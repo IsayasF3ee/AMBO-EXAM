@@ -1,6 +1,247 @@
 // Exam Data
 const exams = {
 
+"Jimmaa University":[
+
+  {
+    q: "Which type of attack involves an attacker intercepting and modifying communication between two parties?",
+    options: ["Denial of Service (DoS)", "Man-in-the-Middle (MitM)", "Phishing", "Trojan Horse"],
+    answer: 1,
+    explanation: "A Man-in-the-Middle (MitM) attack occurs when an attacker secretly intercepts and alters communication between two parties."
+  },
+  {
+    q: "Which cryptographic technique is used to ensure the integrity and authenticity of a message?",
+    options: ["Encryption", "Hashing", "Steganography", "Digital Signature"],
+    answer: 3,
+    explanation: "Digital signatures provide integrity and authenticity by allowing the recipient to verify that the message has not been altered and is from the claimed sender."
+  },
+  {
+    q: "Which authentication factor requires something the user knows?",
+    options: ["Something you are", "Something you have", "Something you do", "Something you know"],
+    answer: 3,
+    explanation: "Authentication factors include knowledge (something you know), possession (something you have), and inherence (something you are)."
+  },
+  {
+    q: "Which principle of cyber security restricts how privileges are initiated whenever any object or subject accesses a resource?",
+    options: ["Least Privilege", "Fail-Safe Defaults", "Economy of Mechanism", "Complete Mediation"],
+    answer: 0,
+    explanation: "The principle of Least Privilege ensures that users and programs operate using the minimum privileges necessary to perform their tasks."
+  },
+  {
+    q: "Which of the following is a common method used by attackers to exploit buffer overflow vulnerabilities?",
+    options: ["Injecting malicious code into input fields", "Sending large amounts of data to overrun a buffer's boundary", "Manipulating URLs to execute unauthorized commands", "Intercepting communication between two parties"],
+    answer: 1,
+    explanation: "Buffer overflow exploits typically involve sending more data than a buffer can hold, which can overwrite memory and allow execution of malicious code."
+  },
+  {
+    q: "Which type of vulnerability occurs when software developers unintentionally expose sensitive information in error messages?",
+    options: ["Buffer Overflow", "Information Disclosure", "Cross-Site Scripting (XSS)", "Privilege Escalation"],
+    answer: 1,
+    explanation: "Information Disclosure vulnerabilities happen when applications reveal sensitive data (e.g., database info, passwords) in errors or logs."
+  },
+  {
+    q: "You are creating a use case model for an online library system. Which is the MOST appropriate use case description for the 'Borrow a Book' functionality?",
+    options: [
+      "The user logs in to the system and searches for a book. They then click on the 'Borrow' button and the book is borrowed.",
+      "The system verifies user credentials, retrieves book information, updates loan status, and sends a confirmation email.",
+      "The user selects a book they want to borrow and the system handles the loan process.",
+      "The system interacts with the database to update borrowing information and generates a loan receipt."
+    ],
+    answer: 2,
+    explanation: "A use case should describe the user's interaction with the system from the user's perspective, not the internal system details."
+  },
+  {
+    q: "When creating requirements using use case modeling concepts, which activity involves identifying the actors, their goals, and interactions between them and the system?",
+    options: [
+      "Writing detailed pseudocode for system functionalities",
+      "Defining the database schema for data storage",
+      "Developing test cases for system validation",
+      "Creating use case diagrams to depict system functionality"
+    ],
+    answer: 3,
+    explanation: "Use case modeling focuses on capturing the interactions between actors and the system to understand functional requirements."
+  },
+  {
+    q: "What is the main difference between Agile and Waterfall development methodologies?",
+    options: [
+      "Agile is faster and more iterative, while Waterfall is more linear and plan-driven.",
+      "Agile focuses on user interface design, while Waterfall prioritizes code quality.",
+      "Agile requires extensive documentation, while Waterfall is more flexible.",
+      "Agile is only for small projects, and Waterfall is better for large-scale systems."
+    ],
+    answer: 0,
+    explanation: "Agile uses iterative development with frequent feedback, whereas Waterfall is linear with defined sequential phases."
+  },
+  {
+    q: "You are analyzing user requirements for a new e-commerce platform. Which technique is most relevant to gather user feedback?",
+    options: [
+      "Reviewing existing code from similar platforms",
+      "Conducting user interviews to understand their needs and shopping habits",
+      "Directly coding the core functionalities based on assumptions",
+      "Analyzing competitor websites' user interfaces"
+    ],
+    answer: 1,
+    explanation: "User interviews allow gathering direct feedback from end users to understand their needs and improve system design."
+  },
+  {
+    q: "After implementing a new software update, you notice an increase in user complaints about bugs. What is the MOST appropriate course of action?",
+    options: [
+      "Ignore the complaints and wait for user feedback to stabilize",
+      "Release a new update with completely different functionalities",
+      "Delete the update and revert to the previous version of the software",
+      "Analyze the complaints, identify the bugs, and release a hotfix update"
+    ],
+    answer: 3,
+    explanation: "Identifying the issues and releasing a targeted hotfix addresses the problem without discarding valid improvements in the update."
+  },
+  {
+    q: "A software system experiences performance issues during peak usage times. How can you analyze the problem to identify the root cause?",
+    options: [
+      "Identify bottlenecks in the code and optimize resource usage",
+      "Change the user interface to a simpler design",
+      "Increase the hardware specifications of the system without further analysis",
+      "Rewrite the entire system from scratch using a different programming language"
+    ],
+    answer: 0,
+    explanation: "Performance issues are best solved by profiling the system, identifying bottlenecks, and optimizing resource-intensive parts."
+  },
+  {
+    q: "The recurrence relation for the Merge Sort algorithm is:",
+    options: [
+      "T(n) = 2T(n/2) + O(n)",
+      "T(n) = 2T(n/2) + O(1)",
+      "T(n) = T(n/2) + O(n)",
+      "T(n) = T(n-1) + O(n)"
+    ],
+    answer: 0,
+    explanation: "Merge Sort divides the array in half recursively (2T(n/2)) and combines sorted halves in O(n) time."
+  },
+  {
+    q: "Which of the following is true about the dynamic programming approach?",
+    options: [
+      "It always uses recursion",
+      "It solves each sub-problem only once and stores the result",
+      "It is always more efficient than greedy algorithms",
+      "It is used only for optimization problems"
+    ],
+    answer: 1,
+    explanation: "Dynamic programming stores the results of solved subproblems to avoid redundant calculations, optimizing efficiency."
+  },
+  {
+    q: "Which of the following problems can be solved using the greedy algorithm approach?",
+    options: [
+      "Longest Common Subsequence",
+      "Traveling Salesman Problem",
+      "Fractional Knapsack Problem",
+      "Matrix Chain Multiplication"
+    ],
+    answer: 2,
+    explanation: "The fractional knapsack problem can be solved optimally using a greedy strategy by taking items with the highest value-to-weight ratio first."
+  },
+  {
+    q: "Which technique is used in dynamic programming to solve optimization problems?",
+    options: [
+      "Divide and Conquer",
+      "Greedy Approach",
+      "Memoization",
+      "Heuristics"
+    ],
+    answer: 2,
+    explanation: "Memoization is storing results of subproblems to avoid repeated computation, a key technique in dynamic programming."
+  },
+  {
+    q: "The main idea behind the divide-and-conquer algorithm is to:",
+    options: [
+      "Break the problem into smaller subproblems, solve them independently, and combine their solutions",
+      "Solve the problem directly without dividing",
+      "Use a single loop to find the solution",
+      "Use dynamic programming to store results of subproblems"
+    ],
+    answer: 0,
+    explanation: "Divide-and-conquer splits a complex problem into smaller, manageable subproblems, solves them recursively, and combines the results."
+  },
+  {
+    q: "What is the time complexity of Kruskal's algorithm for finding the minimum spanning tree?",
+    options: ["O(n^2)", "O(E log E)", "O(V^2)", "O(V log V)"],
+    answer: 1,
+    explanation: "Kruskal's algorithm sorts edges by weight (O(E log E)) and adds them without forming cycles to build the MST."
+  },
+  {
+    q: "What is the primary function of the Data Link Layer in the OSI model?",
+    options: [
+      "Routing packets across networks",
+      "Ensuring reliable transmission of data across a physical link",
+      "Providing end-to-end communication between devices",
+      "Establishing and maintaining communication sessions"
+    ],
+    answer: 1,
+    explanation: "The Data Link Layer ensures error-free transmission between two nodes on the same network and manages physical addressing."
+  },
+  {
+    q: "Which layer of the OSI model converts data packets from the Network layer into electrical signals for transmission?",
+    options: ["Physical Layer", "Data Link Layer", "Network Layer", "Transport Layer"],
+    answer: 0,
+    explanation: "The Physical Layer handles the transmission of raw bitstreams over a physical medium (electrical, optical, or radio signals)."
+  },
+  {
+    q: "What is the primary function of the ARP (Address Resolution Protocol)?",
+    options: [
+      "Translates domain names to IP addresses",
+      "Determines the MAC address of a device based on its IP address",
+      "Routes packets between different networks",
+      "Establishes a secure connection between client and server"
+    ],
+    answer: 1,
+    explanation: "ARP maps an IP address to the corresponding hardware MAC address on a local network."
+  },
+  {
+    q: "How many host addresses are available in a subnet with a subnet mask of 255.255.255.248 (/29)?",
+    options: ["2", "6", "14", "30"],
+    answer: 1,
+    explanation: "A /29 subnet provides 8 addresses, of which 2 are reserved for network and broadcast addresses, leaving 6 usable host addresses."
+  },
+  {
+    q: "Which wireless technology is commonly used for local area networking and internet access within buildings?",
+    options: ["Bluetooth", "Cellular", "Wi-Fi", "NFC (Near Field Communication)"],
+    answer: 2,
+    explanation: "Wi-Fi is a common wireless technology for LANs and provides internet access in buildings."
+  },
+  {
+    q: "What is the broadcast address in a subnet with the address range 192.168.1.0 - 192.168.1.31?",
+    options: ["192.168.1.0", "192.168.1.31", "192.168.1.255", "192.168.0.255"],
+    answer: 1,
+    explanation: "The broadcast address is the last address in a subnet range, used to send messages to all hosts in the subnet."
+  },
+  {
+    q: "Which principle ensures that critical systems remain operational in case of hardware failure?",
+    options: ["Load balancing", "Failover", "Data normalization", "Denial of Service (DoS) prevention"],
+    answer: 1,
+    explanation: "Failover provides redundancy so that if one system fails, another system automatically takes over to maintain operation."
+  }
+
+
+
+
+
+
+
+
+
+  
+  
+],
+
+
+
+
+
+
+
+
+
+
+  
+
 "Finfinnee":[
 
   {
@@ -9947,6 +10188,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
