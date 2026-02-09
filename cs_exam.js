@@ -736,10 +736,6 @@ const exams = {
 
 
 
-
-
-
-
   
 "haramayaa":[
 
@@ -6698,6 +6694,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
