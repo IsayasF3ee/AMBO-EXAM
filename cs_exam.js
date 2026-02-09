@@ -443,7 +443,7 @@ const exams = {
     ],
     answer: 1,
     explanation: "Derived attributes use dashed ellipses."
-  }
+  },
 
 
 
@@ -853,14 +853,6 @@ const exams = {
 
 
 
-
-
-
-
-
-
-
-/* ===================== 1–7 C++ ===================== */
 {
   q: "What are the values of A, B, C and D after executing the given C++ code?",
   options: ["5, 9, -4, 0", "6, 8, -3, 6", "6, 9, -3, 5", "8, 6, -3, 6"],
@@ -9327,6 +9319,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
