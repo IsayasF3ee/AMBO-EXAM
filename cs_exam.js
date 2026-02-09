@@ -1,5 +1,500 @@
 // Exam Data
 const exams = {
+
+"Finfinnee":[
+
+
+/* ===================== 1–7 C++ ===================== */
+{
+  q: "What are the values of A, B, C and D after executing the given C++ code?",
+  options: ["5, 9, -4, 0", "6, 8, -3, 6", "6, 9, -3, 5", "8, 6, -3, 6"],
+  answer: 1,
+  explanation: "++A makes A=6, B-- makes B=8 after use, so C=-3 and D=6."
+},
+{
+  q: "What will be the value of count and sum if x = 7.2?",
+  options: ["0, 10.2", "10.2, 10.2", "0, 3", "None of the above"],
+  answer: 3,
+  explanation: "Condition fails, sum stays 3, count becomes 3 → none matches."
+},
+{
+  q: "How many times is 'Hello' printed?",
+  options: ["0", "6", "3", "9"],
+  answer: 1,
+  explanation: "Inner loop runs 6 times total."
+},
+{
+  q: "What does cout << *t print?",
+  options: ["Address of x", "3", "7", "None"],
+  answer: 1,
+  explanation: "*t dereferences pointer t, which points to x=3."
+},
+{
+  q: "What is the output of the struct copy code?",
+  options: ["25 25", "25 30", "30 30", "Compilation error", "None"],
+  answer: 1,
+  explanation: "p2 is a copy; changing p2 does not affect p1."
+},
+{
+  q: "What is the output of the enum loop code?",
+  options: ["Month names", "1–12", "12", "13", "None"],
+  answer: 3,
+  explanation: "mon increments twice per loop, ending at 13."
+},
+{
+  q: "Which function returns the current file output pointer position?",
+  options: ["tellg()", "tellp()", "seekg()", "seekp()", "None"],
+  answer: 1,
+  explanation: "tellp() gives output file pointer position."
+},
+
+/* ===================== Database Systems ===================== */
+{
+  q: "Primary purpose of concurrency control?",
+  options: ["Increase speed", "Guarantee serializability", "Reduce redundancy", "Security"],
+  answer: 1,
+  explanation: "Concurrency control ensures serializability."
+},
+{
+  q: "What is a deadlock?",
+  options: ["Transactions wait on each other", "Busy lock", "Rollback conflict", "Commit rollback"],
+  answer: 0,
+  explanation: "Circular waiting for locks."
+},
+{
+  q: "Which GRANT allows no propagation?",
+  options: ["WITH GRANT OPTION", "Normal GRANT", "REVOKE OPTION", "ALLOW OPTION"],
+  answer: 1,
+  explanation: "Without GRANT OPTION prevents propagation."
+},
+{
+  q: "Correct statement about recovery?",
+  options: ["Force simplifies recovery", "No-steal flushes early", "Steal prevents flushing", "No-force lowers I/O"],
+  answer: 0,
+  explanation: "Force writes data at commit, simplifying recovery."
+},
+{
+  q: "Effect of coarse granularity?",
+  options: ["More concurrency", "No locks", "Less concurrency", "No effect"],
+  answer: 2,
+  explanation: "Larger items reduce concurrency."
+},
+{
+  q: "Lock required for delete?",
+  options: ["Shared", "Intention", "Write", "Read"],
+  answer: 2,
+  explanation: "Delete modifies data → write lock."
+},
+{
+  q: "Which backup copies only changes since last backup?",
+  options: ["Full", "Incremental", "Differential", "Snapshot"],
+  answer: 1,
+  explanation: "Incremental stores changes only."
+},
+{
+  q: "Purpose of recovery?",
+  options: ["Speed", "Reduce redundancy", "Security", "Restore consistency"],
+  answer: 3,
+  explanation: "Recovery restores last consistent state."
+},
+{
+  q: "RBAC principle?",
+  options: ["Users get permissions", "Roles get permissions", "Admin assigns per request", "Auto assign"],
+  answer: 1,
+  explanation: "Permissions are assigned to roles."
+},
+{
+  q: "Contemporaneous principle means?",
+  options: ["Recorded at time of action", "Attributable", "Readable", "Original"],
+  answer: 0,
+  explanation: "Data recorded immediately."
+},
+{
+  q: "If owner revokes privilege?",
+  options: ["Remain active", "Automatically revoked", "Transferred", "Read-only"],
+  answer: 1,
+  explanation: "Cascade revoke occurs."
+},
+{
+  q: "Purpose of savepoints?",
+  options: ["Encrypt data", "Rollback point", "Compress data", "Duplicate"],
+  answer: 1,
+  explanation: "Savepoints allow partial rollback."
+},
+{
+  q: "Unique feature of OODB?",
+  options: ["SQL", "Large data", "Objects & classes", "Rows"],
+  answer: 2,
+  explanation: "Stores objects."
+},
+{
+  q: "Advantage of RDB?",
+  options: ["SQL usage", "NoSQL", "Complex types", "Hierarchy"],
+  answer: 0,
+  explanation: "SQL is simple and standard."
+},
+
+/* ===================== OOP ===================== */
+{
+  q: "Correct 2D array initialization?",
+  options: ["Flat list", "Uneven rows with zeros", "Missing commas", "Jagged array"],
+  answer: 3,
+  explanation: "Jagged arrays allow different row sizes."
+},
+{
+  q: "Good static candidate?",
+  options: ["PI field", "Employee salary display", "Hypotenuse calc", "Student name", "All except B"],
+  answer: 4,
+  explanation: "Statics belong to class, not object."
+},
+{
+  q: "Access modifier rule?",
+  options: ["Must be public/private", "Optional, only two", "Optional, many choices", "Depends on return", "All"],
+  answer: 2,
+  explanation: "Java allows several modifiers or none."
+},
+{
+  q: "Output of inheritance code?",
+  options: ["4", "25", "12", "20"],
+  answer: 1,
+  explanation: "num becomes 25, assigned to num1."
+},
+{
+  q: "Dynamic polymorphism requires?",
+  options: ["Variable", "Overriding", "Inheritance", "All"],
+  answer: 3,
+  explanation: "All are required."
+},
+{
+  q: "Non-abstract child must?",
+  options: ["Override abstract", "Different return", "Not define", "Define abstract", "All"],
+  answer: 0,
+  explanation: "Must implement abstract methods."
+},
+{
+  q: "Correct inheritance rule?",
+  options: ["Extend OR implement", "One parent one interface", "One parent many interfaces", "Many parents"],
+  answer: 2,
+  explanation: "Java allows one class, many interfaces."
+},
+
+/* ===================== COA ===================== */
+{
+  q: "CPU involvement in I/O?",
+  options: ["PIO wastes, DMA minimal", "Same time", "Interrupt wastes more", "All same"],
+  answer: 0,
+  explanation: "DMA reduces CPU involvement."
+},
+{
+  q: "Memory-mapped I/O uses?",
+  options: ["Load/store", "Separate space", "Special instr", "Extra pin", "No DMA"],
+  answer: 0,
+  explanation: "Uses memory instructions."
+},
+{
+  q: "Block transfer without CPU?",
+  options: ["Busy wait", "Interrupt", "DMA", "Polling"],
+  answer: 2,
+  explanation: "DMA transfers directly."
+},
+{
+  q: "RISC vs CISC?",
+  options: ["RISC complex", "Same cycles", "Fixed vs variable", "RISC uses microcode"],
+  answer: 2,
+  explanation: "RISC uses simple fixed-length instructions."
+},
+{
+  q: "Purpose of cache?",
+  options: ["Store files", "Printer buffer", "Fast access", "BIOS"],
+  answer: 2,
+  explanation: "Cache speeds up access."
+},
+{
+  q: "Fetch cycle sequence?",
+  options: ["PC→MAR", "PC→IR", "IR→MDR", "MAR→PC"],
+  answer: 0,
+  explanation: "Correct fetch sequence."
+},
+{
+  q: "ADD R1,R2,R3 means?",
+  options: ["R2=R1+R3", "R1=R2+R3", "Memory op", "Stack"],
+  answer: 1,
+  explanation: "ALU adds R2 and R3 into R1."
+},
+
+/* ===================== Networking ===================== */
+{
+  q: "Hosts in /27 subnet?",
+  options: ["14", "15", "30", "62"],
+  answer: 2,
+  explanation: "32 addresses − 2 = 30."
+},
+{
+  q: "Incorrect physical layer task?",
+  options: ["Media interaction", "Logical channels", "Signal creation", "Direction flow", "None"],
+  answer: 1,
+  explanation: "Logical channels belong to data link layer."
+},
+{
+  q: "Not data link layer task?",
+  options: ["Framing", "Flow control", "Channel coding", "Error control", "None"],
+  answer: 2,
+  explanation: "Channel coding is physical layer."
+},
+{
+  q: "Valid host address?",
+  options: ["191.254.0.32", "191.254.1.29", "191.254.1.64", "191.254.0.96"],
+  answer: 1,
+  explanation: "Valid subnet and host range."
+},
+{
+  q: "Best medium against interference?",
+  options: ["UTP", "Optical fiber", "Coaxial", "Microwave", "Copper"],
+  answer: 1,
+  explanation: "Fiber is immune to EMI."
+},
+
+
+
+
+
+  
+{
+  q: "Which scheduling algorithm may cause starvation?",
+  options: ["FCFS", "Round Robin", "Priority Scheduling", "FIFO"],
+  answer: 2,
+  explanation: "Priority scheduling may cause starvation if low-priority processes never get CPU time."
+},
+{
+  q: "Which layer of the OSI model is responsible for encryption?",
+  options: ["Session layer", "Presentation layer", "Transport layer", "Network layer"],
+  answer: 1,
+  explanation: "The Presentation layer handles encryption, compression, and translation."
+},
+{
+  q: "Which of the following is NOT a function of the operating system?",
+  options: ["Memory management", "Process scheduling", "Compiler design", "File management"],
+  answer: 2,
+  explanation: "Compiler design is handled by programming tools, not the OS."
+},
+{
+  q: "Which data structure is used in Breadth First Search (BFS)?",
+  options: ["Stack", "Queue", "Tree", "Graph"],
+  answer: 1,
+  explanation: "BFS uses a queue to explore nodes level by level."
+},
+{
+  q: "Which protocol is used to send email?",
+  options: ["HTTP", "FTP", "SMTP", "SNMP"],
+  answer: 2,
+  explanation: "SMTP (Simple Mail Transfer Protocol) is used to send emails."
+},
+{
+  q: "Which type of memory is volatile?",
+  options: ["ROM", "Hard Disk", "RAM", "Flash memory"],
+  answer: 2,
+  explanation: "RAM is volatile and loses data when power is turned off."
+},
+{
+  q: "Which normal form removes transitive dependency?",
+  options: ["1NF", "2NF", "3NF", "BCNF"],
+  answer: 2,
+  explanation: "Third Normal Form (3NF) removes transitive dependency."
+},
+{
+  q: "Which algorithm is used to find the shortest path in a graph?",
+  options: ["Prim’s algorithm", "Kruskal’s algorithm", "Dijkstra’s algorithm", "DFS"],
+  answer: 2,
+  explanation: "Dijkstra’s algorithm finds the shortest path from a source node."
+},
+{
+  q: "Which command is used to remove a directory in Linux?",
+  options: ["rm", "rmdir", "del", "erase"],
+  answer: 1,
+  explanation: "The rmdir command removes empty directories in Linux."
+},
+{
+  q: "Which software development model is best suited for large projects with well-defined requirements?",
+  options: ["Agile", "Spiral", "Waterfall", "RAD"],
+  answer: 2,
+  explanation: "The Waterfall model is suitable when requirements are clear and fixed."
+},
+{
+  q: "Which device connects two different networks?",
+  options: ["Hub", "Switch", "Router", "Repeater"],
+  answer: 2,
+  explanation: "A router connects and routes data between different networks."
+},
+{
+  q: "Which key uniquely identifies a record in a database table?",
+  options: ["Foreign key", "Candidate key", "Primary key", "Composite key"],
+  answer: 2,
+  explanation: "A primary key uniquely identifies each record in a table."
+},
+{
+  q: "Which programming paradigm focuses on objects and classes?",
+  options: ["Procedural", "Functional", "Object-Oriented", "Logical"],
+  answer: 2,
+  explanation: "Object-Oriented Programming is based on objects and classes."
+},
+{
+  q: "Which type of attack listens to network traffic?",
+  options: ["Phishing", "Sniffing", "Spoofing", "DoS"],
+  answer: 1,
+  explanation: "Sniffing captures and analyzes network traffic."
+},
+{
+  q: "Which sorting algorithm has the best average-case time complexity?",
+  options: ["Bubble sort", "Insertion sort", "Merge sort", "Selection sort"],
+  answer: 2,
+  explanation: "Merge sort has O(n log n) average-case time complexity."
+},
+{
+  q: "Which SQL command is used to remove a table?",
+  options: ["DELETE", "REMOVE", "DROP", "TRUNCATE"],
+  answer: 2,
+  explanation: "DROP removes the table structure and its data."
+},
+{
+  q: "Which topology uses a central device?",
+  options: ["Bus", "Ring", "Star", "Mesh"],
+  answer: 2,
+  explanation: "Star topology uses a central hub or switch."
+},
+{
+  q: "Which process state comes after running?",
+  options: ["Ready", "Waiting", "Terminated", "New"],
+  answer: 2,
+  explanation: "After execution completes, a process enters the terminated state."
+},
+{
+  q: "Which language is mainly used for system programming?",
+  options: ["Java", "Python", "C", "HTML"],
+  answer: 2,
+  explanation: "C is widely used for system and low-level programming."
+},
+{
+  q: "Which factor affects CPU performance the most?",
+  options: ["Clock speed", "Monitor size", "Keyboard type", "Mouse sensitivity"],
+  answer: 0,
+  explanation: "Higher clock speed allows the CPU to execute instructions faster."
+},
+
+
+
+
+
+  {
+  q: "Which addressing mode uses the actual value in the instruction?",
+  options: ["Immediate", "Direct", "Indirect", "Register"],
+  answer: 0,
+  explanation: "Immediate addressing mode contains the actual operand value within the instruction itself."
+},
+{
+  q: "Which component of a computer performs arithmetic and logical operations?",
+  options: ["Control Unit", "ALU", "Register", "Cache"],
+  answer: 1,
+  explanation: "The Arithmetic Logic Unit (ALU) performs arithmetic and logical operations."
+},
+{
+  q: "Which protocol is used for secure web communication?",
+  options: ["HTTP", "FTP", "HTTPS", "SMTP"],
+  answer: 2,
+  explanation: "HTTPS secures HTTP communication using SSL/TLS encryption."
+},
+{
+  q: "Which type of software is an operating system?",
+  options: ["Application software", "System software", "Utility software", "Programming software"],
+  answer: 1,
+  explanation: "An operating system is system software that manages hardware and software resources."
+},
+{
+  q: "Which of the following is a non-relational database?",
+  options: ["MySQL", "Oracle", "PostgreSQL", "MongoDB"],
+  answer: 3,
+  explanation: "MongoDB is a NoSQL (non-relational) database."
+},
+{
+  q: "Which algorithm is used for deadlock avoidance?",
+  options: ["Round Robin", "Banker’s algorithm", "FCFS", "Priority scheduling"],
+  answer: 1,
+  explanation: "Banker’s algorithm avoids deadlock by ensuring safe resource allocation."
+},
+{
+  q: "Which network device operates at the Data Link layer?",
+  options: ["Router", "Switch", "Gateway", "Modem"],
+  answer: 1,
+  explanation: "A switch operates at the Data Link layer (Layer 2) of the OSI model."
+},
+{
+  q: "Which SDLC phase involves coding and unit testing?",
+  options: ["Requirement analysis", "Design", "Implementation", "Maintenance"],
+  answer: 2,
+  explanation: "The implementation phase includes coding and unit testing of the system."
+},
+{
+  q: "Which programming language is primarily used for artificial intelligence?",
+  options: ["C", "Python", "HTML", "Assembly"],
+  answer: 1,
+  explanation: "Python is widely used in AI due to its simplicity and rich libraries."
+},
+{
+  q: "Which type of memory is fastest?",
+  options: ["RAM", "Cache", "Hard Disk", "ROM"],
+  answer: 1,
+  explanation: "Cache memory is the fastest memory, located closest to the CPU."
+},
+{
+  q: "Which key is used to link two tables in a database?",
+  options: ["Primary key", "Candidate key", "Foreign key", "Composite key"],
+  answer: 2,
+  explanation: "A foreign key links records between two database tables."
+},
+{
+  q: "Which OS concept allows multiple programs to run simultaneously?",
+  options: ["Multithreading", "Multiprogramming", "Batch processing", "Spooling"],
+  answer: 1,
+  explanation: "Multiprogramming allows multiple programs to reside in memory and execute concurrently."
+},
+{
+  q: "Which data structure follows LIFO principle?",
+  options: ["Queue", "Array", "Stack", "Linked list"],
+  answer: 2,
+  explanation: "Stack follows the Last In, First Out (LIFO) principle."
+},
+{
+  q: "Which software testing ensures the system meets user requirements?",
+  options: ["Unit testing", "Integration testing", "System testing", "Acceptance testing"],
+  answer: 3,
+  explanation: "Acceptance testing verifies the system meets user requirements."
+},
+{
+  q: "Which command is used to view IP configuration in Windows?",
+  options: ["ping", "ifconfig", "ipconfig", "netstat"],
+  answer: 2,
+  explanation: "The ipconfig command displays IP configuration in Windows."
+}
+
+
+
+
+  
+
+  ],
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
 "Arbaminch":[
 
   
@@ -7976,6 +8471,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
