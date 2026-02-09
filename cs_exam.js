@@ -1,5 +1,650 @@
 // Exam Data
 const exams = {
+"Arbaminch":[
+
+
+  {
+    q: "Which one of the following is asynchronous in message communication?",
+    options: ["Blocking receive", "Blocking send", "Direct message", "Non-block receive"],
+    answer: 3,
+    explanation: "Non-blocking receive allows the process to continue without waiting, making it asynchronous."
+  },
+  {
+    q: "What is the purpose of an opcode in an instruction?",
+    options: ["It determines the operation to be done", "It holds the next instruction reference", "It holds the destination address of an operand", "It holds the source address of an operand"],
+    answer: 0,
+    explanation: "Opcode specifies which operation the CPU should perform."
+  },
+  {
+    q: "Which layer uses port number to identify applications?",
+    options: ["Transport layer", "Application layer", "Network layer", "Physical layer"],
+    answer: 0,
+    explanation: "Port numbers are used at the transport layer to identify processes or applications."
+  },
+  {
+    q: "Which asymptotic notation describes average case analysis?",
+    options: ["Big-O", "Theta (Θ)", "Big-Omega (Ω)", "Little Omega (ω)"],
+    answer: 1,
+    explanation: "Theta notation (Θ) represents both upper and lower bounds, often used for average case."
+  },
+  {
+    q: "At which layer of the OSI model are devices such as bridges, switches, and NICs used?",
+    options: ["Physical layer", "Network layer", "Data link layer", "Application layer"],
+    answer: 2,
+    explanation: "Bridges, switches, and NICs operate at the data link layer for frame-level communication."
+  },
+  {
+    q: "A computer expert wants to know the number of processes completed per hour. Which metric is this?",
+    options: ["Turnaround time", "System throughput", "Waiting time", "Response time"],
+    answer: 1,
+    explanation: "System throughput measures the number of processes completed in a given period."
+  },
+  {
+    q: "What will be the output of the JavaScript statement Math.sqrt(36)?",
+    options: ["6", "3", "36", "1"],
+    answer: 0,
+    explanation: "The square root of 36 is 6."
+  },
+  {
+    q: "Which is correct about human role in system administration?",
+    options: ["Ethics is not required", "Organizational skills not needed", "Requires patience, understanding, and knowledge", "Skills and confidence not expected"],
+    answer: 2,
+    explanation: "System administration requires technical knowledge, patience, and organizational skills."
+  },
+  {
+    q: "Which is valid regarding PHP variables?",
+    options: ["$test = \"This is 'Computer science'\";", "test = 5;", "$test = 9.5", "$test = \"Computer;"],
+    answer: 0,
+    explanation: "PHP variables start with $ and can store strings correctly enclosed in quotes."
+  },
+  {
+    q: "Which is NOT correct about POP3 and SMTP?",
+    options: ["Both are application layer protocols", "A sender can send email using SMTP", "A sender can receive emails using POP3", "Both are network layer protocols"],
+    answer: 3,
+    explanation: "POP3 and SMTP operate at the application layer, not network layer."
+  },
+  {
+    q: "A problem occurs when a transaction updates a database item, fails, and another transaction accesses it before restoration. What is this?",
+    options: ["Lost update problem", "Incorrect summary problem", "Dirty read", "Temporary read problem"],
+    answer: 2,
+    explanation: "Dirty read happens when a transaction reads uncommitted changes from another transaction."
+  },
+  {
+    q: "Which quantifier can be used for some portion of the universe?",
+    options: ["→", "∃", "∧", "∀"],
+    answer: 1,
+    explanation: "The existential quantifier ∃ indicates that 'there exists' at least one element."
+  },
+  {
+    q: "Output of Math.floor(5.9) in JavaScript?",
+    options: ["9", "5", "11.8", "6"],
+    answer: 1,
+    explanation: "Math.floor() rounds a number down to the nearest integer."
+  },
+  {
+    q: "Attackers motivated by financial gain and performing sabotage/IP theft are called:",
+    options: ["Stealer", "Competitor", "Activist", "Hacktivist"],
+    answer: 1,
+    explanation: "Competitors may attack rivals for financial advantage or theft of secrets."
+  },
+  {
+    q: "_____ is the whole thing that an agent has observed concerning the environment.",
+    options: ["Performance measure", "Knowledge", "Action", "Perception"],
+    answer: 3,
+    explanation: "Perception is the information an agent obtains from the environment."
+  },
+  {
+    q: "Which phase comes before semantic analysis in compiling?",
+    options: ["Syntax analysis", "Code optimization", "Code generation", "Intermediate code generation"],
+    answer: 0,
+    explanation: "Syntax analysis (parsing) occurs before semantic analysis."
+  },
+  {
+    q: "False statement about universal hashing technique:",
+    options: ["Single fixed hash function is better than universal hashing for collisions", "Universal hashing reduces chance of collision", "Hash function selected independently of keys", "Hash function selected randomly for each key"],
+    answer: 0,
+    explanation: "Using a single fixed hash function is more prone to collisions than universal hashing."
+  },
+  {
+    q: "True about functions in JavaScript:",
+    options: ["Function names can contain spaces", "Function names can begin with digits", "Function names are not case-sensitive", "No limit to number of function parameters"],
+    answer: 3,
+    explanation: "JavaScript functions can have any number of parameters; names cannot contain spaces or start with digits."
+  },
+  {
+    q: "Phase of software development that refers to modifying software for changing requirements:",
+    options: ["Validation", "Development", "Specification", "Evolution"],
+    answer: 3,
+    explanation: "Software evolution modifies existing software to meet new requirements."
+  },
+  {
+    q: "True about pop() operation in Stack:",
+    options: ["Inserts new element at bottom", "Removes end/top element", "Returns top element without deleting", "Inserts at middle"],
+    answer: 1,
+    explanation: "pop() removes and returns the element at the top of the stack."
+  },
+  {
+    q: "False about programming language generations:",
+    options: ["Assembly language is machine independent", "Assembly needs translation to machine code", "Machine language can execute without translation", "Fifth generation languages need very powerful hardware"],
+    answer: 0,
+    explanation: "Assembly language is machine dependent, not independent."
+  },
+  {
+    q: "Responsible for shielding machines from attacks:",
+    options: ["Switch", "Firewall", "Router", "Network OS"],
+    answer: 1,
+    explanation: "Firewalls block unauthorized access and protect networked machines."
+  },
+  {
+    q: "Two-level cache with internal and external caches:",
+    options: ["Multilevel cache", "Single-level cache", "Unified cache", "Split cache"],
+    answer: 0,
+    explanation: "Multilevel cache uses L1 (internal) and L2 (external) caches."
+  },
+  {
+    q: "Patients in a clinic with seriously sick first – which data structure?",
+    options: ["Stack", "Priority Queue", "Queue", "Tree"],
+    answer: 1,
+    explanation: "Priority queues allow higher-priority elements to be processed first."
+  },
+  {
+    q: "False about computer architecture and organization:",
+    options: ["Organization lasts as long as architecture", "Architecture can be used across different computer models", "Architecture remains long, organization can change", "Manufacturers offer same architecture but different organization"],
+    answer: 0,
+    explanation: "Organization can change while architecture remains the same; it does not last as long as architecture."
+  },
+  {
+    q: "Optimization problem on a weighted graph:",
+    options: ["Is vertex P reachable from Q", "Find minimum spanning tree", "Traverse all vertices", "Count cycles"],
+    answer: 1,
+    explanation: "Finding a minimum spanning tree is an optimization problem."
+  },
+  {
+    q: "False about transaction failure:",
+    options: ["Catastrophes cause failure", "Disk blocks losing data cause failure", "Concurrency control avoids failure", "Logical errors cause failure"],
+    answer: 2,
+    explanation: "Concurrency control prevents inconsistent data but does not guarantee prevention of transaction failure."
+  },
+  {
+    q: "False about packet vs circuit switching:",
+    options: ["Packet more efficient", "Circuit has dedicated channel", "Packet requires end-to-end connection", "Packets sent in small blocks"],
+    answer: 2,
+    explanation: "Packet switching does NOT require a dedicated end-to-end connection, unlike circuit switching."
+  },
+  {
+    q: "Not an example of scripting language:",
+    options: ["PHP", "Perl", "C++", "Python"],
+    answer: 2,
+    explanation: "C++ is a compiled language, not a scripting language."
+  },
+  {
+    q: "Node with no parent node in a tree is:",
+    options: ["Root node", "Parent node", "Internal node", "External node"],
+    answer: 0,
+    explanation: "The root node has no parent."
+  },
+  {
+    q: "Network architecture characteristic allowing quick expansion:",
+    options: ["Fault tolerance", "Quality of service", "Scalability", "Security"],
+    answer: 2,
+    explanation: "Scalability allows networks to expand without significant performance degradation."
+  },
+  {
+    q: "Deadlock prevention mechanism that doesn’t require timestamp:",
+    options: ["Wound-wait", "Wait-die", "No-wait", "Wait-wait"],
+    answer: 2,
+    explanation: "No-wait protocol prevents waiting, avoiding the need for timestamps."
+  },
+  {
+    q: "Hardest environment for an agent:",
+    options: ["Sequential, non-deterministic, dynamic", "Partially observable, static, continuous", "Fully observable, sequential, deterministic", "Deterministic, fully observable, static"],
+    answer: 0,
+    explanation: "Sequential, non-deterministic, dynamic environments are hardest because the agent must handle uncertainty and changes."
+  },
+  {
+    q: "Program data independence in DBMS means:",
+    options: ["Application may be affected by data changes", "Data and applications are defined separately", "Both program and data defined together", "Programs can create redundant data independently"],
+    answer: 1,
+    explanation: "Data and applications are defined separately to allow changes in data without affecting programs."
+  },
+  {
+    q: "Output of Java fragment: n=6, m=15, p=3; n-=m; n*=p; System.out.print(n);",
+    options: ["-27", "27", "3", "24"],
+    answer: 0,
+    explanation: "n = 6-15 = -9; then n*-9*3 = -27."
+  },
+  {
+    q: "Time complexity of Quick sort algorithm:",
+    options: ["O(n²)", "O(2^n)", "O(n)", "O(n log n)"],
+    answer: 3,
+    explanation: "Average time complexity of Quick sort is O(n log n)."
+  },
+  {
+    q: "Smallest HTML heading tag:",
+    options: ["<H3>", "<H1>", "<H4>", "<H6>"],
+    answer: 3,
+    explanation: "<H6> is the smallest heading tag."
+  },
+  {
+    q: "Software test done by clients to check if system satisfies requirements:",
+    options: ["Unit testing", "Integration testing", "System testing", "Acceptance testing"],
+    answer: 3,
+    explanation: "Acceptance testing is done by clients to validate the system meets requirements."
+  },
+
+
+
+
+  {
+    q: "Which measure ensures information systems' availability, integrity, authentication, and confidentiality?",
+    options: ["Interception", "Information assurance", "Information security", "Wiretapping"],
+    answer: 1,
+    explanation: "Information assurance focuses on protecting information and information systems."
+  },
+  {
+    q: "Which network type is the largest?",
+    options: ["Metropolitan Area Network", "The Internet", "Wide Area Network", "Local Area Network"],
+    answer: 1,
+    explanation: "The Internet is the largest network globally, connecting multiple WANs and LANs."
+  },
+  {
+    q: "Depth First Traversal algorithm uses which data structure?",
+    options: ["Tree", "Priority queue", "Queue", "Stack"],
+    answer: 3,
+    explanation: "DFS uses a stack (explicit or via recursion) to track the next node to visit."
+  },
+  {
+    q: "Branch that studies whether a problem can be solved regardless of resources?",
+    options: ["Automata theory", "Set theory", "Computability theory", "Complexity theory"],
+    answer: 2,
+    explanation: "Computability theory deals with what can be computed in principle."
+  },
+  {
+    q: "Algorithm to extract Minimum Spanning Tree from a graph:",
+    options: ["Huffman encoding", "Prim's algorithm", "Merge sort", "Dijkstra's algorithm"],
+    answer: 1,
+    explanation: "Prim's algorithm is used to find a minimum spanning tree in weighted graphs."
+  },
+  {
+    q: "University LANs and WANs used by staff and students are best described as:",
+    options: ["Metropolitan Area Network", "Local Area Network", "Wide Area Network", "The Internet"],
+    answer: 2,
+    explanation: "A wide area network (WAN) connects multiple local area networks (LANs) across locations."
+  },
+  {
+    q: "Which is not a single-level ordered index?",
+    options: ["Multilevel index", "Primary index", "Clustering index", "Secondary index"],
+    answer: 0,
+    explanation: "A multilevel index has more than one level, so it is not single-level."
+  },
+  {
+    q: "SQL to delete publisher named 'xWZ' from PUBLISHER table?",
+    options: ["DELETE FROM PUBLISHER WHERE Address = 'XWZ'", "DELETE FROM BOOK WHERE Name = 'XWZ'", "DELETE FROM BOOK_AUTHOR WHERE Address = 'xWZ'", "DELETE FROM PUBLISHER WHERE Name = 'XWZ'"],
+    answer: 3,
+    explanation: "DELETE FROM PUBLISHER WHERE Name='xWZ' correctly removes the row by name."
+  },
+  {
+    q: "Method to obtain meaning of encrypted information without secret key?",
+    options: ["Decryption", "Cryptanalysis", "Encryption", "Cryptography"],
+    answer: 1,
+    explanation: "Cryptanalysis attempts to break encryption without the key."
+  },
+  {
+    q: "Used for syntax analysis in compiling process:",
+    options: ["Loader", "Scanner", "Linker", "Parser"],
+    answer: 3,
+    explanation: "Parser performs syntax analysis by checking grammatical structure of code."
+  },
+  {
+    q: "Program to decode scrambled messages sent by a friend:",
+    options: ["Secret key", "Encryption program", "Ciphertext", "Decryption program"],
+    answer: 3,
+    explanation: "Decryption program converts scrambled text (ciphertext) back to readable form."
+  },
+  {
+    q: "Most secure computer compared to others?",
+    options: ["Connected with latest antivirus", "Connected with strong IDS", "Connected with latest firewall", "Not connected to Internet"],
+    answer: 3,
+    explanation: "A computer not connected to the Internet is least vulnerable to attacks."
+  },
+  {
+    q: "Not true about fan trap in ERD:",
+    options: ["Resolved by readjusting model", "Occurs with ambiguous pathway", "Occurs when no pathway exists", "Occurs when multiple 1:N relationships fan out"],
+    answer: 2,
+    explanation: "Fan trap occurs due to multiple 1:N relationships, not absence of pathway."
+  },
+  {
+    q: "False about arrays in C++:",
+    options: ["Collection of similar data objects", "Size must be constant at declaration", "Use [] brackets to access", "Access elements without index"],
+    answer: 3,
+    explanation: "Array elements cannot be accessed without using index numbers."
+  },
+  {
+    q: "When is DBMS costly and not recommended?",
+    options: ["To control redundancy", "Embedded systems with small storage", "Multiple users accessing database", "To deny unauthorized access"],
+    answer: 1,
+    explanation: "Embedded systems with limited storage may not efficiently support a full DBMS."
+  },
+  {
+    q: "Data update method where modified items are written after transaction ends?",
+    options: ["In-place update", "Immediate update", "Shadow update", "Deferred update"],
+    answer: 3,
+    explanation: "Deferred update writes changes at the end of the transaction or after multiple transactions."
+  },
+  {
+    q: "True about Java and JavaScript:",
+    options: ["JavaScript used in sophisticated apps", "JavaScript is compiled and interpreted in source form", "Both are object-oriented", "JavaScript has more features than Java"],
+    answer: 2,
+    explanation: "Both Java and JavaScript support object-oriented programming concepts."
+  },
+  {
+    q: "Step in problem solving listing actions and states for goal:",
+    options: ["Search", "Problem formulation", "Execute", "Goal formulation"],
+    answer: 1,
+    explanation: "Problem formulation defines the state space and actions to achieve the goal."
+  },
+  {
+    q: "Set of attributes affecting logical execution of a program:",
+    options: ["Arrangement", "Architecture", "Organization", "Flow control"],
+    answer: 1,
+    explanation: "Architecture defines the structure and attributes of a system."
+  },
+  {
+    q: "Turing machine with two tapes, one read-only, one read-write:",
+    options: ["Multi-dimensional TM", "Off-line TM", "Non-deterministic TM", "Multi-head TM"],
+    answer: 1,
+    explanation: "Offline Turing machines have one read-only input tape and one read/write tape."
+  },
+  {
+    q: "Testing modified software to ensure no new errors introduced:",
+    options: ["Regression testing", "Dynamic testing", "Beta testing", "Static testing"],
+    answer: 0,
+    explanation: "Regression testing checks that new changes haven't introduced bugs."
+  },
+  {
+    q: "Does not show non-functional requirements:",
+    options: ["Displaying information", "Memory requirement", "Reliability", "Response time"],
+    answer: 0,
+    explanation: "Displaying information is a functional requirement, not non-functional."
+  },
+  {
+    q: "Access modifier allowing subclass but not non-subclass access in C++:",
+    options: ["Private", "Default", "Public", "Protected"],
+    answer: 3,
+    explanation: "Protected members are accessible in subclasses but not in unrelated classes."
+  },
+  {
+    q: "Register that holds address of next instruction to fetch:",
+    options: ["Memory buffer register", "Instruction buffer register", "Memory address register", "Program counter"],
+    answer: 3,
+    explanation: "Program counter stores the memory address of the next instruction."
+  },
+  {
+    q: "Linked list data structure type:",
+    options: ["Dynamic", "Non-linear", "Static", "Fixed size"],
+    answer: 0,
+    explanation: "Linked lists are dynamic because nodes can be allocated and deallocated at runtime."
+  },
+  {
+    q: "Interface transferring multiple bits simultaneously:",
+    options: ["Serial interface", "Parallel interface", "Bus interface", "One line"],
+    answer: 1,
+    explanation: "Parallel interfaces allow multiple bits to be transferred at once."
+  },
+  {
+    q: "PHP array: $list = array(20,12,23,19,18); Index of value 19?",
+    options: ["3", "2", "1", "0"],
+    answer: 0,
+    explanation: "Arrays are 0-indexed; value 19 is at index 3."
+  },
+  {
+    q: "Final phase of compiling process:",
+    options: ["Code optimization", "Code generation", "Semantic analysis", "Intermediate code generation"],
+    answer: 1,
+    explanation: "Code generation produces the final machine code executable."
+  },
+  {
+    q: "False about threads:",
+    options: ["Threads have program counters", "Threads are a group of processes", "Threads have registers for working memory", "Threads are scheduled entities on CPU"],
+    answer: 1,
+    explanation: "Threads are not groups of processes; they are lightweight units of execution within a process."
+  },
+  {
+    q: "False about project planning stage:",
+    options: ["Project planning is one-time task", "Cost estimation done", "Prepare time schedule done", "Risk analysis done"],
+    answer: 0,
+    explanation: "Project planning is ongoing; it's not a one-time task."
+  },
+  {
+    q: "Variable accessible throughout C++ program:",
+    options: ["Static", "Local", "Global", "Automatic"],
+    answer: 2,
+    explanation: "Global variables can be accessed anywhere in the program."
+  },
+  {
+    q: "Concept referring to extending specialized classes from generalized classes:",
+    options: ["Inheritance", "Overriding", "Overloading", "Encapsulation"],
+    answer: 0,
+    explanation: "Inheritance allows classes to inherit properties and methods from other classes."
+  },
+  {
+    q: "Self-driving car sensors can detect environment but not all aspects. Which environment?",
+    options: ["Fully observable", "Discrete", "Partially observable", "Stochastic"],
+    answer: 2,
+    explanation: "Partially observable environments provide incomplete information to the agent."
+  },
+  {
+    q: "False about resource wait dependencies in question 27's figure:",
+    options: ["P0 waits for resource held by P1", "P1 waits for resource held by P2", "P2 cannot execute until P1 finishes", "B cannot execute until P4 finishes"],
+    answer: 3,
+    explanation: "Assuming the figure, B’s dependency on P4 is incorrect or unrelated."
+  },
+  {
+    q: "Correct way to create String object in Java:",
+    options: ["String m = 'Computer Science'", "String m = 'H' 'e' 'l' 'l' 'o'", "String m = new String('Technology')", "String m = new String(\"Exit Exam\")"],
+    answer: 3,
+    explanation: "String objects in Java can be created using new String(\"...\")."
+  },
+  {
+    q: "True about frames in HTML:",
+    options: ["Frames allow parts to remain stationary while others scroll", "All browsers support frames", "Server load not affected by many frames", "Frames are not difficult for search engines"],
+    answer: 0,
+    explanation: "Frames allow static content in one section while scrolling other sections."
+  },
+  {
+    q: "False about String in Java:",
+    options: ["String can be created from char array", "Content can be changed once created", "String literal creation possible", "String is an object"],
+    answer: 1,
+    explanation: "Strings in Java are immutable; their content cannot be changed once created."
+  },
+  {
+    q: "DBMS component to control locks:",
+    options: ["Query Processor", "Lock Manager", "Lock Table", "Query Optimizer"],
+    answer: 1,
+    explanation: "Lock manager handles concurrency control by managing locks."
+  },
+  {
+    q: "Evaluates degrees of success of an agent:",
+    options: ["Action", "Perception", "Performance measure", "Knowledge"],
+    answer: 2,
+    explanation: "Performance measure evaluates how well an agent achieves its goals."
+  },
+  {
+    q: "Security service to protect information disclosure from unauthorized entities:",
+    options: ["Integrity", "Confidentiality", "Availability", "Authentication"],
+    answer: 1,
+    explanation: "Confidentiality ensures that sensitive information is not disclosed to unauthorized users."
+  },
+
+
+
+
+  
+[
+  {
+    q: "False statement regarding Direct Address Table and Hash Table?",
+    options: [
+      "Direct Address Table doesn't use hash function",
+      "If universe U is very large, Hash table is better",
+      "Hash table allocates one slot per key in universe U",
+      "One-to-one correspondence exists between keys and slots in Direct Address table"
+    ],
+    answer: 2,
+    explanation: "Hash tables do not allocate one slot for every possible key; they use hashing to map keys to slots."
+  },
+  {
+    q: "Network security issue showing weakness in networks and devices?",
+    options: ["Availability", "Vulnerability", "Attack", "Threat"],
+    answer: 1,
+    explanation: "Vulnerability represents weaknesses that could be exploited by attacks."
+  },
+  {
+    q: "Time complexity of binary search algorithm?",
+    options: ["O(1)", "O(n)", "O(n³)", "O(log2n)"],
+    answer: 3,
+    explanation: "Binary search divides the search space in half each step, giving O(log n) complexity."
+  },
+  {
+    q: "Software requires major architectural changes. Strategy to apply?",
+    options: ["Architectural transformation", "Preventative maintenance", "Software reengineering", "Software maintenance"],
+    answer: 0,
+    explanation: "Architectural transformation involves modifying the system's architecture."
+  },
+  {
+    q: "Variable accessible throughout C++ program scope?",
+    options: ["Static", "Local", "Global", "Automatic"],
+    answer: 2,
+    explanation: "Global variables are accessible anywhere in the program."
+  },
+  {
+    q: "Correct way to create String object in Java?",
+    options: [
+      "String m = 'Computer Science'",
+      "String m = 'H' 'e' 'l' 'l' 'o'",
+      "String m = new String('Technology')",
+      "String m = new String(\"Exit Exam\")"
+    ],
+    answer: 3,
+    explanation: "Java String objects can be created using new String(\"...\")."
+  },
+  {
+    q: "Command to check if a computer upstairs is connected to network?",
+    options: ["Traceroute", "Ping", "DHCP Discover", "Nslookup"],
+    answer: 1,
+    explanation: "Ping sends ICMP requests to check connectivity of a host on the network."
+  },
+  {
+    q: "Which element is NOT part of the language L generated from Grammar G (S→aSb, S→ε)?",
+    options: ["a", "aabb", "ab", "ε"],
+    answer: 0,
+    explanation: "Single 'a' cannot be generated; the language requires balanced 'a's and 'b's or empty string."
+  },
+  {
+    q: "Algorithm to reduce size of large data files?",
+    options: ["Merge sort", "Heap sort", "Prim's algorithm", "Huffman encoding"],
+    answer: 3,
+    explanation: "Huffman encoding is a compression algorithm that reduces file size by encoding frequent symbols with fewer bits."
+  },
+  {
+    q: "Asymptotic notation describing worst case analysis?",
+    options: ["f(n) little-oh", "f(n) little-omega", "f(n) theta", "f(n) big-omega"],
+    answer: 3,
+    explanation: "Big-Omega (Ω) is commonly used for best-case; Big-O (O) is for worst-case, but in this context Big-Omega can represent lower bounds; careful interpretation needed."
+  },
+  {
+    q: "Different from others based on role in network?",
+    options: ["Wireless access point", "Network printer", "Routers", "Hubs"],
+    answer: 1,
+    explanation: "A network printer is an end device, others manage network traffic."
+  },
+  {
+    q: "Wrongly coupled generation of operating system and advancement?",
+    options: [
+      "Fourth generation -> Real time systems",
+      "First generation -> Single user",
+      "Second generation -> Multiprogramming",
+      "Third generation -> Batch system"
+    ],
+    answer: 3,
+    explanation: "Third generation OS were multiprogramming, batch systems were earlier (first or second generation)."
+  },
+  {
+    q: "Best description of a Database Management System (DBMS)?",
+    options: [
+      "Helps manage computer's activity",
+      "Assists process images",
+      "Creates and maintains a database",
+      "Processes documents"
+    ],
+    answer: 2,
+    explanation: "A DBMS manages and organizes databases for efficient access and control."
+  },
+  {
+    q: "Process terminated due to reference to non-existing memory is called?",
+    options: ["Fatal exit", "Normal exit", "Error exit", "Terminated by another process"],
+    answer: 0,
+    explanation: "Fatal exit occurs when a process accesses invalid memory, causing termination."
+  },
+  {
+    q: "Two transactions interleaved causing incorrect database value is?",
+    options: ["Dirty read", "Lost update", "Temporary read", "Incorrect summary"],
+    answer: 1,
+    explanation: "Lost update occurs when concurrent transactions overwrite each other's updates."
+  },
+  {
+    q: "Question 96 – placeholder (needs content)",
+    options: ["Option A", "Option B", "Option C", "Option D"],
+    answer: 0,
+    explanation: "No specific question content provided for 96."
+  },
+  {
+    q: "Question 97 – placeholder (needs content)",
+    options: ["Option A", "Option B", "Option C", "Option D"],
+    answer: 0,
+    explanation: "No specific question content provided for 97."
+  },
+  {
+    q: "Question 98 – placeholder (needs content)",
+    options: ["Option A", "Option B", "Option C", "Option D"],
+    answer: 0,
+    explanation: "No specific question content provided for 98."
+  },
+  {
+    q: "Question 99 – placeholder (needs content)",
+    options: ["Option A", "Option B", "Option C", "Option D"],
+    answer: 0,
+    explanation: "No specific question content provided for 99."
+  },
+  {
+    q: "Question 100 – placeholder (needs content)",
+    options: ["Option A", "Option B", "Option C", "Option D"],
+    answer: 0,
+    explanation: "No specific question content provided for 100."
+  },
+  {
+    q: "Question 101 – placeholder (needs content)",
+    options: ["Option A", "Option B", "Option C", "Option D"],
+    answer: 0,
+    explanation: "No specific question content provided for 101."
+  }
+
+
+
+
+
+
+
+
+  
+  
+],
+
+
+
+
+
+
+  
 "exit exam":[
 
   {
@@ -6694,6 +7339,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
