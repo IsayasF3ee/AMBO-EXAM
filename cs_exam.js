@@ -1,5 +1,746 @@
 // Exam Data
 const exams = {
+"exit exam":[
+
+  {
+    q: "Which one of the following is a step in problem solving that lists the actions and states that the agent has to consider provided a goal?",
+    options: ["Goal formulation", "Search", "Problem formulation", "Execute"],
+    answer: 2,
+    explanation: "Problem formulation defines the state space, initial state, actions, and goal state for an agent to solve a problem."
+  },
+  {
+    q: "A process is terminated by the operating system due to a reference to non-existing memory. Which one of the following best explains the process termination?",
+    options: ["Normal exit", "Terminated by another process", "Fatal exit", "Error exit"],
+    answer: 3,
+    explanation: "Error exit occurs when a process encounters an error such as referencing non-existing memory."
+  },
+  {
+    q: "What is the output of the following C++ fragment code? int a, b; a = 13; b = 9; while((20 && 0) && (a > b)) { cout << \"Plants are our life\"; }",
+    options: [
+      "It displays message 'Plants are our life' infinitely",
+      "It displays message 'Plants are Our Life' 4 times",
+      "No message will be displayed",
+      "It displays message 'Plants are our life' 20 times"
+    ],
+    answer: 2,
+    explanation: "The condition (20 && 0) evaluates to false (0), so the loop body is never executed."
+  },
+  {
+    q: "Which one of the following is not correct about POP3 and SMTP?",
+    options: [
+      "Both are application layer protocols",
+      "A sender can receive emails using POP3",
+      "Both are network layer protocols",
+      "A sender can send email using SMTP"
+    ],
+    answer: 2,
+    explanation: "POP3 and SMTP are application layer protocols, not network layer protocols."
+  },
+  {
+    q: "Size of large data files can be reduced to save storage disk space. Which algorithm is appropriate to reduce size of large files?",
+    options: ["Heap sort algorithm", "Huffman encoding algorithm", "Prim's algorithm", "Merge sort algorithm"],
+    answer: 1,
+    explanation: "Huffman encoding algorithm is a compression technique used to reduce file size efficiently."
+  },
+  {
+    q: "Advancement of operating system is closely tied to computer architectures. Which one of the following generation and advancement is wrongly coupled?",
+    options: [
+      "First generation -> single user",
+      "Third generation -> batch system",
+      "Second generation -> multiprogramming",
+      "Fourth generation -> real time systems"
+    ],
+    answer: 1,
+    explanation: "Third generation OSs were multi-programmed systems, not batch systems; batch systems were typical of the second generation."
+  },
+  {
+    q: "Given input Alphabet = {a, b, c, d} and empty string X. Then, which one of the following is true about *?",
+    options: ["* = + U {X}", "Σ* = Σ+ ∪ Σ² ∪ Σ³ ∪ Σ⁴", "Σ* = {^}", "Σ* = Σ+"],
+    answer: 0,
+    explanation: "The Kleene star (*) represents zero or more occurrences of symbols from Σ. It includes the empty string."
+  },
+  {
+    q: "Which one of the following lists of environments is the hardest for an agent?",
+    options: [
+      "Deterministic, fully observable, static",
+      "Sequential, non-deterministic, dynamic",
+      "Fully observable, sequential, deterministic",
+      "Partially observable, static, continuous"
+    ],
+    answer: 1,
+    explanation: "Sequential, non-deterministic, dynamic environments are the hardest because the agent must deal with uncertainty, sequence of actions, and changing states."
+  },
+  {
+    q: "Which one of the following registers holds the address of the next pair of instructions to be fetched from memory?",
+    options: ["Instruction buffer register", "Memory address register", "Program counter", "Memory buffer register"],
+    answer: 2,
+    explanation: "The Program Counter (PC) holds the memory address of the next instruction to be executed."
+  },
+  {
+    q: "Linked list data structure is type of data structure.",
+    options: ["Dynamic data structure", "Non-linear data structure", "Static data structure", "Fixed size data structure"],
+    answer: 0,
+    explanation: "Linked lists are dynamic data structures because their size can grow or shrink during runtime."
+  },
+  {
+    q: "Which phase of compiling process is considered as the final phase in the process?",
+    options: ["Code optimization", "Semantic analysis", "Code generation", "Intermediate code generation"],
+    answer: 2,
+    explanation: "Code generation is the final phase of compilation, producing machine or intermediate code."
+  },
+  {
+    q: "Which one of the following computers can be most secured compared to the rest?",
+    options: [
+      "A computer connected to the Internet having strong intrusion detection",
+      "A computer connected to the Internet and the latest anti-virus installed on it",
+      "A computer connected to the Internet with the latest firewall system",
+      "A computer that is not connected to the Internet"
+    ],
+    answer: 3,
+    explanation: "A computer not connected to the Internet is physically isolated and therefore most secure."
+  },
+  {
+    q: "An interface that has multiple lines connecting input/output module and peripheral device and assures multiple bits to be transferred at the same time is:",
+    options: ["Parallel interface", "One line interface", "Bus interface", "Serial interface"],
+    answer: 0,
+    explanation: "A parallel interface transfers multiple bits simultaneously using multiple lines."
+  },
+  {
+    q: "Which one of the following best explains attackers who are motivated by financial gain and perform sabotage, IP theft, and secrets of a rival company?",
+    options: ["Activist", "Stealer", "Hacktivist", "Competitor"],
+    answer: 3,
+    explanation: "Competitor attackers are motivated by business gain and may steal intellectual property or sabotage rivals."
+  },
+  {
+    q: "Which one of the following is responsible for separating some machines from the rest to shield them from possible attacks?",
+    options: ["Switch", "Network operating system", "Firewall", "Router"],
+    answer: 2,
+    explanation: "A firewall acts as a barrier, separating and protecting devices from potential attacks."
+  },
+  {
+    q: "Which one of the following is different from the other based on its role in computer network?",
+    options: ["Network printer", "Routers", "Hubs", "Wireless access point"],
+    answer: 0,
+    explanation: "Network printer is an end device, whereas routers, hubs, and wireless access points are networking devices."
+  },
+  {
+    q: "Which statement is false about universal hashing technique?",
+    options: [
+      "In universal hashing a hash function is selected randomly from set of hash functions for each key",
+      "Universal hashing reduces the chance of data collision",
+      "In universal hashing a hash function is selected from set of hash functions independent of keys.",
+      "Single fixed hash function technique is better than universal hashing technique in terms of collision reduction"
+    ],
+    answer: 3,
+    explanation: "Single fixed hash function is not better; universal hashing reduces collisions by randomly selecting functions."
+  },
+  {
+    q: "What does the program data independence in the database approach entails for?",
+    options: [
+      "Data and applications are defined separately",
+      "Programs can create redundant data independently",
+      "Both program and data are defined together",
+      "The application may be affected when data changes"
+    ],
+    answer: 0,
+    explanation: "Data independence means data and programs are defined separately; changes in data structure do not affect programs."
+  },
+  {
+    q: "Which asymptotic notation describes average case analysis?",
+    options: ["f(n) = Big-Oh", "f(n) = little-omega", "f(n) = Big-Omega", "f(n) = Theta"],
+    answer: 3,
+    explanation: "Theta notation (Θ) describes the average case and tight bound of an algorithm's complexity."
+  },
+  {
+    q: "Let a Grammar G = ({S}, {a, b}, S, P), where {S} is set of variables, {a, b} is set of terminal symbols, S is start variable and P is set of productions. Then which one of the following is not an element of the language generated from G. Given P: S → aSb | ε",
+    options: ["A", "a", "ab", "aabb"],
+    answer: 0,
+    explanation: "The grammar generates strings with balanced a's and b's (including ε). 'A' is not part of the generated language."
+  },
+
+
+
+
+  
+  {
+    q: "Which concept refers to extending specialized classes from generalized classes in object-oriented programming?",
+    options: ["Overriding", "Overloading", "Inheritance", "Data field Encapsulation"],
+    answer: 2,
+    explanation: "Inheritance allows a class to acquire properties and behaviors from a parent class."
+  },
+  {
+    q: "A computer expert would like to know the number of processes that are completed per hour to assess the performance of a machine. Therefore, which one of the following best describes the expert's assessment?",
+    options: ["Waiting time", "Turnaround time", "Response time", "System throughput"],
+    answer: 3,
+    explanation: "System throughput measures the number of processes completed in a given time period."
+  },
+  {
+    q: "Which one of the following is not a single level ordered index?",
+    options: ["Clustering index", "Secondary index", "Primary index", "Multilevel index"],
+    answer: 3,
+    explanation: "Multilevel index is a multi-level index, not single-level."
+  },
+  {
+    q: "Which one of the following is true about functions in JavaScript?",
+    options: [
+      "Function names can begin with digits",
+      "There is no limit to the number of function parameters that a function may contain",
+      "Function names are not case-sensitive",
+      "Function names can contain spaces"
+    ],
+    answer: 1,
+    explanation: "JavaScript functions can have any number of parameters."
+  },
+  {
+    q: "What is the purpose of an opcode that is as indicated in the figure (4 bits opcode, 6 bits operands)?",
+    options: [
+      "It holds the next instruction reference",
+      "It determines the operation to be done",
+      "It holds the destination address of an operand",
+      "It holds the source address of an operand"
+    ],
+    answer: 1,
+    explanation: "Opcode specifies the operation to be performed by the CPU."
+  },
+  {
+    q: "Which one of the following is not correct for deadlock in the given resource allocation scenario?",
+    options: [
+      "P0 is waiting for a resource held by P1",
+      "P1 is waiting for a resource held by P2",
+      "P2 cannot be executed until P1 finishes",
+      "P3 cannot be executed until P4 finishes"
+    ],
+    answer: 2,
+    explanation: "P2 may proceed independently if it has resources; the statement incorrectly assumes P2 is blocked."
+  },
+  {
+    q: "What is the output of the following Java fragment code? int n = 6, m = 15, p = 3; n -= m; n *= p; System.out.print(n);",
+    options: ["-27", "3", "27", "24"],
+    answer: 0,
+    explanation: "n -= m → n = 6 - 15 = -9; n *= p → n = -9 * 3 = -27."
+  },
+  {
+    q: "Which one of the following is a measure taken to ensure information and information systems' availability, integrity, authentication and confidentiality?",
+    options: ["Information security", "Interception", "Information assurance", "Wiretapping"],
+    answer: 0,
+    explanation: "Information security encompasses measures to protect confidentiality, integrity, and availability."
+  },
+  {
+    q: "Suppose you have received a message from your friend but the message is scrambled. In order to read the message which program would you use?",
+    options: ["Secret key", "Encryption program", "Decryption program", "Ciphertext"],
+    answer: 2,
+    explanation: "Decryption program is used to convert encrypted messages back into readable form."
+  },
+  {
+    q: "Suppose you have developed a self-driving car equipped with sensors and camera that help it detect traffic. Its sensors are able to detect the environment but not all aspects. Hence, in which environment is your car acting?",
+    options: ["Stochastic", "Discrete", "Partially observable", "Fully observable"],
+    answer: 2,
+    explanation: "The car operates in a partially observable environment because it cannot see all aspects at once."
+  },
+  {
+    q: "is set of attributes that can be seen by a program and can have direct impact on the logical execution of a program.",
+    options: ["Organization", "Arrangement", "Architecture", "Flow control"],
+    answer: 2,
+    explanation: "Computer architecture refers to attributes visible to programmers that affect program execution."
+  },
+  {
+    q: "Look at the following PHP line: $list = array(20, 12, 23, 19, 18); What is the index of data value 19?",
+    options: ["0", "3", "1", "2"],
+    answer: 1,
+    explanation: "Arrays in PHP are zero-indexed: $list[3] = 19."
+  },
+  {
+    q: "Which one of the following is not a delimiter of PHP code?",
+    options: ["<?php ?>", "<? ?>", "<caption> </caption>", "<script language='PHP'></script>"],
+    answer: 2,
+    explanation: "<caption> is HTML tag, not a PHP code delimiter."
+  },
+  {
+    q: "Which one of the following is not an example of scripting languages?",
+    options: ["Python", "PHP", "Perl", "C++"],
+    answer: 3,
+    explanation: "C++ is a compiled language, not typically considered a scripting language."
+  },
+  {
+    q: "Which one of the following phases is done before semantic analysis phase of compiling process?",
+    options: ["Code generation", "Intermediate code generation", "Syntax analysis", "Code optimization"],
+    answer: 2,
+    explanation: "Syntax analysis (parsing) comes before semantic analysis in the compilation process."
+  },
+  {
+    q: "Which deadlock prevention mechanisms don't require timestamp?",
+    options: ["No-wait", "Wait-wait", "Wait-die", "Wound-wait"],
+    answer: 0,
+    explanation: "No-wait prevents deadlock without using timestamps by not allowing processes to wait."
+  },
+  {
+    q: "In a tree data structure, if a node has no parent node, then the node is",
+    options: ["Internal node", "External node", "Root node", "Parent node"],
+    answer: 2,
+    explanation: "The root node has no parent node in a tree structure."
+  },
+  {
+    q: "What is the output of the following C++ fragment code? int a = 6, b = 8; int x = 2, y = 4; int c = (x > y? (a--, x): (b--, y)); cout << 'a= ' << a << ' b= ' << b << ' c= ' << c;",
+    options: ["a=6 b=8 c=4", "a=5 b=8 c=4", "a=5 b=7 c=2", "a=6 b=7 c=4"],
+    answer: 3,
+    explanation: "x>y is false → (b--, y) executed → b = 7, c = 4; a unchanged."
+  },
+  {
+    q: "Which one of the following is evaluating the degrees of success of an agent?",
+    options: ["Knowledge", "Action", "Performance measure", "Perception"],
+    answer: 2,
+    explanation: "Performance measure evaluates how well an agent achieves its goals."
+  },
+  {
+    q: "If you want to allow subclasses to access data fields or methods defined in the superclass, but not allow non-subclasses to access these data fields and methods, which access modifier is appropriate?",
+    options: ["public", "protected", "private", "default"],
+    answer: 1,
+    explanation: "Protected access allows subclasses to access members but hides them from non-subclasses."
+  },
+
+
+  
+  {
+    q: "Which asymptotic notation describes worst case analysis?",
+    options: ["f(n) = little-oh", "f(n) = Ω (Big omega)", "f(n) = little-ω (little omega)", "f(n) = Θ (theta)"],
+    answer: 3,
+    explanation: "Θ notation gives a tight bound on worst-case time complexity."
+  },
+  {
+    q: "Which type of Turing machine has two tapes, one read-only and one read-write?",
+    options: ["Multi-head Turing machine", "Multi-dimensional Turing machine", "Non-deterministic Turing machine", "Off-line Turing machine"],
+    answer: 3,
+    explanation: "An off-line Turing machine uses a read-only input tape and a read-write working tape."
+  },
+  {
+    q: "Among the following, which one best describes a database management system (DBMS)?",
+    options: [
+      "It can assist you to process documents",
+      "It can assist process images",
+      "It is responsible for creating and maintaining a database",
+      "It can help users to manage computer's activity"
+    ],
+    answer: 2,
+    explanation: "DBMS provides tools to create, access, and maintain databases."
+  },
+  {
+    q: "Which one of the following does not show non-functional requirement of software systems?",
+    options: ["Response time", "Memory requirement", "Reliability", "Displaying information"],
+    answer: 3,
+    explanation: "Displaying information is a functional requirement, not non-functional."
+  },
+  {
+    q: "Which one of the following is the smallest heading tag?",
+    options: ["<H3>", "<H6>", "<H1>", "<H4>"],
+    answer: 1,
+    explanation: "<H6> is the smallest HTML heading tag."
+  },
+  {
+    q: "Given the schemas: BOOK (Book_id, Title, Publisher_name), BOOK_AUTHOR (Book_id, Author_name), PUBLISHER (Name, Address, Phone) Which SQL is correct to delete publisher named 'XWZ'?",
+    options: [
+      "DELETE FROM PUBLISHER WHERE Address = 'XWZ'",
+      "DELETE FROM BOOK_AUTHOR WHERE Address = 'XWZ'",
+      "DELETE FROM PUBLISHER WHERE Name = 'XWZ'",
+      "DELETE FROM BOOK WHERE Name = 'XWZ'"
+    ],
+    answer: 2,
+    explanation: "DELETE FROM PUBLISHER WHERE Name='XWZ' correctly deletes the publisher by name."
+  },
+  {
+    q: "Which one of the following is true about frames in HTML?",
+    options: [
+      "Frames are not difficult to handle for search engines",
+      "Frames allow parts of the page to remain stationary while other parts scroll",
+      "Load on the server is not affected by the number of frames",
+      "All browsers support frames"
+    ],
+    answer: 1,
+    explanation: "Frames allow part of a webpage to remain static while other parts scroll."
+  },
+  {
+    q: "Which statement is true about pop() operation of Stack data structures?",
+    options: [
+      "pop() inserts new element at the beginning/bottom of stack",
+      "pop() returns the end/top element but does not delete it",
+      "pop() removes the end/top element from stack",
+      "pop() inserts new element at the middle of stack"
+    ],
+    answer: 2,
+    explanation: "pop() removes and returns the top element in a stack."
+  },
+  {
+    q: "Assume a line of patients waiting for service. Seriously sick patients should be served first. Which data structure is most appropriate?",
+    options: ["Tree", "Queue", "Priority Queue", "Stack"],
+    answer: 2,
+    explanation: "Priority Queue serves items based on priority rather than arrival order."
+  },
+  {
+    q: "In which situation using DBMS becomes costly and not recommended?",
+    options: [
+      "Multiple users access the database",
+      "Embedded systems with very small storage space",
+      "To control redundancy",
+      "To deny access to unauthorized users"
+    ],
+    answer: 1,
+    explanation: "DBMS requires significant storage and processing; in very small embedded systems, it is inefficient."
+  },
+  {
+    q: "Which one of the following is a correct way of creating a String object in Java?",
+    options: [
+      "String m = new String('Exit Exam');",
+      "String m = 'Computer Science';",
+      "String m = new String('Technology');",
+      "String m = 'H', 'e', 'l', 'l', 'o';"
+    ],
+    answer: 0,
+    explanation: "String objects can be created using new String('text') in Java."
+  },
+  {
+    q: "Which one of the following is a valid statement regarding PHP variables?",
+    options: [
+      "test = 5;",
+      "$test = 'This is Computer science';",
+      "$test = 'Computer;",
+      "$test = 9.5"
+    ],
+    answer: 3,
+    explanation: "PHP variables must begin with $, so $test = 9.5 is valid."
+  },
+  {
+    q: "Which security service protects disclosure of information from unauthorized entities?",
+    options: ["Integrity", "Availability", "Authentication", "Confidentiality"],
+    answer: 3,
+    explanation: "Confidentiality ensures that data is accessed only by authorized parties."
+  },
+  {
+    q: "Which method is used to obtain the meaning of encrypted information without access to the secret key?",
+    options: ["Encryption", "Decryption", "Crypto-analysis", "Cryptography"],
+    answer: 2,
+    explanation: "Cryptanalysis studies methods to break encrypted messages without the key."
+  },
+  {
+    q: "Which network security issue shows the level of weakness in networks and devices?",
+    options: ["Threat", "Attack", "Availability", "Vulnerability"],
+    answer: 3,
+    explanation: "Vulnerability is a weakness that can be exploited in a system or network."
+  },
+  {
+    q: "After analysis if software requires major change to the architecture, which strategy should be applied?",
+    options: ["Software maintenance", "Architectural transformation", "Software reengineering", "Preventative maintenance"],
+    answer: 1,
+    explanation: "Architectural transformation modifies the system's structure to meet new requirements."
+  },
+  {
+    q: "Which type of variable can be accessed throughout C++ program scope?",
+    options: ["Local", "Static", "Automatic", "Global"],
+    answer: 3,
+    explanation: "Global variables can be accessed throughout the program."
+  },
+  {
+    q: "Which phase of software development refers to modification of software to reflect changing customer and market requirements?",
+    options: ["Evolution", "Specification", "Validation", "Development"],
+    answer: 0,
+    explanation: "Evolution phase handles modifications due to changing requirements."
+  },
+  {
+    q: "Which quantifier can be used for some portion of the universe?",
+    options: ["∀", "∃", "¬", "∈"],
+    answer: 1,
+    explanation: "∃ (existential quantifier) represents 'there exists'."
+  },
+  {
+    q: "Among phases of compiling process, in which phase are characters converted to tokens?",
+    options: ["Lexical analysis", "Semantic analysis", "Code optimization", "Syntax analysis"],
+    answer: 0,
+    explanation: "Lexical analysis converts character sequences into tokens."
+  },
+  {
+    q: "For an input graph, Depth First Traversal algorithm uses which data structure?",
+    options: ["Stack", "Queue", "Tree", "Priority Queue"],
+    answer: 0,
+    explanation: "DFS uses a stack (explicit or via recursion) to traverse nodes."
+  },
+  {
+    q: "Which one of the following is not correct about packet and circuit switching?",
+    options: [
+      "In packet switching, end-to-end connection must be established",
+      "In circuit switching, a channel is dedicatedly used",
+      "In packet switching, messages are sent in small blocks",
+      "Packet switching is more efficient than circuit switching"
+    ],
+    answer: 0,
+    explanation: "Packet switching does not require a dedicated end-to-end connection."
+  },
+  {
+    q: "Which statement describes: 'Transaction updates a DB item, fails, and another transaction reads the uncorrected value'?",
+    options: ["Incorrect summary problem", "Lost update problem", "Dirty read", "Temporary read problem"],
+    answer: 2,
+    explanation: "Dirty read occurs when a transaction reads uncommitted data from another transaction."
+  },
+  {
+    q: "To check if a computer in the network is reachable, which command is used?",
+    options: ["ping", "traceroute", "DHCP discover", "nslookup"],
+    answer: 0,
+    explanation: "ping sends ICMP packets to test connectivity."
+  },
+  {
+    q: "What will be the output of Math.sqrt(36) in JavaScript?",
+    options: ["1", "36", "30", "6"],
+    answer: 3,
+    explanation: "Math.sqrt(36) returns 6, the square root of 36."
+  },
+  {
+    q: "What will be the output of Math.floor(5.9) in JavaScript?",
+    options: ["5", "6", "9", "11.8"],
+    answer: 0,
+    explanation: "Math.floor() rounds down to the nearest integer, so Math.floor(5.9) = 5."
+  },
+  {
+    q: "Which one of the following is asynchronous in message communication?",
+    options: ["Direct message", "Non-blocking receive", "Blocking receive", "Blocking send"],
+    answer: 1,
+    explanation: "Non-blocking receive allows the program to continue while waiting for a message."
+  },
+  {
+    q: "Given input Alphabet = {a, b, c, d} and empty string X. Which one is equivalent to Σ0?",
+    options: ["{A}", "+", "Σ*", "Σ"],
+    answer: 2,
+    explanation: "Σ0 is the set containing the empty string; equivalent to Σ*^0 = {ε}."
+  },
+  {
+    q: "A university owns several private LANs and WANs for staff, students, and admins. What term best describes this network?",
+    options: ["Wide Area Network", "Metropolitan Area Network", "The Internet", "Local Area Network"],
+    answer: 0,
+    explanation: "WANs connect multiple LANs across wide areas, such as a university campus."
+  },
+  {
+    q: "Assume universe of keys U. Which statement is false regarding Direct Address Table and Hash Table?",
+    options: [
+      "If U is very large, hash table is better than direct address table",
+      "One-to-one correspondence exists between keys and memory in direct address table",
+      "Hash table allocates one memory slot per key in U",
+      "Direct address table doesn't use a hash function to map keys"
+    ],
+    answer: 2,
+    explanation: "Hash tables do not allocate separate memory for all keys in the universe; that's inefficient."
+  },
+  {
+    q: "If a software is modified, which testing ensures no new errors were introduced?",
+    options: ["Dynamic testing", "Static testing", "Beta testing", "Regression testing"],
+    answer: 3,
+    explanation: "Regression testing checks that modifications did not break existing functionality."
+  },
+  {
+    q: "Which one of the following is false about String in Java?",
+    options: [
+      "We can create a String object using a literal",
+      "In Java a string is treated as object",
+      "We can create a String object using array of characters",
+      "Content of a string can be changed once created"
+    ],
+    answer: 3,
+    explanation: "Java strings are immutable; content cannot be changed after creation."
+  },
+  {
+    q: "A DBMS has to control locks. Which module does this?",
+    options: ["Query optimizer", "Lock table", "Lock manager", "Query processor"],
+    answer: 2,
+    explanation: "Lock manager is responsible for lock management in DBMS."
+  },
+  {
+    q: "Which one of the following is not true about fan trap in ER diagram?",
+    options: [
+      "Ambiguous pathway exists between some entity occurrences",
+      "Occurs when more than two 1:N relationships fan out from entity",
+      "Occurs when there is no pathway between related entities",
+      "Can be resolved by readjusting model to avoid 1:N fan-out"
+    ],
+    answer: 2,
+    explanation: "Fan trap is due to multiple 1:N relationships fanning from one entity; 'no pathway' is incorrect."
+  },
+  {
+    q: "Which one of the following is not correct about transaction failure?",
+    options: [
+      "Transactions fail if logical errors detected",
+      "Concurrency control enforcement avoids transaction failure",
+      "Catastrophes can cause transaction failure",
+      "Transactions fail if disk blocks lose data"
+    ],
+    answer: 1,
+    explanation: "Concurrency control does not prevent all transaction failures; it only manages access conflicts."
+  },
+  {
+    q: "Consider C++ code: const int x=8, y=16; if(x>y){int z=x+y;} Which compiler optimization applies?",
+    options: ["Code motion", "Compile time evaluation", "Arithmetic simplification", "Dead code elimination"],
+    answer: 3,
+    explanation: "Dead code elimination removes code that will never execute (x>y is false)."
+  },
+  {
+    q: "Which network type is the largest compared to the rest?",
+    options: ["Wide Area Network", "Metropolitan Area Network", "The Internet", "Local Area Network"],
+    answer: 2,
+    explanation: "The Internet is the largest network connecting millions of devices worldwide."
+  },
+  {
+    q: "Which one of the following is correct about human role in system administration?",
+    options: [
+      "Ethics is not required",
+      "Requires patience, understanding, and knowledge",
+      "Sysadmin need not have skills or confidence",
+      "Doesn't need organizational skills"
+    ],
+    answer: 1,
+    explanation: "System administration requires ethics, patience, skill, knowledge, and organization."
+  },
+  {
+    q: "What is the output of the C++ fragment: for(int n=1; n<=18; n+=2){if(n%7!=0) cout<<n<<' '; else break;}",
+    options: ["1 3 5", "1 2 3 4 5 6", "3 5 7", "1 3 5 7 11 13 15 17"],
+    answer: 0,
+    explanation: "Numbers 1,3,5 satisfy n%7!=0; loop breaks at 7."
+  },
+  {
+    q: "Which one of the following is not correct about computer architecture and organization?",
+    options: [
+      "Architecture can remain for long time, organization can change",
+      "Architecture can be used long time across different models",
+      "Organization can last as long as architecture",
+      "Manufacturers offer same architecture but different organization"
+    ],
+    answer: 2,
+    explanation: "Organization changes faster; it cannot last as long as architecture."
+  },
+  {
+    q: "Which layer uses port number to identify applications?",
+    options: ["Application layer", "Physical layer", "Network layer", "Transport layer"],
+    answer: 3,
+    explanation: "Transport layer uses port numbers to identify applications (e.g., TCP/UDP)."
+  },
+  {
+    q: "Assume weighted graph G(V,E). Which is an optimization problem on G?",
+    options: [
+      "Traverse all vertices",
+      "How many cycles exist",
+      "Find minimum spanning tree",
+      "Is vertex p reachable from q"
+    ],
+    answer: 2,
+    explanation: "Finding MST is an optimization problem (minimizing total edge weight)."
+  },
+  {
+    q: "When two transactions access same DB items and interleaving causes incorrect value, which problem occurs?",
+    options: ["Dirty read", "Incorrect summary", "Lost update", "Temporary read"],
+    answer: 2,
+    explanation: "Lost update occurs when one transaction overwrites another's updates."
+  },
+  {
+    q: "Time complexity order of binary search algorithm?",
+    options: ["O(log2 n)", "O(1)", "O(n)", "O(n³)"],
+    answer: 0,
+    explanation: "Binary search has O(log n) time complexity."
+  },
+  {
+    q: "Which is true about Java and JavaScript?",
+    options: [
+      "Both are object-oriented",
+      "JavaScript used in sophisticated applications",
+      "More features in JavaScript than Java",
+      "JavaScript is compiled and interpreted"
+    ],
+    answer: 1,
+    explanation: "JavaScript can be used in web apps, dynamic front-end apps, etc."
+  },
+  {
+    q: "Which is a two-level cache having internal and external caches?",
+    options: ["Split cache", "Single level cache", "Multilevel cache", "Unified cache"],
+    answer: 2,
+    explanation: "Multilevel cache (L1 internal + L2 external) improves performance."
+  },
+  {
+    q: "Which one is not correct about threads?",
+    options: [
+      "Threads have registers for working memory",
+      "Threads are entities scheduled for CPU",
+      "It is a group of processes",
+      "Threads have program counters"
+    ],
+    answer: 2,
+    explanation: "Threads are not groups of processes; they are smaller units of execution."
+  },
+  {
+    q: "Which one is used for syntax analysis?",
+    options: ["Scanner", "Parser", "Linker", "Loader"],
+    answer: 1,
+    explanation: "Parser checks the grammatical structure of tokens."
+  },
+  {
+    q: "Which statement is false about programming language generations?",
+    options: [
+      "Assembly language is machine independent",
+      "Fifth generation languages need powerful hardware",
+      "Machine language can be executed without translation",
+      "Assembly must be translated to machine code before execution"
+    ],
+    answer: 0,
+    explanation: "Assembly language is machine dependent, not independent."
+  },
+  {
+    q: "At which OSI layer are bridges, switches, and NICs used?",
+    options: ["Application layer", "Physical layer", "Network layer", "Data link layer"],
+    answer: 3,
+    explanation: "Data link layer handles MAC addresses; switches and NICs operate here."
+  },
+  {
+    q: "Which algorithm can be used to extract Minimum Spanning Tree?",
+    options: ["Merge sort", "Huffman encoding", "Prim's algorithm", "Dijkstra's algorithm"],
+    answer: 2,
+    explanation: "Prim's algorithm finds the minimum spanning tree of a weighted graph."
+  },
+  {
+    q: "A network architecture characteristic that allows network to expand without significant degradation?",
+    options: ["Scalability", "Transparency", "Latency", "Availability"],
+    answer: 0,
+    explanation: "Scalability measures how well a network grows without performance loss."
+  },
+  {
+    q: "Which one is an example of non-preemptive scheduling?",
+    options: ["Round Robin", "Shortest Job First (non-preemptive)", "Multilevel Queue", "Preemptive priority scheduling"],
+    answer: 1,
+    explanation: "SJF non-preemptive executes a job until it finishes without interruption."
+  },
+  {
+    q: "Which one of the following statements is correct about relational database?",
+    options: [
+      "Data stored in unstructured format",
+      "Data stored in hierarchical format",
+      "Data stored in tabular format with rows and columns",
+      "Data stored in network format"
+    ],
+    answer: 2,
+    explanation: "Relational DB stores data in structured tables (rows and columns)."
+  },
+  {
+    q: "Which one is correct about deadlock?",
+    options: [
+      "Deadlock occurs when processes wait indefinitely",
+      "Deadlock is always fatal",
+      "Deadlock never happens in multiprogramming",
+      "Deadlock can occur in single-threaded processes"
+    ],
+    answer: 0,
+    explanation: "Deadlock happens when processes wait indefinitely for resources held by each other."
+  }
+
+
+  ],
+
+
+
+
+
+
+
+  
 "haramayaa":[
 
 
@@ -5957,6 +6698,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
