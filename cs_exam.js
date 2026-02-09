@@ -2,6 +2,643 @@
 const exams = {
 "Arbaminch":[
 
+  
+{
+  q: "Which type of attack tricks users into revealing sensitive information via fake websites or emails?",
+  options: ["Phishing", "DDoS", "MITM", "Trojan"],
+  answer: 0,
+  explanation: "Phishing attacks deceive users into providing confidential information, often through fake emails or websites."
+},
+{
+  q: "What does SSL/TLS provide in network communication?",
+  options: ["Encryption and secure data transfer", "IP assignment", "Firewall protection", "Virus scanning"],
+  answer: 0,
+  explanation: "SSL/TLS encrypts data in transit to ensure confidentiality and integrity between client and server."
+},
+{
+  q: "Which type of malware encrypts a user's files and demands payment for decryption?",
+  options: ["Ransomware", "Spyware", "Virus", "Worm"],
+  answer: 0,
+  explanation: "Ransomware locks or encrypts files and demands a ransom for restoring access."
+},
+{
+  q: "What is the purpose of multi-factor authentication (MFA)?",
+  options: ["To require multiple methods of identity verification", "To encrypt all data", "To prevent viruses", "To monitor network traffic"],
+  answer: 0,
+  explanation: "MFA increases security by requiring two or more verification factors, such as a password and OTP."
+},
+{
+  q: "Which protocol is used to securely transfer files over a network using encryption?",
+  options: ["SFTP", "FTP", "HTTP", "SMTP"],
+  answer: 0,
+  explanation: "SFTP (Secure File Transfer Protocol) encrypts file transfers, unlike FTP which is unencrypted."
+},
+{
+  q: "What type of attack exploits vulnerabilities in web applications by injecting malicious SQL statements?",
+  options: ["SQL injection", "XSS", "MITM", "Brute-force"],
+  answer: 0,
+  explanation: "SQL injection allows attackers to manipulate databases by injecting harmful SQL queries."
+},
+{
+  q: "Which layer of network security is responsible for protecting data in transit?",
+  options: ["Application layer", "Network layer", "Physical layer", "Data link layer"],
+  answer: 1,
+  explanation: "The network layer protects data during transmission, often using protocols like IPsec for encryption."
+},
+{
+  q: "What is the main purpose of antivirus software?",
+  options: ["Detect and remove malicious software", "Assign IP addresses", "Encrypt data", "Monitor network traffic"],
+  answer: 0,
+  explanation: "Antivirus software scans for, detects, and removes malware to protect systems."
+},
+{
+  q: "Which term refers to ensuring data is only accessible by authorized users?",
+  options: ["Integrity", "Confidentiality", "Availability", "Authentication"],
+  answer: 1,
+  explanation: "Confidentiality ensures sensitive information is accessed only by authorized individuals."
+},
+{
+  q: "What is social engineering in cybersecurity?",
+  options: ["Manipulating people to gain confidential information", "Encrypting data", "Scanning for vulnerabilities", "Blocking network traffic"],
+  answer: 0,
+  explanation: "Social engineering exploits human psychology rather than technical weaknesses to gain sensitive information."
+},
+{
+  q: "Which network device filters traffic based on rules to protect the network?",
+  options: ["Router", "Switch", "Firewall", "Hub"],
+  answer: 2,
+  explanation: "A firewall monitors and filters network traffic according to security policies."
+},
+{
+  q: "Which type of malware spreads automatically without user intervention?",
+  options: ["Worm", "Trojan", "Virus", "Spyware"],
+  answer: 0,
+  explanation: "A worm can replicate and spread across networks without requiring user action."
+},
+{
+  q: "What is the primary goal of penetration testing?",
+  options: ["Identify vulnerabilities before attackers do", "Encrypt network traffic", "Install antivirus", "Monitor user activity"],
+  answer: 0,
+  explanation: "Penetration testing simulates attacks to find and fix security weaknesses proactively."
+},
+{
+  q: "Which security mechanism ensures non-repudiation of digital communication?",
+  options: ["Encryption", "Digital signature", "Firewall", "Authentication"],
+  answer: 1,
+  explanation: "Digital signatures provide non-repudiation by verifying the sender and preventing denial of sending."
+},
+{
+  q: "Which type of attack involves overwhelming a network with traffic from multiple sources?",
+  options: ["DDoS", "Phishing", "MITM", "Brute-force"],
+  answer: 0,
+  explanation: "Distributed Denial-of-Service (DDoS) attacks use multiple systems to flood a target network, causing disruption."
+},
+{
+  q: "Which of the following is a common method of securing wireless networks?",
+  options: ["WEP", "WPA2", "FTP", "HTTP"],
+  answer: 1,
+  explanation: "WPA2 is a strong encryption protocol used to secure Wi-Fi networks."
+},
+{
+  q: "What is the purpose of a honeypot in network security?",
+  options: ["Attract and study attackers", "Encrypt data", "Assign IP addresses", "Block viruses"],
+  answer: 0,
+  explanation: "A honeypot is a decoy system designed to lure attackers and study their techniques."
+},
+{
+  q: "Which attack involves modifying data in transit between two communicating parties?",
+  options: ["MITM", "Phishing", "DDoS", "SQL injection"],
+  answer: 0,
+  explanation: "Man-in-the-middle attacks intercept and potentially alter communications between parties."
+},
+{
+  q: "Which of the following is a preventive security measure?",
+  options: ["Firewall", "Log analysis", "Intrusion detection", "Incident response"],
+  answer: 0,
+  explanation: "Firewalls prevent unauthorized access by filtering network traffic before it reaches the system."
+},
+{
+  q: "What is the primary purpose of encryption?",
+  options: ["Protect data confidentiality", "Assign IP addresses", "Monitor network", "Verify identity"],
+  answer: 0,
+  explanation: "Encryption converts data into unreadable form to protect confidentiality from unauthorized access."
+},
+{
+  q: "Which type of malware records user activities without their knowledge?",
+  options: ["Spyware", "Ransomware", "Trojan", "Worm"],
+  answer: 0,
+  explanation: "Spyware secretly monitors user activity to collect information."
+},
+{
+  q: "Which cybersecurity practice involves regularly updating software to fix vulnerabilities?",
+  options: ["Patch management", "Encryption", "Penetration testing", "Network monitoring"],
+  answer: 0,
+  explanation: "Patch management ensures software vulnerabilities are fixed by applying updates."
+},
+{
+  q: "Which security principle ensures that authorized users can access systems when needed?",
+  options: ["Integrity", "Confidentiality", "Availability", "Authentication"],
+  answer: 2,
+  explanation: "Availability ensures that systems and data are accessible to authorized users when required."
+},
+{
+  q: "Which protocol is used to securely browse websites?",
+  options: ["HTTP", "HTTPS", "FTP", "SMTP"],
+  answer: 1,
+  explanation: "HTTPS encrypts web traffic using SSL/TLS, providing secure browsing."
+},
+{
+  q: "Which type of malware can replicate by attaching itself to other programs?",
+  options: ["Virus", "Worm", "Trojan", "Spyware"],
+  answer: 0,
+  explanation: "A virus requires a host program to spread and execute malicious actions."
+},
+{
+  q: "Which security method verifies the identity of a user before granting access?",
+  options: ["Encryption", "Authentication", "Authorization", "Hashing"],
+  answer: 1,
+  explanation: "Authentication verifies user identity before access is granted."
+},
+{
+  q: "Which type of attack injects malicious scripts into web pages to target users?",
+  options: ["XSS", "SQL injection", "DDoS", "Phishing"],
+  answer: 0,
+  explanation: "Cross-site scripting (XSS) allows attackers to run malicious scripts in users’ browsers."
+},
+{
+  q: "What is the purpose of hashing in cybersecurity?",
+  options: ["Verify data integrity", "Encrypt data", "Authenticate users", "Assign IP addresses"],
+  answer: 0,
+  explanation: "Hashing creates a fixed-length value to verify data integrity, detecting changes."
+},
+{
+  q: "Which security control involves monitoring and logging system activity to detect threats?",
+  options: ["Preventive", "Detective", "Corrective", "Physical"],
+  answer: 1,
+  explanation: "Detective controls, such as logs and intrusion detection systems, help identify potential security incidents."
+},
+{
+  q: "Which type of attack uses repeated attempts to guess passwords?",
+  options: ["Brute-force", "MITM", "DDoS", "SQL injection"],
+  answer: 0,
+  explanation: "Brute-force attacks systematically try all possible passwords to gain unauthorized access."
+},
+{
+  q: "Which principle ensures that data cannot be repudiated after sending or receiving?",
+  options: ["Authentication", "Authorization", "Non-repudiation", "Confidentiality"],
+  answer: 2,
+  explanation: "Non-repudiation prevents parties from denying their involvement in digital communications."
+},
+{
+  q: "Which of the following is a form of physical security?",
+  options: ["Locked doors", "Firewall", "Encryption", "Access control lists"],
+  answer: 0,
+  explanation: "Physical security protects systems by controlling physical access, such as locked doors or security guards."
+},
+
+
+
+  
+{
+  q: "Which authentication method uses something the user knows?",
+  options: ["Biometric", "Password", "Token", "Smart card"],
+  answer: 1,
+  explanation: "Password authentication relies on something the user knows to verify identity."
+},
+{
+  q: "What type of attack floods a network or server with excessive requests to make it unavailable?",
+  options: ["DoS attack", "Phishing attack", "Man-in-the-middle attack", "SQL injection"],
+  answer: 0,
+  explanation: "A Denial-of-Service (DoS) attack overwhelms a system to prevent legitimate access."
+},
+{
+  q: "Which encryption method uses a pair of public and private keys?",
+  options: ["AES", "RSA", "MD5", "DES"],
+  answer: 1,
+  explanation: "RSA is an asymmetric encryption algorithm using a public and private key pair."
+},
+{
+  q: "Which security principle ensures that data is not altered or tampered with?",
+  options: ["Confidentiality", "Integrity", "Availability", "Authentication"],
+  answer: 1,
+  explanation: "Integrity ensures that data remains accurate and unmodified during storage or transmission."
+},
+{
+  q: "Which type of malware pretends to be legitimate software but performs malicious actions?",
+  options: ["Virus", "Trojan", "Worm", "Spyware"],
+  answer: 1,
+  explanation: "A Trojan disguises itself as legitimate software to trick users while performing malicious actions."
+},
+{
+  q: "What is the purpose of a VPN?",
+  options: ["To provide a secure connection over the internet", "To assign IP addresses", "To detect malware", "To monitor network traffic"],
+  answer: 0,
+  explanation: "A VPN (Virtual Private Network) encrypts traffic to provide secure communication over an untrusted network."
+},
+{
+  q: "Which attack allows an attacker to intercept and possibly modify communication between two parties?",
+  options: ["Man-in-the-middle attack", "Phishing", "Brute-force attack", "SQL injection"],
+  answer: 0,
+  explanation: "A man-in-the-middle (MITM) attack intercepts communication, potentially modifying or eavesdropping on data."
+},
+{
+  q: "Which type of malware can record keystrokes to steal sensitive information?",
+  options: ["Keylogger", "Ransomware", "Spyware", "Rootkit"],
+  answer: 0,
+  explanation: "Keyloggers monitor and record keystrokes to capture sensitive information like passwords."
+},
+{
+  q: "Which security concept ensures that only authorized users can access certain resources?",
+  options: ["Authentication", "Authorization", "Encryption", "Non-repudiation"],
+  answer: 1,
+  explanation: "Authorization defines what actions or resources a verified user is allowed to access."
+},
+{
+  q: "Which hashing algorithm is commonly used to verify data integrity?",
+  options: ["SHA-256", "AES", "RSA", "DES"],
+  answer: 0,
+  explanation: "SHA-256 is a cryptographic hash function used to verify data integrity by producing a unique hash."
+},
+
+
+
+
+  
+{
+  q: "Which type of malware can spread automatically without user intervention?",
+  options: ["Worm", "Trojan", "Virus", "Adware"],
+  answer: 0,
+  explanation: "A worm is a self-replicating malware that spreads without needing to attach to files or user action."
+},
+{
+  q: "Which security mechanism ensures that a user is who they claim to be?",
+  options: ["Authentication", "Authorization", "Encryption", "Hashing"],
+  answer: 0,
+  explanation: "Authentication verifies the identity of a user before granting access to resources."
+},
+{
+  q: "What is the main purpose of a firewall?",
+  options: ["To prevent unauthorized access to or from a network", "To encrypt files", "To assign IP addresses", "To perform hashing"],
+  answer: 0,
+  explanation: "A firewall monitors and controls incoming and outgoing network traffic based on security rules."
+},
+{
+  q: "Which attack involves tricking users into revealing sensitive information by pretending to be a trustworthy entity?",
+  options: ["Phishing", "SQL Injection", "Brute-force attack", "Man-in-the-middle attack"],
+  answer: 0,
+  explanation: "Phishing attacks deceive users into giving sensitive information like passwords or credit card numbers."
+},
+{
+  q: "Which of the following is a symmetric encryption algorithm?",
+  options: ["AES", "RSA", "DSA", "Diffie-Hellman"],
+  answer: 0,
+  explanation: "AES (Advanced Encryption Standard) is a symmetric encryption algorithm that uses the same key for encryption and decryption."
+},
+{
+  q: "Which type of attack exploits a website’s trust in a user’s browser?",
+  options: ["SQL Injection", "Cross-site scripting (XSS)", "Buffer overflow", "DoS attack"],
+  answer: 1,
+  explanation: "XSS attacks inject malicious scripts into web pages viewed by other users, exploiting the website’s trust in the client."
+},
+{
+  q: "Which protocol is commonly used to securely transfer files over the internet?",
+  options: ["FTP", "SFTP", "HTTP", "Telnet"],
+  answer: 1,
+  explanation: "SFTP (Secure File Transfer Protocol) encrypts the data during transfer, unlike plain FTP."
+},
+{
+  q: "What is the main purpose of intrusion detection systems (IDS)?",
+  options: ["To encrypt data", "To detect unauthorized or suspicious activity", "To assign IP addresses", "To manage network hardware"],
+  answer: 1,
+  explanation: "IDS monitors network or system activities to detect malicious activities or policy violations."
+},
+{
+  q: "Which type of malware hides its presence and activities from users and security software?",
+  options: ["Rootkit", "Trojan", "Virus", "Adware"],
+  answer: 0,
+  explanation: "Rootkits are designed to hide their presence, giving attackers control over the system without detection."
+},
+{
+  q: "Which of the following is NOT a goal of computer security?",
+  options: ["Confidentiality", "Integrity", "Availability", "Replication"],
+  answer: 3,
+  explanation: "Replication is related to data storage or distributed systems, not a primary goal of computer security."
+},
+
+
+
+
+
+  
+{
+  q: "Which of the following is a type of malware that replicates itself to spread to other computers?",
+  options: ["Virus", "Firewall", "VPN", "Encryption"],
+  answer: 0,
+  explanation: "A virus is malware that replicates itself and spreads to other computers, often damaging files or systems."
+},
+{
+  q: "What is the main purpose of a VPN (Virtual Private Network)?",
+  options: ["To prevent malware infection", "To encrypt data and provide secure remote access", "To assign IP addresses", "To monitor network traffic"],
+  answer: 1,
+  explanation: "A VPN encrypts data and provides secure remote access over the internet."
+},
+{
+  q: "Which of the following is a common method to prevent SQL injection attacks?",
+  options: ["Using parameterized queries", "Using weak passwords", "Disabling encryption", "Installing antivirus software"],
+  answer: 0,
+  explanation: "Parameterized queries ensure user input is treated as data, preventing SQL injection attacks."
+},
+{
+  q: "Which type of attack intercepts communication between two parties without their knowledge?",
+  options: ["Phishing attack", "Man-in-the-middle attack", "Brute-force attack", "Denial-of-Service attack"],
+  answer: 1,
+  explanation: "A man-in-the-middle (MITM) attack intercepts and possibly alters communication between two parties."
+},
+{
+  q: "What is the purpose of hashing in computer security?",
+  options: ["To encrypt data for secure transmission", "To convert data into a fixed-length value for integrity checking", "To hide data in images", "To assign IP addresses dynamically"],
+  answer: 1,
+  explanation: "Hashing converts data into a fixed-length value to check data integrity, detect tampering, or store passwords securely."
+},
+{
+  q: "Which security principle ensures that data is not altered or tampered with by unauthorized users?",
+  options: ["Confidentiality", "Integrity", "Availability", "Authentication"],
+  answer: 1,
+  explanation: "Integrity ensures that data remains accurate and unaltered by unauthorized parties."
+},
+{
+  q: "Which type of attack overwhelms a system with excessive requests to make it unavailable?",
+  options: ["Phishing", "Denial-of-Service (DoS)", "SQL Injection", "XSS"],
+  answer: 1,
+  explanation: "A DoS attack floods a system with requests, causing service disruption or unavailability."
+},
+{
+  q: "Which security measure restricts access to resources based on user identity and permissions?",
+  options: ["Encryption", "Access control", "Input validation", "Firewall"],
+  answer: 1,
+  explanation: "Access control restricts resources based on user identity and defined permissions."
+},
+{
+  q: "What is the process of converting ciphertext back into plaintext called?",
+  options: ["Encryption", "Decryption", "Hashing", "Steganography"],
+  answer: 1,
+  explanation: "Decryption converts unreadable ciphertext back into readable plaintext using a key."
+},
+{
+  q: "Which type of malware disguises itself as legitimate software to trick users into installing it?",
+  options: ["Trojan", "Worm", "Virus", "Rootkit"],
+  answer: 0,
+  explanation: "A Trojan appears as legitimate software but contains malicious code that can damage systems or steal data."
+},
+
+
+
+
+
+  
+{
+  q: "Which layer of the OSI reference model is responsible for establishing and terminating sessions between applications?",
+  options: ["Presentation layer", "Session layer", "Transport layer", "Application layer"],
+  answer: 1,
+  explanation: "The session layer is responsible for establishing and terminating sessions between applications. It manages the dialogue and coordination between applications and provides synchronization and recovery mechanisms."
+},
+{
+  q: "Which protocol is used for transferring files between computers over a network?",
+  options: ["SMTP", "HTTP", "FTP", "TCP"],
+  answer: 2,
+  explanation: "FTP is a protocol used for transferring files between computers over a network. It provides functions for file upload, download, and directory listing."
+},
+{
+  q: "Which layer of the OSI reference model is responsible for providing services directly to the end-user applications?",
+  options: ["Presentation layer", "Session layer", "Transport layer", "Application layer"],
+  answer: 3,
+  explanation: "The application layer is the topmost layer of the OSI reference model. It provides services directly to end-user applications, such as email, web browsing, and file transfer."
+},
+{
+  q: "Which subnet mask represents a Class C network?",
+  options: ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.255"],
+  answer: 2,
+  explanation: "A Class C network uses a subnet mask of 255.255.255.0, allowing for 254 host addresses."
+},
+{
+  q: "What is the maximum number of hosts in a subnet with a subnet mask of 255.255.255.224?",
+  options: ["8", "16", "30", "62"],
+  answer: 2,
+  explanation: "With a subnet mask of 255.255.255.224, there are 5 host bits. Number of hosts = 2^5 - 2 = 30 usable hosts."
+},
+{
+  q: "Which IP address belongs to the loopback network?",
+  options: ["127.0.0.1", "192.168.0.1", "10.0.0.1", "172.16.0.1"],
+  answer: 0,
+  explanation: "The loopback network is represented by the IP address range 127.0.0.0/8, used for testing network connectivity on the local machine."
+},
+{
+  q: "How many subnets can be created from a Class B network with a subnet mask of 255.255.240.0?",
+  options: ["8", "16", "32", "64"],
+  answer: 1,
+  explanation: "With 4 subnet bits, the number of subnets = 2^4 = 16."
+},
+{
+  q: "What is the default subnet mask for a Class A network?",
+  options: ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.255"],
+  answer: 0,
+  explanation: "A Class A network uses a default subnet mask of 255.0.0.0."
+},
+{
+  q: "Which subnet mask is used for a point-to-point link?",
+  options: ["255.255.255.0", "255.255.255.128", "255.255.255.192", "255.255.255.252"],
+  answer: 3,
+  explanation: "A point-to-point link only requires 2 usable IP addresses; a mask of 255.255.255.252 provides 2 hosts."
+},
+{
+  q: "How many bits are in the host portion of an IPv4 address with a subnet mask of 255.255.255.192?",
+  options: ["6", "8", "10", "14"],
+  answer: 0,
+  explanation: "With 255.255.255.192, there are 6 host bits, representing 2^6 - 2 = 62 usable hosts."
+},
+{
+  q: "What is the network address for the IP address 192.168.10.25/28?",
+  options: ["192.168.10.0", "192.168.10.16", "192.168.10.24", "192.168.10.25"],
+  answer: 0,
+  explanation: "A /28 subnet mask (255.255.255.240) gives a network address of 192.168.10.0."
+},
+{
+  q: "How many usable host addresses are available in a subnet with a subnet mask of 255.255.255.224?",
+  options: ["6", "14", "30", "62"],
+  answer: 2,
+  explanation: "Subnet mask 255.255.255.224 provides 5 host bits; usable hosts = 2^5 - 2 = 30."
+},
+{
+  q: "Which type of IP address is used for communication within a local network?",
+  options: ["Public IP address", "Private IP address", "Reserved IP address", "Dynamic IP address"],
+  answer: 1,
+  explanation: "Private IP addresses are used for communication within a local network and are not routable over the Internet."
+},
+{
+  q: "Which of the following is not a valid IP address?",
+  options: ["192.168.0.1", "10.0.0.256", "172.16.0.0", "255.255.255.0"],
+  answer: 1,
+  explanation: "Each octet must be in the range 0–255; 10.0.0.256 is invalid."
+},
+{
+  q: "What is the default subnet mask for a Class B IP address?",
+  options: ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.255"],
+  answer: 1,
+  explanation: "Class B uses 255.255.0.0 as the default subnet mask."
+},
+{
+  q: "How many bits are used for the host portion of an IP address with a subnet mask of 255.255.255.0?",
+  options: ["8 bits", "16 bits", "24 bits", "32 bits"],
+  answer: 0,
+  explanation: "Subnet mask 255.255.255.0 leaves 8 bits for hosts."
+},
+{
+  q: "Given a subnet mask of 255.255.255.224, how many host addresses are available in each subnet?",
+  options: ["6", "14", "30", "62"],
+  answer: 2,
+  explanation: "Subnet mask 255.255.255.224 has 5 host bits; usable hosts = 2^5 - 2 = 30."
+},
+{
+  q: "What is the network address for the IP address 192.168.1.65/26?",
+  options: ["192.168.1.0", "192.168.1.64", "192.168.1.65", "192.168.1.128"],
+  answer: 1,
+  explanation: "With a /26 subnet mask (255.255.255.192), the network address is 192.168.1.64."
+},
+{
+  q: "How many subnets can be created from a Class C network with a subnet mask of 255.255.255.192?",
+  options: ["2", "4", "8", "16"],
+  answer: 2,
+  explanation: "Subnet mask 255.255.255.192 provides 2 subnet bits; number of subnets = 2^2 = 4."
+},
+{
+  q: "What is the maximum number of IP addresses that can be assigned to hosts in a subnet with a /27 subnet mask?",
+  options: ["14", "30", "62", "126"],
+  answer: 1,
+  explanation: "/27 provides 5 host bits; usable hosts = 2^5 - 2 = 30."
+},
+{
+  q: "Which IP address range is reserved for Automatic Private IP Addressing (APIPA)?",
+  options: ["10.0.0.0 - 10.255.255.255", "127.0.0.0 - 127.255.255.255", "169.254.0.0 - 169.254.255.255", "192.168.0.0 - 192.168.255.255"],
+  answer: 2,
+  explanation: "APIPA assigns IPs automatically when DHCP fails; range is 169.254.0.0 - 169.254.255.255."
+},
+{
+  q: "What is the purpose of Network Address Translation (NAT) in computer networking?",
+  options: ["To encrypt network traffic for secure communication", "To assign unique IP addresses to hosts", "To provide a firewall for network security", "To translate private IP addresses to public IP addresses"],
+  answer: 3,
+  explanation: "NAT translates private IP addresses to public IP addresses, allowing multiple devices to share a single public IP."
+},
+{
+  q: "Which of the following protocols is responsible for assigning IP addresses to hosts dynamically?",
+  options: ["DNS", "DHCP", "HTTP", "FTP"],
+  answer: 1,
+  explanation: "DHCP dynamically assigns IP addresses and other network parameters to hosts."
+},
+{
+  q: "What is the primary goal of computer security?",
+  options: ["Confidentiality", "Integrity", "Availability", "All of the above"],
+  answer: 3,
+  explanation: "Computer security aims to ensure confidentiality, integrity, and availability (CIA) of systems and data."
+},
+{
+  q: "What is the term used for a software program that attempts to gain unauthorized access to computer systems?",
+  options: ["Firewall", "Malware", "Encryption", "VPN"],
+  answer: 1,
+  explanation: "Malware is malicious software designed to disrupt, damage, or gain unauthorized access to systems."
+},
+{
+  q: "What is the practice of hiding confidential data within other data called?",
+  options: ["Encryption", "Decryption", "Steganography", "Intrusion detection"],
+  answer: 2,
+  explanation: "Steganography conceals information within other non-secret data, e.g., hiding text in images."
+},
+{
+  q: "Which of the following authentication methods verifies a user's identity based on a unique physical characteristic?",
+  options: ["Password authentication", "Biometric authentication", "Token authentication", "Two-factor authentication"],
+  answer: 1,
+  explanation: "Biometric authentication uses unique physical traits like fingerprints or iris scans."
+},
+{
+  q: "What is the process of converting plaintext into ciphertext called?",
+  options: ["Encryption", "Decryption", "Hashing", "Key exchange"],
+  answer: 0,
+  explanation: "Encryption converts readable plaintext into unreadable ciphertext using algorithms and keys."
+},
+{
+  q: "What is the term for a software vulnerability that allows an attacker to execute arbitrary code on a target system?",
+  options: ["Phishing", "Buffer overflow", "SQL injection", "Cross-site scripting"],
+  answer: 1,
+  explanation: "Buffer overflow vulnerabilities allow attackers to overwrite memory and execute arbitrary code."
+},
+{
+  q: "Which of the following is an example of a social engineering attack?",
+  options: ["Denial-of-Service (DoS) attack", "Distributed Denial-of-Service (DDoS) attack", "Phishing attack", "Brute-force attack"],
+  answer: 2,
+  explanation: "Phishing tricks users into revealing sensitive info, such as passwords, via deceptive emails or sites."
+},
+{
+  q: "What is the purpose of a firewall in computer security?",
+  options: ["To encrypt network traffic", "To monitor and control network traffic", "To detect and remove malware", "To authenticate users"],
+  answer: 1,
+  explanation: "A firewall monitors and controls incoming/outgoing network traffic based on security rules."
+},
+{
+  q: "Which of the following is a common authentication factor used in two-factor authentication?",
+  options: ["Username", "Password", "Security question", "One-time password (OTP)"],
+  answer: 3,
+  explanation: "Two-factor authentication combines two factors, often a password and a one-time password (OTP)."
+},
+{
+  q: "What is the term for a malicious activity where an attacker tries all possible combinations of passwords to gain unauthorized access?",
+  options: ["Brute-force attack", "Denial-of-Service (DoS) attack", "SQL injection", "Man-in-the-middle (MITM) attack"],
+  answer: 0,
+  explanation: "Brute-force attacks systematically attempt all possible password combinations to gain access."
+},
+{
+  q: "What is a buffer overflow vulnerability?",
+  options: ["A vulnerability that allows unauthorized access to a system's memory", "A vulnerability that allows attackers to intercept network traffic", "A vulnerability that allows attackers to execute arbitrary code", "A vulnerability that allows unauthorized access to a system's files"],
+  answer: 2,
+  explanation: "Buffer overflows occur when data exceeds allocated memory, allowing attackers to execute code."
+},
+{
+  q: "What is SQL injection?",
+  options: ["A vulnerability that allows attackers to intercept network traffic", "A vulnerability that allows attackers to execute arbitrary code", "A vulnerability that allows unauthorized access to a system's memory", "A vulnerability that allows unauthorized access to a database"],
+  answer: 3,
+  explanation: "SQL injection allows attackers to inject malicious SQL into queries to manipulate or access the database."
+},
+{
+  q: "What is cross-site scripting (XSS)?",
+  options: ["A vulnerability that allows unauthorized access to a system's memory", "A vulnerability that allows attackers to execute arbitrary code", "A vulnerability that allows attackers to manipulate web page content", "A vulnerability that allows unauthorized access to a database"],
+  answer: 2,
+  explanation: "XSS allows attackers to inject malicious scripts into web pages to manipulate content or steal info."
+},
+{
+  q: "What is the purpose of input validation in program security?",
+  options: ["To ensure the confidentiality of data", "To prevent unauthorized access to a system", "To detect and block malicious input", "To encrypt sensitive data during transmission"],
+  answer: 2,
+  explanation: "Input validation checks user input against criteria to prevent execution of malicious commands."
+},
+{
+  q: "What is the role of secure coding practices in program security?",
+  options: ["To prevent code duplication and improve program efficiency", "To ensure compliance with industry standards and regulations", "To minimize the number of bugs and vulnerabilities in code", "To facilitate code collaboration among developers"],
+  answer: 2,
+  explanation: "Secure coding reduces vulnerabilities by following standards, defensive coding, and best practices."
+},
+{
+  q: "What is the purpose of access control mechanisms in program security?",
+  options: ["To prevent unauthorized access to sensitive resources", "To monitor and log system activities for auditing purposes", "To encrypt data during storage and transmission", "To protect against malware and viruses"],
+  answer: 0,
+  explanation: "Access control mechanisms prevent unauthorized users from accessing sensitive resources."
+},
+
+
+
+
+
+
+
+
+  
 
   {
     q: "Which one of the following is asynchronous in message communication?",
@@ -7339,6 +7976,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
