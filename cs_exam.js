@@ -309,11 +309,6 @@ const exams = {
 
 
 
-
-
-
-
-
   {
     q: "Which searching algorithm is based on comparing the target element with elements at regular intervals?",
     options: ["Linear search", "Binary search", "Hash search", "Depth-first search"],
@@ -5962,5 +5957,6 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
