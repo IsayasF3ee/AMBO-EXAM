@@ -16,7 +16,7 @@ body {
 /* Sidebar Navbar */
 .navbar {
     width: 220px;
-    background-color: #2f3640;
+    background-color:;,black
     color: #fff;
     padding: 20px;
     display: flex;
@@ -164,3 +164,4 @@ body {
         flex-direction: column;
     }
 }
+
