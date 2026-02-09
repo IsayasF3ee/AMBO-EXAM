@@ -3,6 +3,408 @@ const exams = {
 
 "Finfinnee":[
 
+{
+  q: "Which OSI layer performs error detection, error correction, and flow control?",
+  options: [
+    "Application",
+    "Transport",
+    "Network",
+    "Data Link",
+    "Physical"
+  ],
+  answer: 3,
+  explanation: "The Data Link layer is responsible for error detection, correction, and flow control."
+},
+{
+  q: "Which OSI layer is responsible for routing?",
+  options: [
+    "Physical",
+    "Data Link",
+    "Network",
+    "Transport"
+  ],
+  answer: 2,
+  explanation: "The Network layer determines routing paths between hosts."
+},
+{
+  q: "Which MAC protocol is used by IEEE 802.11 WLAN?",
+  options: [
+    "ALOHA",
+    "CSMA/CA",
+    "Token Passing",
+    "FDMA",
+    "CSMA/CD"
+  ],
+  answer: 1,
+  explanation: "Wireless LAN uses CSMA/CA to avoid collisions."
+},
+{
+  q: "Which network device operates on all OSI layers?",
+  options: [
+    "Hub",
+    "Switch",
+    "Router",
+    "Gateway",
+    "Bridge"
+  ],
+  answer: 3,
+  explanation: "A gateway can operate across all OSI layers."
+},
+{
+  q: "Which IP address can be assigned to a LAN host?",
+  options: [
+    "127.0.0.0",
+    "9.0.0.1",
+    "192.168.1.256",
+    "172.16.1.27",
+    "All"
+  ],
+  answer: 3,
+  explanation: "172.16.1.27 is a valid private Class B address."
+},
+{
+  q: "Which linked-list operation can be done in O(1) time with only a start pointer?",
+  options: [
+    "Insert at front",
+    "Insert at end",
+    "Delete last node",
+    "Traverse list",
+    "A and C"
+  ],
+  answer: 0,
+  explanation: "Insertion at the front only updates the head pointer."
+},
+{
+  q: "What is the time complexity of a loop that doubles i each iteration?",
+  options: [
+    "O(n)",
+    "O(n log n)",
+    "O(log n)",
+    "O(n²)"
+  ],
+  answer: 2,
+  explanation: "The loop runs log₂(n) times."
+},
+{
+  q: "Which data structure best represents a heap?",
+  options: [
+    "2D array",
+    "Doubly linked list",
+    "Linear array",
+    "Singly linked list"
+  ],
+  answer: 2,
+  explanation: "Heaps are efficiently stored in linear arrays."
+},
+{
+  q: "Linear search is inefficient compared to binary search when dealing with?",
+  options: [
+    "Small unsorted arrays",
+    "Large sorted arrays",
+    "Small sorted arrays",
+    "Large unsorted arrays"
+  ],
+  answer: 1,
+  explanation: "Binary search works efficiently on large sorted arrays."
+},
+{
+  q: "Which data structure is used in BFS?",
+  options: [
+    "Stack",
+    "Array",
+    "Linked List",
+    "Queue"
+  ],
+  answer: 3,
+  explanation: "BFS explores nodes level by level using a queue."
+},
+{
+  q: "Which data structure is used in DFS?",
+  options: [
+    "Stack",
+    "Queue",
+    "Array",
+    "Linked List"
+  ],
+  answer: 0,
+  explanation: "DFS uses a stack (explicitly or via recursion)."
+},
+{
+  q: "Recursion solves a problem by breaking it into?",
+  options: [
+    "Larger subproblems",
+    "Smaller instances of the same problem",
+    "Different problems",
+    "Independent problems"
+  ],
+  answer: 1,
+  explanation: "Recursion depends on smaller instances of the same problem."
+},
+{
+  q: "What stops a recursive function from infinite calls?",
+  options: [
+    "Worst case",
+    "Best case",
+    "Base case",
+    "Loop condition"
+  ],
+  answer: 2,
+  explanation: "The base case terminates recursion."
+},
+{
+  q: "Which property allows optimal solutions from optimal subproblems?",
+  options: [
+    "Overlapping subproblems",
+    "Optimal substructure",
+    "Memoization",
+    "Greedy choice"
+  ],
+  answer: 1,
+  explanation: "Optimal substructure is required for dynamic programming."
+},
+{
+  q: "Which algorithm is used in game-tree decision making?",
+  options: [
+    "DFS",
+    "BFS",
+    "Heuristic search",
+    "Minimax",
+    "Greedy"
+  ],
+  answer: 3,
+  explanation: "Minimax is used for win/lose decisions in game trees."
+},
+
+
+
+  
+{
+  q: "Consider a relation R(A,B,C,D) with F={C→D, C→B, B→C}. Which statement is true?",
+  options: [
+    "The relation R is in second normal form",
+    "The relation R is in third normal form",
+    "The candidate key for R is BC",
+    "The relation R is in second normal form",
+    "None"
+  ],
+  answer: 1,
+  explanation: "C is a candidate key and all dependencies are non-transitive, so R is in 3NF."
+},
+{
+  q: "Which schema of the three-schema architecture describes the structure of the whole database?",
+  options: ["Internal schema", "Conceptual schema", "External schema", "Schema"],
+  answer: 1,
+  explanation: "The conceptual schema represents the overall logical structure of the database."
+},
+{
+  q: "Which of the following is a disadvantage of a database approach?",
+  options: [
+    "Data consistency",
+    "Sharing of data",
+    "Improved data integrity",
+    "Increased concurrency",
+    "Enforcement of standards",
+    "Complexity",
+    "None"
+  ],
+  answer: 5,
+  explanation: "Database systems introduce complexity in design, cost, and management."
+},
+{
+  q: "Which statements are correct about a relation?",
+  options: [
+    "Values of each column are repeating groups",
+    "Values in a column can be from different domains",
+    "A relation is in 1NF",
+    "Two rows can be identical",
+    "Order of rows and columns is insignificant",
+    "None"
+  ],
+  answer: 4,
+  explanation: "In relations, row/column order is irrelevant and duplicate rows are not allowed."
+},
+{
+  q: "Which database security measure hides detailed data but allows aggregate access?",
+  options: [
+    "Inference control",
+    "Access control",
+    "Integrity control",
+    "Encryption",
+    "None"
+  ],
+  answer: 0,
+  explanation: "Inference control prevents users from deducing sensitive information."
+},
+{
+  q: "Which query optimization technique modifies the internal representation of a query?",
+  options: [
+    "Systematic estimation",
+    "Semantic query optimization",
+    "Cost estimation",
+    "Heuristic rules",
+    "A and C"
+  ],
+  answer: 3,
+  explanation: "Heuristic rules rewrite queries into more efficient forms."
+},
+{
+  q: "Which statement about locks is NOT true?",
+  options: [
+    "Large granularity locks are easier to manage",
+    "Small granularity locks cause more conflicts",
+    "Large granularity locks reduce tracking overhead",
+    "Locks can be table-level",
+    "Locks can be database-level"
+  ],
+  answer: 1,
+  explanation: "Small granularity locks reduce conflicts but increase overhead."
+},
+{
+  q: "If all operations of a transaction execute consecutively, the schedule is called?",
+  options: [
+    "Cascaded schedule",
+    "Serial schedule",
+    "Cascadeless schedule",
+    "Recoverable schedule",
+    "None"
+  ],
+  answer: 1,
+  explanation: "A serial schedule executes transactions one after another."
+},
+{
+  q: "Which transaction property ensures committed changes persist?",
+  options: [
+    "Isolation",
+    "Durability",
+    "Atomicity",
+    "Consistency",
+    "None"
+  ],
+  answer: 1,
+  explanation: "Durability guarantees data persistence after commit."
+},
+{
+  q: "If a transaction modifies the database only after commit, it uses which technique?",
+  options: [
+    "Undo",
+    "Late-modification",
+    "Immediate-modification",
+    "Deferred-modification"
+  ],
+  answer: 3,
+  explanation: "Deferred modification delays writes until commit."
+},
+{
+  q: "Which statement is false?",
+  options: [
+    "Object-oriented DB stores data in tables",
+    "Relational DB uses tables",
+    "OODB supports object identification",
+    "OODB supports reusability",
+    "None"
+  ],
+  answer: 0,
+  explanation: "Tables are used in relational, not object-oriented databases."
+},
+{
+  q: "Which diagram models software functionality?",
+  options: [
+    "Use case diagram",
+    "Class diagram",
+    "ER diagram",
+    "Deployment diagram"
+  ],
+  answer: 0,
+  explanation: "Use case diagrams describe system functionality."
+},
+{
+  q: "Which process model is least suitable for changes?",
+  options: ["Waterfall", "Scrum", "RAD", "Agile"],
+  answer: 0,
+  explanation: "Waterfall is rigid and does not handle changes well."
+},
+{
+  q: "Which SDLC phase aims to find errors?",
+  options: ["Requirement analysis", "Design", "Testing", "None"],
+  answer: 2,
+  explanation: "Testing detects defects in software."
+},
+{
+  q: "Which candidate is best suited to be static?",
+  options: [
+    "PI field of a circle class",
+    "Employee salary display method",
+    "Hypotenuse calculation method",
+    "Student name field",
+    "All except B"
+  ],
+  answer: 4,
+  explanation: "Static members belong to the class, not instances."
+},
+{
+  q: "Which property is required for dynamic polymorphism?",
+  options: [
+    "Polymorphic variable",
+    "Method overriding",
+    "Inheritance",
+    "All of the above"
+  ],
+  answer: 3,
+  explanation: "Dynamic polymorphism requires all three."
+},
+{
+  q: "In computers, subtraction is generally carried out using?",
+  options: [
+    "1's complement",
+    "2's complement",
+    "Signed magnitude",
+    "BCD subtraction"
+  ],
+  answer: 1,
+  explanation: "2's complement is efficient for subtraction."
+},
+{
+  q: "Which device bypasses CPU for data transfer?",
+  options: [
+    "Software interrupt",
+    "Interrupt-driven I/O",
+    "Polled I/O",
+    "DMA"
+  ],
+  answer: 3,
+  explanation: "DMA transfers data directly between memory and devices."
+},
+{
+  q: "Which bus is bidirectional?",
+  options: ["Address bus", "Control bus", "Data bus", "None"],
+  answer: 2,
+  explanation: "Data bus carries data both ways."
+},
+{
+  q: "Which algorithm is used in game trees?",
+  options: [
+    "DFS",
+    "BFS",
+    "Heuristic search",
+    "Minimax",
+    "Greedy"
+  ],
+  answer: 3,
+  explanation: "Minimax evaluates win/lose decisions."
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ===================== 1–7 C++ ===================== */
 {
@@ -8471,6 +8873,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
