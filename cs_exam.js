@@ -3,6 +3,239 @@ const exams = {
 
 "Finfinnee":[
 
+  {
+    q: "From the library management system classes, which relationship is NOT true?",
+    options: [
+      "The relationship between library and books is aggregation",
+      "The relationship between library and student is aggregation",
+      "The relationship between library and books is composition",
+      "The relationship between books and student is association"
+    ],
+    answer: 2,
+    explanation: "Books can exist independently of a library, so composition is incorrect."
+  },
+  {
+    q: "Which objects are Entity objects in the file system GUI scenario?",
+    options: [
+      "File, Folder, and Pointer",
+      "Icon, TrashCan, and Pointer",
+      "File, Folder, and Disk",
+      "File, Folder, Disk, and TrashCan"
+    ],
+    answer: 3,
+    explanation: "Entity objects represent persistent data such as files, folders, disks, and trash."
+  },
+  {
+    q: "Which statement about coupling and cohesion is incorrect?",
+    options: [
+      "High cohesion subsystem contains related objects performing similar tasks",
+      "In weakly coupled systems, changes to one subsystem affect others",
+      "Low cohesion subsystem contains unrelated objects",
+      "In strongly coupled systems, changes to one subsystem affect others"
+    ],
+    answer: 1,
+    explanation: "Weak coupling minimizes the impact of changes between subsystems."
+  },
+  {
+    q: "Which software process model is described when modules are delivered incrementally?",
+    options: [
+      "Agile model",
+      "Waterfall model",
+      "Incremental model",
+      "Iterative model"
+    ],
+    answer: 2,
+    explanation: "The system is built and delivered module by module using the Incremental model."
+  },
+  {
+    q: "Which project type involves redesigning an existing system using new technology?",
+    options: [
+      "Green field project",
+      "Interface engineering project",
+      "Re-engineering project",
+      "None of the above"
+    ],
+    answer: 2,
+    explanation: "Re-engineering focuses on improving or rebuilding existing systems."
+  },
+  {
+    q: "Which is the correct mitigation strategy for slow middleware performance?",
+    options: [
+      "Plan for a performance evaluation prototype",
+      "Develop alternate interface",
+      "Assign key developers",
+      "Increase task priority"
+    ],
+    answer: 0,
+    explanation: "Prototyping helps evaluate performance risks early."
+  },
+  {
+    q: "What does the CSS rule p.class1 { text-align: center; } mean?",
+    options: [
+      "All paragraphs are centered",
+      "Paragraphs with class1 are centered",
+      "All elements inside paragraphs are centered",
+      "All elements with class1 are centered"
+    ],
+    answer: 1,
+    explanation: "Only <p> elements with class='class1' are affected."
+  },
+  {
+    q: "Which JavaScript method changes the content of HTML elements?",
+    options: [
+      "innerHTML",
+      "document.write()",
+      "console.log()",
+      "window.alert()"
+    ],
+    answer: 0,
+    explanation: "innerHTML modifies the content inside an HTML element."
+  },
+  {
+    q: "Which statement about JavaScript variables is true?",
+    options: [
+      "Const declares read-only global variables",
+      "Let declares block-scoped local variables",
+      "Var declares block-scoped variables",
+      "All of the above"
+    ],
+    answer: 1,
+    explanation: "let provides block-level scope."
+  },
+  {
+    q: "What is the output of: for(x in obj) console.log(obj);",
+    options: [
+      "No output",
+      "XYZ",
+      "name",
+      "Object is printed"
+    ],
+    answer: 3,
+    explanation: "The entire object is printed for each property."
+  },
+  {
+    q: "Which PHP statement attaches one file to another?",
+    options: [
+      "include(\"file2.php\")",
+      "import(\"file2.php\")",
+      "attach(\"file2.php\")",
+      "None of the above"
+    ],
+    answer: 0,
+    explanation: "include() inserts another PHP file."
+  },
+  {
+    q: "Which statement about cookies and sessions is correct?",
+    options: [
+      "Cookies can be disabled but sessions cannot",
+      "Sessions are stored on server, cookies on client",
+      "Cookies stay until expiry",
+      "All of the above"
+    ],
+    answer: 3,
+    explanation: "All statements correctly describe cookies and sessions."
+  },
+  {
+    q: "Which HTML form method is used to send binary data?",
+    options: [
+      "POST",
+      "GET",
+      "HTTP",
+      "None of the above"
+    ],
+    answer: 0,
+    explanation: "POST supports binary data transmission."
+  },
+  {
+    q: "Which is the correct way to set a cookie with key 'Location' and value 'AA'?",
+    options: [
+      "setcookie(\"AA\",\"Location\")",
+      "setcookie(\"Location\",\"AA\")",
+      "setcookie(time()+60,\"Location\",\"AA\")",
+      "setcookie(\"Location\",time()+60,\"AA\")"
+    ],
+    answer: 1,
+    explanation: "Correct syntax is setcookie(name, value)."
+  },
+  {
+    q: "Which statement is false?",
+    options: [
+      "A web browser runs on a server",
+      "A user agent renders resources",
+      "A website is a collection of resources",
+      "A web page is a basic unit of WWW"
+    ],
+    answer: 0,
+    explanation: "Web browsers run on client machines."
+  },
+  {
+    q: "What is information about data called?",
+    options: [
+      "Hyper data",
+      "Metadata",
+      "Teradata",
+      "Relations"
+    ],
+    answer: 1,
+    explanation: "Metadata describes other data."
+  },
+  {
+    q: "An RDBMS consists of:",
+    options: [
+      "Records",
+      "Tables",
+      "Keys",
+      "Fields"
+    ],
+    answer: 1,
+    explanation: "Relational databases store data in tables."
+  },
+  {
+    q: "Which language allows inserting, deleting, and updating data?",
+    options: [
+      "TCL",
+      "DCL",
+      "DDL",
+      "DML"
+    ],
+    answer: 3,
+    explanation: "DML handles data manipulation."
+  },
+  {
+    q: "What happens when data is stored in two places?",
+    options: [
+      "Storage is wasted and inconsistency occurs",
+      "Only inconsistency occurs",
+      "Access becomes easier",
+      "Only storage is wasted"
+    ],
+    answer: 0,
+    explanation: "Data redundancy causes inconsistency and wastes storage."
+  },
+  {
+    q: "Derived attributes in ER diagrams are represented by:",
+    options: [
+      "Ellipse",
+      "Dashed ellipse",
+      "Rectangle",
+      "Triangle"
+    ],
+    answer: 1,
+    explanation: "Derived attributes use dashed ellipses."
+  }
+
+
+
+
+
+
+
+
+
+
+
+  
+
 {
   q: "Which OSI layer performs error detection, error correction, and flow control?",
   options: [
@@ -8873,6 +9106,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
