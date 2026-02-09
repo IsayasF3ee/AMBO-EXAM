@@ -3,6 +3,470 @@ const exams = {
 
 "Jimmaa University":[
 
+{
+q: "Which of the following operating system functions contributes to efficient utilization of system resources by preventing conflicts and bottlenecks?",
+options: ["Security and protection", "Device management", "Process management and memory management", "Inter-process communication"],
+answer: 2,
+explanation: "Process and memory management ensures that system resources are allocated efficiently and processes do not interfere with each other."
+},
+{
+q: "Which function of a contemporary OS contributes most to its ability to evolve and adapt?",
+options: ["Providing a user-friendly GUI", "Efficient process and memory management", "Centralized software installation", "Modular design with hardware abstraction layers"],
+answer: 3,
+explanation: "Modular design allows new components to be added or replaced without affecting the whole system, enhancing adaptability."
+},
+{
+q: "Why can the Hold and Wait condition lead to deadlock?",
+options: ["Processes can't make progress", "Resources are acquired in order", "Processes never release unneeded resources", "Forces indefinite wait"],
+answer: 3,
+explanation: "Hold and Wait occurs when a process holds resources while waiting for others, which can cause indefinite waiting and deadlock."
+},
+{
+q: "Primary advantage of non-preemptive scheduling over preemptive algorithms?",
+options: ["Improved real-time performance", "Reduced task starvation", "Simpler implementation and reduced overhead", "Better support for dynamic workloads"],
+answer: 2,
+explanation: "Non-preemptive scheduling is simpler to implement and has lower runtime overhead since tasks run to completion."
+},
+{
+q: "Most important factor when evaluating scheduling algorithms for real-time systems?",
+options: ["Fairness in allocation", "Responsiveness and ability to meet deadlines", "Simplicity of implementation", "Overall system throughput"],
+answer: 1,
+explanation: "Real-time systems prioritize meeting deadlines; responsiveness is critical."
+},
+{
+q: "Which file system is commonly used in Windows OS?",
+options: ["NTFS", "FAT32", "HFS+", "Ext4", "exFAT"],
+answer: 0,
+explanation: "NTFS is the default file system for modern Windows OS, supporting security, large files, and journaling."
+},
+{
+q: "Regarding class hierarchy with interfaces and abstract classes, which statement is correct?",
+options: ["All concrete subclasses must override abstract methods", "Interfaces define abstract methods, abstract classes can have concrete implementations", "Polymorphism is only method overloading", "Interfaces promote tight coupling"],
+answer: 1,
+explanation: "Interfaces provide abstract methods; abstract classes can have both abstract and concrete methods, supporting polymorphism."
+},
+{
+q: "Key design principle for maintainable, scalable systems with multiple interacting objects?",
+options: ["Loose coupling with well-defined interfaces", "Code duplication", "Tight coupling", "Global variables"],
+answer: 0,
+explanation: "Loose coupling reduces dependencies, making the system easier to maintain and scale."
+},
+{
+q: "Feature of OOP indicated by: class Topper extends Student { ... }",
+options: ["Inheritance", "Encapsulation", "Polymorphism", "Abstraction"],
+answer: 0,
+explanation: "Topper inherits properties and methods from Student, demonstrating inheritance."
+},
+{
+q: "Output of Java program: int a=5; int b=6; c=(a>b)?a:b;?",
+options: ["5", "4", "7", "6"],
+answer: 3,
+explanation: "Since a>b is false, c takes the value of b, which is 6."
+},
+{
+q: "Which handles exceptions in Java when catch is not used?",
+options: ["Finally", "throw handler", "Default handler", "Java runtime system"],
+answer: 3,
+explanation: "Java runtime system handles uncaught exceptions, typically terminating the program."
+},
+{
+q: "Which statement is INCORRECT about the Final keyword in Java?",
+options: ["A Final variable value can't change", "A Final method can't be inherited", "A Final method can't be overridden", "A Final class can't be extended"],
+answer: 1,
+explanation: "A Final method cannot be overridden, but it can still be inherited; saying it can't be inherited is incorrect."
+},
+{
+q: "First step in database design?",
+options: ["Identifying entities and attributes", "Defining database requirements", "Creating a conceptual schema", "Choosing DBMS"],
+answer: 1,
+explanation: "Database design starts by understanding requirements before modeling entities."
+},
+{
+q: "Database concept for tracking books, borrowers, and borrowings?",
+options: ["Big data", "OLTP", "Normalization", "Data warehousing"],
+answer: 1,
+explanation: "OLTP systems handle transactional data like loans, inserts, updates, and deletions."
+},
+{
+q: "Database concept to calculate employee pay based on hours worked?",
+options: ["Triggers", "Functions", "Views", "Stored Procedures"],
+answer: 3,
+explanation: "Stored procedures encapsulate business logic for calculations in the database."
+},
+{
+q: "SQL join to identify which products sell well together?",
+options: ["Inner join", "Outer join", "Left join", "Right join"],
+answer: 0,
+explanation: "Inner join combines only matching rows from two tables, useful for analyzing product combinations."
+},
+{
+q: "SQL operation to track employee performance by department and job title?",
+options: ["SELECT", "FROM", "JOIN", "GROUP BY"],
+answer: 3,
+explanation: "GROUP BY allows aggregation of performance data by department and job title."
+},
+{
+q: "Precedence graphs help find a:",
+options: ["Recoverable schedule", "Deadlock-free schedule", "Serializable schedule", "Cascade-less schedule"],
+answer: 2,
+explanation: "Precedence graphs are used to check if a schedule is conflict-serializable in databases."
+},
+{
+q: "SQL statement: select * from R, S is equivalent to?",
+options: ["Select * from R natural join S", "Select * from R cross join S", "Select * from R union join S", "Select * from R inner join S"],
+answer: 1,
+explanation: "Using multiple tables without join condition defaults to a cross join."
+},
+{
+q: "Relational algebra query to find customers with balance > 1000?",
+options: [
+"σ Customer_name( Π balance >1000(Deposit))",
+"Π Customer_name( σ balance >1000(Borrow))",
+"Π Customer_name( σ balance >1000(Deposit))",
+"σ Customer_"
+],
+answer: 2,
+explanation: "First select rows with balance > 1000, then project the customer_name column."
+},
+{
+q: "Transaction: Commit; Rollback; What does Rollback do?",
+options: ["Undoes transactions before commit", "Clears all transactions", "Redoes transactions", "No action"],
+answer: 0,
+explanation: "Rollback undoes all uncommitted changes to maintain database consistency."
+},
+{
+q: "In an E-R, Y is dominant and X is subordinate. Which is incorrect?",
+options: ["If Y is deleted, so is X", "Existence is dependent on Y", "If X is deleted, so is Y", "Operationally, if X is deleted"],
+answer: 2,
+explanation: "The subordinate entity X depends on Y; deleting X does not delete Y."
+},
+{
+q: "In DDBMS, which component receives and processes application requests?",
+options: ["Data processor", "Transaction processor", "DDBMS protocol", "Workstations"],
+answer: 1,
+explanation: "Transaction processors handle requests and ensure ACID properties in distributed databases."
+},
+{
+q: "Which operation retrieves only certain columns of a table?",
+options: ["PROJECTION", "SELECTION", "UNION", "JOIN"],
+answer: 0,
+explanation: "Projection selects specific columns from a relation, while selection filters rows."
+},
+{
+q: "Used by lexical analyzers to define patterns for tokens?",
+options: ["Parse Tree", "Symbol Table", "Regular Expressions", "Abstract Syntax Tree"],
+answer: 2,
+explanation: "Regular expressions define token patterns like identifiers, numbers, and keywords."
+},
+{
+q: "Role of a type system in type-checking?",
+options: ["Defines syntax rules", "Specifies valid tokens", "Determines type of expressions and enforces rules", "Generates machine code"],
+answer: 2,
+explanation: "Type systems check that operations are applied to compatible data types."
+},
+{
+q: "Compiler principle ensuring efficient generated code?",
+options: ["Lexical Analysis", "Syntax Analysis", "Semantic Analysis", "Code Optimization"],
+answer: 3,
+explanation: "Code optimization improves runtime performance of compiled code."
+},
+{
+q: "NOT a role of lexer in compiler?",
+options: ["Identifying tokens", "Performing semantic analysis", "Ignoring whitespace/comments", "Generating errors for invalid tokens"],
+answer: 1,
+explanation: "Semantic analysis is handled after lexical and syntax analysis, not by the lexer."
+},
+{
+q: "Parsing technique using predictive approach and handles recursive descent without backtracking?",
+options: ["LR Parsing", "LL(1) Parsing", "Bottom-Up Parsing", "Top-Down Parsing"],
+answer: 1,
+explanation: "LL(1) parsing uses one-token lookahead to predict rules without backtracking."
+},
+{
+q: "Phase in which undeclared variable error is detected?",
+options: ["Lexical", "Syntax", "Semantic", "Code generation"],
+answer: 2,
+explanation: "Semantic analysis checks for variable declarations, type compatibility, and meaning correctness."
+},
+{
+q: "Output of C++ code: int a=5,b=6,c=(a>b)?a:b; cout<<c;",
+options: ["5", "4", "7", "6"],
+answer: 3,
+explanation: "Since a>b is false, c = b = 6."
+},
+{
+q: "Times executed by loop: int i=0; while(i<5){ cout<<i; i+=2; }",
+options: ["2", "3", "6", "5"],
+answer: 1,
+explanation: "Loop executes i=0,2,4 → 3 times."
+},
+{
+q: "Purpose of a function prototype in C++?",
+options: ["Define function body", "Declare existence", "Specify return type", "Provide parameters"],
+answer: 1,
+explanation: "Function prototypes inform the compiler about a function before its definition."
+},
+{
+q: "Loop structure suitable when iterations are known in advance?",
+options: ["for loop", "while loop", "do-while loop", "switch statement"],
+answer: 0,
+explanation: "A for loop is ideal when the number of iterations is predetermined."
+},
+{
+q: "Output of C++ code: int x=10; int& ref=x; int* ptr=&ref; *ptr=20; cout<<x;",
+options: ["10", "20", "Pointer address", "Compilation error"],
+answer: 1,
+explanation: "Pointer modifies the original variable via reference; x becomes 20."
+},
+{
+q: "Output of function printing even numbers from array {1,2,3,4,5,6}?",
+options: ["1 3 5", "2 4 6", "1 2 3 4 5 6", "0 0 0"],
+answer: 1,
+explanation: "Function prints numbers divisible by 2 → 2 4 6."
+},
+{
+q: "Role of instruction decode (ID) stage in pipelining?",
+options: ["Execute instruction", "Write result back", "Fetch instruction", "Translate into signals for other stages"],
+answer: 3,
+explanation: "ID stage decodes instructions and prepares control signals for execution."
+},
+{
+q: "Characteristic of a hardwired control unit?",
+options: ["Flexibility", "Ease of modification", "Faster execution", "Complex design"],
+answer: 2,
+explanation: "Hardwired control units are fast but less flexible and more rigid than microprogrammed units."
+},
+{
+q: "Primary function of memory management unit in computer system?",
+options: ["Map physical to cache address", "Store recent translations", "Map logical to physical addresses", "All of the above"],
+answer: 3,
+explanation: "The MMU handles mapping logical addresses to physical memory, caching translations, and access management."
+},
+{
+q: "Key difference between serial and parallel interfaces?",
+options: ["Serial transmits 1 bit at a time, parallel multiple bits", "Serial faster", "Serial input, parallel output", "Both A and C"],
+answer: 0,
+explanation: "Serial interfaces send one bit sequentially, while parallel sends multiple bits at once."
+},
+{
+q: "Which register facilitates communication between CPU and memory?",
+options: ["Memory Data Register", "Program Counter", "Memory Address Register", "A and C"],
+answer: 3,
+explanation: "MAR holds address, MDR holds data; together they facilitate CPU-memory communication."
+},
+{
+q: "How does CPU's control unit coordinate execution?",
+options: ["Manages virtual memory translation", "Retrieves, interprets, and executes instructions", "Integrates components", "Manages I/O operations"],
+answer: 1,
+explanation: "Control unit orchestrates instruction fetch, decode, execution, and result storage."
+},
+{
+q: "Example of propositional logic statement?",
+options: ["All cats are mammals", "If it rains, streets will be wet", "A and B are both true", "John is taller than Mary"],
+answer: 2,
+explanation: "Propositional logic uses statements that are either true or false."
+},
+{
+q: "Agent that chooses actions based on desirability of outcomes?",
+options: ["Model-based", "Simple reflex", "Utility-based", "Goal-based"],
+answer: 2,
+explanation: "Utility-based agents select actions maximizing a utility function."
+},
+{
+q: "Search type using heuristic search algorithm?",
+options: ["BFS", "A* search", "DFS", "Binary search"],
+answer: 1,
+explanation: "A* search uses heuristics to find the shortest path efficiently."
+},
+{
+q: "Social media platform uses Logistic Regression to predict advertisement engagement. Primary objective?",
+options: ["Forecast demographics", "Predict past clicks", "Anticipate engagement", "Cluster users"],
+answer: 2,
+explanation: "Logistic regression predicts probability of future engagement based on historical data."
+},
+{
+q: "Algorithm commonly used for classification tasks?",
+options: ["Linear regression", "Logistic Regression", "K-means clustering", "Association mining"],
+answer: 1,
+explanation: "Logistic regression is a standard algorithm for binary or multi-class classification."
+},
+{
+q: "Situation using reinforcement learning?",
+options: ["Chatbot training", "Customer segmentation", "Robot navigating maze", "Grouping news articles"],
+answer: 2,
+explanation: "Reinforcement learning involves agents learning by trial-and-error to maximize rewards."
+},
+{
+q: "Sorting algorithm preferred when swap operation is costly?",
+options: ["Quick sort", "Merge sort", "Bubble sort", "Shell sort"],
+answer: 1,
+explanation: "Merge sort minimizes swaps because it primarily uses copying rather than swapping elements."
+},
+{
+q: "For linked list queue, where are enqueue and dequeue performed?",
+options: ["Enqueue front, dequeue front", "Enqueue last, dequeue last", "Enqueue last, dequeue first", "Enqueue front, dequeue last"],
+answer: 2,
+explanation: "Enqueue adds at the tail, dequeue removes from the head to maintain FIFO order."
+},
+{
+q: "Most efficient data structure for a priority queue?",
+options: ["Binary search tree", "Hash table", "Binary heap", "Linked list"],
+answer: 2,
+explanation: "Binary heaps allow efficient insertion and extraction of minimum/maximum elements for priority queues."
+},
+{
+q: "If T(n) = Ω(g(n)), which statement is true?",
+options: [
+"T(n) <= c*g(n) for n>=n0",
+"T(n) >= c*g(n) for n>=n0",
+"T(n) = c*g(n) for n>=n0",
+"T(n) > c*g(n) for n>=n0"
+],
+answer: 1,
+explanation: "Ω(g(n)) defines a lower bound: T(n) is at least proportional to g(n) for large n."
+},
+{
+q: "Time complexity of code: for(i=0;i<n;i++){for(j=1;j<n;j*=2){...}}?",
+options: ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+answer: 1,
+explanation: "Outer loop runs n times; inner loop doubles j each iteration → log n iterations → O(n log n)."
+},
+{
+q: "Sorting algorithm with same average and worst-case bounds as heapsort?",
+options: ["Insertion sort", "Merge sort", "Quicksort", "Shell sort"],
+answer: 1,
+explanation: "Merge sort guarantees O(n log n) for both average and worst case."
+},
+{
+q: "Sorting algorithm of divide-and-conquer type?",
+options: ["Bubble sort", "Insertion sort", "Quick sort", "Selection sort"],
+answer: 2,
+explanation: "Quick sort recursively partitions arrays and sorts subarrays, using divide-and-conquer."
+},
+{
+q: "Big-O complexity of O(n log n)?",
+options: ["O(1)", "O(n)", "O(n^2)", "O(n log n)"],
+answer: 3,
+explanation: "O(n log n) indicates algorithms like merge sort or heap sort."
+},
+{
+q: "Relationship between formal languages, grammars, and automata?",
+options: [
+"Formal languages are subsets of grammars",
+"Automata generate languages, grammars define rules",
+"Languages build automata, grammars translate",
+"Grammars define language rules, automata recognize strings"
+],
+answer: 3,
+explanation: "Formal grammars define syntax rules for languages; automata can recognize strings generated by those grammars."
+},
+{
+q: "Most powerful type of machine?",
+options: ["Deterministic finite automata", "Non-deterministic FA", "Turing machine", "Pushdown automata"],
+answer: 2,
+explanation: "Turing machines can simulate any algorithm and are more powerful than finite automata or pushdown automata."
+},
+{
+q: "Kleene star '*' in regular expressions represents:",
+options: ["Concatenation", "Union", "One or more repetitions", "Zero or more repetitions"],
+answer: 3,
+explanation: "Kleene star denotes zero or more repetitions of the preceding element."
+},
+{
+q: "Regex for strings starting with 01 and ending with 110?",
+options: ["010*1*110", "01(01)*110", "01(0+1)*110", "01110"],
+answer: 2,
+explanation: "01(0+1)*110 matches any string starting with 01, ending with 110, with any combination of 0 and 1 in between."
+},
+{
+q: "Phase of software development: translating requirements to structured design?",
+options: ["Analysis", "Design", "Implementation", "Testing"],
+answer: 1,
+explanation: "Design transforms requirements into architecture, modules, interfaces, and data models."
+},
+{
+q: "Purpose of UML use case diagrams?",
+options: ["Define class attributes", "Show interaction between users and system", "Generate code", "Perform testing"],
+answer: 1,
+explanation: "Use case diagrams model functional requirements and interactions between actors and system."
+},
+{
+q: "Difference between class and object in OOP?",
+options: ["Class is blueprint; object is instance", "Object is blueprint; class is instance", "Both are same", "Class is method; object is variable"],
+answer: 0,
+explanation: "Class defines structure and behavior; object is a concrete instance of the class."
+},
+{
+q: "In AI, which search is uninformed?",
+options: ["A* search", "DFS", "Greedy search", "Hill climbing"],
+answer: 1,
+explanation: "DFS does not use heuristic information; it blindly explores branches."
+},
+{
+q: "In computer networks, which protocol is connectionless?",
+options: ["TCP", "UDP", "HTTP", "FTP"],
+answer: 1,
+explanation: "UDP is connectionless and does not guarantee delivery, ordering, or error checking."
+},
+{
+q: "OSI layer responsible for routing packets?",
+options: ["Transport", "Network", "Data Link", "Application"],
+answer: 1,
+explanation: "The network layer determines paths for data transmission across networks."
+},
+{
+q: "IP address class with 192.168.x.x?",
+options: ["Class A", "Class B", "Class C", "Class D"],
+answer: 2,
+explanation: "192.168.x.x belongs to Class C (private addresses)."
+},
+{
+q: "What is subnet mask 255.255.255.0 equivalent to?",
+options: ["/24", "/16", "/8", "/32"],
+answer: 0,
+explanation: "255.255.255.0 represents a /24 subnet (24 bits for network)."
+},
+{
+q: "In distributed systems, consistency model ensuring all nodes see same order of writes?",
+options: ["Eventual consistency", "Strong consistency", "Causal consistency", "Weak consistency"],
+answer: 1,
+explanation: "Strong consistency guarantees that all nodes immediately reflect writes in the same order."
+},
+{
+q: "Replication improves:",
+options: ["Performance and fault tolerance", "Security", "Only security", "None"],
+answer: 0,
+explanation: "Replication creates multiple copies to enhance system reliability and access speed."
+},
+{
+q: "In distributed systems, fault tolerance is achieved by:",
+options: ["Replication", "Redundancy", "Checkpointing", "All of the above"],
+answer: 3,
+explanation: "Combining replication, redundancy, and checkpointing enables fault-tolerant systems."
+},
+{
+q: "CAP theorem states:",
+options: ["Consistency, Availability, Partition tolerance—cannot achieve all simultaneously", "Consistency, Accuracy, Performance", "Correctness, Availability, Performance", "Cache, Availability, Partition"],
+answer: 0,
+explanation: "CAP theorem states a distributed system can only guarantee two of three: consistency, availability, and partition tolerance."
+},
+{
+q: "Which database model is suitable for distributed systems?",
+options: ["Relational", "NoSQL", "Hierarchical", "Network"],
+answer: 1,
+explanation: "NoSQL databases scale better horizontally and handle distributed environments efficiently."
+},
+
+
+
+
+
+
+
+
+
+  
+
   {
     q: "Which type of attack involves an attacker intercepting and modifying communication between two parties?",
     options: ["Denial of Service (DoS)", "Man-in-the-Middle (MitM)", "Phishing", "Trojan Horse"],
@@ -10188,6 +10652,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
