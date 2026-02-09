@@ -4,6 +4,227 @@ const exams = {
 "Finfinnee":[
 
   {
+    q: "Which of the following is NOT an OOP concept?",
+    options: ["Encapsulation", "Polymorphism", "Exception", "Abstraction"],
+    answer: 2,
+    explanation: "Exception handling is not a core OOP principle."
+  },
+  {
+    q: "Runtime polymorphism feature in Java is:",
+    options: ["Method overriding", "Operator overloading", "Method overloading", "Constructor overloading"],
+    answer: 0,
+    explanation: "Runtime polymorphism is achieved through method overriding."
+  },
+  {
+    q: "Prim’s algorithm initializes with:",
+    options: [
+      "A vertex",
+      "An edge",
+      "A vertex with the smallest edge",
+      "A forest"
+    ],
+    answer: 0,
+    explanation: "Prim’s algorithm starts from a single vertex."
+  },
+  {
+    q: "Worst-case time complexity of Prim’s algorithm using adjacency matrix is:",
+    options: ["O(log V)", "O(V²)", "O(E²)", "O(V log E)"],
+    answer: 1,
+    explanation: "Using adjacency matrix, Prim’s algorithm runs in O(V²)."
+  },
+  {
+    q: "Which algorithm should be used when a vertex is fully explored before backtracking?",
+    options: ["Depth First Search", "Breadth First Search", "Prim’s algorithm", "Kruskal’s algorithm"],
+    answer: 0,
+    explanation: "DFS explores deeply before backtracking."
+  },
+  {
+    q: "Using Kruskal’s algorithm, which edge is selected first?",
+    options: ["GF", "BE", "DE", "BG"],
+    answer: 0,
+    explanation: "Kruskal selects the edge with the smallest weight first."
+  },
+  {
+    q: "Which OSI layer ensures ordered delivery of packets?",
+    options: ["Presentation Layer", "Network Layer", "Data Link Layer", "Transport Layer"],
+    answer: 3,
+    explanation: "Transport layer ensures sequencing and reliability."
+  },
+  {
+    q: "Correct IEEE 802 layer ordering is:",
+    options: [
+      "MAC, LLC, IP, TCP, Application",
+      "LLC, MAC, TCP, IP, Application",
+      "LLC, MAC, IP, TCP, Application",
+      "MAC, LLC, TCP, IP, Application"
+    ],
+    answer: 2,
+    explanation: "Correct order is LLC → MAC → IP → TCP → Application."
+  },
+  {
+    q: "Which subnet mask supports at least 300 hosts per subnet?",
+    options: [
+      "255.255.254.0",
+      "255.255.224.0",
+      "255.255.255.0",
+      "255.255.255.128"
+    ],
+    answer: 0,
+    explanation: "255.255.254.0 supports 510 hosts."
+  },
+  {
+    q: "Which wires are swapped in a crossover cable?",
+    options: [
+      "Wires 1 & 2 with wires 3 & 6",
+      "Wires 1 & 2 with wires 3 & 4",
+      "Wires 1 & 2 with wires 6 & 8",
+      "Wires 2 & 3 with wires 3 & 6"
+    ],
+    answer: 0,
+    explanation: "Crossover cable swaps transmit and receive pairs."
+  },
+  {
+    q: "New subnet mask for breaking Class C network into 20 subnets is:",
+    options: [
+      "255.255.255.0",
+      "255.255.248.0",
+      "255.255.224.0",
+      "255.255.255.248"
+    ],
+    answer: 3,
+    explanation: "255.255.255.248 provides 32 subnets."
+  },
+  {
+    q: "A person who hacks using tools without understanding is called:",
+    options: ["Script kiddy", "Novice", "Gray hat hacker", "White hat hacker"],
+    answer: 0,
+    explanation: "Script kiddies rely on pre-made tools."
+  },
+  {
+    q: "Which is an attack on availability?",
+    options: ["Spoofing", "Delay", "Masquerading", "Snooping"],
+    answer: 1,
+    explanation: "Delay attacks reduce system availability."
+  },
+  {
+    q: "Which algorithm is NOT used for digital signatures?",
+    options: ["RSA", "Diffie-Hellman", "Elliptic Curve", "DSS"],
+    answer: 1,
+    explanation: "Diffie-Hellman is for key exchange, not signatures."
+  },
+  {
+    q: "Which is a violation of confidentiality?",
+    options: [
+      "Azeb copies Abebe's homework",
+      "Bekele crashes Tulu's system",
+      "Bekele changes Abebech’s check amount",
+      "Domain name hijacking"
+    ],
+    answer: 0,
+    explanation: "Unauthorized access to information violates confidentiality."
+  },
+  {
+    q: "Key logger is a type of:",
+    options: ["Virus", "Trojan horse", "Buffer overflow", "Spyware"],
+    answer: 3,
+    explanation: "Keyloggers secretly collect user input."
+  },
+  {
+    q: "Rule of access control is:",
+    options: [
+      "Grant most access possible",
+      "Grant least access required",
+      "Grant standard access to all",
+      "Strictly limit all users"
+    ],
+    answer: 1,
+    explanation: "Principle of least privilege."
+  },
+  {
+    q: "Which is NOT a common user management task?",
+    options: [
+      "Creating user accounts",
+      "Deleting user accounts",
+      "Modifying accounts",
+      "Installing software for users"
+    ],
+    answer: 3,
+    explanation: "Software installation is not user management."
+  },
+  {
+    q: "Purpose of creating groups in OS is:",
+    options: [
+      "Increase performance",
+      "Limit access",
+      "Organize users by roles",
+      "None of the above"
+    ],
+    answer: 2,
+    explanation: "Groups simplify permission management."
+  },
+  {
+    q: "Key function of a domain controller is:",
+    options: [
+      "Provide internet",
+      "Manage hardware",
+      "Monitor traffic",
+      "Manage authentication"
+    ],
+    answer: 3,
+    explanation: "Domain controllers manage users and authentication."
+  },
+  {
+    q: "Active Directory Sites and Services enables:",
+    options: [
+      "Centralized device control",
+      "Traffic monitoring",
+      "Replication between sites",
+      "Remote access"
+    ],
+    answer: 2,
+    explanation: "It manages AD replication across sites."
+  },
+  {
+    q: "Biggest security challenge for system administrators:",
+    options: [
+      "Evolving threats",
+      "Employee compliance",
+      "Complex security tools",
+      "Balancing access and security"
+    ],
+    answer: 0,
+    explanation: "Threats constantly evolve."
+  },
+  {
+    q: "Active Directory container used for organizing users is:",
+    options: ["User Units", "Organizational Units", "Container object", "Leaf object"],
+    answer: 1,
+    explanation: "OUs organize users and resources logically."
+  },
+  {
+    q: "If an agent knows the exact state, the problem type is:",
+    options: ["Single-state", "Exploration", "Conformant", "Contingency"],
+    answer: 0,
+    explanation: "Exact knowledge implies single-state problem."
+  },
+  {
+    q: "Which sorting algorithm uses pivot and partition?",
+    options: ["Merge", "Quick", "Shell", "Selection"],
+    answer: 1,
+    explanation: "Quick sort uses pivot-based partitioning."
+  },
+  {
+    q: "The sequence of steps to solve a problem is called:",
+    options: ["Data Structure", "Algorithm", "Information", "Data Processing"],
+    answer: 1,
+    explanation: "An algorithm defines problem-solving steps."
+  },
+
+
+
+  
+
+  {
     q: "From the library management system classes, which relationship is NOT true?",
     options: [
       "The relationship between library and books is aggregation",
@@ -9106,6 +9327,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
