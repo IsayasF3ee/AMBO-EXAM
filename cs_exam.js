@@ -304,15 +304,358 @@ const exams = {
     options: ["Linear search", "Binary search", "Hash search", "Depth-first search"],
     answer: 1,
     explanation: "Binary search has a worst-case time complexity of O(log n) due to its ability to divide the search space in half at each step."
+  },
+
+
+
+
+
+
+
+
+
+  {
+    q: "Which searching algorithm is based on comparing the target element with elements at regular intervals?",
+    options: ["Linear search", "Binary search", "Hash search", "Depth-first search"],
+    answer: 2,
+    explanation: "Hash search involves comparing the target element with elements at regular intervals based on a hashing function."
+  },
+  {
+    q: "Which searching algorithm is suitable for unsorted arrays or lists?",
+    options: ["Linear search", "Binary search", "Hash search", "Depth-first search"],
+    answer: 0,
+    explanation: "Linear search can be applied to unsorted arrays or lists by sequentially comparing each element until the target element is found."
+  },
+  {
+    q: "Which searching algorithm is commonly used for traversing graphs or trees?",
+    options: ["Linear search", "Binary search", "Hash search", "Depth-first search"],
+    answer: 3,
+    explanation: "Depth-first search is a graph/tree traversal algorithm that explores as far as possible along each branch before backtracking."
+  },
+  {
+    q: "Which sorting algorithm has the best-case time complexity of O(n)?",
+    options: ["Bubble sort", "Quick sort", "Merge sort", "Insertion sort"],
+    answer: 3,
+    explanation: "Insertion sort has a best-case time complexity of O(n) when the input array is already sorted, requiring minimal comparisons and swaps."
+  },
+  {
+    q: "Which sorting algorithm is stable, meaning it preserves the relative order of equal elements?",
+    options: ["Bubble sort", "Quick sort", "Merge sort", "Insertion sort"],
+    answer: 2,
+    explanation: "Merge sort is a stable sorting algorithm as it guarantees the relative order of equal elements during the merging phase."
+  },
+  {
+    q: "Which sorting algorithm is commonly used for small input sizes or partially sorted arrays?",
+    options: ["Bubble sort", "Quick sort", "Merge sort", "Insertion sort"],
+    answer: 3,
+    explanation: "Insertion sort performs well on small input sizes or partially sorted arrays due to its efficient element insertion strategy."
+  },
+  {
+    q: "Which searching algorithm divides the search space into three parts at each step?",
+    options: ["Linear search", "Binary search", "Ternary search", "Depth-first search"],
+    answer: 2,
+    explanation: "Ternary search divides the search space into three equal parts at each step, narrowing down the search space more quickly than binary search."
+  },
+  {
+    q: "Which sorting algorithm has a space complexity of O(1) in the best and average cases?",
+    options: ["Bubble sort", "Quick sort", "Merge sort", "Insertion sort"],
+    answer: 3,
+    explanation: "Insertion sort requires only a constant amount of additional space, resulting in a space complexity of O(1) in the best and average cases."
+  },
+  {
+    q: "Which searching algorithm is based on the principle of divide-and-conquer?",
+    options: ["Linear search", "Binary search", "Hash search", "Depth-first search"],
+    answer: 1,
+    explanation: "Binary search divides the search space in half at each step, following the divide-and-conquer strategy."
+  },
+  {
+    q: "Which sorting algorithm has the worst-case time complexity of O(n log n)?",
+    options: ["Bubble sort", "Quick sort", "Merge sort", "Insertion sort"],
+    answer: 2,
+    explanation: "Merge sort has a worst-case time complexity of O(n log n) due to its recursive divide-and-conquer approach."
+  },
+  {
+    q: "Which sorting algorithm is efficient for sorting data in external memory (hard disks)?",
+    options: ["Bubble sort", "Quick sort", "Merge sort", "Insertion sort"],
+    answer: 2,
+    explanation: "Merge sort is efficient for sorting data in external memory as it minimizes disk I/O operations by performing sequential reads and writes."
+  },
+  {
+    q: "Which searching algorithm is suitable for large datasets or databases?",
+    options: ["Linear search", "Binary search", "Hash search", "Depth-first search"],
+    answer: 2,
+    explanation: "Hash search is suitable for large datasets or databases due to its efficient lookup time based on hash values."
+  },
+  {
+    q: "Which sorting algorithm has the best average-case time complexity?",
+    options: ["Bubble sort", "Quick sort", "Merge sort", "Insertion sort"],
+    answer: 1,
+    explanation: "Quick sort has the best average-case time complexity among the given options, with an average complexity of O(n log n) when implemented efficiently."
+  },
+  {
+    q: "Which data structure is best suited for implementing a dictionary with fast lookup and insertion?",
+    options: ["Array", "Linked list", "Hash table", "Stack"],
+    answer: 2,
+    explanation: "Hash tables provide fast lookup and insertion operations with an average time complexity of O(1) using key-value pairs."
+  },
+  {
+    q: "Which algorithm is commonly used for finding the shortest path in a graph?",
+    options: ["Depth-first search", "Breadth-first search", "Dijkstra's algorithm", "Prim's algorithm"],
+    answer: 2,
+    explanation: "Dijkstra's algorithm is widely used for finding the shortest path between nodes in a weighted graph."
+  },
+  {
+    q: "Which data structure is typically used to implement a stack?",
+    options: ["Array", "Linked list", "Queue", "Tree"],
+    answer: 1,
+    explanation: "Linked lists provide efficient insertion and deletion operations at the beginning of the list, making them suitable for implementing a stack."
+  },
+  {
+    q: "Which algorithm is used to sort elements in a specific order based on their priorities?",
+    options: ["Bubble sort", "Quick sort", "Merge sort", "Heap sort"],
+    answer: 3,
+    explanation: "Heap sort uses a binary heap data structure to sort elements based on their priorities, making it an efficient priority-based sorting algorithm."
+  },
+  {
+    q: "Which data structure is best suited for implementing a cache with efficient insertion and removal of elements?",
+    options: ["Array", "Linked list", "Hash table", "Queue"],
+    answer: 2,
+    explanation: "Hash tables provide fast insertion and removal operations, making them suitable for implementing a cache with efficient key-based access."
+  },
+  {
+    q: "Which algorithm is used to find the maximum subarray sum in an array?",
+    options: ["Binary search", "Quick sort", "Merge sort", "Kadane's algorithm"],
+    answer: 3,
+    explanation: "Kadane's algorithm is used to find the maximum subarray sum in an array with a time complexity of O(n)."
+  },
+  {
+    q: "Which data structure is commonly used to implement a graph?",
+    options: ["Array", "Linked list", "Hash table", "Adjacency list"],
+    answer: 3,
+    explanation: "Adjacency lists are commonly used to represent graphs efficiently by storing the vertices and their adjacent vertices."
+  },
+  {
+    q: "Which algorithm is used to find the minimum spanning tree in a graph?",
+    options: ["Depth-first search", "Breadth-first search", "Dijkstra's algorithm", "Prim's algorithm"],
+    answer: 3,
+    explanation: "Prim's algorithm is used to find the minimum spanning tree in a weighted graph, connecting all vertices with the minimum total weight."
+  },
+  {
+    q: "Which data structure is best suited for implementing a priority queue?",
+    options: ["Array", "Linked list", "Heap", "Queue"],
+    answer: 2,
+    explanation: "Heaps provide efficient insertion and deletion of elements with the highest priority, making them suitable for implementing a priority queue."
+  },
+  {
+    q: "Which algorithm is commonly used for pattern matching in strings?",
+    options: ["Depth-first search", "Breadth-first search", "Dijkstra's algorithm", "Knuth-Morris-Pratt algorithm"],
+    answer: 3,
+    explanation: "The Knuth-Morris-Pratt algorithm is used for efficient pattern matching in strings by avoiding unnecessary comparisons based on previously matched characters."
+  },
+  {
+    q: "Which of the following is not a primary function of the network layer in the OSI model?",
+    options: ["Routing", "Addressing", "Flow control", "Fragmentation"],
+    answer: 2,
+    explanation: "The network layer is responsible for routing packets across different networks and providing addressing and fragmentation services. Flow control is typically handled by the transport layer."
+  },
+  {
+    q: "What is the purpose of a MAC address in computer networking?",
+    options: ["To identify a device within a local area network (LAN)", "To identify a device within a wide area network (WAN)", "To establish a secure connection between two devices", "To determine the IP address of a device"],
+    answer: 0,
+    explanation: "A MAC (Media Access Control) address is a unique identifier assigned to a network interface card (NIC) and is used to identify a device within a local network."
+  },
+
+
+  {
+    q: "What is the purpose of a firewall in computer networks?",
+    options: [
+      "To encrypt network traffic for secure communication",
+      "To manage network resources and allocate bandwidth",
+      "To filter and control network traffic based on predefined rules",
+      "To connect two separate networks and enable communication between them"
+    ],
+    answer: 2,
+    explanation: "A firewall is a network security device that monitors and filters incoming and outgoing network traffic based on a set of rules to protect the network from unauthorized access and potential threats."
+  },
+  {
+    q: "Which of the following network topologies provides the highest fault tolerance?",
+    options: ["Bus topology", "Ring topology", "Star topology", "Mesh topology"],
+    answer: 3,
+    explanation: "In a mesh topology, each device is connected to every other device, providing multiple redundant paths. This redundancy enhances fault tolerance and ensures high availability in case of link failures."
+  },
+  {
+    q: "Which network addressing scheme is used in IPv6?",
+    options: ["Classful addressing", "Classless addressing", "Subnetting", "CIDR (Classless Inter-Domain Routing)"],
+    answer: 1,
+    explanation: "IPv6 uses classless addressing, where the length of the network prefix is not fixed as in classful addressing. It allows for more efficient allocation of IP addresses and supports hierarchical addressing."
+  },
+  {
+    q: "Which protocol is responsible for translating domain names into IP addresses?",
+    options: ["DHCP (Dynamic Host Configuration Protocol)", "DNS (Domain Name System)", "ARP (Address Resolution Protocol)", "ICMP (Internet Control Message Protocol)"],
+    answer: 1,
+    explanation: "DNS is responsible for translating domain names, such as www.example.com, into corresponding IP addresses."
+  },
+  {
+    q: "What is the purpose of NAT (Network Address Translation) in computer networks?",
+    options: [
+      "To secure network communications through encryption",
+      "To provide redundancy and fault tolerance",
+      "To translate private IP addresses to public IP addresses",
+      "To manage network resources and allocate bandwidth"
+    ],
+    answer: 2,
+    explanation: "NAT allows multiple devices within a private network to share a single public IP address by translating the private IP addresses to the public IP address when communicating with external networks."
+  },
+  {
+    q: "Which of the following is an example of a connectionless protocol?",
+    options: ["TCP (Transmission Control Protocol)", "UDP (User Datagram Protocol)", "HTTP (Hypertext Transfer Protocol)", "FTP (File Transfer Protocol)"],
+    answer: 1,
+    explanation: "UDP is a connectionless protocol that does not establish a dedicated connection before sending data. It provides fast and lightweight communication but does not guarantee reliable delivery."
+  },
+  {
+    q: "Which network device operates at the Data Link layer of the OSI model?",
+    options: ["Hub", "Switch", "Router", "Bridge"],
+    answer: 1,
+    explanation: "A switch operates at the Data Link layer (Layer 2) of the OSI model and is responsible for forwarding data packets between devices within a local network based on their MAC addresses."
+  },
+  {
+    q: "Which protocol is used for secure communication over the internet?",
+    options: ["HTTP", "FTP", "HTTPS", "SMTP"],
+    answer: 2,
+    explanation: "HTTPS (Hypertext Transfer Protocol Secure) is a protocol that uses encryption to ensure secure communication over the internet. It is commonly used for secure transactions, such as online banking and e-commerce."
+  },
+  {
+    q: "What is the function of a router in a computer network?",
+    options: [
+      "To connect multiple networks together",
+      "To amplify the strength of network signals",
+      "To provide firewall protection",
+      "To manage network resources and allocate bandwidth"
+    ],
+    answer: 0,
+    explanation: "A router is a networking device that forwards data packets between different networks. It connects multiple networks and determines the best path for data transmission."
+  },
+  {
+    q: "Which of the following is a network device that operates at the Physical layer of the OSI model?",
+    options: ["Switch", "Hub", "Router", "Bridge"],
+    answer: 1,
+    explanation: "A hub is a network device that operates at the Physical layer (Layer 1) of the OSI model. It simply broadcasts incoming data to all connected devices without any intelligence or filtering."
+  },
+  {
+    q: "Which network component is responsible for converting digital data into analog signals for transmission over telephone lines?",
+    options: ["Modem", "Router", "Switch", "Firewall"],
+    answer: 0,
+    explanation: "A modem (Modulator-Demodulator) is used to modulate digital data into analog signals for transmission over analog telephone lines. It also demodulates the analog signals back into digital data at the receiving end."
+  },
+  {
+    q: "Which protocol is used for sending and receiving email messages?",
+    options: ["SMTP", "HTTP", "FTP", "DNS"],
+    answer: 0,
+    explanation: "SMTP (Simple Mail Transfer Protocol) is the standard protocol used for sending and receiving email messages between mail servers."
+  },
+  {
+    q: "What is the purpose of DNS (Domain Name System) in computer networks?",
+    options: [
+      "To encrypt network traffic for secure communication",
+      "To manage network resources and allocate bandwidth",
+      "To convert domain names into IP addresses",
+      "To provide firewall protection"
+    ],
+    answer: 2,
+    explanation: "DNS is responsible for translating domain names, such as www.example.com, into their corresponding IP addresses. It acts as a directory for mapping human-readable domain names to machine-readable IP addresses."
+  },
+  {
+    q: "Which of the following is a network protocol used for file transfer between computers?",
+    options: ["HTTP", "FTP", "SMTP", "TCP"],
+    answer: 1,
+    explanation: "FTP (File Transfer Protocol) is a network protocol used for transferring files between computers over a network. It provides functionalities for uploading, downloading, and managing files on remote servers."
+  },
+  {
+    q: "Which network component is responsible for connecting multiple devices within a local area network (LAN)?",
+    options: ["Hub", "Router", "Switch", "Modem"],
+    answer: 2,
+    explanation: "A switch is a network component used to connect multiple devices within a local area network (LAN). It forwards data packets to the intended device based on their MAC addresses."
+  },
+  {
+    q: "What is the primary function of a firewall in a computer network?",
+    options: [
+      "To manage network resources and allocate bandwidth",
+      "To encrypt network traffic for secure communication",
+      "To filter and monitor network traffic for security purposes",
+      "To convert domain names into IP addresses"
+    ],
+    answer: 2,
+    explanation: "A firewall is a security device that monitors and filters network traffic based on predetermined rules. It acts as a barrier between the internal network and external networks, providing protection against unauthorized access and malicious activities."
+  },
+  {
+    q: "Which protocol is responsible for assigning IP addresses to devices on a network automatically?",
+    options: ["HTTP", "DNS", "DHCP", "FTP"],
+    answer: 2,
+    explanation: "DHCP is a network protocol that dynamically assigns IP addresses to devices on a network. It simplifies the process of network configuration by automatically providing IP addresses, subnet masks, and other network parameters to connected devices."
+  },
+  {
+    q: "Which layer of the OSI reference model is responsible for establishing, managing, and terminating connections between devices?",
+    options: ["Physical layer", "Data Link layer", "Transport layer", "Session layer"],
+    answer: 2,
+    explanation: "The transport layer is responsible for establishing, managing, and terminating connections between devices. It ensures reliable data delivery and provides mechanisms for flow control and error recovery."
+  },
+  {
+    q: "Which protocol is used for reliable data delivery at the transport layer in the TCP/IP protocol suite?",
+    options: ["UDP", "IP", "FTP", "TCP"],
+    answer: 3,
+    explanation: "TCP is a reliable transport protocol that ensures the reliable delivery of data between devices in the TCP/IP protocol suite. It provides features such as error detection, flow control, and congestion control."
+  },
+  {
+    q: "Which layer of the OSI reference model is responsible for addressing and routing data packets across different networks?",
+    options: ["Network layer", "Data Link layer", "Transport layer", "Physical layer"],
+    answer: 0,
+    explanation: "The network layer is responsible for addressing and routing data packets across different networks. It determines the optimal path for data transmission and performs logical addressing using IP addresses."
+  },
+  {
+    q: "Which layer of the OSI reference model is responsible for reliable data delivery within the same network segment?",
+    options: ["Network layer", "Transport layer", "Data Link layer", "Application layer"],
+    answer: 2,
+    explanation: "The Data Link layer is responsible for reliable data delivery within the same network segment. It handles the framing of data packets, error detection, and correction at the link level."
+  },
+  {
+    q: "Which protocol is used for sending and receiving email messages over the internet?",
+    options: ["SMTP", "FTP", "HTTP", "DNS"],
+    answer: 0,
+    explanation: "SMTP is the standard protocol used for sending and receiving email messages over the internet. It is responsible for the transfer of email messages between mail servers."
+  },
+  {
+    q: "Which layer of the OSI reference model is responsible for converting data into a format suitable for transmission over a network?",
+    options: ["Presentation layer", "Session layer", "Physical layer", "Application layer"],
+    answer: 0,
+    explanation: "The presentation layer is responsible for converting data into a format suitable for transmission over a network. It handles data compression, encryption, and formatting."
+  },
+  {
+    q: "Which protocol is used for translating domain names into IP addresses?",
+    options: ["DNS", "FTP", "HTTP", "SMTP"],
+    answer: 0,
+    explanation: "DNS is used for translating domain names into their corresponding IP addresses. It acts as a distributed database that maps domain names to IP addresses."
   }
 
 
 
+  
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+  
   
   ],
 
@@ -5619,4 +5962,5 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
