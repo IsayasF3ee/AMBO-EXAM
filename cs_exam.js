@@ -432,489 +432,126 @@ const exams = {
 "OBU":[
 
   {
-    "Question": "Which of the following is not an example of finite state machine system?",
-    "Options": {
-      "A": "Control Mechanism of an elevator",
-      "B": "Combinational Locks",
-      "C": "Traffic Lights",
-      "D": "Digital Watches"
-    },
-    "Answer": "D",
-    "Explanation": "Digital watches involve real-time counting rather than simple finite state transitions."
+    "q": "Which of the following is not an example of finite state machine system?",
+    "options": ["Control Mechanism of an elevator", "Combinational Locks", "Traffic Lights", "Digital Watches"],
+    "correct": 1,
+    "explanation": "Combinational locks do not maintain state; they only compute output from current input."
   },
   {
-    "Question": "The activities involved in retrieving data from the database is _____?",
-    "Options": {
-      "A": "Query Optimization",
-      "B": "Materialization",
-      "C": "Query Processing",
-      "D": "Pipelining"
-    },
-    "Answer": "C",
-    "Explanation": "Query processing includes retrieving data from the database."
+    "q": "The activities involved in retrieving data from the database is _____?",
+    "options": ["Query Optimization", "Materialization", "Query Processing", "Pipelining"],
+    "correct": 2,
+    "explanation": "Query processing includes retrieving data and executing queries against the database."
   },
   {
-    "Question": "Suppose x = 7, y = 8, z = 6, k = x + z*y/z % x − z. What is the value of k?",
-    "Options": {
-      "A": "9",
-      "B": "8",
-      "C": "2",
-      "D": "7"
-    },
-    "Answer": "B",
-    "Explanation": "k = 7 + (6×8/6)%7 − 6 = 8."
+    "q": "Suppose x=7, y=8, z=6, k=x+z*y/z%x-z then what will be the value of k after expression is evaluated?",
+    "options": ["9", "8", "2", "7"],
+    "correct": 0,
+    "explanation": "Evaluating step by step: k = 7 + 6*8/6%7 - 6 = 9."
   },
   {
-    "Question": "Which objects are in charge of realizing use cases?",
-    "Options": {
-      "A": "Control objects",
-      "B": "Boundary objects",
-      "C": "A & B",
-      "D": "Entity objects"
-    },
-    "Answer": "A",
-    "Explanation": "Control objects coordinate the execution of use cases."
+    "q": "Which Objects are in charge of realizing use cases?",
+    "options": ["Control objects", "Boundary object", "A & B", "Entity objects"],
+    "correct": 2,
+    "explanation": "Both control and boundary objects can participate in realizing use cases in UML."
   },
   {
-    "Question": "If every non-key attribute is functionally dependent on the primary key, the relation is in which normal form?",
-    "Options": {
-      "A": "Third Normal Form (3NF)",
-      "B": "Second Normal Form (2NF)",
-      "C": "First Normal Form (1NF)",
-      "D": "Fourth Normal Form (4NF)"
-    },
-    "Answer": "A",
-    "Explanation": "This satisfies Third Normal Form."
+    "q": "If every non-key attribute is functionally dependent on primary key, then the relation will be in which normal form?",
+    "options": ["Third Normal Form(3NF)", "Second Normal Form (2NF)", "First Normal Form (1NF)", "Fourth Normal Form (4NF)"],
+    "correct": 0,
+    "explanation": "3NF requires every non-key attribute to be fully functionally dependent on the primary key."
   },
   {
-    "Question": "Purchasing insurance cover is an example of which risk handling strategy?",
-    "Options": {
-      "A": "Mitigation",
-      "B": "Avoidance",
-      "C": "Acceptance",
-      "D": "Transfer"
-    },
-    "Answer": "D",
-    "Explanation": "Insurance transfers risk to another party."
+    "q": "Purchasing insurance cover can be considered to be an example of which one of the following risk handling strategies?",
+    "options": ["Mitigation", "Avoidance", "Acceptance", "Transfer"],
+    "correct": 3,
+    "explanation": "Insurance transfers financial risk from the insured to the insurer."
   },
   {
-    "Question": "The permanent recording of committed transactions indicates which property?",
-    "Options": {
-      "A": "Consistency",
-      "B": "Atomicity",
-      "C": "Isolation",
-      "D": "Durability"
-    },
-    "Answer": "D",
-    "Explanation": "Durability ensures data is not lost after failure."
+    "q": "The effect of a successfully completed (committed) transaction are permanently recorded in the database and must not be lost because of subsequent failure indicates?",
+    "options": ["Consistency", "Atomicity", "Isolation", "Durability"],
+    "correct": 3,
+    "explanation": "Durability ensures that committed transactions are permanently recorded even after failures."
   },
   {
-    "Question": "Which of the following data structures is linear?",
-    "Options": {
-      "A": "Graph",
-      "B": "Tree",
-      "C": "Array",
-      "D": "Hierarchy"
-    },
-    "Answer": "C",
-    "Explanation": "Array elements are stored sequentially."
+    "q": "Which of the following data structure is linear type?",
+    "options": ["Graphs", "Tree", "Array", "Hierarchy"],
+    "correct": 2,
+    "explanation": "Arrays are linear data structures as their elements are stored sequentially."
   },
   {
-    "Question": "The size of virtual memory is based on?",
-    "Options": {
-      "A": "Address bus",
-      "B": "CPU",
-      "C": "RAM",
-      "D": "Data bus"
-    },
-    "Answer": "A",
-    "Explanation": "Virtual memory size depends on address bus width."
+    "q": "The size of virtual memory is based on which of the following?",
+    "options": ["Address bus", "CPU", "RAM", "Data bus"],
+    "correct": 0,
+    "explanation": "Virtual memory size is determined by the width of the address bus."
   },
   {
-    "Question": "Which DBMS language is used to store, retrieve, and manipulate data?",
-    "Options": {
-      "A": "DCL",
-      "B": "DDL",
-      "C": "DTL",
-      "D": "DML"
-    },
-    "Answer": "D",
-    "Explanation": "DML handles insert, update, delete, and select."
+    "q": "A list which displays the relationship of adjacency between elements is said to be?",
+    "options": ["Nonlinear", "Trees", "Linked list", "Linear"],
+    "correct": 2,
+    "explanation": "A linked list maintains adjacency of elements using pointers; it is a linear structure."
   },
+  {
+    "q": "A core command or language of DBMS used by end-users and programmers to store, retrieve, and access the data in the database is ___?",
+    "options": ["Data Control Language (DCL)", "Data Definition Language (DDL)", "Data Transaction Language (DTL)", "Data Manipulation Language (DML)"],
+    "correct": 3,
+    "explanation": "DML includes commands like SELECT, INSERT, UPDATE, DELETE for manipulating data."
+  },
+  {
+    "q": "The characteristics of knowledge based system that corresponds to the ability of manipulating the representational structures to produce new knowledge corresponding to existing structure is?",
+    "options": ["Acquisitional efficiency", "Inferential Efficiency", "Representational Accuracy", "Inferential Adequacy"],
+    "correct": 3,
+    "explanation": "Inferential adequacy refers to the system’s ability to derive new knowledge from existing knowledge structures."
+  },
+  {
+    "q": "The feature by which one object can interact with another object in object oriented database is?",
+    "options": ["Message Passing", "Data Binding", "Data Transfer", "Message reading"],
+    "correct": 0,
+    "explanation": "Message passing allows objects to communicate and invoke behaviors of other objects."
+  },
+  {
+    "q": "Assume we use the Caesar cipher encryption mechanism to encrypt each alphabet letter, by encryption key of 17, thus, identifies M cipher text?",
+    "options": ["C", "F", "W", "D"],
+    "correct": 2,
+    "explanation": "Applying Caesar cipher shift of 17 to 'M' results in 'W'."
+  },
+  {
+    "q": "The time complexity of quick sort is_______?",
+    "options": ["O(n)", "O(n^2)", "O(log n)", "O(n log n)"],
+    "correct": 3,
+    "explanation": "The average case time complexity of Quick Sort is O(n log n)."
+  },
+  {
+    "q": "Which one is False about PHP?",
+    "options": ["PHP is an object-oriented language", "None", "PHP is a server-side scripting language and manage the dynamic content of the website", "PHP can’t be directly embedded into HTML"],
+    "correct": 3,
+    "explanation": "PHP can be embedded directly into HTML using <?php ... ?> tags."
+  },
+  {
+    "q": "In a priority queue, insertion and deletion takes place at_________?",
+    "options": ["Only at front end", "Any position", "Front, rear end", "Only at rear end"],
+    "correct": 1,
+    "explanation": "In a priority queue, elements can be inserted/deleted based on priority, not just front/rear."
+  },
+  {
+    "q": "______ attempts not only to find a solution, but to find the ideal solution to any given problem.",
+    "options": ["Dynamic programming", "Branch and bound algorithms", "Randomized algorithms", "Greedy algorithms"],
+    "correct": 1,
+    "explanation": "Branch and bound algorithms explore the solution space and prune non-optimal solutions to find the ideal solution."
+  },
+  {
+    "q": "_____ describes inheritance relationship in the world of objects?",
+    "options": ["Dependency", "Realization", "Association", "Generalization"],
+    "correct": 3,
+    "explanation": "Generalization represents an 'is-a' inheritance relationship between objects."
+  },
+  {
+    "q": "How is an input–output instruction different from a register-reference instruction?",
+    "options": ["A and C", "An input–output instruction does not need a reference to memory, whereas a register-reference instruction needs a reference to memory.", "An input–output instruction is recognized by the operation code 111 with a 1 in the leftmost bit of the instruction, whereas a register-reference instruction recognized by the operation code 111 with a 0 in the leftmost.", "An input–output instruction does not need operand from memory, whereas a register-reference instruction needs operand from memory"],
+    "correct": 1,
+    "explanation": "I/O instructions operate on devices, not memory, whereas register-reference instructions may reference memory."
+  }
 
-  {
-    "Question": "Which algorithm attempts to find the optimal solution?",
-    "Options": {
-      "A": "Dynamic Programming",
-      "B": "Branch and Bound",
-      "C": "Greedy",
-      "D": "Randomized"
-    },
-    "Answer": "B",
-    "Explanation": "Branch and Bound searches for the best solution."
-  },
-  {
-    "Question": "Which UML relationship represents inheritance?",
-    "Options": {
-      "A": "Dependency",
-      "B": "Realization",
-      "C": "Association",
-      "D": "Generalization"
-    },
-    "Answer": "D",
-    "Explanation": "Generalization represents inheritance."
-  },
-  {
-    "Question": "Which HTML tag target opens the document in the same window?",
-    "Options": {
-      "A": "_blank",
-      "B": "_self",
-      "C": "_parent",
-      "D": "_top"
-    },
-    "Answer": "B",
-    "Explanation": "_self opens in the same tab/window."
-  },
-  {
-    "Question": "Which error can a compiler check?",
-    "Options": {
-      "A": "Logical error",
-      "B": "Both logical and syntax",
-      "C": "None",
-      "D": "Syntax error"
-    },
-    "Answer": "D",
-    "Explanation": "Compiler detects syntax errors."
-  },
-  {
-    "Question": "Which malware spreads by user executing downloaded files?",
-    "Options": {
-      "A": "Trojan",
-      "B": "Worm",
-      "C": "Spyware",
-      "D": "Virus"
-    },
-    "Answer": "A",
-    "Explanation": "Trojans rely on user execution."
-  },
-  {
-    "Question": "Which OS memory is accessed fastest?",
-    "Options": {
-      "A": "Cache",
-      "B": "Main Memory",
-      "C": "Virtual Memory",
-      "D": "Secondary Memory"
-    },
-    "Answer": "A",
-    "Explanation": "Cache memory is fastest."
-  },
-  {
-    "Question": "Which keyword is used to achieve interface inheritance in Java?",
-    "Options": {
-      "A": "Extends",
-      "B": "Implements",
-      "C": "Inherits",
-      "D": "Interface"
-    },
-    "Answer": "B",
-    "Explanation": "Interfaces are implemented using implements."
-  },
-  {
-    "Question": "Which OSI layer handles routing?",
-    "Options": {
-      "A": "Transport",
-      "B": "Network",
-      "C": "Data Link",
-      "D": "Physical"
-    },
-    "Answer": "B",
-    "Explanation": "Network layer handles routing and logical addressing."
-  },
-  {
-    "Question": "Which scheduling algorithm gives each process fixed time slice?",
-    "Options": {
-      "A": "FCFS",
-      "B": "SJF",
-      "C": "Priority",
-      "D": "Round Robin"
-    },
-    "Answer": "D",
-    "Explanation": "Round Robin uses time quantum."
-  },
-  {
-    "Question": "Which algorithm works on sorted data?",
-    "Options": {
-      "A": "Linear Search",
-      "B": "Binary Search",
-      "C": "Bubble Sort",
-      "D": "Selection Sort"
-    },
-    "Answer": "B",
-    "Explanation": "Binary search requires sorted data."
-  },
-
-  {
-    "Question": "Which security objective is violated by unauthorized data modification?",
-    "Options": {
-      "A": "Integrity",
-      "B": "Confidentiality",
-      "C": "Availability",
-      "D": "Authentication"
-    },
-    "Answer": "A",
-    "Explanation": "Integrity ensures data is not altered improperly."
-  },
-
-  {
-    "Question": "Which paradigm uses step-by-step manipulation of data?",
-    "Options": {
-      "A": "Functional",
-      "B": "Object-Oriented",
-      "C": "Procedural",
-      "D": "Declarative"
-    },
-    "Answer": "C",
-    "Explanation": "Procedural programming follows stepwise execution."
-  },
-
-  {
-    "Question": "Which traversal visits root first?",
-    "Options": {
-      "A": "Inorder",
-      "B": "Preorder",
-      "C": "Postorder",
-      "D": "Level order"
-    },
-    "Answer": "B",
-    "Explanation": "Preorder visits root first."
-  },
-
-
-  {
-    "Question": "Which scheduling algorithm gives minimum average waiting time?",
-    "Options": {
-      "A": "First Come First Serve",
-      "B": "Round Robin",
-      "C": "Shortest Job First",
-      "D": "Priority Scheduling"
-    },
-    "Answer": "C",
-    "Explanation": "Shortest Job First minimizes the average waiting time by executing shorter processes first."
-  },
-  {
-    "Question": "Which OS component decides which process will run next?",
-    "Options": {
-      "A": "Loader",
-      "B": "Dispatcher",
-      "C": "Scheduler",
-      "D": "Interpreter"
-    },
-    "Answer": "C",
-    "Explanation": "The scheduler selects the next process to be executed by the CPU."
-  },
-  {
-    "Question": "Which layer of OSI model is responsible for error detection and correction?",
-    "Options": {
-      "A": "Physical",
-      "B": "Data Link",
-      "C": "Network",
-      "D": "Transport"
-    },
-    "Answer": "B",
-    "Explanation": "The Data Link layer handles framing, error detection, and correction."
-  },
-  {
-    "Question": "Which protocol is used to send emails?",
-    "Options": {
-      "A": "HTTP",
-      "B": "FTP",
-      "C": "SMTP",
-      "D": "SNMP"
-    },
-    "Answer": "C",
-    "Explanation": "SMTP (Simple Mail Transfer Protocol) is used for sending emails."
-  },
-  {
-    "Question": "Which normal form removes partial dependency?",
-    "Options": {
-      "A": "1NF",
-      "B": "2NF",
-      "C": "3NF",
-      "D": "BCNF"
-    },
-    "Answer": "B",
-    "Explanation": "Second Normal Form removes partial dependency."
-  },
-  {
-    "Question": "Which key uniquely identifies a record in a table?",
-    "Options": {
-      "A": "Foreign Key",
-      "B": "Candidate Key",
-      "C": "Primary Key",
-      "D": "Composite Key"
-    },
-    "Answer": "C",
-    "Explanation": "A primary key uniquely identifies each record in a table."
-  },
-  {
-    "Question": "Which data structure uses FIFO principle?",
-    "Options": {
-      "A": "Stack",
-      "B": "Queue",
-      "C": "Tree",
-      "D": "Graph"
-    },
-    "Answer": "B",
-    "Explanation": "Queue follows First In First Out (FIFO) principle."
-  },
-  {
-    "Question": "Which searching algorithm works on sorted data?",
-    "Options": {
-      "A": "Linear Search",
-      "B": "Binary Search",
-      "C": "Hash Search",
-      "D": "DFS"
-    },
-    "Answer": "B",
-    "Explanation": "Binary search requires sorted data for correct operation."
-  },
-  {
-    "Question": "Which sorting algorithm has the best average time complexity?",
-    "Options": {
-      "A": "Bubble Sort",
-      "B": "Insertion Sort",
-      "C": "Merge Sort",
-      "D": "Selection Sort"
-    },
-    "Answer": "C",
-    "Explanation": "Merge sort has O(n log n) average time complexity."
-  },
-  {
-    "Question": "Which logic gate produces output 1 when inputs are different?",
-    "Options": {
-      "A": "AND",
-      "B": "OR",
-      "C": "XOR",
-      "D": "NOR"
-    },
-    "Answer": "C",
-    "Explanation": "XOR outputs 1 when inputs are different."
-  },
-
-
-
-
-
-  {
-    "Question": "Which device is used to convert digital signals into analog signals?",
-    "Options": [
-      "Router",
-      "Modem",
-      "Repeater",
-      "Switch"
-    ],
-    "Answer": "Modem",
-    "Explanation": "A modem converts digital signals to analog and vice versa for transmission."
-  },
-  {
-    "Question": "Which type of memory is fastest?",
-    "Options": [
-      "RAM",
-      "Cache",
-      "Hard Disk",
-      "ROM"
-    ],
-    "Answer": "Cache",
-    "Explanation": "Cache memory is the fastest memory and is located close to the CPU."
-  },
-  {
-    "Question": "Which algorithm is used to find the shortest path in a graph?",
-    "Options": [
-      "Prim’s Algorithm",
-      "Kruskal’s Algorithm",
-      "Dijkstra’s Algorithm",
-      "DFS"
-    ],
-    "Answer": "Dijkstra’s Algorithm",
-    "Explanation": "Dijkstra’s algorithm finds the shortest path between nodes in a graph."
-  },
-  {
-    "Question": "Which OS concept allows multiple programs to reside in memory at the same time?",
-    "Options": [
-      "Multitasking",
-      "Multiprogramming",
-      "Multithreading",
-      "Time Sharing"
-    ],
-    "Answer": "Multiprogramming",
-    "Explanation": "Multiprogramming allows multiple programs to be loaded in memory simultaneously."
-  },
-  {
-    "Question": "Which database constraint ensures no duplicate values?",
-    "Options": [
-      "NOT NULL",
-      "CHECK",
-      "UNIQUE",
-      "DEFAULT"
-    ],
-    "Answer": "UNIQUE",
-    "Explanation": "UNIQUE constraint prevents duplicate values in a column."
-  },
-  {
-    "Question": "Which layer of OSI model is responsible for routing?",
-    "Options": [
-      "Transport",
-      "Network",
-      "Data Link",
-      "Session"
-    ],
-    "Answer": "Network",
-    "Explanation": "The Network layer handles routing and logical addressing."
-  },
-  {
-    "Question": "Which HTML tag is used to create a hyperlink?",
-    "Options": [
-      "<link>",
-      "<a>",
-      "<href>",
-      "<url>"
-    ],
-    "Answer": "<a>",
-    "Explanation": "The <a> tag is used to create hyperlinks in HTML."
-  },
-  {
-    "Question": "Which software metric measures program complexity?",
-    "Options": [
-      "LOC",
-      "Cyclomatic Complexity",
-      "Function Points",
-      "Halstead Volume"
-    ],
-    "Answer": "Cyclomatic Complexity",
-    "Explanation": "Cyclomatic complexity measures the logical complexity of a program."
-  },
-  {
-    "Question": "Which attack involves intercepting communication between two parties?",
-    "Options": [
-      "Phishing",
-      "Man-in-the-Middle",
-      "Denial of Service",
-      "Trojan Horse"
-    ],
-    "Answer": "Man-in-the-Middle",
-    "Explanation": "MITM attack intercepts and possibly alters communication between two parties."
-  },
-  {
-    "Question": "Which compiler phase removes unnecessary code?",
-    "Options": [
-      "Lexical Analysis",
-      "Syntax Analysis",
-      "Code Optimization",
-      "Code Generation"
-    ],
-    "Answer": "Code Optimization",
-    "Explanation": "Code optimization removes redundant and unnecessary code to improve efficiency."
-  },
 
 
     
@@ -13296,6 +12933,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
