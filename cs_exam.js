@@ -5766,7 +5766,1220 @@ explanation: "NoSQL databases scale better horizontally and handle distributed e
 
 "ADAMA":[
 
+  {
+    "id": 1,
+    "q": "When do we use spiral model?",
+    "options": [
+      "Where business modeling is clearly understood",
+      "When it is too risky to develop the overall system as one block",
+      "When requirements are understood early but may change",
+      "When requirements are unstable and constantly changing"
+    ],
+    "answer": 1,
+    "explanation": "Spiral model is best when project risks are high and need continuous risk analysis."
+  },
+  {
+    "id": 2,
+    "q": "A module is said to have logical cohesion if",
+    "options": [
+      "All functions execute at the same time",
+      "All elements depend on interface complexity",
+      "It performs tasks loosely related",
+      "All elements perform similar operations"
+    ],
+    "answer": 3,
+    "explanation": "Logical cohesion groups similar kinds of operations in one module."
+  },
+  {
+    "id": 3,
+    "q": "Which software engineering principle reduces programming complexity?",
+    "options": [
+      "Structured and unstructured",
+      "Object oriented design",
+      "Abstraction and decomposition",
+      "Functional and non-functional"
+    ],
+    "answer": 2,
+    "explanation": "Abstraction and decomposition break complex systems into manageable parts."
+  },
+  {
+    "id": 4,
+    "q": "Which life cycle model is most general and others are specializations?",
+    "options": [
+      "Spiral",
+      "Prototyping",
+      "Classical waterfall",
+      "Iterative waterfall"
+    ],
+    "answer": 0,
+    "explanation": "Spiral model combines features of waterfall, incremental and prototyping models."
+  },
+  {
+    "id": 5,
+    "q": "Which system requirements include human computer interface issues?",
+    "options": [
+      "Functional requirements",
+      "Non-functional requirements",
+      "Goal implementation",
+      "System testing"
+    ],
+    "answer": 1,
+    "explanation": "HCI, usability, and performance fall under non-functional requirements."
+  },
+  {
+    "id": 6,
+    "q": "In classical waterfall model, which phase precedes design?",
+    "options": [
+      "Requirements analysis and specification",
+      "Maintenance",
+      "Feasibility study",
+      "Coding and unit testing"
+    ],
+    "answer": 0,
+    "explanation": "Design starts only after requirements are fully analyzed."
+  },
+  {
+    "id": 7,
+    "q": "Which phase refers to modifying software due to changing requirements?",
+    "options": [
+      "Validation",
+      "Development",
+      "Specification",
+      "Evolution"
+    ],
+    "answer": 3,
+    "explanation": "Evolution phase handles changes after deployment."
+  },
+  {
+    "id": 8,
+    "q": "Which testing phase is done by clients to verify requirements?",
+    "options": [
+      "Unit testing",
+      "Integration testing",
+      "System testing",
+      "Acceptance testing"
+    ],
+    "answer": 3,
+    "explanation": "Acceptance testing confirms the system meets user requirements."
+  },
+  {
+    "id": 9,
+    "q": "Which problem-solving step lists actions and states to reach a goal?",
+    "options": [
+      "Search",
+      "Problem formulation",
+      "Execute",
+      "Goal formulation"
+    ],
+    "answer": 1,
+    "explanation": "Problem formulation defines states, actions, and goals."
+  },
+  {
+    "id": 10,
+    "q": "Which testing ensures changes didn’t introduce new errors?",
+    "options": [
+      "Regression testing",
+      "Dynamic testing",
+      "Beta testing",
+      "Static testing"
+    ],
+    "answer": 0,
+    "explanation": "Regression testing checks that new changes didn’t break existing functionality."
+  },
 
+
+
+
+
+
+  {
+    "id": 10,
+    "question": "Assume you make modification to your software. Then you want to make sure that the modification has not introduced new errors. Which software testing level is required?",
+    "options": ["Regression testing", "Dynamic testing", "Beta testing", "Static testing"],
+    "correctAnswer": 0,
+    "explanation": "Regression testing is used to verify that new code changes do not adversely affect existing functionality."
+  },
+  {
+    "id": 11,
+    "question": "Which one of the following does not show non-functional requirement of software systems?",
+    "options": ["Displaying information", "Memory requirement", "Reliability", "Response time"],
+    "correctAnswer": 0,
+    "explanation": "Displaying information is a functional requirement, whereas memory, reliability, and response time are non-functional requirements."
+  },
+  {
+    "id": 12,
+    "question": "Which one of the following is false about project planning stage?",
+    "options": ["Project planning is a one-time task in software development life cycle", "Cost estimation is done during project planning", "Preparing time schedule is done during project planning", "Risk analysis is done during project planning"],
+    "correctAnswer": 0,
+    "explanation": "Project planning is iterative and updated throughout the project life cycle, not a one-time task."
+  },
+  {
+    "id": 13,
+    "question": "After deep analysis if your software requires major change to the architecture of the system, which strategy of software change should be applied?",
+    "options": ["Architectural transformation", "Preventative maintenance", "Software reengineering", "Software maintenance"],
+    "correctAnswer": 0,
+    "explanation": "Architectural transformation involves major modifications to the software architecture."
+  },
+  {
+    "id": 14,
+    "question": "Identifying and describing the fundamental software system abstractions and their relationships. Establishing the overall system architecture in which phase these activities are done?",
+    "options": ["System design", "Requirement Analysis and definition", "System testing", "Implementation"],
+    "correctAnswer": 0,
+    "explanation": "System design focuses on defining abstractions, architecture, and overall structure of the system."
+  },
+  {
+    "id": 15,
+    "question": "Which one of software testing is most time consuming test phase?",
+    "options": ["Unit testing", "Acceptance testing", "System testing", "Integration testing"],
+    "correctAnswer": 2,
+    "explanation": "System testing is time-consuming because it tests the complete integrated system."
+  },
+  {
+    "id": 16,
+    "question": "Which of the following is the understanding of software product limitations, learning system related problems or changes to be done in existing systems beforehand, identifying and addressing the impact of project on organization and personnel etc.?",
+    "options": ["Software Design", "Feasibility Study", "Requirement Gathering", "System Analysis"],
+    "correctAnswer": 1,
+    "explanation": "Feasibility study examines limitations, impact, and challenges before development."
+  },
+  {
+    "id": 17,
+    "question": "Instead of delivering the system as a single delivery, the development and delivery is broken down into phases with each phase delivering part of the required functionality. What type of development mode is this?",
+    "options": ["Incremental", "Waterfall", "Spiral", "Evolutionary"],
+    "correctAnswer": 0,
+    "explanation": "Incremental development divides the system into smaller parts delivered over phases."
+  },
+  {
+    "id": 18,
+    "question": "We should not use Waterfall software development process mode in situations like",
+    "options": ["Plenty resources with required expertise are available freely", "There are no ambiguous requirements", "The project is short", "Software requirements change quickly"],
+    "correctAnswer": 3,
+    "explanation": "Waterfall is rigid; it does not handle rapidly changing requirements well."
+  },
+  {
+    "id": 19,
+    "question": "Which characteristic of requirements specify that the requirement should be phrased so that there is one and only one interpretation for it?",
+    "options": ["Unambiguous", "Correct", "Feasible", "Verifiable"],
+    "correctAnswer": 0,
+    "explanation": "Unambiguous requirements have a single, clear interpretation."
+  },
+  {
+    "id": 20,
+    "question": "Which instruction type is used to test the value of a data word or status of composition?",
+    "options": ["Data processing instruction", "Test instruction", "Data movement instruction", "Branch instruction"],
+    "correctAnswer": 1,
+    "explanation": "Test instructions are specifically used to check data values or conditions."
+  },
+  {
+    "id": 21,
+    "question": "If you develop software that can be easily made to work in different hardware and operating system environments, the quality of your software has ---?",
+    "options": ["Reusability", "Correctness", "Portability", "Usability"],
+    "correctAnswer": 2,
+    "explanation": "Portability refers to software’s ability to run on multiple platforms with minimal changes."
+  },
+  {
+    "id": 22,
+    "question": "Software Debugging is known as",
+    "options": ["Identifying the task to be computerized", "Creating program code", "Creating the algorithm", "Finding and correcting errors in the program code"],
+    "correctAnswer": 3,
+    "explanation": "Debugging involves detecting and fixing errors in code."
+  },
+  {
+    "id": 23,
+    "question": "Which of the following UML diagram helps model the physical aspect of an Object-Oriented software system?",
+    "options": ["Class diagram", "Component diagram", "Deployment diagram", "B & C"],
+    "correctAnswer": 2,
+    "explanation": "Deployment diagrams represent the physical deployment of artifacts on nodes."
+  },
+  {
+    "id": 24,
+    "question": "Which process model helps us manage changes in software?",
+    "options": ["Software development process", "Software configuration management", "Software managing process", "None of the above"],
+    "correctAnswer": 1,
+    "explanation": "Software configuration management is specifically aimed at controlling and managing software changes."
+  },
+  {
+    "id": 25,
+    "question": "Changing code without altering its underlying behavior is called",
+    "options": ["Refactoring", "Refinement", "Requirement engineering", "None of the above"],
+    "correctAnswer": 0,
+    "explanation": "Refactoring improves internal code structure while preserving external behavior."
+  },
+  {
+    "id": 26,
+    "question": "A measurement that defines the level of inter-dependability among modules of a program is",
+    "options": ["Cohesive", "Coupling", "Design", "Testing"],
+    "correctAnswer": 1,
+    "explanation": "Coupling measures the degree of interdependence between software modules."
+  },
+  {
+    "id": 27,
+    "question": "Which of the following are Advantages of modularization in software design?",
+    "options": ["Smaller components are difficult to maintain", "Components with high cohesion can be re-used again", "Program can be divided based on functional aspects", "Desired from security aspect"],
+    "correctAnswer": 1,
+    "explanation": "Modularization improves reusability and maintainability by creating smaller, cohesive components."
+  },
+  {
+    "id": 28,
+    "question": "Which of the following is not element of Requirement Engineering Process?",
+    "options": ["Software Requirement Design", "Feasibility Study", "Software Requirement Specification", "Requirement Gathering"],
+    "correctAnswer": 0,
+    "explanation": "Software Requirement Design is not a standard RE process element."
+  },
+  {
+    "id": 29,
+    "question": "Which type of test determines if the system meets the entire requirements (functional and nonfunctional)?",
+    "options": ["Integration test", "System test", "Acceptance test", "Unit Test"],
+    "correctAnswer": 1,
+    "explanation": "System testing validates the complete system against all requirements."
+  },
+  {
+    "id": 30,
+    "question": "How is generalization implemented in Object-Oriented software engineering?",
+    "options": ["Inheritance", "Polymorphism", "Encapsulation", "Abstract Classes"],
+    "correctAnswer": 0,
+    "explanation": "Generalization is implemented using inheritance to create hierarchical relationships."
+  },
+  {
+    "id": 31,
+    "question": "All of the following are required to develop an effective test except:",
+    "options": ["Detailed understanding of the system", "Application and solution domain knowledge", "Knowledge of the testing techniques", "Skill to specific programming language"],
+    "correctAnswer": 3,
+    "explanation": "Knowledge of a specific programming language is not mandatory for designing tests."
+  },
+  {
+    "id": 32,
+    "question": "Use case description commonly contain:",
+    "options": ["Trigger, associations, guarantee", "Precondition, generalizations, main scenario", "Precondition, main scenario, alternative scenarios", "None of the above"],
+    "correctAnswer": 2,
+    "explanation": "A use case description includes preconditions, main scenario, and alternative scenarios."
+  },
+  {
+    "id": 33,
+    "question": "Aggregation, composition, generalization. Which document is created by a system analyst after the requirements are collected from different stakeholders?",
+    "options": ["Requirement gathering", "Software Requirement specification", "Software Requirement testing", "Software Requirement validation"],
+    "correctAnswer": 1,
+    "explanation": "The SRS documents all requirements, relationships, and constraints of the system."
+  },
+  {
+    "id": 34,
+    "question": "Choose the incorrect statement in terms of Objects.",
+    "options": ["Objects are abstractions of real-world", "Objects can’t manage themselves", "Objects encapsulate state and representation information", "All of the mentioned"],
+    "correctAnswer": 1,
+    "explanation": "Objects can manage themselves via methods; the statement claiming they can't is incorrect."
+  },
+  {
+    "id": 35,
+    "question": "Which of the following is a mechanism that allows several objects in a class hierarchy to have different methods with the same name?",
+    "options": ["Aggregation", "Polymorphism", "Inheritance", "All of the mentioned"],
+    "correctAnswer": 1,
+    "explanation": "Polymorphism allows objects to have methods with the same name but different behaviors."
+  },
+  {
+    "id": 36,
+    "question": "________ is a process which translates system specification into a formal or semi formal model.",
+    "options": ["Design", "Implementation", "Analysis", "Elicitation"],
+    "correctAnswer": 0,
+    "explanation": "Design converts requirements into models or architecture for implementation."
+  },
+  {
+    "id": 37,
+    "question": "Which of the following is a disadvantage of Object-Oriented Design?",
+    "options": ["Easier maintenance", "Objects may be understood as stand-alone entities", "Objects are potentially reusable components", "Objects are difficult to maintain"],
+    "correctAnswer": 3,
+    "explanation": "OOP can be difficult to maintain due to complexity in relationships and interactions."
+  },
+  {
+    "id": 38,
+    "question": "Which of the following is correct about software product in the context of software engineering?",
+    "options": ["Software product refers any software created to meet the client’s requirements", "Software product includes design and test documentation", "Software product includes requirement specifications, and user manuals", "All of the above"],
+    "correctAnswer": 3,
+    "explanation": "A software product includes all documentation, specifications, and actual software components."
+  },
+  {
+    "id": 39,
+    "question": "One of the followings is type of requirements associated with quality features of a software.",
+    "options": ["Business requirements", "Functional requirements", "Non-functional requirements", "User requirements"],
+    "correctAnswer": 2,
+    "explanation": "Non-functional requirements specify quality attributes like performance, security, usability."
+  },
+  {
+    "id": 40,
+    "question": "A type of requirement that describes why the software project is needed and used to define the objective of the software is",
+    "options": ["Business requirements", "Functional requirements", "Non-functional requirements", "User requirements"],
+    "correctAnswer": 0,
+    "explanation": "Business requirements define the purpose and objectives of the software project."
+  },
+  {
+    "id": 41,
+    "question": "Which of the following is used to model the functionality of software?",
+    "options": ["Use case diagram", "Class diagram", "E-R diagram", "Deployment diagram"],
+    "correctAnswer": 0,
+    "explanation": "Use case diagrams model the system functionality from the user's perspective."
+  },
+  {
+    "id": 42,
+    "question": "Which of the following refers to the deployment platform?",
+    "options": ["Use case", "Tier", "Layer", "Component"],
+    "correctAnswer": 1,
+    "explanation": "A 'tier' refers to the deployment environment in multi-tier architecture."
+  },
+  {
+    "id": 43,
+    "question": "Which of the following process model is not suitable to accommodate changes?",
+    "options": ["Waterfall", "Scrum", "RAD", "Agile"],
+    "correctAnswer": 0,
+    "explanation": "Waterfall is rigid and does not accommodate frequent requirement changes."
+  },
+  {
+    "id": 44,
+    "question": "Which of the following aims to find errors?",
+    "options": ["Requirement Analysis", "Design", "Testing", "None of the above"],
+    "correctAnswer": 2,
+    "explanation": "Testing is the activity aimed at detecting defects in software."
+  },
+  {
+    "id": 45,
+    "question": "____ is a software development life cycle model that is chosen if the development team has less experience on similar projects.",
+    "options": ["Iterative Enhancement Model", "RAD", "Spiral", "Waterfall"],
+    "correctAnswer": 2,
+    "explanation": "Spiral model is suited for projects with high uncertainty and less experienced teams."
+  },
+  {
+    "id": 46,
+    "question": "Which one of the following is not a step of requirement engineering?",
+    "options": ["Elicitation", "Design", "Analysis", "Documentation"],
+    "correctAnswer": 1,
+    "explanation": "Design is a separate phase after requirement engineering, not part of elicitation, analysis, or documentation."
+  },
+  {
+    "id": 47,
+    "question": "____ is a software development activity that is not a part of software processes.",
+    "options": ["Validation", "Specification", "Development", "Dependence"],
+    "correctAnswer": 3,
+    "explanation": "Dependence is not recognized as a software development process activity."
+  },
+  {
+    "id": 48,
+    "question": "Attributes of good software is___",
+    "options": ["Development", "Maintainability & functionality", "Functionality", "Maintainability"],
+    "correctAnswer": 1,
+    "explanation": "Good software should be both functional and maintainable."
+  },
+  {
+    "id": 49,
+    "question": "Which one of the following is not a software process quality?",
+    "options": ["Visibility", "Timeliness", "Productivity", "Portability"],
+    "correctAnswer": 3,
+    "explanation": "Portability is a software product quality, not a process quality."
+  },
+  {
+    "id": 50,
+    "question": "In which step of SDLC actual programming of software code is done?",
+    "options": ["Development and Documentation", "Maintenance and Evaluation", "Design", "Analysis"],
+    "correctAnswer": 0,
+    "explanation": "The development phase is where actual coding of software takes place."
+  },
+
+
+
+
+
+
+  {
+    "q": "Which model can be selected if user is involved in all the phases of SDLC?",
+    "a": ["Prototyping Model","Waterfall Model","RAD Model","Both Prototyping Model & RAD Model"],
+    "correct": 3,
+    "explanation": "Both Prototyping and RAD models allow continuous user involvement through iterations and feedback, unlike Waterfall which is sequential."
+  },
+  {
+    "q": "Which software development model is suitable for large projects which involves continuous enhancements with very high emphasis on risk analysis?",
+    "a": ["Iterative Model","Agile Model","Prototyping Model","Spiral Model"],
+    "correct": 3,
+    "explanation": "The Spiral Model emphasizes risk analysis and iterative development, making it ideal for large projects with evolving requirements."
+  },
+  {
+    "q": "What is the purpose of software testing?",
+    "a": ["To find and fix errors in the code","To improve the user interface","To ensure that the software meets all technical requirements","To provide feedback on usability"],
+    "correct": 0,
+    "explanation": "Software testing primarily focuses on identifying and fixing errors to ensure reliability and correctness."
+  },
+  {
+    "q": "Which of the following is not defined in a good Software Requirement Specification (SRS) document?",
+    "a": ["Functional Requirement","Nonfunctional Requirement","Goals of implementation","Algorithm for software implementation"],
+    "correct": 3,
+    "explanation": "SRS specifies what the system should do, not how it should be implemented; algorithm details are excluded."
+  },
+  {
+    "q": "Which one of the following requirements is not a nonfunctional requirement?",
+    "a": ["Performance","Cultural and political","Security","Taking user input"],
+    "correct": 3,
+    "explanation": "Taking user input is a functional requirement; nonfunctional requirements concern quality attributes like performance and security."
+  },
+  {
+    "q": "Which phase of SDLC is responsible for gathering and analyzing user requirements?",
+    "a": ["Analysis","Design","Development","Testing"],
+    "correct": 0,
+    "explanation": "The Analysis phase focuses on understanding user needs and defining the system requirements."
+  },
+  {
+    "q": "Which approach is more related to effective management of software complexity?",
+    "a": ["Modularity","Reusability","Extensibility","Maintainability"],
+    "correct": 0,
+    "explanation": "Modularity divides the system into smaller components, making complex software easier to manage."
+  },
+  {
+    "q": "Which organizational structure has all team members responsible for all SDLC phases?",
+    "a": ["Functional","Project","Democratic","Chief programmer"],
+    "correct": 1,
+    "explanation": "Project teams have full responsibility for development from requirements to delivery."
+  },
+  {
+    "q": "Which CMM level requires mastering requirements management, QA, and project planning?",
+    "a": ["Repeatable level","Initial level","Defined level","Optimizing level"],
+    "correct": 0,
+    "explanation": "The Repeatable level focuses on managing key processes to ensure repeatable project success."
+  },
+  {
+    "q": "Which testing focuses on testing the functionality of objects or methods?",
+    "a": ["Integration testing","White box testing","Black box testing","Unit testing"],
+    "correct": 3,
+    "explanation": "Unit testing verifies individual objects or methods in isolation."
+  },
+  {
+    "q": "Which view represents user interaction with software without revealing internal workings?",
+    "a": ["Use case diagram","Activity diagram","Class diagram","Sequence diagram"],
+    "correct": 0,
+    "explanation": "Use case diagrams model user interactions with the system without showing internal design."
+  },
+  {
+    "q": "Which SDLC model is suitable when user requirements are incomplete and technical issues are unclear?",
+    "a": ["Incremental model","Prototype model","Spiral model","Waterfall model"],
+    "correct": 2,
+    "explanation": "The Spiral model iteratively refines requirements while managing risks in uncertain projects."
+  },
+  {
+    "q": "What is the purpose of a sequence diagram?",
+    "a": ["Show interactions between actors and a system","Show object behavior","Show flow of activities","Show order and timing of interactions"],
+    "correct": 3,
+    "explanation": "Sequence diagrams show the order and timing of interactions between objects or components."
+  },
+  {
+    "q": "Which step of problem solving evaluates sequences of action to choose the optimal path?",
+    "a": ["Execute","Goal Formulation","Problem Formulation","Search"],
+    "correct": 3,
+    "explanation": "Search involves evaluating alternative sequences to find the optimal action plan."
+  },
+  {
+    "q": "Which diagram represents the static structure of a system?",
+    "a": ["Use case documentation","Sequence diagram","Class diagram","Activity diagram"],
+    "correct": 2,
+    "explanation": "Class diagrams show the static relationships between classes and their attributes."
+  },
+  {
+    "q": "What is the process of writing user and system requirements in a document?",
+    "a": ["Feasibility study","Requirements elicitation and analysis","Requirements specification","Requirements validation"],
+    "correct": 2,
+    "explanation": "Requirements specification documents all user and system requirements formally."
+  },
+  {
+    "q": "Incremental model is suitable when:",
+    "a": ["Requirements are well defined","A working core product is needed quickly","Large development teams","User requirements are incomplete"],
+    "correct": 1,
+    "explanation": "Incremental model delivers a working core product quickly in phases."
+  },
+  {
+    "q": "Which relationship is used when one use case is similar to another but slightly different?",
+    "a": ["Generalization","Aggregation","Composition","Association"],
+    "correct": 0,
+    "explanation": "Generalization allows reuse with minor variations between use cases."
+  },
+  {
+    "q": "Which statement is not true about interviewing?",
+    "a": ["Facts, opinions, and speculation are gathered","SA spends large time","SA can verify truthfulness","Interviewing is passive and less rich than others"],
+    "correct": 3,
+    "explanation": "Interviewing is actually an active technique, often providing rich information."
+  },
+  {
+    "q": "Types of datasets used during model development include:",
+    "a": ["Validation dataset","Train dataset","Test dataset","All of the above"],
+    "correct": 3,
+    "explanation": "All three datasets are required: training for model building, validation for tuning, and test for final evaluation."
+  },
+  {
+    "q": "Which project type involves redesign or reimplementation using newer technology?",
+    "a": ["Green field","Re-engineering","Interface engineering","None"],
+    "correct": 1,
+    "explanation": "Re-engineering upgrades existing systems using new technologies."
+  },
+  {
+    "q": "Difference between Agile and Waterfall methodologies?",
+    "a": ["Agile is faster and iterative; Waterfall is linear","Agile focuses on UI; Waterfall on code quality","Agile requires extensive documentation; Waterfall flexible","Agile only for small projects"],
+    "correct": 0,
+    "explanation": "Agile uses iterative cycles with frequent feedback, while Waterfall is sequential and plan-driven."
+  },
+  {
+    "q": "Which of the following is not a characteristic of software?",
+    "a": ["Software must be integral","Software must be stable","Software must be efficient","Software should achieve good quality"],
+    "correct": 0,
+    "explanation": "Software being 'integral' is not a standard characteristic; stability, efficiency, and quality are."
+  },
+  {
+    "q": "Major activities of Spiral model include:",
+    "a": ["Requirements","Quick Design, Build Prototype, Evaluate, Refine","Planning, Risk Analysis, Engineering, Customer Evaluation","Defining, Prototyping, Testing, Delivery"],
+    "correct": 2,
+    "explanation": "Spiral model focuses on planning, risk analysis, iterative engineering, and customer evaluation."
+  },
+  {
+    "q": "Non-functional requirement problem: 'System must work 24/7' vs 'System can maintain within 3 hours'",
+    "a": ["Realism","Consistency","Completeness","Traceability"],
+    "correct": 1,
+    "explanation": "These two requirements conflict; consistency problem arises when two statements contradict."
+  },
+  {
+    "q": "Software is defined as:",
+    "a": ["Set of programs, documentation and configuration of data","Set of programs","Documentation and configuration of data","None"],
+    "correct": 0,
+    "explanation": "Software includes programs, related documentation, and configuration data."
+  },
+  {
+    "q": "Which is not a fundamental activity for software processes?",
+    "a": ["Evolution","Design and Implementation","Validation","Verification"],
+    "correct": 0,
+    "explanation": "Evolution is considered an ongoing activity, not a fundamental activity like design, validation, or verification."
+  },
+  {
+    "q": "Generic phases of software development: What, How, Change?",
+    "a": ["Definition, Development, Support","Definition, Support, Development","Support, Development, Definition","Development, Support, Definition"],
+    "correct": 0,
+    "explanation": "Definition focuses on 'what', Development on 'how', Support on handling changes."
+  },
+  {
+    "q": "Model preferred for client/server applications?",
+    "a": ["WINWIN Spiral","Spiral","Concurrent","Incremental"],
+    "correct": 0,
+    "explanation": "WINWIN Spiral incorporates stakeholder agreements, making it suitable for complex client/server projects."
+  },
+  {
+    "q": "First step in SDLC?",
+    "a": ["Analysis","Design","Problem/Opportunity Identification","Development & Documentation"],
+    "correct": 2,
+    "explanation": "Identifying the problem or opportunity is the initial step before analysis and design."
+  },
+  {
+    "q": "During analysis phase, which document defines goals and objectives?",
+    "a": ["Documentation","Flowchart","Program specification","Design"],
+    "correct": 2,
+    "explanation": "Program specification clearly defines project goals and objectives during analysis."
+  },
+  {
+    "q": "Primary concern in design phase?",
+    "a": ["Architecture, data, interface","UML diagrams","Requirement elicitation","Project management"],
+    "correct": 0,
+    "explanation": "Design phase focuses on system architecture, data structures, and interface design."
+  },
+  {
+    "q": "Study of an existing system refers to:",
+    "a": ["Details of DFD","Feasibility study","System analysis","System planning"],
+    "correct": 2,
+    "explanation": "System analysis involves understanding the current system to inform improvements."
+  },
+  {
+    "q": "Which is not true about SDLC?",
+    "a": ["It is a conceptual model","Enables high-quality software quickly and safely","Involves mostly 5-7 phases","None"],
+    "correct": 3,
+    "explanation": "All listed statements about SDLC are correct; hence 'None' is correct."
+  },
+
+
+
+
+
+
+
+  {
+    "q": "Characteristics of good SRS include all except",
+    "a": ["Completeness", "Dependence", "Design", "Modifiability"],
+    "correct": 1,
+    "explanation": "Dependence is not a characteristic of a good SRS; a good SRS should be complete, modifiable, and well-designed."
+  },
+  {
+    "q": "Which of the following is an agile development methodology?",
+    "a": ["Waterfall model", "Scrum", "V-model", "Spiral model"],
+    "correct": 1,
+    "explanation": "Scrum is an Agile methodology emphasizing iterative development, collaboration, and adaptive planning."
+  },
+  {
+    "q": "Which software development approach involves breaking down a project into small, deliverable increments?",
+    "a": ["Waterfall model", "Agile methodology", "Prototype model", "Spiral model"],
+    "correct": 1,
+    "explanation": "Agile methodology delivers projects incrementally in small iterations for flexibility and early feedback."
+  },
+  {
+    "q": "Which software testing technique focuses on finding defects by executing the software without knowledge of its internal structure?",
+    "a": ["White-box testing", "Black-box testing", "Integration testing", "System testing"],
+    "correct": 1,
+    "explanation": "Black-box testing tests functionality without knowing the internal code."
+  },
+  {
+    "q": "Which diagramming technique is used to visualize the behavior of a software system over time?",
+    "a": ["Use case diagrams", "Class diagrams", "Sequence diagrams", "State machine diagrams"],
+    "correct": 2,
+    "explanation": "Sequence diagrams show object interactions in a time sequence, visualizing behavior over time."
+  },
+  {
+    "q": "Which software development methodology promotes adaptive planning, evolutionary development, and continuous improvement?",
+    "a": ["Waterfall model", "Agile methodology", "V-model", "Spiral model"],
+    "correct": 1,
+    "explanation": "Agile methodology focuses on iterative development, continuous improvement, and adaptive planning."
+  },
+  {
+    "q": "Which technique is used to represent the flow of activities and decisions in a software system?",
+    "a": ["Use case modeling", "Activity diagrams", "State machine diagrams", "Component diagrams"],
+    "correct": 1,
+    "explanation": "Activity diagrams visualize the flow of activities and decision points in a system."
+  },
+  {
+    "q": "Which software development approach involves building a working version of the software system early in the development process?",
+    "a": ["Waterfall model", "Agile methodology", "Prototype model", "Spiral model"],
+    "correct": 2,
+    "explanation": "Prototype model produces an early working version to gather feedback before final implementation."
+  },
+  {
+    "q": "Which testing technique focuses on testing the interaction between different components or modules of a software system?",
+    "a": ["Unit testing", "Integration testing", "System testing", "Regression testing"],
+    "correct": 1,
+    "explanation": "Integration testing ensures that individual modules work together correctly."
+  },
+  {
+    "q": "Which design principle suggests that software entities should depend on abstractions, not on concrete implementations?",
+    "a": ["DRY (Don't Repeat Yourself) principle", "SOLID principle", "KISS (Keep It Simple, Stupid) principle", "YAGNI (You Ain't Gonna Need It) principle"],
+    "correct": 1,
+    "explanation": "SOLID principles include dependency inversion, encouraging dependence on abstractions rather than concrete implementations."
+  },
+  {
+    "q": "Which software development approach follows a linear, sequential flow from requirements gathering to testing and maintenance?",
+    "a": ["Waterfall model", "Agile methodology", "Prototype model", "Spiral model"],
+    "correct": 0,
+    "explanation": "Waterfall model is a linear, sequential SDLC model from requirements to maintenance."
+  },
+  {
+    "q": "Which technique is used to represent the static structure of a software system, including classes, relationships, and attributes?",
+    "a": ["Use case diagrams", "Class diagrams", "Sequence diagrams", "State machine diagrams"],
+    "correct": 1,
+    "explanation": "Class diagrams show the static structure, relationships, and attributes of classes."
+  },
+  {
+    "q": "Which software development methodology involves regular and frequent communication between developers and stakeholders?",
+    "a": ["Waterfall model", "Agile methodology", "V-model", "Spiral model"],
+    "correct": 1,
+    "explanation": "Agile promotes frequent collaboration and continuous feedback between developers and stakeholders."
+  },
+  {
+    "q": "Which testing technique focuses on retesting modified or affected parts of the software to ensure that changes do not introduce new defects?",
+    "a": ["Unit testing", "Integration testing", "Regression testing", "System testing"],
+    "correct": 2,
+    "explanation": "Regression testing ensures that changes do not break existing functionality."
+  },
+  {
+    "q": "Which phase of the software development life cycle (SDLC) focuses on gathering and understanding user requirements?",
+    "a": ["Analysis", "Design", "Implementation", "Testing"],
+    "correct": 0,
+    "explanation": "Analysis phase collects and understands user requirements for the system."
+  },
+  {
+    "q": "What is the primary goal of software design?",
+    "a": ["To create a visually appealing user interface", "To optimize the performance of the software system", "To translate user requirements into a detailed plan", "To develop and test individual software components"],
+    "correct": 2,
+    "explanation": "The primary goal of software design is to transform requirements into a detailed plan for implementation."
+  },
+  {
+    "q": "Which software development approach emphasizes frequent iterations, collaboration, and responsiveness to change?",
+    "a": ["Waterfall model", "Agile methodology", "Spiral model", "V-model"],
+    "correct": 1,
+    "explanation": "Agile emphasizes iterative development, collaboration, and adaptability to change."
+  },
+  {
+    "q": "What is the purpose of modularization in software design?",
+    "a": ["To improve the readability of the code", "To ensure efficient memory management", "To facilitate code reuse and maintenance", "To minimize the number of software defects"],
+    "correct": 2,
+    "explanation": "Modularization divides a system into manageable components for easier reuse and maintenance."
+  },
+
+
+
+  {
+    "q": "Which programming paradigm is based on the concept of objects and their interactions?",
+    "a": ["Functional programming", "Procedural programming", "Object-oriented programming", "Event-driven programming"],
+    "correct": 2,
+    "explanation": "Object-oriented programming (OOP) organizes software design around objects that contain data and behavior."
+  },
+  {
+    "q": "Which software development methodology follows a sequential flow, with each phase being completed before moving to the next?",
+    "a": ["Waterfall model", "Agile methodology", "Spiral model", "V-model"],
+    "correct": 0,
+    "explanation": "Waterfall model is linear and sequential, where each phase must finish before the next begins."
+  },
+  {
+    "q": "Which software development approach involves building small, incremental releases of the software system?",
+    "a": ["Waterfall model", "Agile methodology", "Spiral model", "V-model"],
+    "correct": 1,
+    "explanation": "Agile emphasizes iterative development and delivery of small, functional increments."
+  },
+  {
+    "q": "Which design principle advocates for designing software components that have a single responsibility?",
+    "a": ["Encapsulation", "Inheritance", "Polymorphism", "Single Responsibility Principle"],
+    "correct": 3,
+    "explanation": "Single Responsibility Principle states that a class or module should have only one reason to change."
+  },
+  {
+    "q": "Which programming paradigm promotes the use of data and avoids side effects?",
+    "a": ["Functional programming", "Procedural programming", "Object-oriented programming", "Event-driven programming"],
+    "correct": 0,
+    "explanation": "Functional programming avoids side effects and emphasizes pure functions and immutability."
+  },
+  {
+    "q": "Which type of software maintenance involves making changes to a software system to adapt it to new environments or technologies?",
+    "a": ["Corrective maintenance", "Adaptive maintenance", "Perfective maintenance", "Preventive maintenance"],
+    "correct": 1,
+    "explanation": "Adaptive maintenance modifies software to work in new environments or with new technologies."
+  },
+  {
+    "q": "What is the purpose of usability testing in software development?",
+    "a": ["To evaluate the performance of the software system under stress conditions", "To assess the user-friendliness and ease of use of the software system", "To verify the compliance of the software system with specified requirements", "To identify and fix defects or issues in the software system"],
+    "correct": 1,
+    "explanation": "Usability testing measures how easy and intuitive the software is for end users."
+  },
+  {
+    "q": "Which software development methodology involves iterative development cycles called sprints?",
+    "a": ["Waterfall model", "Agile methodology", "Spiral model", "V-model"],
+    "correct": 1,
+    "explanation": "Agile Scrum uses sprints—short iterative cycles for incremental software delivery."
+  },
+  {
+    "q": "What is the primary purpose of code refactoring?",
+    "a": ["To add new features to the software system", "To optimize the performance of the software system", "To improve the readability and maintainability of the code", "To fix defects or issues in the software system"],
+    "correct": 2,
+    "explanation": "Refactoring improves code structure and maintainability without changing functionality."
+  },
+  {
+    "q": "Which software development approach focuses on involving end-users in the development process through continuous feedback and collaboration?",
+    "a": ["Waterfall model", "Agile methodology", "Spiral model", "V-model"],
+    "correct": 1,
+    "explanation": "Agile emphasizes user collaboration and feedback throughout the development cycle."
+  },
+  {
+    "q": "Which type of testing involves running the entire software system in an environment that closely resembles the production environment?",
+    "a": ["Unit testing", "Integration testing", "System testing", "Regression testing"],
+    "correct": 2,
+    "explanation": "System testing evaluates the complete system in an environment similar to production."
+  },
+  {
+    "q": "What is a use case in use case modeling?",
+    "a": ["A description of a specific user interface design", "A step-by-step procedure for software installation", "A sequence of activities performed by a user or system", "A diagram that represents the relationships between software components"],
+    "correct": 2,
+    "explanation": "A use case describes how a user interacts with the system to achieve a goal."
+  },
+  {
+    "q": "What is an actor in use case modeling?",
+    "a": ["A component that performs specific actions in a software system", "A person or another system that interacts with the software system", "A diagram that represents the flow of activities in a use case", "A description of a specific user role in the software system"],
+    "correct": 1,
+    "explanation": "An actor represents an external entity (user or system) interacting with the system."
+  },
+  {
+    "q": "What is the purpose of an include relationship between use cases?",
+    "a": ["To represent the reuse of common steps between use cases", "To represent optional steps within a use case", "To represent the extension of a use case with additional steps", "To represent the relationship between actors and use cases"],
+    "correct": 0,
+    "explanation": "An include relationship indicates a common sequence of steps reused by multiple use cases."
+  },
+  {
+    "q": "What is the purpose of an extend relationship between use cases?",
+    "a": ["To represent the reuse of common steps between use cases", "To represent optional steps within a use case", "To represent the extension of a use case with additional steps", "To represent the relationship between actors and use cases"],
+    "correct": 2,
+    "explanation": "An extend relationship adds optional or conditional behavior to a base use case."
+  },
+  {
+    "q": "Which diagram is commonly used to visualize the relationships between actors and use cases in use case modeling?",
+    "a": ["Class diagram", "Use case diagram", "Activity diagram", "Sequence diagram"],
+    "correct": 1,
+    "explanation": "Use case diagrams show the interactions between actors and the system's use cases."
+  },
+  {
+    "q": "What is the purpose of an abstract use case?",
+    "a": ["To represent a use case that is not yet fully defined", "To represent a use case that is optional in the system", "To represent a use case that cannot be accessed directly by an actor", "To represent a use case that is reused by other use cases"],
+    "correct": 3,
+    "explanation": "Abstract use cases are reusable and typically included or extended by other use cases."
+  },
+  {
+    "q": "What is the purpose of an exception flow in a use case?",
+    "a": ["To represent an error or exceptional situation in the use case", "To represent an alternative path within the use case", "To represent the termination of the use case", "To represent the relationship between primary and secondary actors"],
+    "correct": 0,
+    "explanation": "Exception flows document errors or exceptional conditions during the execution of a use case."
+  },
+  {
+    "q": "The factors that must be considered when selecting a project are:",
+    "a": ["Perceived needs of the organization", "Existing systems and ongoing projects", "Resource availability", "Evaluation criteria", "All"],
+    "correct": 4,
+    "explanation": "All listed factors influence project selection, including organizational needs, resources, and evaluation criteria."
+  },
+
+
+  {
+    "q": "Which of the following is not a step of requirement engineering?",
+    "a": ["Requirement Elicitation", "Requirement Analysis", "Requirement Design", "Requirement Documentation"],
+    "correct": 2,
+    "explanation": "Requirement design is not a standard step; requirement engineering typically involves elicitation, analysis, specification, and documentation."
+  },
+  {
+    "q": "When you check whether components of a system work together or not, it is considered as:",
+    "a": ["System test", "Integration test", "Acceptance test", "Unit test"],
+    "correct": 1,
+    "explanation": "Integration testing checks if different modules or components interact correctly."
+  },
+  {
+    "q": "The document produced during requirement specification is called:",
+    "a": ["SRS", "Software requirement specification", "System requirement specification", "All"],
+    "correct": 3,
+    "explanation": "All these terms refer to the formal document that specifies software requirements."
+  },
+  {
+    "q": "If you want to test individual subsystems of software, which phase of software test is appropriate?",
+    "a": ["Integration testing", "System testing", "Unit testing", "Acceptance testing"],
+    "correct": 2,
+    "explanation": "Unit testing focuses on testing individual components or subsystems."
+  },
+  {
+    "q": "If a company wants software partially delivered to the end-user without unreasonable delay, which development model is appropriate?",
+    "a": ["Incremental", "Waterfall", "Evolutionary", "Spiral"],
+    "correct": 0,
+    "explanation": "Incremental model allows partial delivery of functional software in increments."
+  },
+  {
+    "q": "A software process model represents which one of the following?",
+    "a": ["The way in which software is developed", "The way in which software processes data", "The way in which software is used", "The way in which software may fail"],
+    "correct": 0,
+    "explanation": "A software process model defines how software development activities are organized."
+  },
+  {
+    "q": "Software that does not have supporting documents such as user manuals or design documents is called:",
+    "a": ["Software product", "Program", "System", "Application"],
+    "correct": 1,
+    "explanation": "A program is standalone code, without supporting documentation; software product usually includes documentation."
+  },
+  {
+    "q": "Which of the following is not a standard software development process model?",
+    "a": ["Waterfall Model", "Watershed Model", "RAD Model", "V-model"],
+    "correct": 1,
+    "explanation": "Watershed model is not a recognized standard software development process model."
+  },
+  {
+    "q": "GUI part of an application software is typically developed using which life cycle model?",
+    "a": ["Waterfall model", "Spiral model", "Prototyping model", "Evolutionary model"],
+    "correct": 2,
+    "explanation": "Prototyping model is commonly used for developing GUIs to gather user feedback early."
+  },
+  {
+    "q": "A self-contained entity with well-defined attributes and behavior is called:",
+    "a": ["Class", "Data type", "Object", "Program"],
+    "correct": 2,
+    "explanation": "An object is an instance with attributes (data) and behavior (methods)."
+  },
+  {
+    "q": "In which phase of SDLC do you meet customers to analyze market requirements and determine real need?",
+    "a": ["Planning", "Requirement Gathering", "Analysis and Design", "Implementation"],
+    "correct": 1,
+    "explanation": "Requirement Gathering involves meeting stakeholders to understand needs and market demand."
+  },
+  {
+    "q": "Which type of software is placed in ROM and controls product functions?",
+    "a": ["Real-time software", "Embedded software", "System software", "Artificial Intelligence software"],
+    "correct": 1,
+    "explanation": "Embedded software is stored in ROM and controls the hardware or device."
+  },
+  {
+    "q": "Project risk factor is considered in which model?",
+    "a": ["Spiral model", "Waterfall model", "Prototyping", "None of the above"],
+    "correct": 0,
+    "explanation": "Spiral model explicitly considers risk assessment at each iteration."
+  },
+  {
+    "q": "For a surgery management system, which type of software quality requirement should the developer emphasize?",
+    "a": ["Flexibility", "Reliability", "Modifiability", "Maintainability"],
+    "correct": 1,
+    "explanation": "Reliability is crucial in healthcare systems to prevent errors during critical operations."
+  },
+  {
+    "q": "Which software process model fits the system requirement for the surgery management system?",
+    "a": ["Agile model", "Spiral model", "Rational Unified Process Model", "Waterfall model"],
+    "correct": 1,
+    "explanation": "Spiral model handles complex systems and emphasizes risk management and iterative development."
+  },
+  {
+    "q": "The Ethiopian Airline Administrator specifies the implementation language as C#. What type of requirement is this?",
+    "a": ["Quality requirement", "Functional requirement", "Pseudo requirement", "Analysis requirement"],
+    "correct": 1,
+    "explanation": "Functional requirement specifies what the system must do, including language constraints."
+  },
+  {
+    "q": "As project manager, how should you resolve a disagreement over programming language?",
+    "a": ["Accept the software team idea (Java)", "Discuss to select a common language or stop project if no agreement", "Stop system development automatically", "Always use developer-preferred language"],
+    "correct": 1,
+    "explanation": "A balanced decision involves discussing both sides to reach a consensus or halt development if agreement fails."
+  },
+  {
+    "q": "Which statement about UML object model mapping to relational databases is false?",
+    "a": ["Each class is mapped to its own table", "Each class attribute is mapped to a column in the table", "Each class method is mapped to a relationship in the table", "An instance of a class represents a row in the table"],
+    "correct": 2,
+    "explanation": "Class methods are not mapped to relational tables; only class attributes and objects are."
+  },
+  {
+    "q": "What is the primary goal of use case modeling?",
+    "a": ["Define software architecture", "Identify and document user requirements", "Design the user interface", "Implement system functionality"],
+    "correct": 1,
+    "explanation": "Use case modeling captures functional requirements and interactions with users."
+  },
+  {
+    "q": "What is an alternative flow in a use case?",
+    "a": ["Flowchart representation", "Parallel flow", "Different sequence of steps based on conditions", "Relationship between use cases"],
+    "correct": 2,
+    "explanation": "Alternative flows represent conditional or optional paths in the use case."
+  },
+  {
+    "q": "What is the purpose of a use case diagram?",
+    "a": ["Describe behavior of a use case in detail", "Represent internal structure", "Visualize relationships between actors and use cases", "Represent flow of activities within a use case"],
+    "correct": 2,
+    "explanation": "Use case diagrams illustrate the actors and their interactions with the system's use cases."
+  },
+  {
+    "q": "What are the six stages of program development in logical order?",
+    "a": ["Define, Analyze, Write, Test, Document, Debug", "Define, Analyze, Develop, Write, Test, Debug", "Define, Write, Develop, Analyze, Test, Document", "Define, Develop, Write, Test, Document, Debug"],
+    "correct": 1,
+    "explanation": "The logical order is Define → Analyze → Develop → Write → Test → Debug."
+  },
+  {
+    "q": "During program development, software requirements specify:",
+    "a": ["How program execution will accomplish the task", "What task the program must perform", "How to divide the task into subtasks", "How to test the program when done"],
+    "correct": 1,
+    "explanation": "Requirements define what the program is supposed to accomplish."
+  },
+  {
+    "q": "Which of the following is not true about UML?",
+    "a": ["It is graphical language for visualizing systems", "It offers a standard way to write system blueprints", "UML is a programming language", "None of the above"],
+    "correct": 2,
+    "explanation": "UML is not a programming language; it is a modeling language."
+  },
+  {
+    "q": "Which UML diagram is not behavioral?",
+    "a": ["Activity diagram", "Sequence diagram", "Use case diagram", "All"],
+    "correct": 3,
+    "explanation": "All the listed diagrams are behavioral; however, class diagrams are structural, not behavioral."
+  },
+  {
+    "q": "Which process is designed to avoid or trap process errors before product errors occur?",
+    "a": ["Understandability", "Measurability", "Reliability", "Maintainability"],
+    "correct": 2,
+    "explanation": "Reliability ensures processes are error-free before affecting the product."
+  },
+  {
+    "q": "Which SDLC technique arranges phases sequentially, ready only after last phase?",
+    "a": ["Agile", "Waterfall", "Spiral", "Iterative"],
+    "correct": 1,
+    "explanation": "Waterfall model is sequential; each phase depends on the previous one."
+  },
+  {
+    "q": "Purpose of software analysis in software development?",
+    "a": ["Identify and understand user requirements", "Design user interface", "Test and validate system", "Deploy and maintain system"],
+    "correct": 0,
+    "explanation": "Analysis phase focuses on understanding what users need."
+  },
+  {
+    "q": "Which development lifecycle phase involves actual coding?",
+    "a": ["Requirement gathering", "Design and architecture", "Implementation", "Testing and QA"],
+    "correct": 2,
+    "explanation": "Implementation phase is where the software code is written."
+  },
+  {
+    "q": "Which SDLC phase transforms user requirements into detailed software design?",
+    "a": ["Testing", "Implementing", "Analysis", "Maintenance"],
+    "correct": 2,
+    "explanation": "Analysis phase produces specifications that guide detailed design."
+  },
+  {
+    "q": "Primary purpose of use case diagram in software design?",
+    "a": ["Document code structure", "Represent interaction between objects", "Visualize user interaction with system", "Debug errors"],
+    "correct": 2,
+    "explanation": "Use case diagrams depict system-user interactions to capture requirements."
+  },
+  {
+    "q": "In OOP, what is Encapsulation?",
+    "a": ["Hiding implementation details and exposing necessary detail", "Write code without comment", "Combine multiple objects into a single class", "Using only public methods"],
+    "correct": 0,
+    "explanation": "Encapsulation hides internal details and exposes only what is needed via interfaces."
+  },
+  {
+    "q": "What is Software Engineering?",
+    "a": ["Designing a software", "Testing a software", "Application of engineering principles to software design", "None of the above"],
+    "correct": 2,
+    "explanation": "Software engineering applies engineering principles to software development systematically."
+  },
+  {
+    "q": "What is a Functional Requirement?",
+    "a": ["Specifies tasks the program must complete", "Specifies tasks program should not complete", "Specifies tasks program must not work", "None"],
+    "correct": 0,
+    "explanation": "Functional requirements define what the software is supposed to do."
+  },
+  {
+    "q": "Which model is not suitable for large projects but good for learning?",
+    "a": ["Big bang model", "Spiral", "Iterative", "Waterfall"],
+    "correct": 0,
+    "explanation": "Big Bang model is simple, experimental, but risky for large projects."
+  },
+  {
+    "q": "Type of maintenance to correct errors not discovered during development phase?",
+    "a": ["Perfective", "Adaptive", "Corrective", "Preventive"],
+    "correct": 2,
+    "explanation": "Corrective maintenance fixes defects found after software is delivered."
+  },
+  {
+    "q": "Quality important for modifying, extending, or repairing software without introducing errors?",
+    "a": ["Reliability", "Maintainability", "Scalability", "Usability"],
+    "correct": 1,
+    "explanation": "Maintainability ensures software can be updated safely and efficiently."
+  },
+  {
+    "q": "Which model is preferred for deploying an advanced version of existing software?",
+    "a": ["Spiral model", "Waterfall model", "RAD", "Spiral model"],
+    "correct": 0,
+    "explanation": "Spiral model manages complex updates with iterative and risk-based approach."
+  },
+  {
+    "q": "Purpose of feasibility study in software engineering?",
+    "a": ["Assess market potential", "Evaluate technical complexity", "Determine financial viability", "Analyze performance/scalability of existing software"],
+    "correct": 2,
+    "explanation": "Feasibility study assesses economic viability and project justification."
+  },
+  {
+    "q": "Software is defined as:",
+    "a": ["Set of programs, documentation & configuration of data", "Set of programs", "Documentation and configuration of data", "None"],
+    "correct": 0,
+    "explanation": "Software includes programs, documentation, and configuration data."
+  },
+  {
+    "q": "Features of Software Code include:",
+    "a": ["Simplicity", "Accessibility", "Modularity", "All of the above"],
+    "correct": 3,
+    "explanation": "Good software code is simple, accessible, and modular."
+  },
+  {
+    "q": "Define Agile Scrum methodology.",
+    "a": ["Project management emphasizing incremental progress", "Project management emphasizing decremental progress", "Neutral progress", "No progress"],
+    "correct": 0,
+    "explanation": "Scrum emphasizes iterative, incremental development and frequent feedback."
+  },
+  {
+    "q": "________ is the process of generating analysis and design documents?",
+    "a": ["Re-engineering", "Reverse engineering", "Software re-engineering", "Science and engineering"],
+    "correct": 2,
+    "explanation": "Software re-engineering involves creating or improving design and analysis documents."
+  },
+  {
+    "q": "Activity that distributes estimated effort across planned project duration is called:",
+    "a": ["Project scheduling", "Detailed schedule", "Macroscopic schedule", "None"],
+    "correct": 0,
+    "explanation": "Project scheduling allocates tasks and effort over time to manage project execution."
+  },
+  {
+    "q": "_________ is not a fundamental activity for software processes.",
+    "a": ["Evolution", "Design and implementation", "Validation", "Verification"],
+    "correct": 0,
+    "explanation": "Evolution is ongoing change; fundamental activities are development-related like design, validation, verification."
+  },
+  {
+    "q": "Software development life cycle model chosen if team has less experience on similar projects?",
+    "a": ["Iterative Enhancement Model", "RAD", "Spiral", "Waterfall"],
+    "correct": 2,
+    "explanation": "Spiral model supports risk management and iterative learning, suitable for inexperienced teams."
+  },
+  {
+    "q": "Agile Software Development is based on which type?",
+    "a": ["Iterative Development", "Incremental Development", "Both Incremental and Iterative Development", "Linear Development"],
+    "correct": 2,
+    "explanation": "Agile uses both iterative and incremental development approaches."
+  },
+  {
+    "q": "Which model is not suitable for accommodating change?",
+    "a": ["Build & Fix Model", "Prototyping Model", "RAD Model", "Waterfall Model"],
+    "correct": 3,
+    "explanation": "Waterfall model is rigid and does not easily accommodate changes."
+  },
+  {
+    "q": "Which model can be selected if user is involved in all SDLC phases?",
+    "a": ["Waterfall Model", "Prototyping Model", "RAD Model", "Both Prototyping & RAD Model"],
+    "correct": 3,
+    "explanation": "Prototyping and RAD involve active user participation throughout development."
+  },
+  {
+    "q": "Which is not an Umbrella Activity complementing process framework?",
+    "a": ["Reusability management", "Risk management", "Measurement", "User Reviews"],
+    "correct": 0,
+    "explanation": "Reusability management is not a standard umbrella activity."
+  },
+  {
+    "q": "Which is not a fundamental activity in software engineering?",
+    "a": ["Software Verification", "Software Validation", "Software design and implementation", "Software evolution"],
+    "correct": 3,
+    "explanation": "Evolution is ongoing; fundamental activities focus on development, validation, verification."
+  },
+  {
+    "q": "Agile Software Development is based on:",
+    "a": ["Incremental Development", "Iterative Development", "Linear Development", "Both Incremental and Iterative Development"],
+    "correct": 3,
+    "explanation": "Agile combines incremental and iterative approaches to deliver software."
+  },
+  {
+    "q": "In the Analysis phase, the development of ____________ occurs, which states goals and objectives.",
+    "a": ["Documentation", "Flowchart", "Program specification", "Design"],
+    "correct": 2,
+    "explanation": "Program specification clearly documents the objectives and requirements."
+  },
+  {
+    "q": "Actual programming of software code is done during the ____________ step in SDLC.",
+    "a": ["Maintenance and Evaluation", "Design", "Analysis", "Development and Documentation"],
+    "correct": 3,
+    "explanation": "Development step is where actual coding takes place."
+  },
+  {
+    "q": "Who designs and implements database structures?",
+    "a": ["Programmers", "Project managers", "Technical writers", "Database administrators"],
+    "correct": 3,
+    "explanation": "Database administrators (DBAs) design, implement, and maintain databases."
+  },
+  {
+    "q": "__________ is translating a task into a series of commands a computer will execute.",
+    "a": ["Project design", "Installation", "Systems analysis", "Programming"],
+    "correct": 3,
+    "explanation": "Programming is writing instructions to perform a task on a computer."
+  },
+  {
+    "q": "Step to verify a software system works as expected is called:",
+    "a": ["Validation", "Verification", "Documentation", "Analysis"],
+    "correct": 0,
+    "explanation": "Validation ensures the system meets user requirements and expectations."
+  },
+
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  
 
   {
     q: "What is the purpose of server-side scripting languages in web development?",
@@ -10740,6 +11953,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
