@@ -3,6 +3,421 @@ const exams = {
 "RVU":[
 
   {
+    "q": "Which of the following is used to add styles and formatting to a webpage in CSS?",
+    "options": ["Functions", "Variables", "Selectors", "Arrays"],
+    "answer": 2,
+    "explanation": "Selectors in CSS are used to target HTML elements and apply styles to them."
+  },
+  {
+    "q": "Which one of the following techniques is not used in the Binary tree?",
+    "options": ["Randomized traversal", "Preorder traversal", "Postorder traversal", "Inorder traversal"],
+    "answer": 0,
+    "explanation": "Binary trees commonly use preorder, postorder, and inorder traversals. Randomized traversal is not standard."
+  },
+  {
+    "q": "Which of the following principles does Queue use?",
+    "options": ["LIFO principle", "FIFO principle", "Linear tree", "Ordered array"],
+    "answer": 1,
+    "explanation": "A queue operates on First In First Out (FIFO) principle; the first element added is the first removed."
+  },
+  {
+    "q": "Which of the following is not considered as a peripheral device?",
+    "options": ["CPU", "Keyboard", "Monitor", "All of the above"],
+    "answer": 0,
+    "explanation": "The CPU is the central processing unit, part of the main system, not a peripheral device."
+  },
+  {
+    "q": "Which recovery technique uses the undo/redo approach?",
+    "options": ["Immediate Update", "Deferred Update", "ARIES Algorithm", "None"],
+    "answer": 0,
+    "explanation": "Immediate update recovery uses undo and redo operations to maintain database consistency."
+  },
+  {
+    "q": "Which of the following statements is false about classes of language in automaton theory?",
+    "options": [
+      "Context-free language is a subset of context-sensitive language",
+      "Regular language is a subset of context-sensitive language",
+      "Recursively enumerable language is the superset of regular language",
+      "Context-sensitive language is a subset of context-free language"
+    ],
+    "answer": 3,
+    "explanation": "Context-sensitive languages are more powerful than context-free languages, so they are not a subset of context-free languages."
+  },
+  {
+    "q": "Where are the list of processes that are prepared to be executed and waiting placed?",
+    "options": ["Job queue", "Ready queue", "Execution queue", "Process queue"],
+    "answer": 1,
+    "explanation": "The ready queue holds processes that are ready to execute and waiting for CPU allocation."
+  },
+  {
+    "q": "Which one of the following statements is not true about the application of micro-operations?",
+    "options": [
+      "Selective set operation is implemented using OR micro-operation",
+      "Selective clear operation clears to zero the bit in the first operand only where there are corresponding 1's in the logical operand",
+      "Clear operation is implemented using Exclusive-OR Micro-operation",
+      "None of the above"
+    ],
+    "answer": 3,
+    "explanation": "All statements about micro-operations are correct, so 'None of the above' is the correct choice."
+  },
+  {
+    "q": "Based on the function prototype MY_AGENT(PERCEPT), the instruction updates the state of the environment if necessary. What is its purpose?",
+    "options": [
+      "Modify the state of the environment if necessary",
+      "Update the state information to be like the one after executing the best action chosen",
+      "Update the environment so that the agent can perceive the next percept",
+      "Modify the state of the environment once the decision of which action to choose is made"
+    ],
+    "answer": 0,
+    "explanation": "The function updates the environment state based on the percept, allowing the agent to respond correctly."
+  },
+  {
+    "q": "The process of recovering the original message without the detailed knowledge of the secret information is called:",
+    "options": ["Decryption", "Decipher", "Cryptanalysis", "A and B"],
+    "answer": 2,
+    "explanation": "Cryptanalysis is the study of analyzing and breaking ciphers without knowing the key."
+  },
+  {
+    "q": "Both the CISC and RISC architectures have been developed to reduce the ______",
+    "options": ["Time delay", "Semantic gap", "Cost", "All of the mentioned"],
+    "answer": 1,
+    "explanation": "Both architectures aim to reduce the semantic gap between high-level instructions and hardware execution."
+  },
+  {
+    "q": "All of the following are disadvantages of using DHCP services EXCEPT?",
+    "options": [
+      "Fault on the DHCP server can affect the whole network",
+      "It is not a secured way of assigning IP addresses",
+      "Static IP address assignment can't be used",
+      "It minimizes the load of network admin"
+    ],
+    "answer": 3,
+    "explanation": "DHCP reduces admin workload, which is an advantage, not a disadvantage."
+  },
+  {
+    "q": "CPU scheduling is the basis of ___________",
+    "options": [
+      "Multiprogramming operating systems",
+      "Larger memory-sized systems",
+      "Multiprocessor systems",
+      "None of the mentioned"
+    ],
+    "answer": 0,
+    "explanation": "CPU scheduling allows multiple programs to share the CPU effectively in multiprogramming OS."
+  },
+  {
+    "q": "What is the bottom-up parsing method also known as?",
+    "options": [
+      "Recursive descent parsing",
+      "Predictive parsing",
+      "Shift-reduce parsing",
+      "All of them"
+    ],
+    "answer": 2,
+    "explanation": "Bottom-up parsers construct a parse tree from leaves to root using shift-reduce operations."
+  },
+  {
+    "q": "On the basis of the general search methods, which simple strategy results in greedy best search?",
+    "options": [
+      "Append newly generated nodes at the beginning of the open list",
+      "Append newly generated nodes at the end of the open list",
+      "Insert newly generated nodes in the open list according to their path cost (lowest values first)",
+      "Insert newly generated nodes in the open list according to their evaluation function (lowest values first)"
+    ],
+    "answer": 3,
+    "explanation": "Greedy best-first search selects nodes based on evaluation function (e.g., heuristic) to find optimal path faster."
+  },
+  {
+    "q": "What is the main goal of data compression while it paths in different network layers?",
+    "options": [
+      "Securing data",
+      "Minimize the size of data",
+      "Select the best path of destination devices",
+      "All of the above"
+    ],
+    "answer": 1,
+    "explanation": "Data compression reduces the size of data to save bandwidth and improve transmission efficiency."
+  },
+  {
+    "q": "The _________ statement causes a loop to terminate immediately.",
+    "options": ["Continue", "Goto", "Break", "Jump"],
+    "answer": 2,
+    "explanation": "The 'break' statement terminates the current loop immediately."
+  },
+  {
+    "q": "Which of the following can be a heuristic for grouping objects into subsystems?",
+    "options": [
+      "Assign objects identified in one use case into the same subsystem",
+      "Create a dedicated subsystem for objects used for moving data among subsystems",
+      "Minimize the number of associations crossing subsystem boundaries",
+      "All of the above"
+    ],
+    "answer": 3,
+    "explanation": "All three rules are used as heuristics to create efficient, modular subsystems."
+  },
+  {
+    "q": "The term Push and Pop is related to______________",
+    "options": ["Queue", "Stack", "Both", "None"],
+    "answer": 1,
+    "explanation": "Push adds an item to the stack and Pop removes an item, following LIFO principle."
+  },
+  {
+    "q": "Which one of the following statements is false?",
+    "options": [
+      "A sentence is said to be invalid iff it is unsatisfiable",
+      "A sentence is valid if it is satisfiable",
+      "A sentence which is not invalid is satisfiable",
+      "A sentence is unsatisfiable if it is false in all models"
+    ],
+    "answer": 1,
+    "explanation": "A valid sentence is true in all models, not just satisfiable in some."
+  },
+  {
+    "q": "Which of the following PHP code snippets is used to retrieve data from a MySQL database?",
+    "options": [
+      "$result = mysql_query(\"SELECT * FROM users WHERE id = 1\")",
+      "$result = mysqliquery(conn, \"SELECT * FROM users WHERE id = 1\")",
+      "$result = $pdo->query(\"SELECT * FROM users WHERE id = 1\")",
+      "$result = pg_query(\"SELECT * FROM users WHERE id = 1\")"
+    ],
+    "answer": 1,
+    "explanation": "The correct PHP mysqli syntax uses 'mysqliquery' to execute SQL queries on MySQL."
+  },
+  {
+    "q": "Which of the following JavaScript code snippets is used to add a new element to an HTML document?",
+    "options": [
+      "element.appendChild(document.createTextNode(\"Hello, world!\"))",
+      "var element = document.createElement(\"div\")",
+      "document.body.appendChild(element)",
+      "document.getElementById(\"container\").appendChild(element)"
+    ],
+    "answer": 1,
+    "explanation": "document.createElement(\"div\") creates a new HTML element which can then be appended."
+  },
+  {
+    "q": "Based on the prototype MY_AGENT(PERCEPT), MY_AGENT is ____________ type of agent.",
+    "options": ["Goal based", "Model based reflex", "Simple reflex", "Utility based"],
+    "answer": 3,
+    "explanation": "It uses a utility-based approach, evaluating actions based on state to choose the best one."
+  },
+  {
+    "q": "Which of the following statements is true about crackers?",
+    "options": [
+      "They attempt to break the system without permissions",
+      "They are legally employed to break into the system",
+      "They reveal the information after breaking into the system",
+      "All"
+    ],
+    "answer": 0,
+    "explanation": "Crackers break systems illegally, without permission, unlike ethical hackers."
+  },
+  {
+    "q": "Which one of the following is not the application of the stack data structure?",
+    "options": ["String reversal", "Recursion", "Backtracking", "Asynchronous data transfer"],
+    "answer": 3,
+    "explanation": "Stacks are used for LIFO operations, not for asynchronous data transfer."
+  },
+  {
+    "q": "Which of the following is false about subsystems?",
+    "options": [
+      "A physical and replaceable part of the system",
+      "It reduces the complexity of the application domain",
+      "Decompose a system into simpler parts",
+      "Well-defined interfaces that encapsulate the state and behavior of its contained classes"
+    ],
+    "answer": 1,
+    "explanation": "Subsystems help manage complexity but do not directly reduce the complexity of the application domain itself."
+  },
+  {
+    "q": "Suppose you are asked to construct a DFA for the strings ending with an 'n' length substring. How many minimal states may the DFA require?",
+    "options": ["n", "n+1", "n+2", "n*2"],
+    "answer": 1,
+    "explanation": "A DFA for strings of length n needs n+1 states to distinguish all suffixes of length ≤ n."
+  },
+  {
+    "q": "Which type of firewall can filter incoming signals based on port numbers and protocol?",
+    "options": ["Packet Filtering", "Proxy Service", "Stateful Inspection", "Threat-Focused NGFW"],
+    "answer": 2,
+    "explanation": "Stateful Inspection firewalls examine packets, including ports and protocol, before allowing them."
+  },
+  {
+    "q": "Which of the following is an example of Usability requirements?",
+    "options": ["User interface", "Robustness", "Mean time to failure", "Adaptability"],
+    "answer": 0,
+    "explanation": "Usability requirements focus on how user-friendly the system is, including UI design."
+  },
+  {
+    "q": "____________ is an alternative to log-based recovery.",
+    "options": ["Disk recovery", "Shadow paging", "Disk shadowing", "Crash recovery"],
+    "answer": 1,
+    "explanation": "Shadow paging keeps a copy of database pages to recover without using logs."
+  },
+  {
+    "q": "To test the IP stack on your local host, which IP address would you ping?",
+    "options": ["127.0.0.1", "1.0.0.127", "127.0.0.0", "127.0.0.255"],
+    "answer": 0,
+    "explanation": "127.0.0.1 is the loopback address used to test networking on the local machine."
+  },
+  {
+    "q": "Why is determining the run time of a program exactly difficult in terms of algorithm performance?",
+    "options": ["Processor speed", "Current processor load", "Input size of the given algorithm", "All"],
+    "answer": 3,
+    "explanation": "All these factors affect program runtime, making exact measurement difficult."
+  },
+  {
+    "q": "Which one of the following is not the purpose of the super keyword?",
+    "options": [
+      "Refer to the current object",
+      "Call superclass constructor",
+      "Access hidden variables",
+      "Invoke superclass method with the same name as the subclass method"
+    ],
+    "answer": 0,
+    "explanation": "The 'super' keyword refers to the superclass, not the current object (that's 'this')."
+  },
+  {
+    "q": "What will be the encrypted message if the message 'ATTACK' is encrypted by Caesar's cipher with key = 25?",
+    "options": ["ZSSZBJ", "ZGGZXP", "ZTTZAK", "BGGBDL"],
+    "answer": 0,
+    "explanation": "A Caesar cipher with key 25 shifts each letter one position backward in the alphabet."
+  },
+  {
+    "q": "A translator that translates a single-line instruction at a time is:",
+    "options": ["Compiler", "Assembler", "Interpreter", "Linker"],
+    "answer": 2,
+    "explanation": "An interpreter executes instructions line by line, unlike a compiler which translates the entire program."
+  },
+  {
+    "q": "What is an operating system?",
+    "options": [
+      "Interface between the hardware and application programs",
+      "Collection of programs that manages hardware resources",
+      "System service provider to the application programs",
+      "All of the mentioned"
+    ],
+    "answer": 3,
+    "explanation": "An OS performs all these functions to manage hardware and provide services to applications."
+  },
+  {
+    "q": "Most of the time, it is recommended to apply a Hardware RAID into your system in terms of system performance. Why?",
+    "options": [
+      "A physical storage device that is built into a system",
+      "Can appear as a single hard disk in the system",
+      "There is no difference between regular hardware and the RAID devices",
+      "Can use its own resources"
+    ],
+    "answer": 3,
+    "explanation": "Hardware RAID uses dedicated resources for better performance, offloading processing from the CPU."
+  },
+  {
+    "q": "A conceptual level refers to:",
+    "options": [
+      "Describes the represents global view of the entire database",
+      "Describes the part of the database that a particular user group views of the data environment",
+      "Describes how data is actually stored on disk",
+      "Describes the physical storage structure of the database"
+    ],
+    "answer": 0,
+    "explanation": "The conceptual level shows a global logical view of the entire database, independent of physical storage."
+  },
+  {
+    "q": "Which of the following protocols in MTA enables users to access mail data/information from the MDA?",
+    "options": ["POP3", "IMAP", "SMTP", "Both POP3 and IMAP"],
+    "answer": 3,
+    "explanation": "Both POP3 and IMAP allow clients to retrieve emails from the mail server (MDA)."
+  },
+  {
+    "q": "Which one of the following has the same name as the class name?",
+    "options": ["Method", "Variable", "Constructor", "Package name"],
+    "answer": 2,
+    "explanation": "Constructors have the same name as the class to initialize objects."
+  },
+  {
+    "q": "An AI agent acts upon the environment using _______________.",
+    "options": ["Sensors", "Effectors", "Actuators", "Manipulators"],
+    "answer": 0,
+    "explanation": "Agents perceive the environment using sensors; effectors/actuators act upon it."
+  },
+  {
+    "q": "Which of the following is used to include an external JavaScript file in an HTML document?",
+    "options": [
+      "<script href=\"file.js\"></script>",
+      "<link rel=\"stylesheet\" href=\"file.js\">",
+      "<script type=\"text/javascript\" src=\"file.js\"></script>",
+      "<link rel=\"stylesheet\" type=\"text/javascript\" href=\"file.js\">"
+    ],
+    "answer": 2,
+    "explanation": "External JavaScript files are linked using <script> with the src attribute."
+  },
+  {
+    "q": "How many tokens are there in the following C++ statement? for (int i =0; i <= 10; i++)",
+    "options": ["4", "5", "9", "10"],
+    "answer": 2,
+    "explanation": "Tokens are syntactic units; here we have: for, (, int, i, =, 0, ;, i, <=, 10, ;, i++, ) → 9 tokens if counting operators and identifiers."
+  },
+  {
+    "q": "Which of the following is not correct about a finite Automaton?",
+    "options": [
+      "Finite automaton accept a string or word by final state",
+      "Finite Automaton has at least one final state",
+      "Finite Automaton has at least one initial state",
+      "Deterministic Finite Automaton has a single transition"
+    ],
+    "answer": 3,
+    "explanation": "In DFA, each state must have exactly one transition for each input symbol; the statement is ambiguous."
+  },
+  {
+    "q": "Which of the following is the main function of a network firewall?",
+    "options": [
+      "Monitoring incoming and outgoing network traffic",
+      "Filtering unauthorized access",
+      "Protecting against malware attacks",
+      "All of the mentioned"
+    ],
+    "answer": 3,
+    "explanation": "Firewalls monitor and filter network traffic to block unauthorized access and protect systems."
+  },
+  {
+    "q": "Which of the following is true about the TCP protocol?",
+    "options": [
+      "TCP is connection-oriented",
+      "TCP provides reliable delivery",
+      "TCP ensures data integrity with checksums",
+      "All of the above"
+    ],
+    "answer": 3,
+    "explanation": "TCP is connection-oriented, reliable, and provides integrity checks."
+  },
+  {
+    "q": "Which of the following is used for disk scheduling?",
+    "options": ["FCFS", "SSTF", "SCAN", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "All listed algorithms (FCFS, SSTF, SCAN) are used for disk scheduling."
+  },
+  {
+    "q": "Which of the following techniques is used for error detection in networking?",
+    "options": ["Parity Check", "Checksum", "CRC", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "All these techniques detect errors in transmitted data."
+  },
+  {
+    "q": "Which is the best-suited algorithm to sort a linked list?",
+    "options": ["Quick Sort", "Heap Sort", "Merge Sort", "Insertion Sort"],
+    "answer": 2,
+    "explanation": "Merge Sort works efficiently for linked lists because it doesn't require random access."
+  },
+  {
+    "q": "Which of the following is not a relational database management system?",
+    "options": ["MySQL", "Oracle", "MongoDB", "PostgreSQL"],
+    "answer": 2,
+    "explanation": "MongoDB is a NoSQL database; others are relational."
+  },
+
+
+
+
+
+  {
     "q": "_________ is one of the basic principles of object oriented programming that uses one object in multiple forms.",
     "options": ["Inheritance", "Interface", "Encapsulation", "None of the above"],
     "correct": 3,
@@ -13818,6 +14233,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
