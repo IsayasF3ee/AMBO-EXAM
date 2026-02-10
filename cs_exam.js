@@ -5336,21 +5336,109 @@ explanation: "NoSQL databases scale better horizontally and handle distributed e
 
 
 
-
-
-
-
-
-
-
-
-
   
   
   ],
 
   
 "AMBO":[
+
+  {"q":"Attackers motivated by financial gain who steal rival secrets are called?","options":["Stealer","Competitor","Activist","Hacktivist"],"answer":1,"explanation":"Competitors attack rivals for business advantage."},
+  {"q":"Device that isolates machines to protect from attacks?","options":["Switch","Firewall","Router","NOS"],"answer":1,"explanation":"Firewalls filter and block unauthorized traffic."},
+  {"q":"Ensures availability, integrity, authentication and confidentiality?","options":["Interception","Information assurance","Information security","Wiretapping"],"answer":1,"explanation":"Information assurance covers all security goals."},
+  {"q":"Breaking encryption without key is called?","options":["Decryption","Cryptanalysis","Encryption","Cryptography"],"answer":1,"explanation":"Cryptanalysis attacks encryption."},
+  {"q":"Program used to read scrambled message?","options":["Secret key","Encryption program","Ciphertext","Decryption program"],"answer":3,"explanation":"Decryption restores readable data."},
+  {"q":"Protects information from unauthorized disclosure?","options":["Integrity","Confidentiality","Availability","Authentication"],"answer":1,"explanation":"Confidentiality prevents data leakage."},
+  {"q":"Shows weakness in network or device?","options":["Availability","Vulnerability","Attack","Threat"],"answer":1,"explanation":"Vulnerability is a weakness."},
+  {"q":"Crash and service denial attack is?","options":["Access attack","Virus","Information gathering","DoS"],"answer":3,"explanation":"DoS disrupts availability."},
+  {"q":"Wrong pair of active/passive attack?","options":["Active:add/delete","Active:traffic analysis","Passive:monitoring","Passive:read content"],"answer":1,"explanation":"Traffic analysis is passive."},
+  {"q":"Incorrect about symmetric key?","options":["Shared key","Old key unusable","Third party distribution","Frequent change encouraged"],"answer":1,"explanation":"Keys can be reused but not advised."},
+  {"q":"Not a wireless attack?","options":["Bluesnarfing","Phishing","Rogue AP","Bluejacking"],"answer":1,"explanation":"Phishing is social engineering."},
+  {"q":"Protects info systems from unauthorized access?","options":["Computer security","Information security","Network security","Hardware security"],"answer":1,"explanation":"Information security protects data."},
+  {"q":"Not part of human-computer system?","options":["Humans","Security guards","Network hardware","Host computer"],"answer":1,"explanation":"Guards are physical security."},
+  {"q":"Which is NOT correct?","options":["Apps are assets","Complete security denies access","No security gives full access","Authentication can be refuted"],"answer":3,"explanation":"Authentication must be non-refutable."},
+  {"q":"Not an availability concern?","options":["Fault tolerance","Alteration","Usefulness","Fair allocation"],"answer":1,"explanation":"Alteration affects integrity."},
+  {"q":"Detects suspicious network traffic?","options":["Antivirus","IDS","Firewall","Router"],"answer":1,"explanation":"IDS detects intrusions."},
+  {"q":"First step of access control?","options":["Audit","Authorization","Accreditation","Authentication"],"answer":3,"explanation":"Identity must be verified first."},
+  {"q":"Asymmetric decryption uses?","options":["Receiver public","Receiver private","Sender private","Sender public"],"answer":1,"explanation":"Private key decrypts."},
+  {"q":"Same key encryption system?","options":["Public key","Parallel","Asymmetric","Symmetric"],"answer":3,"explanation":"Symmetric uses one key."},
+  {"q":"Unauthorized reading of data is?","options":["Modification","Interception","Interruption","Fabrication"],"answer":1,"explanation":"Interception reads data."},
+
+  {"q":"Secure email protocol?","options":["SMTP","POP3","IMAP","S/MIME"],"answer":3,"explanation":"S/MIME secures emails."},
+  {"q":"Ensures data not disclosed?","options":["Confidentiality","Integrity","Availability","Authentication"],"answer":0,"explanation":"Confidentiality prevents disclosure."},
+  {"q":"Tricking users to give passwords?","options":["DDoS","Phishing","Ransomware","SQL injection"],"answer":1,"explanation":"Phishing uses deception."},
+  {"q":"Strong password example?","options":["password123","P@55w0rd!","abcdef","userpass"],"answer":1,"explanation":"Strong passwords use symbols."},
+  {"q":"Antivirus purpose?","options":["Prevent attacks","Protect malware","Encrypt data","Secure passwords"],"answer":1,"explanation":"Antivirus removes malware."},
+  {"q":"Security protects privacy by?","options":["Availability","Unauthorized access","Not related","Encryption only"],"answer":1,"explanation":"Security blocks unauthorized access."},
+  {"q":"Key used to encrypt in asymmetric crypto?","options":["Public","Private","Session","Symmetric"],"answer":0,"explanation":"Public key encrypts."},
+  {"q":"Assessing potential risks?","options":["Vulnerability scan","Risk analysis","Threat modeling","Pen testing"],"answer":1,"explanation":"Risk analysis evaluates threats."},
+  {"q":"Controls network access?","options":["Fault","Performance","Security","Configuration"],"answer":2,"explanation":"Security management controls access."},
+  {"q":"Authentication bound to body?","options":["One","Two","Three","Four factor"],"answer":2,"explanation":"Biometrics included."},
+
+  {"q":"DHCP IP when PC removed?","options":["Permanent","Renewed","Returned to pool","Reserved"],"answer":2,"explanation":"Lease expires and returns."},
+  {"q":"Windows command showing MAC?","options":["ipconfig","ipstatus","ipconfig /all","ping"],"answer":2,"explanation":"ipconfig /all shows full info."},
+  {"q":"User cannot change password because?","options":["Bad login","Admin member","Not domain","Setting enabled"],"answer":3,"explanation":"Policy prevents change."},
+  {"q":"Destruction of hardware affects?","options":["Confidentiality","Integrity","Availability","Intercepted"],"answer":2,"explanation":"Availability is lost."},
+  {"q":"Wiretapping violates?","options":["Integrity","Availability","Confidentiality","All"],"answer":2,"explanation":"It reads data secretly."},
+  {"q":"Not passive attack?","options":["Delete data","Eavesdropping","Stealing data","None"],"answer":0,"explanation":"Deletion is active."},
+  {"q":"Not OS security practice?","options":["Patch OS","Update AV","Allow all traffic","Least privilege"],"answer":2,"explanation":"Open traffic is unsafe."},
+  {"q":"Breaking crypto systems is?","options":["Decryption","Cryptanalysis","Cryptography","Hacking"],"answer":1,"explanation":"Cryptanalysis breaks ciphers."},
+  {"q":"Sender cannot deny message?","options":["DoS","Non-repudiation","Replay","Traffic analysis"],"answer":1,"explanation":"Non-repudiation ensures proof."},
+
+  {"q":"False about computer security?","options":["Protect HW/SW","Protect networks","Machines over data","Data over machines"],"answer":2,"explanation":"Data is more valuable."},
+  {"q":"Viruses, worms, trojans are?","options":["Phishing","Sniffing","Malware","Adware"],"answer":2,"explanation":"They are malware."},
+  {"q":"Mismatched pair?","options":["Interception-confidentiality","Interruption-availability","Modification-integrity","Fabrication-authenticity","None"],"answer":4,"explanation":"All pairs are correct."},
+  {"q":"VPN provides?","options":["Confidentiality","Authenticity","Encryption","All"],"answer":3,"explanation":"VPN provides all."},
+  {"q":"Intercept and modify communication?","options":["DoS","MitM","Phishing","Trojan"],"answer":1,"explanation":"Man-in-the-middle attack."},
+
+  {"q":"Ensures integrity and authenticity?","options":["Encryption","Hashing","Steganography","Digital Signature"],"answer":3,"explanation":"Digital signatures verify integrity."},
+  {"q":"Something user knows?","options":["Are","Have","Do","Know"],"answer":3,"explanation":"Passwords are knowledge-based."},
+  {"q":"Restricts access privileges?","options":["Least Privilege","Economy","Fail-safe","Mediation"],"answer":0,"explanation":"Least privilege limits access."},
+  {"q":"Buffer overflow exploitation?","options":["Inject code","Overrun buffer","URL manipulation","Intercept traffic"],"answer":1,"explanation":"Overflow exceeds memory bounds."},
+  {"q":"Sensitive info in error messages?","options":["Buffer overflow","Information disclosure","XSS","Privilege escalation"],"answer":1,"explanation":"Leaks internal data."},
+
+  {"q":"SSL/TLS purpose?","options":["Prevent DoS","Secure transmission","Monitor traffic","Authenticate devices"],"answer":1,"explanation":"Encrypts data in transit."},
+  {"q":"Least privilege means?","options":["Max access","Only necessary access","Shared logins","Weak passwords"],"answer":1,"explanation":"Limits access rights."},
+  {"q":"VPN primary purpose?","options":["Hardware protection","Unauthorized access","Traffic monitor","Secure connection"],"answer":3,"explanation":"Creates secure tunnel."},
+  {"q":"Data consistency means?","options":["Accurate across nodes","Concurrent access","Less transfer","None"],"answer":0,"explanation":"Data remains consistent."},
+  {"q":"Penetration testing goal?","options":["Find vulnerabilities","Prevent access","Encrypt data","Monitor traffic"],"answer":0,"explanation":"Tests system weaknesses."},
+
+  {"q":"Linux firewall utility?","options":["iptables","ifconfig","ping","netstat"],"answer":0,"explanation":"iptables manages firewall rules."},
+  {"q":"XSS vulnerability allows?","options":["Unauthorized access","Email malware","Buffer overflow","Script injection"],"answer":3,"explanation":"Injects malicious scripts."},
+  {"q":"Highest hacker risk?","options":["Disgruntled employees","Grey hat","Script kiddies","Black hat"],"answer":0,"explanation":"Insiders have access."},
+
+  {"q":"Confidentiality breach means?","options":["Destroy data","Use resources","Modify data","Read data"],"answer":3,"explanation":"Unauthorized reading."},
+  {"q":"Mouse moves by itself fix?","options":["Run antivirus","Call coworkers","Disconnect network","Unplug mouse"],"answer":2,"explanation":"Stops remote attacker."},
+  {"q":"Broad malicious software term?","options":["Worm","Spyware","Malware","Virus"],"answer":2,"explanation":"Malware includes all."},
+  {"q":"Fake useful program with damage?","options":["Trojan","Spyware","Worm","Virus"],"answer":0,"explanation":"Trojan disguises itself."},
+  {"q":"Scans browsing habits?","options":["Worm","Spyware","DoS","Virus"],"answer":1,"explanation":"Spyware tracks activity."},
+
+  {"q":"Network segmentation purpose?","options":["Security","Traffic management","Performance","All"],"answer":3,"explanation":"Improves security and performance."},
+  {"q":"Checkpoints are part of?","options":["Concurrency","Security","Recovery","Authorization"],"answer":2,"explanation":"Used in recovery."},
+  {"q":"Major virus characteristic?","options":["Steals data","Encrypts files","Email spread","Self-replication","Network spread"],"answer":3,"explanation":"Viruses replicate."},
+  {"q":"Network of infected devices?","options":["Internet","Botnet","Telnet","D-net"],"answer":1,"explanation":"Botnets are controlled zombies."},
+  {"q":"System backup purpose?","options":["Recover data","Encrypt","Prevent access","Develop software","Detect attacks"],"answer":0,"explanation":"Backups restore data."},
+
+  {"q":"DoS goal?","options":["Modify data","Disable service","Gain access","Intercept data","Steal data"],"answer":1,"explanation":"Disrupt availability."},
+  {"q":"Not software security objective?","options":["Physical protection","Confidentiality","Robust software","Verify security","Prevent vulnerabilities"],"answer":0,"explanation":"Physical is not software security."},
+  {"q":"Attack on availability?","options":["Snooping","Spoofing","Delay","Masquerading"],"answer":2,"explanation":"Delay disrupts service."},
+  {"q":"Digital certificate purpose?","options":["Encrypt","Protect malware","Authenticate users","Monitor traffic","Authenticate website"],"answer":4,"explanation":"Verifies identity."},
+  {"q":"Secure file transfer protocol?","options":["SSH","SSH & SFTP","SFTP","HTTPS"],"answer":2,"explanation":"SFTP transfers files securely."},
+
+  {"q":"Interrupt types?","options":["Hardware","Software","Timer","All"],"answer":3,"explanation":"All are interrupts."},
+  {"q":"Confidentiality violation?","options":["Domain squatting","Crash system","Change check","Copy homework"],"answer":3,"explanation":"Unauthorized copying."},
+  {"q":"Network congestion occurs?","options":["Traffic overload","Transfer failure","System terminates","Link terminates"],"answer":0,"explanation":"Too much traffic."},
+  {"q":"Wireless security method?","options":["Policy","Encryption","MAC filtering","Firmware updates","All"],"answer":4,"explanation":"All strengthen security."},
+  {"q":"Unreadable data transformation?","options":["Data security","Encryption","DB security","Authentication"],"answer":1,"explanation":"Encryption scrambles data."},
+
+  {"q":"Ransomware aim?","options":["Access network","Encrypt files","Disable service","Steal data","Intercept data"],"answer":1,"explanation":"Encrypts and demands ransom."},
+  {"q":"VPN primary purpose?","options":["Remote access","Enhance security","Improve performance","All"],"answer":3,"explanation":"VPN provides all."},
+
+
+
+
+
+  
 
   {
     q: "Which phase of the software development life cycle is responsible for gathering and analyzing user requirements?",
@@ -10652,6 +10740,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
