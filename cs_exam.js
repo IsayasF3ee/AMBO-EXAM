@@ -2,6 +2,452 @@
 const exams = {
 "MOE":[
 
+
+  {
+    "q": "Which of the following is a mechanism for reliable data delivery in a connectionless protocol?",
+    "options": ["TCP", "UDP", "IP", "ICMP"],
+    "correct": 0,
+    "explanation": "TCP provides reliable data delivery, even though UDP is connectionless."
+  },
+  {
+    "q": "What is the main purpose of ARP in a network?",
+    "options": ["Maps IP to MAC address", "Maps MAC to IP address", "Filters network packets", "Assigns IP dynamically"],
+    "correct": 0,
+    "explanation": "ARP resolves IP addresses to their corresponding MAC addresses for communication within a LAN."
+  },
+  {
+    "q": "Which of the following is used to store user-specific temporary data on a web server?",
+    "options": ["Cookie", "Session", "Database", "Cache"],
+    "correct": 1,
+    "explanation": "Sessions temporarily store server-side data unique to each user across web pages."
+  },
+  {
+    "q": "Which protocol is connection-oriented and ensures error-free data transmission?",
+    "options": ["TCP", "UDP", "HTTP", "SMTP"],
+    "correct": 0,
+    "explanation": "TCP is connection-oriented and uses acknowledgments to guarantee delivery."
+  },
+  {
+    "q": "Which transmission medium is suitable for long-distance sky broadcasting?",
+    "options": ["Radio Wave", "Infrared", "Microwave", "Fiber Optic"],
+    "correct": 0,
+    "explanation": "Radio waves propagate through the air and are used for long-distance broadcasting."
+  },
+  {
+    "q": "Which OSPF packet type is used to discover neighbors?",
+    "options": ["Hello Packet", "Link-State Update", "Database Description", "Acknowledgment"],
+    "correct": 0,
+    "explanation": "Hello packets are used to discover neighbors and establish OSPF adjacency."
+  },
+  {
+    "q": "Which property of the reference monitor ensures every access is checked against security policy?",
+    "options": ["Complete mediation", "Isolation", "Verifiability", "No read up"],
+    "correct": 0,
+    "explanation": "Complete mediation ensures that every access to every object is checked for compliance."
+  },
+  {
+    "q": "Which OOP principle binds together code and data while keeping both safe from outside interference?",
+    "options": ["Inheritance", "Polymorphism", "Encapsulation", "Abstraction"],
+    "correct": 2,
+    "explanation": "Encapsulation hides the internal representation of an object and allows controlled access."
+  },
+  {
+    "q": "Which cardinality represents that one entity in set A maps to at most one entity in set B and vice versa?",
+    "options": ["One-to-many", "Many-to-one", "One-to-one", "Many-to-many"],
+    "correct": 2,
+    "explanation": "One-to-one cardinality restricts associations to a single match in both sets."
+  },
+  {
+    "q": "Which PHP function removes all global session variables?",
+    "options": ["session_unset()", "session_destroy()", "session_close()", "session_delete()", "A and B"],
+    "correct": 4,
+    "explanation": "Both session_unset() and session_destroy() clear session data and destroy the session."
+  },
+  {
+    "q": "Which of the following statements about Access Control Matrix (ACM) is incorrect?",
+    "options": [
+      "Subjects & objects are represented by rows and columns respectively",
+      "Matrix has many empty entries",
+      "ACL is decomposition by rows; Capability List is decomposition by columns",
+      "ACM drawback can be fixed using ACL"
+    ],
+    "correct": 2,
+    "explanation": "ACLs decompose the matrix by columns, not rows; Capability Lists use rows."
+  },
+  {
+    "q": "Which state defines creating a new instance of the MediaPlayer class?",
+    "options": ["Prepared state", "Initialization state", "Idle state", "Completed state"],
+    "correct": 2,
+    "explanation": "Idle state occurs when the MediaPlayer object is newly created and not yet initialized."
+  },
+  {
+    "q": "Which Android mechanism is preferred to access smartphone camera from an app?",
+    "options": ["Service", "Intent", "Broadcast receiver", "View"],
+    "correct": 1,
+    "explanation": "Intents are used to launch the camera app and get the captured photo."
+  },
+  {
+    "q": "Which attribute type can be calculated from other related attributes?",
+    "options": ["Simple", "Derived", "Multi-valued", "Composite"],
+    "correct": 1,
+    "explanation": "Derived attributes are computed from one or more other attributes."
+  },
+  {
+    "q": "Which type of DBMS stores data in tree-like structures similar to filing cabinets?",
+    "options": ["Object-oriented", "Relational", "Network", "Hierarchical"],
+    "correct": 3,
+    "explanation": "Hierarchical DBMS organizes data in a parent-child tree structure."
+  },
+  {
+    "q": "Which is not true about immediate update in databases?",
+    "options": [
+      "Changes made by that transaction are not recorded",
+      "New data is recorded in the database itself",
+      "On restart, redo committed changes from log",
+      "All",
+      "None"
+    ],
+    "correct": 0,
+    "explanation": "Immediate update writes changes to the database immediately, so statement 0 is false."
+  },
+  {
+    "q": "Which UML concept describes an event that starts a use case?",
+    "options": ["Precondition", "Postcondition", "Trigger", "None"],
+    "correct": 2,
+    "explanation": "A trigger is an event that initiates a use case."
+  },
+  {
+    "q": "Which UML diagram shows physical architecture including processors, devices, and software components?",
+    "options": ["State", "Component", "Sequence", "Deployment", "Communication"],
+    "correct": 3,
+    "explanation": "Deployment diagrams depict the physical hardware and software deployment."
+  },
+  {
+    "q": "Which of the following is used to define and manage all the work required for project success?",
+    "options": ["Time management", "Scope management", "Cost management", "Risk management"],
+    "correct": 1,
+    "explanation": "Project Scope Management defines and controls all project work."
+  },
+  {
+    "q": "Which steps occur when establishing a TCP connection using sockets?",
+    "options": [
+      "Server creates ServerSocket with port number",
+      "Server calls accept() to wait for client",
+      "Client creates Socket to connect to server",
+      "All of the above"
+    ],
+    "correct": 3,
+    "explanation": "All steps are required to establish a TCP connection using sockets."
+  },
+  {
+    "q": "Which project goals define success excluding planning?",
+    "options": ["Meet budget", "Finish on schedule", "Generate deliverables", "All except planning", "All except C"],
+    "correct": 3,
+    "explanation": "Project success includes budget, schedule, and deliverables, but planning is a process, not a goal."
+  },
+  {
+    "q": "Which parameter is mandatory when creating a cookie with setcookie() in PHP?",
+    "options": ["Name", "Value", "Expire", "Path", "Domain", "Secure"],
+    "correct": 0,
+    "explanation": "The 'Name' parameter is required; all other parameters are optional."
+  },
+  {
+    "q": "Which software or hardware filters all data packets coming through a network?",
+    "options": ["Antivirus", "Firewall", "Cookies", "Malware"],
+    "correct": 1,
+    "explanation": "A firewall monitors and controls network traffic based on security rules."
+  },
+  {
+    "q": "Which is the correct way to refer to an image in Android's drawable directory?",
+    "options": ["R.drawable.R.File_name", "File_name.R.drawable", "R.File_name.drawable", "R.drawable.File_name"],
+    "correct": 3,
+    "explanation": "Images in drawable folder are accessed using R.drawable.File_name in Android."
+  },
+  {
+    "q": "RAID is commonly used for which purpose?",
+    "options": ["ARIES", "RAID", "Two-phase commit", "All", "None"],
+    "correct": 1,
+    "explanation": "RAID provides reliability and performance by combining multiple disks."
+  },
+  {
+    "q": "What is a buffer in main memory?",
+    "options": ["Track", "Block", "Buffer", "All", "None"],
+    "correct": 2,
+    "explanation": "A buffer temporarily stores disk blocks in main memory for faster access."
+  },
+  {
+    "q": "Which Java class represents a message that can arrive out of order and may be lost?",
+    "options": ["DatagramPacket", "DatagramSocket", "Both A & B", "None"],
+    "correct": 0,
+    "explanation": "DatagramPacket is used in UDP, which is unreliable and connectionless."
+  },
+
+
+
+
+
+
+
+
+ 
+  {
+    "q": "Hosts devices on a network are located by their IP address, but network interface card do not have IP addresses, it has MAC addresses instead so if you need to associate the IP address to a MAC address which protocol can be used?",
+    "options": ["ARP", "SMTP", "UDP", "POP"],
+    "correct": 0,
+    "explanation": "ARP (Address Resolution Protocol) maps an IP address to a MAC address."
+  },
+  {
+    "q": "_________is used to temporarily store data on the server so that it can be utilized on a variety of different websites.",
+    "options": ["Cookie", "Session", "Array", "Structure"],
+    "correct": 1,
+    "explanation": "Session stores temporary server-side data accessible across multiple pages for a user."
+  },
+  {
+    "q": "For which knowledge category/area does Work breakdown structures (WBS) Requirements analyses and Gantt chart tools and techniques used respectively?",
+    "options": ["Integration management and time management", "Project scope management and Time management", "Communication management and Risk management", "Cost management and Quality management"],
+    "correct": 1,
+    "explanation": "WBS is used in Project Scope Management; Gantt charts are tools in Time Management."
+  },
+  {
+    "q": "Which one is correct about Data Provider?",
+    "options": [
+      "Data provider enable to get access for the appropriate database",
+      "System.Data.SqlClient allow us to get access for sql server database",
+      "Data provider provide data from the file somewhere it is located",
+      "System.Data.OleDb allow us to get access for OleDb database"
+    ],
+    "correct": 2,
+    "explanation": "A data provider delivers data from a source, e.g., files, databases, or external systems."
+  },
+  {
+    "q": "Identify the wrong statement/s about Access Control Model",
+    "options": [
+      "In Access Control Matrix (ACM), Subject & object are represented by row and column respectively",
+      "ACM has a drawback as matrix have many empty entries (take more space)",
+      "ACM’s drawback can be fixed by using Access Control Lists, as each object maintains a list of access rights of subjects.",
+      "Access Control List is just decomposition of the matrix by rows while Capability List is decomposition of the matrix by column"
+    ],
+    "correct": 3,
+    "explanation": "ACLs decompose the matrix by columns, not rows; Capability Lists decompose by rows."
+  },
+  {
+    "q": "Which one of the following is true statement about inheritance?",
+    "options": [
+      "A sub class can inherit all non-private members of its parent.",
+      "A parent class can inherit all non-private members of its subclass.",
+      "A sub class can have two or more immediate parent classes.",
+      "A parent class cannot have two or more sub classes."
+    ],
+    "correct": 2,
+    "explanation": "Some languages (like C++) support multiple inheritance, so a subclass can have multiple parent classes."
+  },
+  {
+    "q": "Among reference monitor properties which one aimed to enforce security rules on every access.",
+    "options": ["Complete mediation", "Isolation", "Verifiability", "No read up"],
+    "correct": 0,
+    "explanation": "Complete mediation ensures every access to a resource is checked against security policy."
+  },
+  {
+    "q": "Question missing context (answer is 19)",
+    "options": ["10", "20", "19", "9"],
+    "correct": 2,
+    "explanation": "No context provided, but the correct answer according to the source is 19."
+  },
+  {
+    "q": "When the communication between two remote points is required to be established before sending actual data and error-checking mechanism is required for your communication which network protocol you will use?",
+    "options": ["UDP", "TCP", "HTTP", "FTP"],
+    "correct": 1,
+    "explanation": "TCP provides reliable, connection-oriented communication with error checking."
+  },
+  {
+    "q": "If you want media that propagate in the sky for travel signals for long distances broadcasting which transmission media will you use?",
+    "options": ["Radio Wave", "Microwaves", "Infrared", "All"],
+    "correct": 0,
+    "explanation": "Radio waves are suitable for long-distance wireless broadcasting."
+  },
+  {
+    "q": "What command would be used to determine if a routing protocol-initiated relationship had been made with an adjacent router?",
+    "options": ["ping", "show ip ospf neighbor", "show ip interface brief", "show ip protocols"],
+    "correct": 1,
+    "explanation": "OSPF 'show ip ospf neighbor' displays neighbor relationships and adjacency status."
+  },
+  {
+    "q": "_________________ is commonly used to perform an immediate action when clicked.",
+    "options": ["Exit", "Close", "End", "Button control"],
+    "correct": 3,
+    "explanation": "Button controls trigger immediate actions when clicked in GUI applications."
+  },
+  {
+    "q": "Assume you are a system developer, you develop such a good system but after deploying it, the users are not that much happy in the developed system. which activity of testing is missed according to this scenario?",
+    "options": ["System testing", "Unit testing", "Acceptance testing", "Installation testing"],
+    "correct": 2,
+    "explanation": "Acceptance testing checks whether the system meets user expectations and requirements."
+  },
+  {
+    "q": "How constructor can be used for a servlet?",
+    "options": ["Initialization", "Constructor function", "Initialization and Constructor function", "Setup() method"],
+    "correct": 2,
+    "explanation": "Servlet constructors can initialize objects; initialization methods are also used for setup."
+  },
+  {
+    "q": "In the Project management knowledge area, one of the following is used to define and manage all the work required to complete the project successfully, which is it?",
+    "options": ["Project time management", "Project scope management", "Project cost management", "Project risk management"],
+    "correct": 1,
+    "explanation": "Project Scope Management defines and controls all work required for project completion."
+  },
+  {
+    "q": "Which steps occur when establishing a TCP connection between two computers using sockets?",
+    "options": [
+      "The server instantiates a ServerSocket object, denoting which port number communication is to occur on",
+      "The server invokes the accept() method of the ServerSocket class. This method waits until a client connects to the server on the given port",
+      "After the server is waiting, a client instantiates a Socket object, specifying the server name and port number to connect to",
+      "All of the above"
+    ],
+    "correct": 3,
+    "explanation": "All listed steps occur sequentially to establish a TCP connection using sockets."
+  },
+  {
+    "q": "Identify the three goals of a project in project management.",
+    "options": ["Meet the budget", "Finish on schedule", "Generate deliverables that satisfy the client", "Planning", "all except D", "all except C"],
+    "correct": 4,
+    "explanation": "Project goals include meeting budget, schedule, and delivering client satisfaction, excluding planning."
+  },
+  {
+    "q": "A cookie is created using the setcookie() function. Which parameter is mandatory.",
+    "options": ["Name", "Value", "Expire", "Path", "Domain", "Secure"],
+    "correct": 0,
+    "explanation": "The 'Name' parameter is mandatory when creating a cookie with setcookie()."
+  },
+  {
+    "q": "It can be a software program or a hardware device that filters all data packets coming through the internet, a network, etc. it is known as the_______:",
+    "options": ["Antivirus", "Firewall", "Cookies", "Malware"],
+    "correct": 1,
+    "explanation": "A firewall monitors and filters network traffic to protect systems."
+  },
+  {
+    "q": "One of the following is the correct way for referring multimedia graphics such as image that exists in drawable directory.",
+    "options": ["R.drawable.R.File_name", "File_name.R.drawable", "R.File_name.drawable", "R.drawable.File_name"],
+    "correct": 3,
+    "explanation": "In Android, images in the drawable folder are referenced as R.drawable.File_name."
+  },
+  {
+    "q": "_______is a data storage system architecture that is commonly used in large organizations for better reliability and performance.",
+    "options": ["ARIES", "RAID", "Two-phase commit", "All", "None"],
+    "correct": 1,
+    "explanation": "RAID (Redundant Array of Independent Disks) improves performance and reliability of storage."
+  },
+  {
+    "q": "_______is a contiguous reserved area in main memory available for storage of copies of disk blocks.",
+    "options": ["Track", "Block", "Buffer", "All", "None"],
+    "correct": 2,
+    "explanation": "A buffer temporarily stores disk block data in main memory for faster access."
+  },
+  {
+    "q": "If you need your app to take photos using the integrated smart phone camera, which one of the following way is preferred to use this feature?",
+    "options": ["Service", "Intent", "Broadcast receiver", "View"],
+    "correct": 1,
+    "explanation": "Intents are used in Android to launch external apps such as the camera."
+  },
+  {
+    "q": "Which one of the following state defines creating new instance of the MediaPlayer class?",
+    "options": ["Prepared state", "Initialization state", "Idle state", "Completed state"],
+    "correct": 2,
+    "explanation": "Idle state is when a MediaPlayer object is newly created but not yet initialized."
+  },
+  {
+    "q": "In which of the following attribute type the attribute value can be calculated from other related attribute?",
+    "options": ["Simple Attribute", "Derived Attribute", "Multi-valued Attribute", "Composite Attribute"],
+    "correct": 1,
+    "explanation": "Derived attributes are computed from other attribute values."
+  },
+  {
+    "q": "The traditional storage of data organized by the customer, stored in separate folders in filing cabinets is an example of ______________ type of ‘database’ management system.",
+    "options": [
+      "Object-oriented database management system",
+      "Relational database management system",
+      "Network database management system",
+      "Hierarchical database management system"
+    ],
+    "correct": 3,
+    "explanation": "Hierarchical DBMS stores data in tree-like structures similar to folders."
+  },
+  {
+    "q": "Which one of the following is not true about immediate update?",
+    "options": [
+      "Changes made by that transaction are not recorded in the database.",
+      "The new data is recorded in the database itself.",
+      "On a system restart after a failure, redo committed changes from log.",
+      "All",
+      "None"
+    ],
+    "correct": 0,
+    "explanation": "In immediate update, changes are recorded immediately in the database; statement 0 is false."
+  },
+  {
+    "q": "Which of these statements is truly acceptable?",
+    "options": [
+      "A precondition is an assertion guaranteed to be true when the activity or operation finishes",
+      "A postcondition is an assertion guaranteed to be true when the activity or operation begins",
+      "Trigger is an event that causes a use case to begin",
+      "None"
+    ],
+    "correct": 2,
+    "explanation": "A trigger initiates a use case in UML modeling."
+  },
+  {
+    "q": "___________ diagram describes the physical architecture of the hardware and software in the system and depicts software components, processors, and devices that make up the systems architecture?",
+    "options": ["State", "Component", "Sequence", "Deployment", "Communication"],
+    "correct": 3,
+    "explanation": "Deployment diagrams show hardware and software mapping in UML."
+  },
+  {
+    "q": "What is the function of OSPF hello packets?",
+    "options": [
+      "To send specifically requested link-state records",
+      "To discover neighbors and build adjacencies between them",
+      "To ensure database synchronization between routers",
+      "To request specific link-state records from neighbor routers"
+    ],
+    "correct": 1,
+    "explanation": "Hello packets are used to discover OSPF neighbors and establish adjacency."
+  },
+  {
+    "q": "Which principle object oriented programming is the mechanism that binds together code and the data it manipulates and keeps both safe from outside interference and misuse?",
+    "options": ["Inheritance", "Polymorphism", "Encapsulation", "Abstraction"],
+    "correct": 2,
+    "explanation": "Encapsulation hides data and provides controlled access via methods."
+  },
+  {
+    "q": "In which one of the following cardinality, an occurrence in entity set A is associated with at most one occurrence in an entity set B, and an occurrence in B is associated with at most one occurrence in A.?",
+    "options": ["One-to-many", "Many-to-one", "One-to-one", "Many-to-many"],
+    "correct": 2,
+    "explanation": "One-to-one cardinality restricts each entity in both sets to a single association."
+  },
+  {
+    "q": "One project is successful if the project is",
+    "options": [
+      "Met scope, time, and cost goals",
+      "Satisfied the customer/sponsor.",
+      "The results of the project met its main objective, such as making or saving a certain amount of money, providing a good return on investment, or simply making the sponsors happy",
+      "All"
+    ],
+    "correct": 3,
+    "explanation": "All listed conditions define project success."
+  },
+  {
+    "q": "To remove all global session variables and destroy the session, we use function called____",
+    "options": ["session_unset()", "session_destroy()", "session_close()", "session_delete()", "A and B"],
+    "correct": 4,
+    "explanation": "Both session_unset() and session_destroy() are used to clear and destroy sessions in PHP."
+  },
+  {
+    "q": "Which class is message that can be sent or received. If you send multiple packet, it may arrive in any order, Moreover, packet delivery is not guaranteed?",
+    "options": ["DatagramPacket", "DatagramSocket", "Both A & B", "None of the above"],
+    "correct": 0,
+    "explanation": "DatagramPacket represents individual packets in UDP, which are unordered and unreliable."
+  }
+
+
  
 
 
@@ -12961,6 +13407,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
