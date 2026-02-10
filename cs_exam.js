@@ -1,5 +1,636 @@
 // Exam Data
 const exams = {
+"model":[
+
+
+  {
+    "q": "Which of the following is not a type of computer network?",
+    "options": ["LAN", "WAN", "PAN", "CANADA"],
+    "answer": 3,
+    "explanation": "LAN, WAN, and PAN are network types; CANADA is a country, not a network type."
+  },
+  {
+    "q": "Which of the following is used to detect errors in data transmission?",
+    "options": ["Parity Bit", "Multiplexer", "Demultiplexer", "Router"],
+    "answer": 0,
+    "explanation": "Parity bits are used for simple error detection in transmitted data."
+  },
+  {
+    "q": "Which of the following is an advantage of Object-Oriented Programming?",
+    "options": ["Code reusability", "Better memory management", "Faster execution", "None of the mentioned"],
+    "answer": 0,
+    "explanation": "OOP allows code reusability through inheritance and modular design."
+  },
+  {
+    "q": "Which layer of OSI is responsible for reliable data transfer?",
+    "options": ["Data Link Layer", "Transport Layer", "Network Layer", "Application Layer"],
+    "answer": 1,
+    "explanation": "Transport Layer ensures reliable end-to-end data delivery, error checking, and flow control."
+  },
+  {
+    "q": "Which of the following is a dynamic data structure?",
+    "options": ["Array", "Stack", "Queue", "Linked List"],
+    "answer": 3,
+    "explanation": "Linked lists are dynamic structures that can grow or shrink at runtime."
+  },
+  {
+    "q": "Which of the following is not a feature of TCP?",
+    "options": ["Reliable transmission", "Connection-oriented", "Packet sequencing", "Broadcasting"],
+    "answer": 3,
+    "explanation": "TCP provides reliable, connection-oriented transmission with sequencing; broadcasting is not supported."
+  },
+  {
+    "q": "Which of the following is not a primary key requirement?",
+    "options": ["Unique", "Not null", "Foreign key", "Single attribute or combination"],
+    "answer": 2,
+    "explanation": "Primary key must be unique and not null; it is not a foreign key."
+  },
+  {
+    "q": "Which of the following is used in Internet addressing to identify devices uniquely?",
+    "options": ["IP Address", "MAC Address", "Subnet Mask", "Gateway"],
+    "answer": 0,
+    "explanation": "IP addresses uniquely identify devices on a network; MAC addresses are hardware identifiers."
+  },
+  {
+    "q": "Which of the following is not a type of loop in programming?",
+    "options": ["For loop", "While loop", "Do-while loop", "If-else loop"],
+    "answer": 3,
+    "explanation": "If-else is a conditional statement, not a loop."
+  },
+  {
+    "q": "Which of the following is a type of system software?",
+    "options": ["Compiler", "Operating System", "Assembler", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "System software includes compilers, operating systems, and assemblers."
+  },
+  {
+    "q": "Which of the following memory is volatile?",
+    "options": ["RAM", "ROM", "Flash", "Hard Disk"],
+    "answer": 0,
+    "explanation": "RAM loses its content when power is off, making it volatile."
+  },
+  {
+    "q": "Which of the following is not a type of database query language?",
+    "options": ["DML", "DDL", "DCL", "HTML"],
+    "answer": 3,
+    "explanation": "HTML is a markup language, not a database query language."
+  },
+  {
+    "q": "Which of the following scheduling algorithms uses the shortest next CPU burst?",
+    "options": ["First Come First Serve", "Shortest Job Next", "Round Robin", "Priority Scheduling"],
+    "answer": 1,
+    "explanation": "Shortest Job Next (or Shortest Job First) schedules the process with the smallest CPU burst next."
+  },
+  {
+    "q": "Which of the following is not a characteristic of good software?",
+    "options": ["Maintainability", "Reliability", "Correctness", "Randomness"],
+    "answer": 3,
+    "explanation": "Good software should be maintainable, reliable, and correct; randomness is not a feature."
+  },
+  {
+    "q": "Which of the following is a symmetric key cryptography algorithm?",
+    "options": ["RSA", "DSA", "AES", "Diffie-Hellman"],
+    "answer": 2,
+    "explanation": "AES is a symmetric key algorithm; RSA and DSA are asymmetric."
+  },
+  {
+    "q": "Which of the following is a non-linear algorithm?",
+    "options": ["Binary Search", "Linear Search", "Quick Sort", "Merge Sort"],
+    "answer": 0,
+    "explanation": "Binary search is a divide-and-conquer algorithm, making it non-linear; linear search is linear."
+  },
+  {
+    "q": "Which of the following is a component of DBMS?",
+    "options": ["Query Processor", "Storage Manager", "Transaction Manager", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "All listed components are part of a database management system."
+  },
+  {
+    "q": "Which of the following is a private IP address?",
+    "options": ["192.168.0.1", "8.8.8.8", "172.15.0.1", "4.2.2.2"],
+    "answer": 0,
+    "explanation": "192.168.x.x is reserved for private networks."
+  },
+  {
+    "q": "Which of the following is a part of the Control Unit in CPU?",
+    "options": ["Instruction Register", "Program Counter", "Decoder", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "All listed components are part of the CPU's control unit."
+  },
+  {
+    "q": "Which of the following is used to convert high-level language to machine language?",
+    "options": ["Compiler", "Interpreter", "Assembler", "Linker"],
+    "answer": 0,
+    "explanation": "A compiler translates the entire program into machine language."
+  },
+  {
+    "q": "Which layer of the OSI model establishes, maintains, and terminates sessions?",
+    "options": ["Transport Layer", "Session Layer", "Presentation Layer", "Application Layer"],
+    "answer": 1,
+    "explanation": "The Session Layer manages sessions between applications."
+  },
+  {
+    "q": "Which of the following is used in operating system for deadlock avoidance?",
+    "options": ["Banker's Algorithm", "Round Robin", "First Come First Serve", "Shortest Job First"],
+    "answer": 0,
+    "explanation": "Banker's Algorithm prevents deadlock by resource allocation checks."
+  },
+  {
+    "q": "Which of the following protocols is used for sending email?",
+    "options": ["SMTP", "HTTP", "FTP", "DNS"],
+    "answer": 0,
+    "explanation": "SMTP (Simple Mail Transfer Protocol) is used to send emails."
+  },
+  {
+    "q": "Which of the following is not a type of RAID?",
+    "options": ["RAID 0", "RAID 1", "RAID 5", "RAID 10X"],
+    "answer": 3,
+    "explanation": "RAID 10X does not exist; RAID 0, 1, and 5 are standard types."
+  },
+  {
+    "q": "Which of the following is a characteristic of 5G networks?",
+    "options": ["High latency", "Low speed", "High bandwidth", "Limited connectivity"],
+    "answer": 2,
+    "explanation": "5G offers high bandwidth, low latency, and supports massive connectivity."
+  },
+  {
+    "q": "Which of the following is not a data type in C?",
+    "options": ["int", "float", "string", "double"],
+    "answer": 2,
+    "explanation": "C does not have a string type; it uses char arrays for strings."
+  },
+  {
+    "q": "Which of the following is a type of firewall?",
+    "options": ["Packet Filtering", "Proxy", "Stateful Inspection", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "All listed types are firewall techniques."
+  },
+  {
+    "q": "Which type of database operation is used to retrieve data?",
+    "options": ["SELECT", "INSERT", "UPDATE", "DELETE"],
+    "answer": 0,
+    "explanation": "SELECT is used to retrieve data from a database."
+  },
+  {
+    "q": "Which of the following is used to prevent unauthorized access in a computer system?",
+    "options": ["Authentication", "Encryption", "Backup", "Compression"],
+    "answer": 0,
+    "explanation": "Authentication ensures only authorized users can access the system."
+  },
+  {
+    "q": "Which of the following is an example of non-volatile memory?",
+    "options": ["RAM", "ROM", "Cache", "Register"],
+    "answer": 1,
+    "explanation": "ROM retains data even when power is off."
+  },
+  {
+    "q": "Which of the following is not a Python data structure?",
+    "options": ["List", "Tuple", "Dictionary", "ArrayList"],
+    "answer": 3,
+    "explanation": "ArrayList is used in Java, not Python."
+  },
+  {
+    "q": "Which of the following is used to schedule processes in OS?",
+    "options": ["CPU Scheduler", "Memory Manager", "File System", "Device Manager"],
+    "answer": 0,
+    "explanation": "CPU Scheduler decides which process runs next on the CPU."
+  },
+  {
+    "q": "Which of the following is a markup language?",
+    "options": ["HTML", "C++", "Java", "Python"],
+    "answer": 0,
+    "explanation": "HTML is a markup language, not a programming language."
+  },
+  {
+    "q": "Which of the following is a version control system?",
+    "options": ["Git", "Docker", "Jenkins", "Kubernetes"],
+    "answer": 0,
+    "explanation": "Git is used for version control; others are for CI/CD or containerization."
+  },
+  {
+    "q": "Which of the following is not an OS process state?",
+    "options": ["New", "Ready", "Running", "Compiling"],
+    "answer": 3,
+    "explanation": "Compiling is not a process state; it is an activity done by a process."
+  },
+  {
+    "q": "Which protocol is used for secure browsing?",
+    "options": ["HTTP", "HTTPS", "FTP", "SMTP"],
+    "answer": 1,
+    "explanation": "HTTPS encrypts data for secure web browsing."
+  },
+  {
+    "q": "Which of the following is a key feature of Java?",
+    "options": ["Platform independence", "Object orientation", "Automatic memory management", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "Java supports platform independence, OOP, and automatic memory management."
+  },
+  {
+    "q": "Which type of SQL command is used to change existing records?",
+    "options": ["UPDATE", "DELETE", "INSERT", "SELECT"],
+    "answer": 0,
+    "explanation": "UPDATE modifies existing records in a table."
+  },
+  {
+    "q": "Which of the following is not a valid IPv6 address?",
+    "options": ["2001:0db8:85a3::8a2e:0370:7334", "2001::85a3::7334", "fe80::1", "::1"],
+    "answer": 1,
+    "explanation": "An IPv6 address cannot have two double colons (::) in the same address."
+  },
+  {
+    "q": "Which of the following algorithms is used for searching in a sorted array?",
+    "options": ["Linear Search", "Binary Search", "Bubble Search", "Quick Search"],
+    "answer": 1,
+    "explanation": "Binary Search efficiently finds elements in sorted arrays."
+  },
+  {
+    "q": "Which of the following is a software development methodology?",
+    "options": ["Agile", "Waterfall", "Scrum", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "Agile, Waterfall, and Scrum are software development methodologies."
+  },
+  {
+    "q": "Which of the following is not a type of computer virus?",
+    "options": ["Trojan", "Worm", "Spyware", "Firewall"],
+    "answer": 3,
+    "explanation": "Firewall is a security mechanism, not a virus."
+  },
+  {
+    "q": "Which of the following is used to prevent SQL injection?",
+    "options": ["Parameterized Queries", "Dynamic SQL", "String Concatenation", "None of the mentioned"],
+    "answer": 0,
+    "explanation": "Parameterized queries safely handle user input to prevent SQL injection."
+  },
+  {
+    "q": "Which of the following is used to manage files and directories in OS?",
+    "options": ["File System", "Memory Manager", "Process Scheduler", "Network Manager"],
+    "answer": 0,
+    "explanation": "File system manages files and directories on storage devices."
+  },
+
+
+
+
+  
+
+  {
+    "q": "Which of the following is used to add styles and formatting to a webpage in CSS?",
+    "options": ["Functions", "Variables", "Selectors", "Arrays"],
+    "answer": 2,
+    "explanation": "Selectors are used in CSS to apply styles to specific HTML elements."
+  },
+  {
+    "q": "Which one of the following techniques is not used in the Binary tree?",
+    "options": ["Randomized traversal", "Preorder traversal", "Postorder traversal", "Inorder traversal"],
+    "answer": 0,
+    "explanation": "Randomized traversal is not a standard method for traversing binary trees."
+  },
+  {
+    "q": "In IPv4 Addresses, classful addressing is replaced with ________",
+    "options": ["Classful Addressing", "Classless Addressing", "Classful Advertising", "Classless Advertising"],
+    "answer": 1,
+    "explanation": "Classless addressing (CIDR) replaced classful addressing to allow more efficient IP allocation."
+  },
+  {
+    "q": "Which control statement is used for executing different blocks of code based on multiple conditions?",
+    "options": ["While loop statement", "For loop statement", "If...else statement", "Switch statement"],
+    "answer": 3,
+    "explanation": "The switch statement allows branching to different blocks based on the value of a variable."
+  },
+  {
+    "q": "Which graph traversal algorithm is used to find the shortest path between two nodes?",
+    "options": ["Dijkstra's Algorithm", "Depth-First Search (DFS)", "Kruskal's Algorithm", "Breadth-First Search (BFS)"],
+    "answer": 0,
+    "explanation": "Dijkstra's algorithm finds the shortest path in weighted graphs."
+  },
+  {
+    "q": "Consider the following sequential free memory block sizes: A=100 KB, B=200 KB, C=150 KB, D=300 KB, E=250 KB. Using First Fit, P1=120 KB, P2=250 KB, P3=180 KB. Which process goes into which memory block?",
+    "options": ["P1: Block B, P2: Block E, P3: Block A", "P1: Block D, P2: Block E, P3: will not be allocated", "P1: Block B, P2: Block D, P3: Block E", "P1: Block A, P2: Block D, P3: Block E"],
+    "answer": 2,
+    "explanation": "First Fit allocates the first block that is large enough: P1 fits B, P2 fits D, P3 fits E."
+  },
+  {
+    "q": "Employee (Emp_Id, Emp_name, emp_salary), here Employee is __________ and Emp_Id, Emp_name, emp_salary are _________.",
+    "options": ["Tuple, Primary key", "Table, Attribute", "Attributes, Relation", "Row, Column"],
+    "answer": 1,
+    "explanation": "Employee represents a table and the columns (Emp_Id, Emp_name, emp_salary) are its attributes."
+  },
+  {
+    "q": "Which one of the following search algorithms requires less memory?",
+    "options": ["Linear Search", "Depth First Search", "Optimal Search", "Breadth-First Search"],
+    "answer": 1,
+    "explanation": "Depth First Search uses less memory than BFS because it only stores a path from root to a leaf."
+  },
+  {
+    "q": "A functional dependency is a relationship between/among ___________",
+    "options": ["Rows", "Tables", "Attributes", "Entities"],
+    "answer": 2,
+    "explanation": "A functional dependency expresses a relationship between attributes in a relational database."
+  },
+  {
+    "q": "___________ is a theoretical construct of Turing machine that can simulate any other Turing machine.",
+    "options": ["Multi-tape Turing machine", "Universal Turing machine", "Multi-track Turing machine", "Semi-infinite Tape"],
+    "answer": 1,
+    "explanation": "A Universal Turing Machine can simulate any other Turing Machine."
+  },
+  {
+    "q": "Which of the following errors will be handled by the operating system?",
+    "options": ["Lack of paper in printer", "Power failure", "Connection failure in the network", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "The OS can handle errors like printer, power, and network failures through device and system management."
+  },
+  {
+    "q": "Which of the following is not a type of database model?",
+    "options": ["Hierarchical", "Network", "Relational", "Fragmented"],
+    "answer": 3,
+    "explanation": "Hierarchical, Network, and Relational are standard database models; Fragmented is not."
+  },
+  {
+    "q": "Which layer in the OSI model provides reliable end-to-end delivery of data?",
+    "options": ["Network Layer", "Transport Layer", "Session Layer", "Data Link Layer"],
+    "answer": 1,
+    "explanation": "The Transport Layer ensures reliable data delivery, error detection, and flow control."
+  },
+  {
+    "q": "Which type of memory is non-volatile and used to store firmware?",
+    "options": ["RAM", "ROM", "Cache", "Virtual Memory"],
+    "answer": 1,
+    "explanation": "ROM is non-volatile memory that stores firmware and system-level instructions."
+  },
+  {
+    "q": "Which of the following is not a characteristic of object-oriented programming?",
+    "options": ["Encapsulation", "Inheritance", "Polymorphism", "Sequential execution"],
+    "answer": 3,
+    "explanation": "Sequential execution is not a characteristic of OOP; encapsulation, inheritance, and polymorphism are."
+  },
+  {
+    "q": "What is the primary purpose of DNS in networking?",
+    "options": ["Routing packets", "Translating domain names to IP addresses", "Encrypting data", "Managing sessions"],
+    "answer": 1,
+    "explanation": "DNS translates human-readable domain names into IP addresses for routing."
+  },
+  {
+    "q": "Which scheduling algorithm gives the highest response time to short processes?",
+    "options": ["First Come First Serve", "Shortest Job First", "Round Robin", "Priority Scheduling"],
+    "answer": 1,
+    "explanation": "Shortest Job First favors shorter processes, giving them faster response time."
+  },
+  {
+    "q": "Which of the following is a non-linear data structure?",
+    "options": ["Array", "Linked List", "Stack", "Graph"],
+    "answer": 3,
+    "explanation": "Graphs are non-linear data structures; arrays, stacks, and linked lists are linear."
+  },
+  {
+    "q": "Which Boolean algebra law states that A + 0 = A?",
+    "options": ["Identity Law", "Null Law", "Complement Law", "Idempotent Law"],
+    "answer": 0,
+    "explanation": "The Identity Law states that adding 0 to a variable does not change its value."
+  },
+  {
+    "q": "Which of the following is not a type of OS?",
+    "options": ["Batch OS", "Multiprogramming OS", "Network OS", "Application OS"],
+    "answer": 3,
+    "explanation": "Batch, Multiprogramming, and Network are OS types; Application OS is not."
+  },
+  {
+    "q": "Which data structure is used in implementing recursion?",
+    "options": ["Queue", "Stack", "Linked List", "Graph"],
+    "answer": 1,
+    "explanation": "Recursion uses a stack to store function calls and return addresses."
+  },
+  {
+    "q": "Which layer in TCP/IP corresponds to the OSI transport layer?",
+    "options": ["Application Layer", "Network Layer", "Transport Layer", "Link Layer"],
+    "answer": 2,
+    "explanation": "The Transport Layer in TCP/IP handles end-to-end communication similar to OSI transport layer."
+  },
+  {
+    "q": "Which type of database normalization removes multivalued dependencies?",
+    "options": ["1NF", "2NF", "3NF", "4NF"],
+    "answer": 3,
+    "explanation": "Fourth Normal Form (4NF) removes multivalued dependencies from database tables."
+  },
+  {
+    "q": "Which network topology requires the least amount of cabling?",
+    "options": ["Star", "Bus", "Ring", "Mesh"],
+    "answer": 1,
+    "explanation": "Bus topology uses a single backbone cable connecting all devices, requiring the least cabling."
+  },
+  {
+    "q": "Which of the following is not a feature of the Linux OS?",
+    "options": ["Multitasking", "GUI support", "Virus-free", "Open-source"],
+    "answer": 2,
+    "explanation": "Linux is multitasking, GUI-supported, and open-source, but not inherently virus-free."
+  },
+  {
+    "q": "Which of the following is a primary key constraint?",
+    "options": ["Unique", "Not Null", "Both Unique and Not Null", "Foreign Key"],
+    "answer": 2,
+    "explanation": "A primary key must be both unique and not null."
+  },
+  {
+    "q": "Which of the following sorting algorithms is stable?",
+    "options": ["Quick Sort", "Heap Sort", "Merge Sort", "Selection Sort"],
+    "answer": 2,
+    "explanation": "Merge Sort is a stable sorting algorithm; Quick Sort and Heap Sort are not."
+  },
+  {
+    "q": "Which device is used to connect multiple networks together?",
+    "options": ["Hub", "Switch", "Router", "Repeater"],
+    "answer": 2,
+    "explanation": "Routers connect different networks and manage traffic between them."
+  },
+  {
+    "q": "Which type of malware restricts access to computer systems until a ransom is paid?",
+    "options": ["Virus", "Worm", "Trojan", "Ransomware"],
+    "answer": 3,
+    "explanation": "Ransomware encrypts files or locks systems until a ransom is paid."
+  },
+  {
+    "q": "Which of the following is not part of the CPU?",
+    "options": ["ALU", "Control Unit", "Cache", "RAM"],
+    "answer": 3,
+    "explanation": "RAM is memory, not part of the CPU, while ALU, Control Unit, and Cache are inside CPU."
+  },
+  {
+    "q": "Which network layer is responsible for path determination and logical addressing?",
+    "options": ["Data Link Layer", "Network Layer", "Transport Layer", "Physical Layer"],
+    "answer": 1,
+    "explanation": "The Network Layer handles routing, addressing, and path determination."
+  },
+  {
+    "q": "Which HTTP method is used to update an existing resource?",
+    "options": ["GET", "POST", "PUT", "DELETE"],
+    "answer": 2,
+    "explanation": "PUT is used to update an existing resource on the server."
+  },
+  {
+    "q": "Which of the following is not a SQL command?",
+    "options": ["SELECT", "INSERT", "UPDATE", "CREATE TABLESPACE"],
+    "answer": 3,
+    "explanation": "CREATE TABLESPACE is Oracle-specific; standard SQL commands are SELECT, INSERT, UPDATE."
+  },
+  {
+    "q": "Which type of memory is fastest for CPU access?",
+    "options": ["RAM", "Cache", "ROM", "Hard Disk"],
+    "answer": 1,
+    "explanation": "CPU cache is the fastest memory, located very close to CPU cores."
+  },
+  {
+    "q": "Which protocol is used to securely transfer files over the internet?",
+    "options": ["FTP", "SFTP", "HTTP", "SMTP"],
+    "answer": 1,
+    "explanation": "SFTP (Secure File Transfer Protocol) encrypts file transfers over the network."
+  },
+  {
+    "q": "Which method converts high-level code into machine code directly?",
+    "options": ["Interpretation", "Compilation", "Linking", "Assembling"],
+    "answer": 1,
+    "explanation": "Compilation translates the entire program into machine code before execution."
+  },
+  {
+    "q": "Which of the following is not a type of cloud computing service?",
+    "options": ["IaaS", "PaaS", "SaaS", "DaaS"],
+    "answer": 3,
+    "explanation": "IaaS, PaaS, and SaaS are standard cloud services; DaaS (Desktop as a Service) is less common."
+  },
+  {
+    "q": "Which TCP/IP layer corresponds to the OSI application, presentation, and session layers?",
+    "options": ["Application Layer", "Transport Layer", "Network Layer", "Link Layer"],
+    "answer": 0,
+    "explanation": "TCP/IP Application Layer combines OSI's Application, Presentation, and Session layers."
+  },
+  {
+    "q": "Which of the following is not a feature of Python?",
+    "options": ["Interpreted", "Dynamic typing", "Object-oriented", "Compiled language"],
+    "answer": 3,
+    "explanation": "Python is interpreted, dynamically typed, and supports OOP; it is not compiled."
+  },
+  {
+    "q": "Which method in HTTP is used to remove a resource?",
+    "options": ["GET", "POST", "PUT", "DELETE"],
+    "answer": 3,
+    "explanation": "DELETE method requests the server to remove the specified resource."
+  },
+  {
+    "q": "Which of the following is an example of a NoSQL database?",
+    "options": ["MySQL", "MongoDB", "Oracle", "PostgreSQL"],
+    "answer": 1,
+    "explanation": "MongoDB is a NoSQL database; others are relational databases."
+  },
+  {
+    "q": "Which of the following is not a computer language?",
+    "options": ["Python", "HTML", "CSS", "Photoshop"],
+    "answer": 3,
+    "explanation": "Photoshop is software, not a programming or markup language."
+  },
+  {
+    "q": "Which algorithm is used for minimum spanning tree?",
+    "options": ["Dijkstra", "Prim", "KMP", "Bubble Sort"],
+    "answer": 1,
+    "explanation": "Prim's algorithm finds a minimum spanning tree of a weighted graph."
+  },
+  {
+    "q": "Which OSI layer converts data into electrical signals?",
+    "options": ["Physical Layer", "Data Link Layer", "Network Layer", "Transport Layer"],
+    "answer": 0,
+    "explanation": "Physical Layer handles transmission of bits as electrical/optical signals."
+  },
+  {
+    "q": "Which technique is used to avoid deadlock in operating systems?",
+    "options": ["Mutual Exclusion", "Hold and Wait", "Resource Allocation Graph", "Deadlock Ignoring"],
+    "answer": 2,
+    "explanation": "Resource Allocation Graph and algorithms help detect and avoid deadlocks."
+  },
+  {
+    "q": "Which of the following sorting algorithms has the best average-case performance?",
+    "options": ["Bubble Sort", "Quick Sort", "Selection Sort", "Insertion Sort"],
+    "answer": 1,
+    "explanation": "Quick Sort has O(n log n) average-case time complexity, better than other simple sorts."
+  },
+  {
+    "q": "Which type of cloud is dedicated to a single organization?",
+    "options": ["Public Cloud", "Private Cloud", "Hybrid Cloud", "Community Cloud"],
+    "answer": 1,
+    "explanation": "Private Cloud is used exclusively by a single organization."
+  },
+  {
+    "q": "Which one of the following is not an OS process state?",
+    "options": ["Ready", "Waiting", "Running", "Compiling"],
+    "answer": 3,
+    "explanation": "Compiling is an activity, not a standard process state in OS."
+  },
+  {
+    "q": "Which of the following is a logical operator in C?",
+    "options": ["&", "|", "&&", "!=", "=="],
+    "answer": 2,
+    "explanation": "&& is the logical AND operator in C; & is bitwise AND."
+  },
+  {
+    "q": "Which of the following is an example of a programming paradigm?",
+    "options": ["Object-oriented", "Procedural", "Functional", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "All mentioned are programming paradigms."
+  },
+  {
+    "q": "Which of the following is a valid IPv4 address?",
+    "options": ["192.168.1.1", "256.100.50.25", "192.300.1.1", "10.0.0.256"],
+    "answer": 0,
+    "explanation": "192.168.1.1 is a valid IPv4 address; octets must be 0–255."
+  },
+  {
+    "q": "Which of the following techniques is used in cryptography for secure communication?",
+    "options": ["Symmetric encryption", "Asymmetric encryption", "Hashing", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "All mentioned techniques are used in cryptography to secure data."
+  },
+  {
+    "q": "Which of the following is true about RAID 5?",
+    "options": ["No redundancy", "Mirroring only", "Striping with parity", "Single disk storage"],
+    "answer": 2,
+    "explanation": "RAID 5 uses striping with parity to provide redundancy and improve performance."
+  },
+  {
+    "q": "Which one of the following is a feature of Java?",
+    "options": ["Platform independent", "Object-oriented", "Automatic memory management", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "Java supports all mentioned features."
+  },
+  {
+    "q": "Which of the following is a primary function of the OS?",
+    "options": ["Manage hardware", "Provide interface to users", "Resource allocation", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "OS manages hardware, provides user interface, and allocates resources."
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  ],
+
+  
+
+
+
+
+
+
+
+  
 "RVU":[
 
   {
@@ -14569,6 +15200,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
