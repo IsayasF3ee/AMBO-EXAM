@@ -1,5 +1,416 @@
 // Exam Data
 const exams = {
+"RVU":[
+
+  {
+    "q": "_________ is one of the basic principles of object oriented programming that uses one object in multiple forms.",
+    "options": ["Inheritance", "Interface", "Encapsulation", "None of the above"],
+    "correct": 3,
+    "explanation": "The principle described is Polymorphism, which allows one object to take many forms. None of the listed options directly represents Polymorphism."
+  },
+  {
+    "q": "Which is a correct way to create an object in Java for the given Student class?",
+    "options": ["Student stud = Student(3983,20);", "Student stud;", "Student stud = new Student();", "Student stud = new Student(3983,2);"],
+    "correct": 2,
+    "explanation": "In Java, objects are created using the 'new' keyword with the class constructor. Student stud = new Student(); correctly creates an object."
+  },
+  {
+    "q": "To measure space efficiency of an algorithm, we count:",
+    "options": ["Maximum memory required", "Average memory required", "Minimum memory required", "Maximum disk space needed"],
+    "correct": 0,
+    "explanation": "Space efficiency considers the maximum memory the algorithm may require during execution."
+  },
+  {
+    "q": "Two main measures for algorithm efficiency are:",
+    "options": ["Processor and memory", "Data and space", "Complexity and capacity", "Time and space"],
+    "correct": 3,
+    "explanation": "Algorithm efficiency is measured using time complexity (execution time) and space complexity (memory usage)."
+  },
+  {
+    "q": "Best time complexity to precompute all-pairs shortest paths in a weighted graph:",
+    "options": ["O(n^2)", "O(n^3)", "O(n)", "O(n^4)"],
+    "correct": 1,
+    "explanation": "Floyd-Warshall algorithm computes all-pairs shortest paths in O(n^3) time."
+  },
+  {
+    "q": "Time complexity of optimal binary search tree (OBST):",
+    "options": ["O(n)", "O(n^2)", "O(log n)", "O(n!)"],
+    "correct": 2,
+    "explanation": "Searching in a binary search tree takes O(log n) time in the optimal case."
+  },
+  {
+    "q": "Space complexity of a recursive algorithm with n levels of recursion and O(1) space per level:",
+    "options": ["O(n^2)", "O(n)", "O(1)", "O(log n)"],
+    "correct": 3,
+    "explanation": "Recursive calls require stack space. For n levels with O(1) per level, the total space is O(n). If tail recursion is optimized, it can be O(log n)."
+  },
+  {
+    "q": "Best case time complexity of linear search algorithm:",
+    "options": ["O(n^2)", "O(n)", "O(1)", "O(log n)"],
+    "correct": 2,
+    "explanation": "If the element is found at the first position, only one comparison is needed. Hence O(1)."
+  },
+  {
+    "q": "If elements '1','2','3','4' are inserted in a queue, order for removal is:",
+    "options": ["4321", "3241", "1234", "None of the above"],
+    "correct": 2,
+    "explanation": "Queue follows FIFO (First-In-First-Out), so elements are removed in the order 1,2,3,4."
+  },
+  {
+    "q": "Disadvantage of array data structure:",
+    "options": ["Memory must be known beforehand", "Elements can be accessed in constant time", "Elements are stored contiguously", "Other structures can be implemented using arrays"],
+    "correct": 0,
+    "explanation": "Static arrays require size to be declared before use, which may waste or limit memory."
+  },
+  {
+    "q": "Maximum number of swaps in Selection Sort algorithm:",
+    "options": ["n - 1", "1", "n", "n - 2"],
+    "correct": 0,
+    "explanation": "Selection sort always swaps the minimum element into the correct position at most n-1 times."
+  },
+  {
+    "q": "Time complexity to insert an element at the end of a linked list (head pointer known):",
+    "options": ["O(1)", "O(nlog n)", "O(n)", "O(log n)"],
+    "correct": 0,
+    "explanation": "If a tail pointer is maintained, insertion at the end is O(1); otherwise O(n) to traverse."
+  },
+  {
+    "q": "Data structure required to convert infix to prefix notation:",
+    "options": ["Stack", "Queue", "Binary Tree", "Linked List"],
+    "correct": 0,
+    "explanation": "Stack is used to hold operators while converting infix expressions to prefix or postfix."
+  },
+  {
+    "q": "Process of inserting an element in the stack is called:",
+    "options": ["Insert", "Add", "Push", "None of the above"],
+    "correct": 2,
+    "explanation": "Push operation inserts (pushes) an element onto the top of the stack."
+  },
+  {
+    "q": "Which of the following is a Divide and Conquer algorithm?",
+    "options": ["Merge Sort", "Heap Sort", "Selection Sort", "Bubble Sort"],
+    "correct": 0,
+    "explanation": "Merge Sort divides the array recursively and merges sorted parts, hence divide and conquer."
+  },
+  {
+    "q": "A collection of multiple logically related databases distributed over a network is called:",
+    "options": ["Data Fragmentation", "Distributed Database", "Data Allocation", "Data Replication"],
+    "correct": 1,
+    "explanation": "A Distributed Database stores parts of the database on different networked computers."
+  },
+  {
+    "q": "Transaction must execute exactly once completely or not at all:",
+    "options": ["Consistency", "Durability", "Isolation", "Atomicity"],
+    "correct": 3,
+    "explanation": "Atomicity ensures that either all operations in a transaction are performed or none."
+  },
+  {
+    "q": "Language used to formulate database schema:",
+    "options": ["Data Manipulation Language", "Data Definition Language", "Transaction Control Language", "Data Control Language"],
+    "correct": 1,
+    "explanation": "DDL (Data Definition Language) defines the schema (tables, fields, relationships) in a database."
+  },
+  {
+    "q": "A table can have only one:",
+    "options": ["Unique Key", "Candidate Key", "Primary Key", "Foreign Key"],
+    "correct": 2,
+    "explanation": "A primary key uniquely identifies each row in a table and there can be only one primary key."
+  },
+  {
+    "q": "Checkpoints are part of:",
+    "options": ["Recovery measures", "Concurrency measures", "Authorization measures", "Security measures"],
+    "correct": 0,
+    "explanation": "Checkpoints are used to recover the database system to a consistent state after a failure."
+  },
+  {
+    "q": "Foreign key constraint requires that:",
+    "options": ["Domain Integrity", "Referential Integrity", "Transitive Dependency", "Entity Integrity"],
+    "correct": 1,
+    "explanation": "Referential Integrity ensures foreign key values exist as primary key values in the referenced table."
+  },
+  {
+    "q": "Which is NOT a feature of DBMS?",
+    "options": ["Support ACID Property", "Single-user Access only", "High Level Security", "Minimum Duplication and Redundancy"],
+    "correct": 1,
+    "explanation": "DBMS is designed for multi-user access. Single-user access only is not a feature."
+  },
+  {
+    "q": "Which is NOT a function of a database?",
+    "options": ["Analyzing code", "Provide backup and recovery", "Manipulate data", "Manage stored data"],
+    "correct": 0,
+    "explanation": "Databases store and manage data, manipulate data, and provide recovery. Analyzing code is unrelated."
+  },
+  {
+    "q": "Which is NOT a recovery technique?",
+    "options": ["ARIES Algorithm", "Two-phase commit", "Immediate update", "Deferred update"],
+    "correct": 1,
+    "explanation": "Two-phase commit is a concurrency control technique, not a recovery method."
+  },
+  {
+    "q": "Which is NOT true about OODBMS?",
+    "options": ["Key concept is objects", "Object is persistent", "Key concept is relation", "Object identity is unchangeable"],
+    "correct": 2,
+    "explanation": "OODBMS is object-oriented; the key concept is objects, not relations (which is for RDBMS)."
+  },
+  {
+    "q": "Query optimization technique that uses ordering of operations:",
+    "options": ["Semantic Query", "Heuristic-based", "Cost estimation", "Exhaustive search"],
+    "correct": 1,
+    "explanation": "Heuristic-based optimization uses rules to order operations efficiently without exhaustive cost calculation."
+  },
+  {
+    "q": "Relationship MANY TO ONE example:",
+    "options": ["Building – Location", "Employee – Department", "Hospital – Patient", "Author – Book"],
+    "correct": 1,
+    "explanation": "Many employees can belong to one department (MANY TO ONE)."
+  },
+  {
+    "q": "During system design, decomposition is influenced by all except:",
+    "options": ["Coupling", "System functionality", "Cohesion", "User's thinking"],
+    "correct": 3,
+    "explanation": "System decomposition depends on functionality, coupling, cohesion, but not directly on user thinking."
+  },
+  {
+    "q": "Functional model is graphically represented by:",
+    "options": ["Use case diagram", "State transition diagram", "Class diagram", "Object diagram"],
+    "correct": 0,
+    "explanation": "Use case diagrams represent functional requirements and interactions with actors."
+  },
+  {
+    "q": "False statement about software engineering concepts:",
+    "options": ["System Analysis focuses on user's view", "Design focuses on developer's view", "Result of system analysis includes subsystem decomposition", "Requirements elicitation focuses only on user's view"],
+    "correct": 2,
+    "explanation": "System analysis models user needs. Subsystem decomposition is part of design, not analysis."
+  },
+  {
+    "q": "Heuristic NOT used to identify entity objects:",
+    "options": ["Real-world entities", "Real-world activities", "Forms", "Data sources"],
+    "correct": 2,
+    "explanation": "Forms are not considered entities; entities come from real-world objects, activities, or data sources."
+  },
+  {
+    "q": "System with heat sensor detecting intrusion is providing:",
+    "options": ["Functional Requirement", "Non-Functional", "Constraints", "Known Requirement"],
+    "correct": 0,
+    "explanation": "The system performs a specific function (detect and alert), so it's a functional requirement."
+  },
+  {
+    "q": "To identify actors in a system, we ask:",
+    "options": ["Dependencies among use cases", "Information actor accesses", "Which user groups execute system functions", "Tasks actor wants system to perform"],
+    "correct": 2,
+    "explanation": "Actors are identified by which user groups interact with the system's main functions."
+  },
+  {
+    "q": "PHP function to establish secure MySQL connection using SSL:",
+    "options": ["mysqli_ssl_connect()", "pdo_connect_ssl()", "mysql_ssl_connect()", "secure_connect()"],
+    "correct": 0,
+    "explanation": "mysqli_ssl_connect() establishes a secure connection to MySQL using SSL."
+  },
+  {
+    "q": "JavaScript function to display alert dialog:",
+    "options": ["console.log()", "confirm()", "alert()", "prompt()"],
+    "correct": 2,
+    "explanation": "alert() displays a dialog box with a message."
+  },
+  {
+    "q": "JavaScript method to select HTML element by ID:",
+    "options": ["getElementById()", "getElementByTag()", "getElementByName()", "getElementByClass()"],
+    "correct": 0,
+    "explanation": "getElementById('id') returns the element with the specified ID."
+  },
+  {
+    "q": "Language for interactivity and dynamic behavior in web pages:",
+    "options": ["HTML", "PHP", "CSS", "JavaScript"],
+    "correct": 3,
+    "explanation": "JavaScript is used for client-side interactivity."
+  },
+  {
+    "q": "Language primarily defining structure and content of web page:",
+    "options": ["HTML", "JavaScript", "PHP", "CSS"],
+    "correct": 0,
+    "explanation": "HTML defines the structure and content of web pages."
+  },
+  {
+    "q": "PHP function to check if a file/directory exists:",
+    "options": ["file_exists()", "file_exists_check()", "is_file()", "file_check()"],
+    "correct": 0,
+    "explanation": "file_exists() returns true if a file or directory exists."
+  },
+  {
+    "q": "PHP function to retrieve number of rows affected by SQL query:",
+    "options": ["num_rows()", "row_count()", "get_affected_rows()", "affected_rows()"],
+    "correct": 3,
+    "explanation": "affected_rows() returns the number of rows affected by the last query."
+  },
+  {
+    "q": "PHP superglobal array to get server and execution environment info:",
+    "options": ["$_POST", "$_SESSION", "$_GET", "$_SERVER"],
+    "correct": 3,
+    "explanation": "$_SERVER contains information about headers, paths, and script locations."
+  },
+  {
+    "q": "PHP superglobal array to retrieve POSTed form data:",
+    "options": ["$_REQUEST", "$_GET", "$_POST", "$_SERVER"],
+    "correct": 2,
+    "explanation": "$_POST contains data sent from a form using the POST method."
+  },
+  {
+    "q": "AI agent with condition-action rules and memory to track current state:",
+    "options": ["Simple reflex", "Model-based reflex", "Goal-based", "Utility-based"],
+    "correct": 1,
+    "explanation": "Model-based reflex agents use memory of the world to decide actions based on conditions."
+  },
+  {
+    "q": "Machine learning technique to group existing higher education institutions as first, second, third generation:",
+    "options": ["Reinforcement Learning", "Regression", "Classification", "Clustering"],
+    "correct": 3,
+    "explanation": "Clustering groups data without predefined labels, suitable for unsupervised categorization."
+  },
+  {
+    "q": "AI is: 'Design software that solves problems by identifying best action sequence to achieve goal.'",
+    "options": ["Acts humanly", "Thinks humanly", "Acts rationally", "Thinks rationally"],
+    "correct": 2,
+    "explanation": "The system acts rationally to achieve goals efficiently; focus is on correct actions rather than mimicking humans."
+  },
+  {
+    "q": "Completeness of search algorithm:",
+    "options": ["Finds best goal if multiple exist", "Estimates memory required", "Estimates search steps", "Will find solution if one exists"],
+    "correct": 3,
+    "explanation": "Completeness means the algorithm is guaranteed to find a solution if one exists."
+  },
+  {
+    "q": "AI view concerned with thought processing:",
+    "options": ["Autonomous system", "System that thinks humanly or rationally", "System acts humanly or rationally", "System acts omnisciently"],
+    "correct": 1,
+    "explanation": "This view focuses on replicating human or rational thought processes."
+  },
+  {
+    "q": "False statement about AI validation:",
+    "options": ["Turing test validates acting humanly", "Performance validates acting rationally", "Validating thinking humanly is impossible", "Reasoning validates thinking rationally"],
+    "correct": 2,
+    "explanation": "Validating AI that thinks humanly is theoretically impossible, since we cannot fully measure human thought internally."
+  },
+  {
+    "q": "A context-free grammar is ambiguous if there exists a string that can have:",
+    "options": ["Only one parse tree", "No parse tree", "Partial parse tree", "More than one parse tree"],
+    "correct": 3,
+    "explanation": "Ambiguity occurs if a string can be parsed in multiple valid ways."
+  },
+  {
+    "q": "Context-free grammar S->aS / ε is equivalent to regular expression:",
+    "options": ["a*", "(a+b)*", "a(a+b)*", "a+"],
+    "correct": 0,
+    "explanation": "S -> aS | ε generates any number of 'a's, which is represented by a*."
+  },
+  {
+    "q": "Pushdown automaton uses which data structure?",
+    "options": ["Linked List", "Stack", "Hash Table", "Queue"],
+    "correct": 1,
+    "explanation": "PDA uses a stack to store symbols while processing the input string."
+  },
+  {
+    "q": "Machine equivalent for regular grammar:",
+    "options": ["Pushdown automata", "Linear bounded automata", "Finite state automata", "Turing Machine"],
+    "correct": 2,
+    "explanation": "Regular grammars are recognized by finite state automata."
+  },
+
+
+
+
+
+
+
+
+
+
+
+  
+  {
+    "q": "Assume that p, x, y, and z are int variables with x = 1, y = 10, z = -3. Which of the following is true after the statement p = (x++ * y--) + ++z?",
+    "options": ["p = 22", "p = 17", "p = 16", "p = 8"],
+    "correct": 3,
+    "explanation": "x++ uses the current value of x (1), y-- uses current value of y (10), so 1*10 = 10. ++z increments z from -3 to -2. Sum: 10 + (-2) = 8."
+  },
+  {
+    "q": "What will happen in the following C++ code snippet? int a = 100, b = 200; int *p = &a, *q = &b; p = q;",
+    "options": ["p now points to b", "a is assigned to b", "b is assigned to a", "q now points to a"],
+    "correct": 0,
+    "explanation": "The assignment p = q makes pointer p point to the same address as q, which is b. The values of a or b are not changed."
+  },
+  {
+    "q": "Which of the following best describes the statement “C++ is a case sensitive programming language”?",
+    "options": ["All variables in C++ are identifiers", "Every C++ statement should include the header file iostream.h", "ExitExam and exitExam are distinct in C++", "Every statement in C++ ends with semicolon"],
+    "correct": 2,
+    "explanation": "C++ distinguishes between uppercase and lowercase letters. ExitExam and exitExam refer to two different identifiers."
+  },
+  {
+    "q": "Which of the following is true about the statement a = b;",
+    "options": ["The value of a and b are equal", "The value of b is assigned to variable a and later change on b affects a", "The value of a is assigned to b and b to a", "The value of b is assigned to variable a and later change on b does not affect a"],
+    "correct": 3,
+    "explanation": "The value of b is copied into a. Later changes to b do not affect a, as assignment copies the value, not the reference."
+  },
+  {
+    "q": "Which one of the following is true statement about an algorithm?",
+    "options": ["Ambiguous steps are allowed in an algorithm", "Complex problems cannot have an algorithm", "An algorithm may not have a beginning and an end", "An algorithm should take finite amount of time to compute"],
+    "correct": 3,
+    "explanation": "A correct algorithm must have a finite number of steps and terminate after a finite time."
+  },
+  {
+    "q": "Which of the following will NOT increase an integer variable 'i' by 1?",
+    "options": ["i+=1;", "i=i+1;", "i=i+i;", "++i;", "i++"],
+    "correct": 2,
+    "explanation": "i = i + i doubles the value of i. All other options increment i by exactly 1."
+  },
+  {
+    "q": "Given three classes A, B and C, where class C is derived from class B, which is derived from class A. If those classes are public and in different packages, then a class C object can access:",
+    "options": ["Any data in C and only protected and public data in A and B", "Protected, default and public data only in C and B", "Any data in C and only public data in A and B", "Protected, default and public data only in C"],
+    "correct": 0,
+    "explanation": "A public subclass can access its own data and any public/protected data in its superclass even if they are in different packages. Default members are package-private and not accessible."
+  },
+  {
+    "q": "If the method is not static; how to invoke in Java?",
+    "options": ["Methodname()", "Classname.methodname()", "Objectname.methodname()", "Variablename.methodname"],
+    "correct": 2,
+    "explanation": "Non-static methods belong to an object instance, so they are invoked using the object reference: objectName.methodName()."
+  },
+  {
+    "q": "Which of the following statement is correct, when an overridden method is called from within a subclass?",
+    "options": ["The Compiler will choose randomly the method to execute", "It will always refer to the version of that method defined by the subclass", "Compile time error will occur", "It will always refer to the version of that method defined by the superclass"],
+    "correct": 1,
+    "explanation": "In Java, overridden methods are resolved at runtime (dynamic binding), and the subclass version is called."
+  },
+  {
+    "q": "Which of the following statements is NOT true?",
+    "options": ["A private member of a class cannot be accessed by the methods of the same class", "A public member of a class can be accessed in all the packages", "A private member of a class cannot be accessed from its derived class", "A protected member of a class can be accessed from its derived class"],
+    "correct": 0,
+    "explanation": "Private members CAN be accessed by methods of the same class. So the first statement is false."
+  }
+
+
+
+
+
+
+
+
+
+
+  
+
+  ],
+
+
+
+
+
+
+
+
+
+
+
+  
 "MOE":[
 
 
@@ -13407,6 +13818,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
