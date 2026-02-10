@@ -1,5 +1,280 @@
 // Exam Data
 const exams = {
+"OBU":[
+
+  {
+    "Question": "Which of the following is not an example of finite state machine system?",
+    "Options": {
+      "A": "Control Mechanism of an elevator",
+      "B": "Combinational Locks",
+      "C": "Traffic Lights",
+      "D": "Digital Watches"
+    },
+    "Answer": "D",
+    "Explanation": "Digital watches involve real-time counting rather than simple finite state transitions."
+  },
+  {
+    "Question": "The activities involved in retrieving data from the database is _____?",
+    "Options": {
+      "A": "Query Optimization",
+      "B": "Materialization",
+      "C": "Query Processing",
+      "D": "Pipelining"
+    },
+    "Answer": "C",
+    "Explanation": "Query processing includes retrieving data from the database."
+  },
+  {
+    "Question": "Suppose x = 7, y = 8, z = 6, k = x + z*y/z % x − z. What is the value of k?",
+    "Options": {
+      "A": "9",
+      "B": "8",
+      "C": "2",
+      "D": "7"
+    },
+    "Answer": "B",
+    "Explanation": "k = 7 + (6×8/6)%7 − 6 = 8."
+  },
+  {
+    "Question": "Which objects are in charge of realizing use cases?",
+    "Options": {
+      "A": "Control objects",
+      "B": "Boundary objects",
+      "C": "A & B",
+      "D": "Entity objects"
+    },
+    "Answer": "A",
+    "Explanation": "Control objects coordinate the execution of use cases."
+  },
+  {
+    "Question": "If every non-key attribute is functionally dependent on the primary key, the relation is in which normal form?",
+    "Options": {
+      "A": "Third Normal Form (3NF)",
+      "B": "Second Normal Form (2NF)",
+      "C": "First Normal Form (1NF)",
+      "D": "Fourth Normal Form (4NF)"
+    },
+    "Answer": "A",
+    "Explanation": "This satisfies Third Normal Form."
+  },
+  {
+    "Question": "Purchasing insurance cover is an example of which risk handling strategy?",
+    "Options": {
+      "A": "Mitigation",
+      "B": "Avoidance",
+      "C": "Acceptance",
+      "D": "Transfer"
+    },
+    "Answer": "D",
+    "Explanation": "Insurance transfers risk to another party."
+  },
+  {
+    "Question": "The permanent recording of committed transactions indicates which property?",
+    "Options": {
+      "A": "Consistency",
+      "B": "Atomicity",
+      "C": "Isolation",
+      "D": "Durability"
+    },
+    "Answer": "D",
+    "Explanation": "Durability ensures data is not lost after failure."
+  },
+  {
+    "Question": "Which of the following data structures is linear?",
+    "Options": {
+      "A": "Graph",
+      "B": "Tree",
+      "C": "Array",
+      "D": "Hierarchy"
+    },
+    "Answer": "C",
+    "Explanation": "Array elements are stored sequentially."
+  },
+  {
+    "Question": "The size of virtual memory is based on?",
+    "Options": {
+      "A": "Address bus",
+      "B": "CPU",
+      "C": "RAM",
+      "D": "Data bus"
+    },
+    "Answer": "A",
+    "Explanation": "Virtual memory size depends on address bus width."
+  },
+  {
+    "Question": "Which DBMS language is used to store, retrieve, and manipulate data?",
+    "Options": {
+      "A": "DCL",
+      "B": "DDL",
+      "C": "DTL",
+      "D": "DML"
+    },
+    "Answer": "D",
+    "Explanation": "DML handles insert, update, delete, and select."
+  },
+
+  {
+    "Question": "Which algorithm attempts to find the optimal solution?",
+    "Options": {
+      "A": "Dynamic Programming",
+      "B": "Branch and Bound",
+      "C": "Greedy",
+      "D": "Randomized"
+    },
+    "Answer": "B",
+    "Explanation": "Branch and Bound searches for the best solution."
+  },
+  {
+    "Question": "Which UML relationship represents inheritance?",
+    "Options": {
+      "A": "Dependency",
+      "B": "Realization",
+      "C": "Association",
+      "D": "Generalization"
+    },
+    "Answer": "D",
+    "Explanation": "Generalization represents inheritance."
+  },
+  {
+    "Question": "Which HTML tag target opens the document in the same window?",
+    "Options": {
+      "A": "_blank",
+      "B": "_self",
+      "C": "_parent",
+      "D": "_top"
+    },
+    "Answer": "B",
+    "Explanation": "_self opens in the same tab/window."
+  },
+  {
+    "Question": "Which error can a compiler check?",
+    "Options": {
+      "A": "Logical error",
+      "B": "Both logical and syntax",
+      "C": "None",
+      "D": "Syntax error"
+    },
+    "Answer": "D",
+    "Explanation": "Compiler detects syntax errors."
+  },
+  {
+    "Question": "Which malware spreads by user executing downloaded files?",
+    "Options": {
+      "A": "Trojan",
+      "B": "Worm",
+      "C": "Spyware",
+      "D": "Virus"
+    },
+    "Answer": "A",
+    "Explanation": "Trojans rely on user execution."
+  },
+  {
+    "Question": "Which OS memory is accessed fastest?",
+    "Options": {
+      "A": "Cache",
+      "B": "Main Memory",
+      "C": "Virtual Memory",
+      "D": "Secondary Memory"
+    },
+    "Answer": "A",
+    "Explanation": "Cache memory is fastest."
+  },
+  {
+    "Question": "Which keyword is used to achieve interface inheritance in Java?",
+    "Options": {
+      "A": "Extends",
+      "B": "Implements",
+      "C": "Inherits",
+      "D": "Interface"
+    },
+    "Answer": "B",
+    "Explanation": "Interfaces are implemented using implements."
+  },
+  {
+    "Question": "Which OSI layer handles routing?",
+    "Options": {
+      "A": "Transport",
+      "B": "Network",
+      "C": "Data Link",
+      "D": "Physical"
+    },
+    "Answer": "B",
+    "Explanation": "Network layer handles routing and logical addressing."
+  },
+  {
+    "Question": "Which scheduling algorithm gives each process fixed time slice?",
+    "Options": {
+      "A": "FCFS",
+      "B": "SJF",
+      "C": "Priority",
+      "D": "Round Robin"
+    },
+    "Answer": "D",
+    "Explanation": "Round Robin uses time quantum."
+  },
+  {
+    "Question": "Which algorithm works on sorted data?",
+    "Options": {
+      "A": "Linear Search",
+      "B": "Binary Search",
+      "C": "Bubble Sort",
+      "D": "Selection Sort"
+    },
+    "Answer": "B",
+    "Explanation": "Binary search requires sorted data."
+  },
+
+  {
+    "Question": "Which security objective is violated by unauthorized data modification?",
+    "Options": {
+      "A": "Integrity",
+      "B": "Confidentiality",
+      "C": "Availability",
+      "D": "Authentication"
+    },
+    "Answer": "A",
+    "Explanation": "Integrity ensures data is not altered improperly."
+  },
+
+  {
+    "Question": "Which paradigm uses step-by-step manipulation of data?",
+    "Options": {
+      "A": "Functional",
+      "B": "Object-Oriented",
+      "C": "Procedural",
+      "D": "Declarative"
+    },
+    "Answer": "C",
+    "Explanation": "Procedural programming follows stepwise execution."
+  },
+
+  {
+    "Question": "Which traversal visits root first?",
+    "Options": {
+      "A": "Inorder",
+      "B": "Preorder",
+      "C": "Postorder",
+      "D": "Level order"
+    },
+    "Answer": "B",
+    "Explanation": "Preorder visits root first."
+  },
+
+
+
+
+
+    
+
+
+],
+
+
+
+
+
+
+    
 "AUTOMATA":[
 
 
@@ -12368,6 +12643,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
