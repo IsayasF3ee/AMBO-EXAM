@@ -2,426 +2,7 @@
 const exams = {
 "MOE":[
 
-  {
-    "Question": "Hosts on a network communicate using IP addresses. Which protocol is used to map IP addresses to MAC addresses?",
-    "Options": ["ARP", "DNS", "ICMP", "SMTP"],
-    "Answer": "ARP",
-    "Explanation": "ARP (Address Resolution Protocol) maps IP addresses to MAC addresses for local network communication."
-  },
-  {
-    "Question": "Which session storage method temporarily stores data on the server for use across multiple websites?",
-    "Options": ["Cookie", "Session", "LocalStorage", "Database"],
-    "Answer": "Session",
-    "Explanation": "Sessions store server-side temporary data to maintain state across multiple requests or websites."
-  },
-  {
-    "Question": "Work Breakdown Structure (WBS) and Gantt charts are used in which project management knowledge areas?",
-    "Options": ["Integration and Time Management", "Scope and Time Management", "Cost and Quality Management", "Communication and Risk Management"],
-    "Answer": "Scope and Time Management",
-    "Explanation": "WBS helps manage project scope and Gantt charts help track project schedule."
-  },
-  {
-    "Question": "Which of the following statements about Access Control Models is incorrect?",
-    "Options": ["ACM represents subjects and objects as rows and columns", "ACM has many empty entries", "Access Control Lists fix ACM drawbacks", "Access Control List is just decomposition of the matrix by rows while Capability List is decomposition of the matrix by column"],
-    "Answer": "Access Control List is just decomposition of the matrix by rows while Capability List is decomposition of the matrix by column",
-    "Explanation": "This statement is incorrect; the description of ACL and Capability List is swapped."
-  },
-  {
-    "Question": "In object-oriented programming, which statement about inheritance is true?",
-    "Options": ["A subclass inherits all non-private members of its parent", "A parent class inherits members of its subclass", "A subclass can have multiple immediate parents", "A parent class cannot have multiple subclasses"],
-    "Answer": "A subclass can have multiple immediate parents",
-    "Explanation": "Multiple inheritance allows a subclass to inherit from more than one parent class."
-  },
-  {
-    "Question": "Which reference monitor property enforces security rules on every access?",
-    "Options": ["Complete Mediation", "Isolation", "Verifiability", "No Read Up"],
-    "Answer": "Complete Mediation",
-    "Explanation": "Complete mediation ensures that every access to resources is checked against security rules."
-  },
-  {
-    "Question": "Which protocol should you use when communication requires error-checking and a connection before sending data?",
-    "Options": ["UDP", "TCP", "HTTP", "FTP"],
-    "Answer": "TCP",
-    "Explanation": "TCP provides a reliable, connection-oriented protocol with error checking."
-  },
-  {
-    "Question": "Which transmission medium propagates in the sky for long-distance broadcasting?",
-    "Options": ["Radio Wave", "Microwave", "Infrared", "All of the above"],
-    "Answer": "Radio Wave",
-    "Explanation": "Radio waves can travel long distances through the atmosphere for broadcasting signals."
-  },
-  {
-    "Question": "Which command determines if a routing protocol relationship has been made with an adjacent router?",
-    "Options": ["ping", "show ip ospf neighbor", "show ip interface brief", "show ip protocols"],
-    "Answer": "show ip ospf neighbor",
-    "Explanation": "This command displays OSPF neighbors and their adjacency status."
-  },
-  {
-    "Question": "Which control element is commonly used to perform an immediate action when clicked?",
-    "Options": ["Exit", "Close", "End", "Button Control"],
-    "Answer": "Button Control",
-    "Explanation": "Button controls in GUIs trigger actions immediately when clicked."
-  },
-  {
-    "Question": "Which testing activity ensures the system meets user expectations after deployment?",
-    "Options": ["System Testing", "Unit Testing", "Acceptance Testing", "Installation Testing"],
-    "Answer": "Acceptance Testing",
-    "Explanation": "Acceptance testing validates that the deployed system satisfies user requirements."
-  },
-  {
-    "Question": "How is a constructor used for a servlet?",
-    "Options": ["Initialization", "Constructor function", "Initialization and Constructor function", "Setup() method"],
-    "Answer": "Initialization and Constructor function",
-    "Explanation": "Servlet constructors handle initialization and object creation for the servlet."
-  },
-  {
-    "Question": "Which project management knowledge area defines and manages all the work required to complete a project successfully?",
-    "Options": ["Project Time Management", "Project Scope Management", "Project Cost Management", "Project Risk Management"],
-    "Answer": "Project Scope Management",
-    "Explanation": "Scope management ensures all project work is defined, managed, and completed successfully."
-  },
-  {
-    "Question": "What steps occur when establishing a TCP connection between two computers using sockets?",
-    "Options": ["Server instantiates ServerSocket", "Server invokes accept() method", "Client instantiates Socket object", "All of the above"],
-    "Answer": "All of the above",
-    "Explanation": "All these steps are needed to establish a TCP connection between client and server."
-  },
-  {
-    "Question": "What are the three main goals of a project?",
-    "Options": ["Meet budget", "Finish on schedule", "Generate deliverables satisfying the client", "Planning", "All except D", "All except C"],
-    "Answer": "All except D",
-    "Explanation": "Projects aim to meet budget, schedule, and deliverables; 'Planning' is a process, not a goal."
-  },
-  {
-    "Question": "Which parameter is mandatory when creating a cookie using setcookie()?",
-    "Options": ["Name", "Value", "Expire", "Path", "Domain", "Secure"],
-    "Answer": "Name",
-    "Explanation": "The 'Name' parameter is required to identify the cookie."
-  },
-  {
-    "Question": "A software program or hardware device that filters all data packets coming through the internet is called:",
-    "Options": ["Antivirus", "Firewall", "Cookies", "Malware"],
-    "Answer": "Firewall",
-    "Explanation": "Firewalls monitor and control incoming and outgoing network traffic for security."
-  },
-  {
-    "Question": "How do you refer to a multimedia graphic (image) in Android drawable directory?",
-    "Options": ["R.drawable.R.File_name", "File_name.R.drawable", "R.File_name.drawable", "R.drawable.File_name"],
-    "Answer": "R.drawable.File_name",
-    "Explanation": "R.drawable.File_name is the correct way to reference drawable resources in Android."
-  },
-  {
-    "Question": "Which data storage system architecture is commonly used for better reliability and performance in large organizations?",
-    "Options": ["ARIES", "RAID", "Two-phase commit", "None"],
-    "Answer": "RAID",
-    "Explanation": "RAID improves storage reliability and performance by combining multiple disk drives."
-  },
-  {
-    "Question": "Which area in main memory stores copies of disk blocks for performance improvement?",
-    "Options": ["Track", "Block", "Buffer", "None"],
-    "Answer": "Buffer",
-    "Explanation": "A buffer temporarily stores data in main memory to improve system performance."
-  },
-  {
-    "Question": "Which Android feature allows your app to take photos using the smartphone camera?",
-    "Options": ["Service", "Intent", "Broadcast Receiver", "View"],
-    "Answer": "Intent",
-    "Explanation": "Intents allow apps to launch external features like the camera and receive results."
-  },
-  {
-    "Question": "Which state defines creating a new instance of the MediaPlayer class?",
-    "Options": ["Prepared State", "Initialization State", "Idle State", "Completed State"],
-    "Answer": "Idle State",
-    "Explanation": "MediaPlayer is in Idle state when instantiated but not yet prepared to play media."
-  },
-  {
-    "Question": "Which attribute type’s value can be calculated from other related attributes?",
-    "Options": ["Simple Attribute", "Derived Attribute", "Multi-valued Attribute", "Composite Attribute"],
-    "Answer": "Derived Attribute",
-    "Explanation": "Derived attributes are computed based on other attributes in the database."
-  },
-  {
-    "Question": "Traditional data storage using folders in filing cabinets represents which database type?",
-    "Options": ["Object-oriented DBMS", "Relational DBMS", "Network DBMS", "Hierarchical DBMS"],
-    "Answer": "Hierarchical DBMS",
-    "Explanation": "Hierarchical DBMS organizes data in a tree-like structure, similar to folders."
-  },
-  {
-    "Question": "Which statement is not true about immediate update?",
-    "Options": ["Changes are not recorded in the database", "New data is recorded in the database", "Redo committed changes after failure", "All of the above"],
-    "Answer": "Changes are not recorded in the database",
-    "Explanation": "Immediate update writes changes to the database instantly; the first option is incorrect."
-  },
-  {
-    "Question": "Which statement is truly acceptable regarding preconditions, postconditions, and triggers?",
-    "Options": ["Precondition is true when operation finishes", "Postcondition is true when operation begins", "Trigger causes a use case to begin", "None"],
-    "Answer": "Trigger causes a use case to begin",
-    "Explanation": "Triggers initiate a use case when an event occurs."
-  },
-  {
-    "Question": "Which diagram shows the physical architecture of hardware and software including processors and devices?",
-    "Options": ["State", "Component", "Sequence", "Deployment", "Communication"],
-    "Answer": "Deployment",
-    "Explanation": "Deployment diagrams depict the physical configuration of system components and nodes."
-  },
-  {
-    "Question": "What is the function of OSPF hello packets?",
-    "Options": ["Send requested link-state records", "Discover neighbors and build adjacencies", "Ensure database synchronization", "Request specific link-state records from neighbors"],
-    "Answer": "Discover neighbors and build adjacencies",
-    "Explanation": "Hello packets in OSPF help routers find neighbors and establish adjacencies."
-  },
-  {
-    "Question": "Which OOP principle binds code and data together and protects it from outside interference?",
-    "Options": ["Inheritance", "Polymorphism", "Encapsulation", "Abstraction"],
-    "Answer": "Encapsulation",
-    "Explanation": "Encapsulation keeps data and methods together and secure from outside access."
-  },
-  {
-    "Question": "Which cardinality defines a one-to-one relationship between entity sets A and B?",
-    "Options": ["One-to-many", "Many-to-one", "One-to-one", "Many-to-many"],
-    "Answer": "One-to-one",
-    "Explanation": "Each entity in A is related to at most one entity in B and vice versa."
-  },
-  {
-    "Question": "What determines if a project is successful?",
-    "Options": ["Met scope, time, and cost goals", "Satisfied customer/sponsor", "Results met main objectives", "All of the above"],
-    "Answer": "All of the above",
-    "Explanation": "Project success depends on meeting goals, satisfying stakeholders, and achieving objectives."
-  },
-  {
-    "Question": "Which PHP functions remove all session variables and destroy the session?",
-    "Options": ["session_unset()", "session_destroy()", "session_close()", "session_delete()", "A and B"],
-    "Answer": "A and B",
-    "Explanation": "session_unset() clears all session variables and session_destroy() ends the session."
-  },
-  {
-    "Question": "Which class represents a message that can be sent or received via UDP?",
-    "Options": ["DatagramPacket", "DatagramSocket", "Both A & B", "None of the above"],
-    "Answer": "DatagramPacket",
-    "Explanation": "DatagramPacket represents a packet of data sent/received via UDP, which is unordered and unreliable."
-  },
-
-
-
-
-
-
-
-
-
-
-
-  
-  {
-    "Question": "Hosts devices on a network are located by their IP address, but network interface card do not have IP addresses, it has MAC addresses instead so if you need to associate the IP address to a MAC address which protocol can be used?",
-    "Options": ["ARP", "SMTP", "UDP", "POP"],
-    "Answer": "ARP",
-    "Explanation": "ARP (Address Resolution Protocol) maps IP addresses to MAC addresses in a network."
-  },
-  {
-    "Question": "_________is used to temporarily store data on the server so that it can be utilized on a variety of different websites.",
-    "Options": ["Cookie", "Session", "Array", "Structure"],
-    "Answer": "Session",
-    "Explanation": "Sessions store temporary server-side data for use across multiple pages or websites."
-  },
-  {
-    "Question": "For which knowledge category/area does Work breakdown structures (WBS) Requirements analyses and Gantt chart tools and techniques used respectively?",
-    "Options": ["Integration management and time management", "Project scope management and Time management", "Communication management and Risk management", "Cost management and Quality management"],
-    "Answer": "Project scope management and Time management",
-    "Explanation": "WBS and Gantt charts are tools used in project scope and time management."
-  },
-  {
-    "Question": "Which one is correct about Data Provider?",
-    "Options": ["Data provider enable to get access for the appropriate database", "System.Data.SqlClient allow us to get access for sql server database", "Data provider provide data from the file somewhere it is located", "System.Data.OleDb allow us to get access for OleDb database"],
-    "Answer": "Data provider provide data from the file somewhere it is located",
-    "Explanation": "Data providers supply data from their source, including databases or files."
-  },
-  {
-    "Question": "Identify the wrong statement/s about Access Control Model",
-    "Options": ["In Access Control Matrix (ACM), Subject & object are represented by row and column respectively", "ACM has a drawback as matrix have many empty entries (take more space)", "ACM’s drawback can be fixed by using Access Control Lists, as each object maintains a list of access rights of subjects.", "Access Control List is just decomposition of the matrix by rows while Capability List is decomposition of the matrix by column"],
-    "Answer": "Access Control List is just decomposition of the matrix by rows while Capability List is decomposition of the matrix by column",
-    "Explanation": "This statement is incorrect; the decomposition explanation is swapped."
-  },
-  {
-    "Question": "Which one of the following is true statement about inheritance?",
-    "Options": ["A sub class can inherit all non-private members of its parent.", "A parent class can inherit all non-private members of its subclass.", "A sub class can have two or more immediate parent classes.", "A parent class cannot have two or more sub classes."],
-    "Answer": "A sub class can have two or more immediate parent classes.",
-    "Explanation": "A subclass can inherit from multiple parent classes in multiple inheritance."
-  },
-  {
-    "Question": "Among reference monitor properties which one aimed to inforce security rules on every access.",
-    "Options": ["Complete mediation", "Isolation", "Verifiability", "No read up"],
-    "Answer": "Complete mediation",
-    "Explanation": "Complete mediation ensures all accesses are checked against security policy."
-  },
-  {
-    "Question": "What is the value of the given expression (unspecified in the original text)?",
-    "Options": ["10", "20", "19", "9"],
-    "Answer": "19",
-    "Explanation": "Calculated value based on the provided expression is 19."
-  },
-  {
-    "Question": "When the communication between two remote points is required to be established before sending actual data and error-checking mechanism is required for your communication which network protocol you will use?",
-    "Options": ["UDP", "TCP", "HTTP", "FTP"],
-    "Answer": "TCP",
-    "Explanation": "TCP establishes a connection and provides reliable, error-checked communication."
-  },
-  {
-    "Question": "If you want media that propagate in the sky for travel signals for long distances broadcasting which transmission media will you use?",
-    "Options": ["Radio Wave", "Microwaves", "Infrared", "All"],
-    "Answer": "Radio Wave",
-    "Explanation": "Radio waves are used for long-distance wireless communication."
-  },
-  {
-    "Question": "What command would be used to determine if a routing protocol-initiated relationship had been made with an adjacent router?",
-    "Options": ["ping", "show ip ospf neighbor", "show ip interface brief", "show ip protocols"],
-    "Answer": "show ip ospf neighbor",
-    "Explanation": "This command displays OSPF neighbors and adjacency status."
-  },
-  {
-    "Question": "_________________ is commonly used to perform an immediate action when clicked.",
-    "Options": ["Exit", "Close", "End", "Button control"],
-    "Answer": "Button control",
-    "Explanation": "Button controls trigger immediate actions when clicked in GUI applications."
-  },
-  {
-    "Question": "Assume you are a system developer, you develop such a good system but after deploying it, the users are not that much happy in the developed system. which activity of testing is missed according to this scenario?",
-    "Options": ["System testing", "Unit testing", "Acceptance testing", "Installation testing"],
-    "Answer": "Acceptance testing",
-    "Explanation": "Acceptance testing ensures the system meets user expectations and requirements."
-  },
-  {
-    "Question": "How constructor can be used for a servlet?",
-    "Options": ["Initialization", "Constructor function", "Initialization and Constructor function", "Setup() method"],
-    "Answer": "Initialization and Constructor function",
-    "Explanation": "Servlet constructors are used for initialization and object creation."
-  },
-  {
-    "Question": "In the Project management knowledge area, one of the following is used to define and manage all the work required to complete the project successfully, which is it?",
-    "Options": ["Project time management", "Project scope management", "Project cost management", "Project risk management"],
-    "Answer": "Project scope management",
-    "Explanation": "Project scope management defines and controls all the work needed for the project."
-  },
-  {
-    "Question": "Which steps occur when establishing a TCP connection between two computers using sockets?",
-    "Options": ["The server instantiates a ServerSocket object, denoting which port number communication is to occur on", "The server invokes the accept() method of the ServerSocket class. This method waits until a client connects to the server on the given port", "After the server is waiting, a client instantiates a Socket object, specifying the server name and port number to connect to", "All of the above"],
-    "Answer": "All of the above",
-    "Explanation": "All steps are required to establish a TCP connection between client and server."
-  },
-  {
-    "Question": "Identify the three goals of a project in project management.",
-    "Options": ["Meet the budget", "Finish on schedule", "Generate deliverables that satisfy the client", "Planning", "all except D", "all except C"],
-    "Answer": "all except D",
-    "Explanation": "Projects aim to meet budget, schedule, and deliverables, but not 'Planning' itself."
-  },
-  {
-    "Question": "A cookie is created using the setcookie() function. Which parameter is mandatory.",
-    "Options": ["Name", "Value", "Expire", "Path", "Domain", "Secure"],
-    "Answer": "Name",
-    "Explanation": "The 'Name' parameter is mandatory when creating a cookie."
-  },
-  {
-    "Question": "It can be a software program or a hardware device that filters all data packets coming through the internet, a network, etc. it is known as the_______:",
-    "Options": ["Antivirus", "Firewall", "Cookies", "Malware"],
-    "Answer": "Firewall",
-    "Explanation": "A firewall monitors and filters network traffic for security."
-  },
-  {
-    "Question": "One of the following is the correct way for referring multimedia graphics such as image that exists in drawable directory.",
-    "Options": ["R.drawable.R.File_name", "File_name.R.drawable", "R.File_name.drawable", "R.drawable.File_name"],
-    "Answer": "R.drawable.File_name",
-    "Explanation": "In Android, drawable resources are accessed via R.drawable.File_name."
-  },
-  {
-    "Question": "_______is a data storage system architecture that is commonly used in large organizations for better reliability and performance.",
-    "Options": ["ARIES", "RAID", "Two-phase commit", "All", "None"],
-    "Answer": "RAID",
-    "Explanation": "RAID improves reliability and performance by combining multiple disk drives."
-  },
-  {
-    "Question": "_______is a contiguous reserved area in main memory available for storage of copies of disk blocks.",
-    "Options": ["Track", "Block", "Buffer", "All", "None"],
-    "Answer": "Buffer",
-    "Explanation": "A buffer temporarily stores data in memory to improve performance."
-  },
-  {
-    "Question": "If you need your app to take photos using the integrated smart phone camera, which one of the following way is preferred to use this feature?",
-    "Options": ["Service", "Intent", "Broadcast receiver", "View"],
-    "Answer": "Intent",
-    "Explanation": "Intents allow apps to launch the camera and receive captured images."
-  },
-  {
-    "Question": "Which one of the following state defines creating new instance of the MediaPlayer class?",
-    "Options": ["Prepared state", "Initialization state", "Idle state", "Completed state"],
-    "Answer": "Idle state",
-    "Explanation": "MediaPlayer is in Idle state when a new instance is created."
-  },
-  {
-    "Question": "In which of the following attribute type the attribute value can be calculated from other related attribute?",
-    "Options": ["Simple Attribute", "Derived Attribute", "Multi-valued Attribute", "Composite Attribute"],
-    "Answer": "Derived Attribute",
-    "Explanation": "Derived attributes are calculated based on other attributes."
-  },
-  {
-    "Question": "The traditional storage of data organized by the customer, stored in separate folders in filing cabinets is an example of ______________ type of ‘database’ management system.",
-    "Options": ["Object-oriented database management system", "Relational database management system", "Network database management system", "Hierarchical database management system"],
-    "Answer": "Hierarchical database management system",
-    "Explanation": "Data stored in folders and subfolders is hierarchical in nature."
-  },
-  {
-    "Question": "Which one of the following is not true about immediate update?",
-    "Options": ["Changes made by that transaction are not recorded in the database.", "The new data is recorded in the database itself.", "On a system restart after a failure, redo committed changes from log.", "All", "None"],
-    "Answer": "Changes made by that transaction are not recorded in the database.",
-    "Explanation": "Immediate update means changes are directly recorded to the database."
-  },
-  {
-    "Question": "Which of these statements is truly acceptable?",
-    "Options": ["A precondition is an assertion guaranteed to be true when the activity or operation finishes", "A postcondition is an assertion guaranteed to be true when the activity or operation begins", "Trigger is an event that causes a use case to begin", "None"],
-    "Answer": "Trigger is an event that causes a use case to begin",
-    "Explanation": "Triggers initiate use cases when events occur."
-  },
-  {
-    "Question": "___________ diagram describes the physical architecture of the hardware and software in the system and depicts software components, processors, and devices that make up the systems architecture?",
-    "Options": ["State", "Component", "Sequence", "Deployment", "Communication"],
-    "Answer": "Deployment",
-    "Explanation": "Deployment diagrams show physical system architecture and components."
-  },
-  {
-    "Question": "What is the function of OSPF hello packets?",
-    "Options": ["To send specifically requested link-state records", "To discover neighbors and build adjacencies between them", "To ensure database synchronization between routers", "To request specific link-state records from neighbor routers"],
-    "Answer": "To discover neighbors and build adjacencies between them",
-    "Explanation": "Hello packets allow OSPF routers to identify neighbors and form relationships."
-  },
-  {
-    "Question": "Which principle object oriented programming is the mechanism that binds together code and the data it manipulates and keeps both safes from outside interference and misuse?",
-    "Options": ["Inheritance", "Polymorphism", "Encapsulation", "Abstraction"],
-    "Answer": "Encapsulation",
-    "Explanation": "Encapsulation protects data and methods from outside interference."
-  },
-  {
-    "Question": "In which one of the following cardinality, an occurrence in entity set A is associated with at most one occurrence in an entity set B, and an occurrence in B is associated with at most one occurrence in A?",
-    "Options": ["One-to-many", "Many-to-one", "One-to-one", "Many-to-many"],
-    "Answer": "One-to-one",
-    "Explanation": "One-to-one relationship maps each entity in A to at most one in B."
-  },
-  {
-    "Question": "One project is successful if the project is",
-    "Options": ["Met scope, time, and cost goals", "Satisfied the customer/sponsor.", "The results of the project met its main objective, such as making or saving a certain amount of money, providing a good return on investment, or simply making the sponsors happy", "All"],
-    "Answer": "All",
-    "Explanation": "Project success depends on meeting goals, customer satisfaction, and objectives."
-  },
-  {
-    "Question": "To remove all global session variables and destroy the session, we use function called____",
-    "Options": ["session_unset ()", "session_destroy ()", "session_close ()", "session_delete ()", "A and B"],
-    "Answer": "A and B",
-    "Explanation": "session_unset() clears session variables and session_destroy() ends the session."
-  },
-  {
-    "Question": "Which class is message that can be sent or received. If you send multiple packet, it may arrive in any order, Moreover, packet delivery is not guaranteed?",
-    "Options": ["DatagramPacket", "DatagramSocket", "Both A & B", "None of the above"],
-    "Answer": "DatagramPacket",
-    "Explanation": "DatagramPacket represents a message in UDP, which is unordered and unreliable."
-  }
+ 
 
 
 
@@ -430,6 +11,453 @@ const exams = {
 
   
 "OBU":[
+
+  {
+    "q": "Which one of the following is an operating system peripheral regarding security?",
+    "options": ["Linux operating system", "UNIX Operating System", "Windows operating system", "A and C"],
+    "correct": 3,
+    "explanation": "Both Linux and Windows OS have security mechanisms and management tools."
+  },
+  {
+    "q": "Which one of the following security policies safeguards sensitive traffic data from being exploited?",
+    "options": ["Authentication", "Encryption", "Authorization", "Logging"],
+    "correct": 1,
+    "explanation": "Encryption protects data in transit from unauthorized access."
+  },
+  {
+    "q": "Which algorithm uses the backtracking method recursively?",
+    "options": ["Randomized algorithms", "Divide and conquer algorithms", "Greedy algorithms", "Dynamic programming"],
+    "correct": 3,
+    "explanation": "Dynamic programming can involve recursive methods, especially in solving optimization problems."
+  },
+  {
+    "q": "Computer architecture refers to______?",
+    "options": ["The operational units of computer system", "The operation of each individual component as part of the structure", "Attributes that impact logical execution of a program", "The way computer components are interrelated"],
+    "correct": 3,
+    "explanation": "Computer architecture studies how components are organized and interact logically."
+  },
+  {
+    "q": "Which of these is not applicable for IP protocol?",
+    "options": ["Offer reliable service", "Offer unreliable service", "Does not offer error reporting", "Connectionless"],
+    "correct": 0,
+    "explanation": "IP protocol is connectionless and provides unreliable service; reliability is handled by higher layers like TCP."
+  },
+  {
+    "q": "Training is provided to a machine with unlabeled data. Which algorithm restructures the input into new features or object groups?",
+    "options": ["Unsupervised learning", "Reinforcement learning", "B and C", "Supervised learning"],
+    "correct": 0,
+    "explanation": "Unsupervised learning discovers patterns or clusters in unlabeled data."
+  },
+  {
+    "q": "Which of the following routers use packet filtering?",
+    "options": ["IP enabled firewall", "Packet filtering firewall", "Router enhance firewall", "Application Layer firewall"],
+    "correct": 1,
+    "explanation": "Packet filtering firewalls control network traffic by inspecting packet headers."
+  },
+  {
+    "q": "Which statement describes fragmentation in operating systems?",
+    "options": ["Occurs in dynamic memory when free blocks are too small to satisfy requests", "All", "Occurs when memory is divided into fixed-sized blocks", "Occurs when processes cannot fit in blocks and some memory remains unused"],
+    "correct": 1,
+    "explanation": "Fragmentation includes all these scenarios, so 'All' is correct."
+  },
+  {
+    "q": "Which of the following is odd about constructor and method?",
+    "options": ["Constructor has no return type, whereas a method has", "Like method, constructor has access or visibility modifier", "Constructor is a special type of method in the class", "In Java, method overloading is possible but constructor overloading is not"],
+    "correct": 3,
+    "explanation": "Constructor overloading is allowed in Java; statement 4 is false."
+  },
+  {
+    "q": "______ paradigm expresses computation by stepwise manipulation of named data?",
+    "options": ["Applicative programming", "Object-oriented programming", "Procedural programming", "Functional programming"],
+    "correct": 2,
+    "explanation": "Procedural programming defines stepwise instructions and named data manipulations."
+  },
+  {
+    "q": "Which header file is used for reading and writing to a file in C++?",
+    "options": ["#include<file>", "#include<fe>", "#include<iostream>", "#include<fstream>"],
+    "correct": 3,
+    "explanation": "<fstream> provides file stream classes for file I/O."
+  },
+  {
+    "q": "Which is true about scheduling in operating systems?",
+    "options": ["All", "Round Robin gives each process a time slice", "FCFS serves the job waiting longest next", "Shortest Job First is non-preemptive"],
+    "correct": 0,
+    "explanation": "All listed statements are correct scheduling behaviors."
+  },
+  {
+    "q": "In a relational database, the rule 'A Gender field can hold only values M or F' is an example of___?",
+    "options": ["Domain integrity constraint", "Not Null integrity constraint", "Referential integrity constraint", "Entity integrity constraint"],
+    "correct": 0,
+    "explanation": "Domain integrity restricts column values to a defined set or type."
+  },
+  {
+    "q": "Which one of the following is a role of system administrator?",
+    "options": ["User administration and monitor system performance", "Implement backup and recovery policies", "Ensure efficient system operation for users", "All"],
+    "correct": 3,
+    "explanation": "System administrators perform all of these tasks."
+  },
+  {
+    "q": "A hypothetical computer stores real numbers in 16-bit floating-point format. Number 34.25 in base-2 is?",
+    "options": ["0 1010110 10001001", "0 1100110 10001001", "0 1000110 10001001", "0 1010110 10001000"],
+    "correct": 0,
+    "explanation": "Binary representation for 34.25 in 16-bit floating-point format is 0 1010110 10001001."
+  },
+  {
+    "q": "Which of the following is not a notion of Context Free Grammars?",
+    "options": ["Derivations", "Recursive Inference", "All of the mentioned", "Sentential forms"],
+    "correct": 2,
+    "explanation": "Derivations, recursive inference, and sentential forms are all parts of CFG; 'All' is not."
+  },
+  {
+    "q": "What is the purpose of using Node.js?",
+    "options": ["General purpose applications", "All", "Distributed systems", "Real-time web applications"],
+    "correct": 3,
+    "explanation": "Node.js is commonly used for server-side and real-time web applications."
+  },
+  {
+    "q": "The best example of recursive relationships in DBMS is?",
+    "options": ["A course taken by students per semester", "A student assigned for departments", "An employee who manages other employees", "An employee who manages a department"],
+    "correct": 2,
+    "explanation": "An employee managing other employees is a classic recursive relationship in a database."
+  },
+  {
+    "q": "If you wanted 12 subnets with a Class C network ID, which subnet mask would you use?",
+    "options": ["255.255.255.252", "255.255.255.240", "255.255.255.248", "255.255.255.255"],
+    "correct": 2,
+    "explanation": "255.255.255.248 provides 8 addresses per subnet, enough for 12 subnets."
+  },
+  {
+    "q": "Which tag is used to add rows in an HTML table?",
+    "options": ["None", "<th> and </th>", "<tr> and </tr>", "<td> and </td>"],
+    "correct": 2,
+    "explanation": "<tr> defines table rows in HTML."
+  },
+  {
+    "q": "A digital computer has a common bus system for 16 registers of 32 bits each. How many selection inputs are there in each multiplexer?",
+    "options": ["4", "5", "3", "6"],
+    "correct": 0,
+    "explanation": "16 registers require log2(16)=4 selection inputs for the multiplexer."
+  },
+  {
+    "q": "Output of the following C++ program? #include <iostream> void *p = &n; int *pi = static_cast<int*>(p); cout<<*pi << endl;",
+    "options": ["Compile time error", "Runtime error", "5", "6"],
+    "correct": 2,
+    "explanation": "The pointer is correctly cast to int*, so output is the value of n, which is 5."
+  },
+  {
+    "q": "Which is an application of stack?",
+    "options": ["Tower of Hanoi", "All of the above", "Finding factorial", "Infix to postfix conversion"],
+    "correct": 1,
+    "explanation": "All listed examples (Tower of Hanoi, factorial, infix-to-postfix conversion) can use stacks."
+  },
+  {
+    "q": "Among major structural components, which controls operations of the computer?",
+    "options": ["Input/output", "Central Processing Unit", "System interconnection", "Main Memory"],
+    "correct": 1,
+    "explanation": "CPU is responsible for controlling computer operations."
+  },
+  {
+    "q": "Polymorphism in OOP allows many forms. Static polymorphism is achieved using?",
+    "options": ["Method calling", "A & C", "Method overloading", "Method overriding"],
+    "correct": 2,
+    "explanation": "Static polymorphism is implemented using method overloading at compile-time."
+  },
+  {
+    "q": "Which statement is true about dynamic websites?",
+    "options": ["Content can be changed at runtime", "Content is regenerated each visit", "Content is predefined and unchangeable", "A and C"],
+    "correct": 1,
+    "explanation": "Dynamic websites regenerate content and allow runtime modifications."
+  },
+  {
+    "q": "Basic principles of computer programming include?",
+    "options": ["Document your code", "Minimize coupling", "Keep it simple", "All of the above"],
+    "correct": 3,
+    "explanation": "All listed principles are considered best practices in programming."
+  },
+  {
+    "q": "_______ agents try to maximize their own expected happiness?",
+    "options": ["Goal-based", "Utility-based", "Model-based reflex", "Simple reflex"],
+    "correct": 1,
+    "explanation": "Utility-based agents act to maximize expected utility."
+  },
+  {
+    "q": "Which approach addresses AI behavior?",
+    "options": ["The Turing Test Approach", "The 'Laws of Thought' Approach", "All", "The Cognitive Modeling Approach"],
+    "correct": 2,
+    "explanation": "All listed approaches contribute to modeling AI behavior."
+  },
+  {
+    "q": "An employee familiar only with database interface, operating the system to pay/transfer money, is a category of_____?",
+    "options": ["Naive users", "Sophisticated users", "Casual users", "Advanced users"],
+    "correct": 0,
+    "explanation": "Users familiar only with the interface are considered naive users."
+  },
+  {
+    "q": "A DPDA is a PDA in which_____?",
+    "options": ["None of the mentioned", "More than one state can have two or more outgoing transitions", "No state p has two outgoing transitions", "At least one state has more than one transition"],
+    "correct": 2,
+    "explanation": "A deterministic PDA (DPDA) cannot have a state with two outgoing transitions on the same input symbol."
+  },
+  {
+    "q": "Most government organizations using Microsoft Excel and Word for records is an example of ____?",
+    "options": ["Manual approach", "DBMS approach", "File based approach", "Database approach"],
+    "correct": 1,
+    "explanation": "Using DBMS software like Excel or Word for structured records is considered a DBMS approach."
+  },
+  {
+    "q": "In OOP, inheritance is achieved using which keyword for interface class?",
+    "options": ["Extends", "Implements", "Interfaces", "Inherits"],
+    "correct": 1,
+    "explanation": "In Java, 'implements' is used for classes implementing an interface."
+  },
+  {
+    "q": "For network management and service provision, which OS is most suitable?",
+    "options": ["Client side OS", "Network operating systems", "Desktop OS", "Real Time OS"],
+    "correct": 1,
+    "explanation": "Network operating systems provide centralized management and services."
+  },
+  {
+    "q": "_______ Algorithm operates using a single current node and moves to neighbors only?",
+    "options": ["Simulated annealing", "None", "MinMax", "Recursive best first search"],
+    "correct": 3,
+    "explanation": "Recursive best-first search explores paths from current node to neighbors for search problems."
+  },
+  {
+    "q": "When an unauthorized director modifies own salary in payroll DB, which security objective is violated?",
+    "options": ["Integrity", "Confidentiality", "Availability", "Modification"],
+    "correct": 0,
+    "explanation": "Integrity ensures data is not improperly altered; modifying salary violates integrity."
+  },
+  {
+    "q": "Cracking a classmate’s username/password via social engineering compromises?",
+    "options": ["Confidentiality and Integrity", "Confidentiality", "Integrity", "Availability"],
+    "correct": 1,
+    "explanation": "Unauthorized access compromises confidentiality of the account."
+  },
+  {
+    "q": "In which phases of a unified process are project scope and boundary conditions established?",
+    "options": ["Inception", "Elaboration", "Construction", "Transition"],
+    "correct": 0,
+    "explanation": "Inception phase defines the project scope and boundaries."
+  },
+  {
+    "q": "Which OSI layer is responsible for Logical Addressing and Routing?",
+    "options": ["Transport Layer", "Network Layer", "Data Link Layer", "Physical Layer"],
+    "correct": 1,
+    "explanation": "Network layer handles logical addressing and routing packets."
+  },
+  {
+    "q": "Which method provides dedicated communication channel between two stations?",
+    "options": ["None of the above", "Packet switching", "Switch network", "Circuit switching"],
+    "correct": 3,
+    "explanation": "Circuit switching establishes a dedicated path for communication."
+  },
+  {
+    "q": "Logical or mathematical model of a particular organization of data is called?",
+    "options": ["Data configuration", "Data structure", "Data arrangement", "Data formation"],
+    "correct": 1,
+    "explanation": "Data structure is a logical model organizing data elements."
+  },
+  {
+    "q": "Which is more advantageous about POST method over GET?",
+    "options": ["Can send ASCII and binary data", "No restriction on data size", "All", "Security depends on HTTP protocol"],
+    "correct": 2,
+    "explanation": "POST supports sending large data, ASCII/binary, and avoids URL size limits."
+  },
+  {
+    "q": "A _______ is a technique for finding a particular value in a sorted list?",
+    "options": ["Quicksort algorithm", "Merge sort algorithm", "Selection sort algorithm", "Binary search algorithm"],
+    "correct": 3,
+    "explanation": "Binary search efficiently finds values in sorted lists."
+  },
+  {
+    "q": "Which of the following is a countermeasure of computer security vulnerabilities?",
+    "options": ["Environmental monitoring and cryptographic techniques", "Access control and security-awareness training", "Web proxies and security policies", "All"],
+    "correct": 3,
+    "explanation": "All listed measures help prevent security vulnerabilities."
+  },
+  {
+    "q": "Why are external style sheets preferred?",
+    "options": ["All", "Single file controls multiple documents", "Selectors and grouping are easy", "Classes reusable multiple times"],
+    "correct": 0,
+    "explanation": "External stylesheets allow centralized styling for multiple documents, easy maintenance, and reusable classes."
+  },
+  {
+    "q": "Which Linux command creates a directory inside another directory?",
+    "options": ["$mkdir dir_name1/dir_name2", "$mkdir{ dir_name1, dir_name2, dir_name3}", "$mkdir –p dir_name1/dir_name2", "$mkdir dir_name"],
+    "correct": 2,
+    "explanation": "-p option allows creating nested directories."
+  },
+  {
+    "q": "Which traversal technique processes the root node first?",
+    "options": ["Level order traversal", "Preorder traversal", "In-order traversal", "Post-order traversal"],
+    "correct": 1,
+    "explanation": "Preorder traversal visits root, then left and right subtrees."
+  },
+  {
+    "q": "Restoring a database to a correct state after failure is known as_____?",
+    "options": ["Transaction", "Database backup", "Database Recovery", "Concurrency control"],
+    "correct": 2,
+    "explanation": "Database recovery restores integrity after failures."
+  },
+  {
+    "q": "Which statement is true about forward chaining algorithm?",
+    "options": ["Goal is broken into sub-goals to prove facts", "Starts with goal and chains through rules to find known facts", "Top-down approach", "Data driven algorithm"],
+    "correct": 3,
+    "explanation": "Forward chaining is a data-driven inference algorithm."
+  },
+  {
+    "q": "Which of the functions can a Turing machine not perform?",
+    "options": ["Accepting a palindrome", "Deleting a symbol", "Copying a string", "Inserting a symbol"],
+    "correct": 0,
+    "explanation": "Turing machines can perform all listed operations; cannot decide some languages, but palindromes are decidable. Context may vary; depends on the phrasing."
+  },
+  {
+    "q": "IP address 172.16.13.5 with subnet mask 255.255.255.128: class, subnet, broadcast?",
+    "options": ["Class B, Subnet 172.16.0.0, Broadcast 172.16.255.255", "Class B, Subnet 172.16.13.0, Broadcast 172.16.13.127", "Class B, Subnet 172.16.13.0, Broadcast 172.16.13.255", "Class A, Subnet 172.16.13.0, Broadcast 172.16.13.127"],
+    "correct": 1,
+    "explanation": "Subnet mask /25 divides 172.16.13.x into subnets, subnet 172.16.13.0–127, broadcast 172.16.13.127."
+  },
+  {
+    "q": "Which exception handling mechanism uses two-block code writing format?",
+    "options": ["All", "Throw", "Try and catch", "Finally"],
+    "correct": 2,
+    "explanation": "Try-catch blocks are written in pairs: try for code, catch for exception handling."
+  },
+
+
+
+
+
+
+  
+  {
+    "q": "_______ are used for serial transfer of data?",
+    "options": ["Logic micro-operations", "Register transfer micro-operations", "Shift micro-operations", "Arithmetic micro-operations"],
+    "correct": 2,
+    "explanation": "Shift micro-operations are used to move data serially within registers."
+  },
+  {
+    "q": "Syntax-directed translation rules use______?",
+    "options": ["Lexical values of nodes", "A & B", "Constants & attributes associated with the non-terminals in their definitions.", "None of the mentioned"],
+    "correct": 2,
+    "explanation": "Syntax-directed translation uses attributes of non-terminals to define translation rules."
+  },
+  {
+    "q": "If the input of the Prim's algorithm is a weighted connected graph G= (V, E) then its output is given by?",
+    "options": ["Set of edges comprising a connected graph", "Set of edges comprising a MST", "Set of vertices comprising a MST", "Set of edges comprising a binary tree"],
+    "correct": 1,
+    "explanation": "Prim’s algorithm outputs the Minimum Spanning Tree (MST) edges of a connected weighted graph."
+  },
+  {
+    "q": "Which of the following is a condition that causes deadlock?",
+    "options": ["Hold and wait", "Mutual exclusion", "All", "Circular wait and No preemption"],
+    "correct": 2,
+    "explanation": "Deadlock occurs when all four conditions are present: mutual exclusion, hold and wait, no preemption, circular wait."
+  },
+  {
+    "q": "Which one of the following is the best backup strategy for a large database with data supporting online sales?",
+    "options": ["Mirrored hard disks", "Daily full backup", "Weekly full backup with daily incremental backup", "Clustered servers"],
+    "correct": 2,
+    "explanation": "Weekly full backup with daily incremental backup balances efficiency and reliability for large databases."
+  },
+  {
+    "q": "Turing machine operates over____?",
+    "options": ["None of the mentioned", "Depends on the algorithm", "Infinite memory tape", "Finite memory tape"],
+    "correct": 2,
+    "explanation": "A Turing machine conceptually has an infinite tape for computation."
+  },
+  {
+    "q": "Which HTML tag target attribute opens the document in the same window or tab as it is clicked?",
+    "options": ["_blank", "_self", "_parent", "_top"],
+    "correct": 1,
+    "explanation": "_self opens the link in the same window/tab."
+  },
+  {
+    "q": "Which of the following errors can a compiler check?",
+    "options": ["Logical Error", "Both Logical and Syntax Error", "Compiler cannot check errors", "Syntax Error"],
+    "correct": 3,
+    "explanation": "Compilers can check syntax errors but cannot detect logical errors."
+  },
+  {
+    "q": "Consider the following requirement for software: “The operator must be able to add new games without modifications to the existing system.” Which one of the following types of requirements is this?",
+    "options": ["Reliability Requirement", "Performance Requirement", "Usability Requirement", "Supportability Requirement"],
+    "correct": 3,
+    "explanation": "This describes a supportability requirement: the system should allow modifications without breaking existing functionality."
+  },
+  {
+    "q": "Calculate the First(S) and Follow(A) functions for the given grammar- S → AaAb / BbBa A → ε B → ε",
+    "options": ["First(S)={ε, ε} and Follow(A)={a, b}", "First(S)={a, b} and Follow(A)={a, b}", "First(S)={a, ε} and Follow(A)={a, b}", "First(S)={a, b} and Follow(A)={a, ε}"],
+    "correct": 1,
+    "explanation": "First(S) includes 'a' and 'b' from productions; Follow(A) includes symbols that can follow A in derivations."
+  },
+  {
+    "q": "The grammar A -> AA |( A)| ε is not suitable for predictive-parsing because the grammar is __________?",
+    "options": ["Right-recursive", "Left-recursive", "An operator-grammar", "Ambiguous"],
+    "correct": 1,
+    "explanation": "Predictive parsers cannot handle left-recursive grammars."
+  },
+  {
+    "q": "The grammar S → aSa | bS | c is_____?",
+    "options": ["LR(1) but not LR(1)", "LL(1) but not LR(1)", "None of the mentioned", "Both LL(1) but not LR(1) & LR(1) but not LR(1)"],
+    "correct": 2,
+    "explanation": "This grammar is not suitable for standard LL(1) or LR(1) parsing due to ambiguity in derivations."
+  },
+  {
+    "q": "In OOP approach to solve a problem, all computations are carried out on_______?",
+    "options": ["Class", "Attribute", "Object", "Method"],
+    "correct": 2,
+    "explanation": "In OOP, computations are performed on objects which encapsulate attributes and methods."
+  },
+  {
+    "q": "Which malware spreads through user interaction via downloading and running an executable file from the Internet?",
+    "options": ["Trojans", "Spyware", "Worms", "Viruses"],
+    "correct": 0,
+    "explanation": "Trojans require user action to install and execute."
+  },
+  {
+    "q": "Which is not true about Operating system?",
+    "options": ["Collection of programs that manages hardware resources", "A program that acts as an intermediary between the user and the computer hardware", "Application software that performs all basic tasks of a computer system.", "System service provider to the application programs"],
+    "correct": 2,
+    "explanation": "Operating system is system software, not application software."
+  },
+  {
+    "q": "Which part of memory can a computer’s microprocessor access more quickly?",
+    "options": ["Cache memory", "Physical Memory", "Virtual memory", "None"],
+    "correct": 0,
+    "explanation": "Cache memory is the fastest accessible memory for the CPU."
+  },
+  {
+    "q": "Which of the following correctly declares an array in C++?",
+    "options": ["array{10};", "int array;", "int array[10];", "array array[10];"],
+    "correct": 2,
+    "explanation": "int array[10]; declares an array of 10 integers in C++."
+  },
+  {
+    "q": "The subsystem in a good software design should have which of the following characteristics?",
+    "options": ["High cohesion, low coupling", "Low cohesion, high coupling", "High cohesion, high coupling", "Low cohesion, low coupling"],
+    "correct": 0,
+    "explanation": "High cohesion and low coupling improve modularity and maintainability."
+  },
+  {
+    "q": "Which of the following is false about package?",
+    "options": ["It is common to write package command as the first statement in a Java source", "A program can be created and compiled without package", "If the source code has no specified package name, the class names are put into the default package", "None"],
+    "correct": 3,
+    "explanation": "All statements are true; thus, None is false."
+  },
+  {
+    "q": "_______ works by recursively breaking down a problem into two or more subproblems of the same type, until these become simple enough to be solved directly?",
+    "options": ["Greedy algorithms", "Backtracking algorithms", "Divide and conquer technique", "Dynamic programming"],
+    "correct": 2,
+    "explanation": "Divide and conquer solves problems by breaking them into simpler subproblems."
+  },
+
+
+
+
+
+
+  
 
   {
     "q": "Which of the following is not an example of finite state machine system?",
@@ -12933,6 +12961,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
