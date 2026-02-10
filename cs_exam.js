@@ -3,6 +3,342 @@ const exams = {
 "RVU":[
 
   {
+    "q": "Which of the following errors will be handled by the operating system?",
+    "options": ["Lack of paper in printer", "Power failure", "Connection failure in the network", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "The OS can handle errors like printer, power, and network failures through device and system management."
+  },
+  {
+    "q": "Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity?",
+    "options": ["Merge Sort", "Heap Sort", "Quick Sort", "Insertion Sort"],
+    "answer": 0,
+    "explanation": "Merge Sort is ideal for linked lists due to sequential access and O(n log n) complexity."
+  },
+  {
+    "q": "A combinational circuit that receives 2ⁿ inputs and directs it to a single output line is called?",
+    "options": ["Decoder", "Encoder", "Multiplexer", "Flip-flop"],
+    "answer": 2,
+    "explanation": "A multiplexer selects one input from many and sends it to a single output."
+  },
+  {
+    "q": "Which of the following is true about stack memory allocation?",
+    "options": [
+      "Memory is allocated at runtime in the heap",
+      "Memory is allocated in LIFO order",
+      "Memory cannot be automatically released",
+      "Memory allocation is random"
+    ],
+    "answer": 1,
+    "explanation": "Stack memory is allocated and deallocated in Last-In-First-Out (LIFO) order."
+  },
+  {
+    "q": "Which of the following is not a type of database backup?",
+    "options": ["Full backup", "Incremental backup", "Differential backup", "Transactional backup"],
+    "answer": 3,
+    "explanation": "Transactional backup is not a standard backup type; the main types are full, incremental, and differential."
+  },
+  {
+    "q": "Which of the following is not a layer in the OSI model?",
+    "options": ["Application", "Transport", "Session", "Transmission"],
+    "answer": 3,
+    "explanation": "The OSI model has a Physical layer, not a Transmission layer."
+  },
+  {
+    "q": "Which of the following is a disadvantage of linked lists over arrays?",
+    "options": [
+      "Dynamic memory allocation",
+      "Memory overhead due to pointers",
+      "Ease of insertion/deletion",
+      "Flexible size"
+    ],
+    "answer": 1,
+    "explanation": "Linked lists require extra memory for pointers, unlike arrays."
+  },
+  {
+    "q": "Which of the following is true about TCP/IP model?",
+    "options": [
+      "It has 7 layers like OSI",
+      "It has 4 layers",
+      "It has 5 layers",
+      "It has 6 layers"
+    ],
+    "answer": 1,
+    "explanation": "The TCP/IP model consists of 4 layers: Application, Transport, Internet, and Network Access."
+  },
+  {
+    "q": "Which of the following is not an advantage of using arrays?",
+    "options": [
+      "Random access of elements",
+      "Fixed memory size",
+      "Efficient indexing",
+      "Ease of inserting elements in the middle"
+    ],
+    "answer": 3,
+    "explanation": "Arrays are inefficient for insertion in the middle as it requires shifting elements."
+  },
+  {
+    "q": "Which of the following is the correct syntax to define a class in C++?",
+    "options": [
+      "class MyClass {}", 
+      "class MyClass []", 
+      "MyClass class {}", 
+      "define class MyClass {}"
+    ],
+    "answer": 0,
+    "explanation": "In C++, a class is defined using the 'class' keyword followed by the class name and braces."
+  },
+  {
+    "q": "Which of the following is true about pointers in C++?",
+    "options": [
+      "Pointers store memory addresses",
+      "Pointers can point to any data type",
+      "Pointers can be incremented or decremented",
+      "All of the mentioned"
+    ],
+    "answer": 3,
+    "explanation": "All statements are true: pointers store addresses, can point to different types, and can be incremented/decremented."
+  },
+  {
+    "q": "Which of the following is true about a binary search tree?",
+    "options": [
+      "Left child > parent", 
+      "Right child < parent", 
+      "Left child < parent and Right child > parent", 
+      "None of the mentioned"
+    ],
+    "answer": 2,
+    "explanation": "In a binary search tree, the left child is less than the parent and the right child is greater."
+  },
+  {
+    "q": "Which of the following is not true about deadlock in operating systems?",
+    "options": [
+      "Occurs when two processes wait indefinitely", 
+      "Resources are held by processes", 
+      "Can be resolved automatically without intervention", 
+      "It is a state of permanent blocking"
+    ],
+    "answer": 2,
+    "explanation": "Deadlocks cannot be resolved automatically without intervention; they require prevention, avoidance, or recovery methods."
+  },
+  {
+    "q": "Which of the following is used to uniquely identify a process in operating system?",
+    "options": ["PID", "TID", "UID", "GID"],
+    "answer": 0,
+    "explanation": "A Process ID (PID) uniquely identifies a process in the operating system."
+  },
+  {
+    "q": "Which of the following is not a type of database model?",
+    "options": ["Hierarchical", "Network", "Relational", "Procedural"],
+    "answer": 3,
+    "explanation": "Procedural is a programming paradigm, not a database model."
+  },
+  {
+    "q": "Which of the following is true about recursion?",
+    "options": [
+      "Recursion consumes more memory due to call stack",
+      "Recursion can be replaced by iteration",
+      "Recursion simplifies problem-solving",
+      "All of the mentioned"
+    ],
+    "answer": 3,
+    "explanation": "All statements are correct: recursion uses stack memory, can be converted to iteration, and simplifies some problems."
+  },
+  {
+    "q": "Which of the following is true about DNS?",
+    "options": [
+      "Translates IP addresses to domain names", 
+      "Translates domain names to IP addresses", 
+      "Both A and B", 
+      "None"
+    ],
+    "answer": 2,
+    "explanation": "DNS maps domain names to IP addresses and vice versa."
+  },
+  {
+    "q": "Which of the following is an example of non-volatile memory?",
+    "options": ["RAM", "Cache", "ROM", "Registers"],
+    "answer": 2,
+    "explanation": "ROM retains data even when the power is turned off; RAM and cache are volatile."
+  },
+  {
+    "q": "Which of the following is a component of CPU?",
+    "options": ["ALU", "Control Unit", "Registers", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "CPU consists of Arithmetic Logic Unit (ALU), Control Unit, and registers."
+  },
+  {
+    "q": "Which of the following is true about deadlock prevention?",
+    "options": [
+      "It ensures that at least one of the necessary conditions for deadlock cannot hold", 
+      "It allows circular wait", 
+      "It guarantees deadlocks will occur", 
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Deadlock prevention works by breaking one of the four necessary conditions, such as circular wait."
+  },
+  {
+    "q": "Which of the following is a characteristic of RISC architecture?",
+    "options": [
+      "Large number of complex instructions", 
+      "Fewer instructions executed per cycle", 
+      "Simple instructions executed in a single cycle", 
+      "Microprogrammed control"
+    ],
+    "answer": 2,
+    "explanation": "RISC architectures have simple instructions that execute in a single clock cycle."
+  },
+  {
+    "q": "Which of the following is true about multiplexing?",
+    "options": [
+      "It allows multiple signals to share a single communication channel", 
+      "It improves bandwidth utilization", 
+      "It reduces cost", 
+      "All of the mentioned"
+    ],
+    "answer": 3,
+    "explanation": "Multiplexing shares a channel among multiple signals, improving utilization and reducing cost."
+  },
+  {
+    "q": "Which of the following is true about cloud computing?",
+    "options": [
+      "Provides on-demand network access to resources", 
+      "Resources are easily scalable", 
+      "Users pay for what they use", 
+      "All of the mentioned"
+    ],
+    "answer": 3,
+    "explanation": "Cloud computing provides on-demand resources, scalability, and pay-per-use pricing."
+  },
+  {
+    "q": "Which of the following is true about symmetric encryption?",
+    "options": [
+      "Same key used for encryption and decryption", 
+      "Faster than asymmetric encryption", 
+      "Key must be shared securely", 
+      "All of the mentioned"
+    ],
+    "answer": 3,
+    "explanation": "Symmetric encryption uses one key, is fast, and requires secure key sharing."
+  },
+  {
+    "q": "Which of the following is true about a compiler?",
+    "options": [
+      "Translates high-level language to machine code", 
+      "Executes program line by line", 
+      "Requires source code at runtime", 
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "A compiler translates the entire program into machine code before execution."
+  },
+  {
+    "q": "Which of the following sorting algorithms is stable?",
+    "options": ["Quick Sort", "Heap Sort", "Merge Sort", "Selection Sort"],
+    "answer": 2,
+    "explanation": "Merge Sort is stable because it maintains the relative order of equal elements."
+  },
+  {
+    "q": "Which of the following is true about deadlock avoidance?",
+    "options": [
+      "It requires advance knowledge of resource requests", 
+      "It dynamically ensures safe state", 
+      "It avoids circular wait", 
+      "All of the mentioned"
+    ],
+    "answer": 3,
+    "explanation": "Deadlock avoidance uses knowledge of resource requests to keep the system in a safe state."
+  },
+  {
+    "q": "Which of the following is an example of a non-linear data structure?",
+    "options": ["Array", "Queue", "Stack", "Graph"],
+    "answer": 3,
+    "explanation": "Graph is a non-linear data structure; arrays, stacks, and queues are linear."
+  },
+  {
+    "q": "Which of the following is true about RAID 1?",
+    "options": [
+      "Mirroring of disks", 
+      "Striping of disks", 
+      "Parity-based", 
+      "Combines striping and parity"
+    ],
+    "answer": 0,
+    "explanation": "RAID 1 duplicates data on two disks for redundancy (mirroring)."
+  },
+  {
+    "q": "Which of the following is not a type of operating system?",
+    "options": ["Batch OS", "Distributed OS", "Embedded OS", "Oracle OS"],
+    "answer": 3,
+    "explanation": "Oracle OS is not a recognized type of operating system."
+  },
+  {
+    "q": "Which of the following is true about a TCP connection?",
+    "options": [
+      "Connectionless", 
+      "Reliable data transfer", 
+      "No error detection", 
+      "Unreliable"
+    ],
+    "answer": 1,
+    "explanation": "TCP is connection-oriented and provides reliable data transfer with error detection."
+  },
+  {
+    "q": "Which of the following is true about a deadlock?",
+    "options": [
+      "Occurs when processes wait indefinitely for resources", 
+      "Occurs only in single-threaded systems", 
+      "Is easily resolved automatically", 
+      "None"
+    ],
+    "answer": 0,
+    "explanation": "Deadlock occurs when processes wait indefinitely for resources held by each other."
+  },
+  {
+    "q": "Which of the following is true about DHCP?",
+    "options": [
+      "Automatically assigns IP addresses", 
+      "Reduces administrative overhead", 
+      "Uses lease mechanism", 
+      "All of the mentioned"
+    ],
+    "answer": 3,
+    "explanation": "DHCP automates IP assignment, reduces admin work, and leases addresses temporarily."
+  },
+  {
+    "q": "Which of the following is true about an algorithm?",
+    "options": [
+      "Well-defined steps", 
+      "Finite number of steps", 
+      "Input and output defined", 
+      "All of the mentioned"
+    ],
+    "answer": 3,
+    "explanation": "An algorithm is well-defined, finite, and has defined inputs and outputs."
+  },
+  {
+    "q": "Which of the following is true about a stack?",
+    "options": [
+      "Follows LIFO", 
+      "Supports push and pop", 
+      "Used in recursion", 
+      "All of the mentioned"
+    ],
+    "answer": 3,
+    "explanation": "A stack follows LIFO, supports push/pop, and is commonly used in recursion."
+  },
+
+
+
+
+
+
+
+
+
+
+  
+  {
     "q": "Which of the following is used to add styles and formatting to a webpage in CSS?",
     "options": ["Functions", "Variables", "Selectors", "Arrays"],
     "answer": 2,
@@ -14233,6 +14569,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
