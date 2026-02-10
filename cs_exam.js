@@ -261,6 +261,118 @@ const exams = {
   },
 
 
+  {
+    "Question": "Which scheduling algorithm gives minimum average waiting time?",
+    "Options": {
+      "A": "First Come First Serve",
+      "B": "Round Robin",
+      "C": "Shortest Job First",
+      "D": "Priority Scheduling"
+    },
+    "Answer": "C",
+    "Explanation": "Shortest Job First minimizes the average waiting time by executing shorter processes first."
+  },
+  {
+    "Question": "Which OS component decides which process will run next?",
+    "Options": {
+      "A": "Loader",
+      "B": "Dispatcher",
+      "C": "Scheduler",
+      "D": "Interpreter"
+    },
+    "Answer": "C",
+    "Explanation": "The scheduler selects the next process to be executed by the CPU."
+  },
+  {
+    "Question": "Which layer of OSI model is responsible for error detection and correction?",
+    "Options": {
+      "A": "Physical",
+      "B": "Data Link",
+      "C": "Network",
+      "D": "Transport"
+    },
+    "Answer": "B",
+    "Explanation": "The Data Link layer handles framing, error detection, and correction."
+  },
+  {
+    "Question": "Which protocol is used to send emails?",
+    "Options": {
+      "A": "HTTP",
+      "B": "FTP",
+      "C": "SMTP",
+      "D": "SNMP"
+    },
+    "Answer": "C",
+    "Explanation": "SMTP (Simple Mail Transfer Protocol) is used for sending emails."
+  },
+  {
+    "Question": "Which normal form removes partial dependency?",
+    "Options": {
+      "A": "1NF",
+      "B": "2NF",
+      "C": "3NF",
+      "D": "BCNF"
+    },
+    "Answer": "B",
+    "Explanation": "Second Normal Form removes partial dependency."
+  },
+  {
+    "Question": "Which key uniquely identifies a record in a table?",
+    "Options": {
+      "A": "Foreign Key",
+      "B": "Candidate Key",
+      "C": "Primary Key",
+      "D": "Composite Key"
+    },
+    "Answer": "C",
+    "Explanation": "A primary key uniquely identifies each record in a table."
+  },
+  {
+    "Question": "Which data structure uses FIFO principle?",
+    "Options": {
+      "A": "Stack",
+      "B": "Queue",
+      "C": "Tree",
+      "D": "Graph"
+    },
+    "Answer": "B",
+    "Explanation": "Queue follows First In First Out (FIFO) principle."
+  },
+  {
+    "Question": "Which searching algorithm works on sorted data?",
+    "Options": {
+      "A": "Linear Search",
+      "B": "Binary Search",
+      "C": "Hash Search",
+      "D": "DFS"
+    },
+    "Answer": "B",
+    "Explanation": "Binary search requires sorted data for correct operation."
+  },
+  {
+    "Question": "Which sorting algorithm has the best average time complexity?",
+    "Options": {
+      "A": "Bubble Sort",
+      "B": "Insertion Sort",
+      "C": "Merge Sort",
+      "D": "Selection Sort"
+    },
+    "Answer": "C",
+    "Explanation": "Merge sort has O(n log n) average time complexity."
+  },
+  {
+    "Question": "Which logic gate produces output 1 when inputs are different?",
+    "Options": {
+      "A": "AND",
+      "B": "OR",
+      "C": "XOR",
+      "D": "NOR"
+    },
+    "Answer": "C",
+    "Explanation": "XOR outputs 1 when inputs are different."
+  }
+
+
 
 
 
@@ -12643,6 +12755,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
