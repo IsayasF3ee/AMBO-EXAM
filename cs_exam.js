@@ -4,6 +4,571 @@ const exams = {
 
 
   {
+    "q": "Which of the following is used to manage files and directories in OS?",
+    "options": ["File System", "Memory Manager", "Process Scheduler", "Network Manager"],
+    "answer": 0,
+    "explanation": "File system manages files and directories on storage devices."
+  },
+  {
+    "q": "Which scheduling algorithm selects the process with the smallest burst time next?",
+    "options": ["First-Come-First-Serve", "Shortest Job Next", "Round Robin", "Priority Scheduling"],
+    "answer": 1,
+    "explanation": "Shortest Job Next (SJN) selects the process with the minimum burst time."
+  },
+  {
+    "q": "Deadlock can occur in a system when which of the following conditions hold simultaneously?",
+    "options": ["Mutual exclusion, Hold and wait, Circular wait, No preemption", "Mutual exclusion only", "Hold and wait only", "Circular wait only"],
+    "answer": 0,
+    "explanation": "All four conditions together (mutual exclusion, hold and wait, no preemption, circular wait) can cause deadlock."
+  },
+  {
+    "q": "Which memory allocation technique divides memory into fixed-size partitions?",
+    "options": ["Segmentation", "Paging", "Contiguous allocation", "Fixed partitioning"],
+    "answer": 3,
+    "explanation": "Fixed partitioning divides memory into fixed-size blocks."
+  },
+  {
+    "q": "Which of the following is a page replacement algorithm?",
+    "options": ["FIFO", "LRU", "Optimal", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "FIFO, LRU, and Optimal are all page replacement algorithms."
+  },
+  {
+    "q": "What is the main purpose of the process scheduler in an operating system?",
+    "options": ["Manage memory allocation", "Manage file system", "Decide which process runs next", "Monitor network connections"],
+    "answer": 2,
+    "explanation": "The process scheduler decides the order in which processes access the CPU."
+  },
+  {
+    "q": "Which of the following is not a type of operating system?",
+    "options": ["Batch OS", "Multiprogramming OS", "Distributed OS", "Relational OS"],
+    "answer": 3,
+    "explanation": "Relational OS is not a recognized type of operating system."
+  },
+  {
+    "q": "In virtual memory, which technique allows the execution of processes that are not completely in memory?",
+    "options": ["Swapping", "Paging", "Segmentation", "Demand Paging"],
+    "answer": 3,
+    "explanation": "Demand paging brings pages into memory only when they are required."
+  },
+  {
+    "q": "Which of the following is an example of a non-preemptive scheduling algorithm?",
+    "options": ["Round Robin", "Shortest Job Next", "Priority Scheduling", "First-Come-First-Serve"],
+    "answer": 3,
+    "explanation": "FCFS is non-preemptive; once a process starts, it runs to completion."
+  },
+  {
+    "q": "Which type of operating system allows multiple users to run programs simultaneously?",
+    "options": ["Single-user OS", "Multi-user OS", "Real-time OS", "Batch OS"],
+    "answer": 1,
+    "explanation": "Multi-user OS supports multiple users executing programs concurrently."
+  },
+  {
+    "q": "Which of the following is used to prevent unauthorized access to data in OS?",
+    "options": ["Memory Manager", "File Permissions", "Process Scheduler", "CPU Registers"],
+    "answer": 1,
+    "explanation": "File permissions control access to files and directories."
+  },
+  {
+    "q": "What is the main purpose of a device driver?",
+    "options": ["Translate user commands", "Control hardware devices", "Manage memory", "Schedule processes"],
+    "answer": 1,
+    "explanation": "Device drivers allow the OS to communicate with hardware devices."
+  },
+  {
+    "q": "Which type of operating system is used in embedded systems?",
+    "options": ["Batch OS", "Real-time OS", "Distributed OS", "Time-sharing OS"],
+    "answer": 1,
+    "explanation": "Real-time OS is used in embedded systems for timely and predictable responses."
+  },
+  {
+    "q": "Which system call is used to create a new process in UNIX/Linux?",
+    "options": ["fork()", "exec()", "wait()", "exit()"],
+    "answer": 0,
+    "explanation": "fork() is used to create a new process."
+  },
+  {
+    "q": "Which file allocation method stores file contents in contiguous blocks?",
+    "options": ["Linked Allocation", "Indexed Allocation", "Contiguous Allocation", "Hashed Allocation"],
+    "answer": 2,
+    "explanation": "Contiguous allocation stores file blocks together sequentially."
+  },
+  {
+    "q": "Which of the following is a critical section problem solution approach?",
+    "options": ["Peterson’s Algorithm", "Semaphores", "Monitors", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "Peterson’s Algorithm, Semaphores, and Monitors are all solutions to the critical section problem."
+  },
+  {
+    "q": "Which of the following is a preemptive scheduling algorithm?",
+    "options": ["Shortest Job Next", "Round Robin", "First-Come-First-Serve", "None of the mentioned"],
+    "answer": 1,
+    "explanation": "Round Robin is preemptive because each process gets a fixed time slice."
+  },
+  {
+    "q": "Which page replacement algorithm replaces the page that will not be used for the longest period in the future?",
+    "options": ["FIFO", "Optimal", "LRU", "Clock"],
+    "answer": 1,
+    "explanation": "Optimal page replacement replaces the page that will not be needed for the longest time."
+  },
+  {
+    "q": "Which of the following is an advantage of multiprogramming?",
+    "options": ["Efficient CPU utilization", "Simple design", "No context switching", "Predictable execution time"],
+    "answer": 0,
+    "explanation": "Multiprogramming improves CPU utilization by keeping it busy with multiple processes."
+  },
+  {
+    "q": "Which of the following is not a CPU scheduling criterion?",
+    "options": ["Throughput", "Turnaround time", "Response time", "Memory access time"],
+    "answer": 3,
+    "explanation": "Memory access time is not a CPU scheduling criterion."
+  },
+  {
+    "q": "In a Unix/Linux system, which command displays all running processes?",
+    "options": ["ps", "ls", "top", "kill"],
+    "answer": 2,
+    "explanation": "top displays all running processes dynamically."
+  },
+  {
+    "q": "Which of the following is a deadlock prevention technique?",
+    "options": ["Resource ordering", "Banker’s algorithm", "Wait-die scheme", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "Resource ordering, Banker’s algorithm, and Wait-die are all deadlock prevention techniques."
+  },
+  {
+    "q": "Which scheduling algorithm is suitable for time-sharing systems?",
+    "options": ["FCFS", "SJN", "Round Robin", "Priority Scheduling"],
+    "answer": 2,
+    "explanation": "Round Robin is widely used in time-sharing systems to ensure fair CPU allocation."
+  },
+  {
+    "q": "What is the purpose of a system call?",
+    "options": ["Provide an interface to hardware", "Create user accounts", "Compile programs", "Encrypt files"],
+    "answer": 0,
+    "explanation": "System calls provide an interface between user programs and the OS to access hardware services."
+  },
+  {
+    "q": "Which file system supports journaling to improve reliability?",
+    "options": ["FAT32", "NTFS", "ext2", "ext3"],
+    "answer": 3,
+    "explanation": "ext3 uses journaling to improve reliability and recoverability."
+  },
+  {
+    "q": "Which memory management technique allows non-contiguous allocation of processes?",
+    "options": ["Segmentation", "Contiguous allocation", "Fixed partitioning", "Static allocation"],
+    "answer": 0,
+    "explanation": "Segmentation allows non-contiguous allocation by dividing programs into logical segments."
+  },
+  {
+    "q": "Which of the following is not a type of OS interrupt?",
+    "options": ["Hardware interrupt", "Software interrupt", "Program interrupt", "Network interrupt"],
+    "answer": 3,
+    "explanation": "Network interrupt is not a standard OS interrupt type."
+  },
+  {
+    "q": "Which memory is fastest in the memory hierarchy?",
+    "options": ["RAM", "Cache", "Registers", "Hard Disk"],
+    "answer": 2,
+    "explanation": "Registers inside the CPU are the fastest memory."
+  },
+  {
+    "q": "Which of the following commands is used to terminate a process in Unix/Linux?",
+    "options": ["kill", "exit", "stop", "end"],
+    "answer": 0,
+    "explanation": "The kill command is used to terminate processes."
+  },
+  {
+    "q": "Which of the following is a disadvantage of contiguous file allocation?",
+    "options": ["Simple access", "External fragmentation", "Easy to implement", "Fast sequential access"],
+    "answer": 1,
+    "explanation": "Contiguous allocation suffers from external fragmentation."
+  },
+  {
+    "q": "Which of the following is a software layer between applications and hardware?",
+    "options": ["Kernel", "Compiler", "Linker", "Assembler"],
+    "answer": 0,
+    "explanation": "The kernel acts as the core software layer managing hardware and applications."
+  },
+  {
+    "q": "Which of the following scheduling criteria measures time from submission to completion?",
+    "options": ["Turnaround time", "Waiting time", "Response time", "Throughput"],
+    "answer": 0,
+    "explanation": "Turnaround time is the total time from process submission to completion."
+  },
+  {
+    "q": "Which of the following is a common method for handling page faults?",
+    "options": ["Demand paging", "Swapping", "Segmentation", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "Demand paging, swapping, and segmentation are methods to handle page faults."
+  },
+  {
+    "q": "Which type of operating system is designed to respond immediately to input?",
+    "options": ["Batch OS", "Time-sharing OS", "Real-time OS", "Distributed OS"],
+    "answer": 2,
+    "explanation": "Real-time OS responds immediately to external events."
+  },
+  {
+    "q": "Which of the following is not a typical function of an OS?",
+    "options": ["Process management", "Memory management", "Compiling programs", "Device management"],
+    "answer": 2,
+    "explanation": "Compiling programs is done by compilers, not the operating system."
+  },
+  {
+    "q": "Which of the following commands in Unix/Linux shows disk usage?",
+    "options": ["df", "du", "ls", "free"],
+    "answer": 1,
+    "explanation": "du displays disk usage of files and directories."
+  },
+  {
+    "q": "Which memory allocation problem can occur in contiguous allocation?",
+    "options": ["Internal fragmentation", "External fragmentation", "Stack overflow", "Buffer overflow"],
+    "answer": 1,
+    "explanation": "External fragmentation occurs when free memory is divided into small blocks that cannot satisfy allocation requests."
+  },
+  {
+    "q": "Which of the following is an advantage of virtual memory?",
+    "options": ["Larger address space than physical memory", "Faster access than cache", "No need for memory management", "Simplifies CPU design"],
+    "answer": 0,
+    "explanation": "Virtual memory allows processes to use more memory than physically available."
+  },
+  {
+    "q": "Which of the following commands is used to display running services in Unix/Linux?",
+    "options": ["ps", "service --status-all", "top", "kill"],
+    "answer": 1,
+    "explanation": "service --status-all lists the status of all services."
+  },
+  {
+    "q": "Which of the following algorithms ensures all processes get fair CPU time?",
+    "options": ["FCFS", "Round Robin", "SJN", "Priority Scheduling"],
+    "answer": 1,
+    "explanation": "Round Robin allocates CPU time in a circular order ensuring fairness."
+  },
+  {
+    "q": "Which of the following is used for inter-process communication?",
+    "options": ["Signals", "Semaphores", "Pipes", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "Signals, semaphores, and pipes are all used for inter-process communication."
+  },
+
+
+
+
+
+
+
+  
+
+  {
+    "q": "Which of the following is used to add styles and formatting to a webpage in CSS?",
+    "options": ["Functions", "Variables", "Selectors", "Arrays"],
+    "answer": 2,
+    "explanation": "Selectors are used in CSS to select HTML elements and apply styles to them."
+  },
+  {
+    "q": "Which one of the following techniques is not used in the Binary tree?",
+    "options": ["Randomized traversal", "Preorder traversal", "Postorder traversal", "Inorder traversal"],
+    "answer": 0,
+    "explanation": "Randomized traversal is not a standard binary tree traversal technique."
+  },
+  {
+    "q": "In IPv4 Addresses, classful addressing is replaced with ________",
+    "options": ["Classful Addressing", "Classless Addressing", "Classful Advertising", "Classless Advertising"],
+    "answer": 1,
+    "explanation": "Classless addressing (CIDR) replaced classful addressing to improve IP address allocation."
+  },
+  {
+    "q": "Which control statement is used for executing different blocks of code based on multiple conditions?",
+    "options": ["While loop statement", "For loop statement", "If...else statement", "Switch statement"],
+    "answer": 3,
+    "explanation": "The switch statement executes different blocks of code based on the value of a variable."
+  },
+  {
+    "q": "Which graph traversal algorithm is used to find the shortest path between two nodes?",
+    "options": ["Dijkstra's Algorithm", "Depth-First Search (DFS)", "Kruskal's Algorithm", "Breadth-First Search (BFS)"],
+    "answer": 0,
+    "explanation": "Dijkstra's Algorithm finds the shortest path between nodes in a weighted graph."
+  },
+  {
+    "q": "Consider sequential free memory blocks A=100 KB, B=200 KB, C=150 KB, D=300 KB, E=250 KB. Using First Fit, allocate P1=120 KB, P2=250 KB, P3=180 KB. Which process goes into which block?",
+    "options": ["P1: Block B, P2: Block E, P3: Block A", "P1: Block D, P2: Block E, P3: will not be allocated", "P1: Block B, P2: Block D, P3: Block E", "P1: Block A, P2: Block D, P3: Block E"],
+    "answer": 1,
+    "explanation": "First Fit allocates the first block that fits: P1 fits Block D, P2 fits Block E, P3 cannot fit any remaining block."
+  },
+  {
+    "q": "Employee (Emp_Id, Emp_name, emp_salary), here Employee is __________ and Emp_Id, Emp_name, emp_salary are _________.",
+    "options": ["Tuple, Primary key", "Table, Attribute", "Attributes, Relation", "row, Column"],
+    "answer": 1,
+    "explanation": "Employee is a table (relation), and Emp_Id, Emp_name, emp_salary are attributes (columns)."
+  },
+  {
+    "q": "Which one of the following search algorithms requires less memory?",
+    "options": ["Linear Search", "Depth First Search", "Optimal Search", "Breadth-First Search"],
+    "answer": 1,
+    "explanation": "Depth-First Search uses less memory compared to Breadth-First Search because it stores only a single path from the root."
+  },
+  {
+    "q": "A functional dependency is a relationship between/among ___________",
+    "options": ["Rows", "Tables", "Attributes", "Entities"],
+    "answer": 2,
+    "explanation": "A functional dependency defines a relationship between attributes in a relation."
+  },
+  {
+    "q": "___________ is a theoretical construct of Turing machine that can simulate any other Turing machine.",
+    "options": ["Multi-tape Turing machine", "Universal Turing machine", "Multi track Turing machine", "Semi-infinite Tape"],
+    "answer": 1,
+    "explanation": "A Universal Turing Machine can simulate the behavior of any other Turing machine."
+  },
+  {
+    "q": "What is the purpose of pipelining in computer architecture?",
+    "options": ["To reduce the power consumption of the CPU", "To increase the speed of instruction execution", "To enhance the reliability of the system", "To improve the efficiency of memory access"],
+    "answer": 1,
+    "explanation": "Pipelining allows overlapping execution of instructions to increase CPU throughput."
+  },
+  {
+    "q": "Push(A), Push(B), Pop(), Push(C), Pop(), Push(D), Push(E). How many elements are present in the stack after these operations?",
+    "options": ["1", "2", "4", "3"],
+    "answer": 3,
+    "explanation": "After the sequence, the stack contains D and E, and C is removed, totaling 3 elements."
+  },
+  {
+    "q": "What is the main function of the arithmetic logic unit (ALU) in a CPU?",
+    "options": ["Fetch and decode instructions", "Perform arithmetic and logical operations", "Manage memory access", "Control the flow of execution"],
+    "answer": 1,
+    "explanation": "The ALU performs arithmetic and logical operations within the CPU."
+  },
+  {
+    "q": "Which of the following is not a common network topology?",
+    "options": ["Star topology", "Pyramid topology", "Bus topology", "Ring topology"],
+    "answer": 1,
+    "explanation": "Pyramid topology is not a standard network topology."
+  },
+  {
+    "q": "Which of the following is a data link protocol?",
+    "options": ["All of the mentioned", "HDLC", "Ethernet", "Point to Point Protocol"],
+    "answer": 0,
+    "explanation": "All listed protocols operate at the data link layer."
+  },
+  {
+    "q": "Which of the following tasks is an example of unsupervised learning?",
+    "options": ["Predicting house prices", "Customer segmentation based on behavior", "Predicting age from social media", "Classifying emails into spam/non-spam"],
+    "answer": 1,
+    "explanation": "Customer segmentation is unsupervised because it finds patterns without labeled output."
+  },
+  {
+    "q": "What differs deep learning from traditional machine learning approaches?",
+    "options": ["Deep learning is only suitable for classification tasks", "Deep learning is a subfield of AI", "Deep learning does not require labeled data", "Deep learning models have multiple layers for automatic feature extraction"],
+    "answer": 3,
+    "explanation": "Deep learning uses multiple layers to automatically learn feature representation from raw data."
+  },
+  {
+    "q": "Which of the following is a characteristic of a non-deterministic finite automaton (NFA)?",
+    "options": ["Requires a stack to store states", "Can only recognize regular languages", "Can have multiple possible transitions for a given input and state", "Can recognize context-free languages"],
+    "answer": 2,
+    "explanation": "NFAs can have multiple transitions for the same input in a given state, unlike DFAs."
+  },
+  {
+    "q": "What is the main function of the branch prediction mechanism in a CPU?",
+    "options": ["To improve the accuracy of branch instructions", "To enhance CPU performance", "To reduce the number of branch instructions", "To minimize the impact of branch mispredictions"],
+    "answer": 3,
+    "explanation": "Branch prediction aims to reduce delays caused by mispredicted branches."
+  },
+  {
+    "q": "_________is the minimum number of steps that can be executed for given parameters?",
+    "options": ["Worst case", "Average case", "Best case", "Time complexity"],
+    "answer": 2,
+    "explanation": "Best case refers to the minimum number of steps an algorithm will take."
+  },
+  {
+    "q": "Which of the following is a characteristic of CISC architecture?",
+    "options": ["Longer instruction execution time", "Fewer registers", "Simpler instruction set", "Variable-length instructions"],
+    "answer": 3,
+    "explanation": "CISC architectures often have variable-length instructions and complex instruction sets."
+  },
+  {
+    "q": "Mr. Akubazgi explains a person who uses hacking tools without understanding underlying technology. This person is called?",
+    "options": ["A script kiddy", "A white hat hacker", "A gray hat hacker", "A novice"],
+    "answer": 0,
+    "explanation": "A script kiddy uses pre-made tools without understanding how they work."
+  },
+  {
+    "q": "Checkpoints are part of ____ measures.",
+    "options": ["Concurrency", "Security", "Recovery", "Authorization"],
+    "answer": 2,
+    "explanation": "Checkpoints save system state to allow recovery after a failure."
+  },
+  {
+    "q": "Which of the following is a key application of context-free grammars?",
+    "options": ["Network security", "Natural language processing", "Image processing", "Database management"],
+    "answer": 1,
+    "explanation": "Context-free grammars are widely used in parsing languages in NLP."
+  },
+  {
+    "q": "Which operator is used for assignment in C++?",
+    "options": ["=", "+=", "==", "/="],
+    "answer": 0,
+    "explanation": "The '=' operator assigns values to variables."
+  },
+  {
+    "q": "Which one of the following algorithms is not applicable for digital signature?",
+    "options": ["RSA", "Elliptic Curve", "Diffie-Hellman", "DSS"],
+    "answer": 2,
+    "explanation": "Diffie-Hellman is a key exchange algorithm, not used for digital signatures."
+  },
+  {
+    "q": "Three or more devices share a link in ________ connection.",
+    "options": ["Multipoint", "Point to point", "Unipoint", "Simplex"],
+    "answer": 0,
+    "explanation": "Multipoint connections allow multiple devices to share the same communication link."
+  },
+  {
+    "q": "How can you pass the value of a function by value in C++?",
+    "options": ["Using the return statement", "Assigning to a global variable", "Passing directly as function argument", "Declaring a pointer as parameter"],
+    "answer": 2,
+    "explanation": "Passing by value sends a copy of the argument to the function."
+  },
+  {
+    "q": "What is the purpose of an Intrusion Detection System (IDS) in computer security?",
+    "options": ["Prevent unauthorized access", "Detect and alert on suspicious activities", "Recover data after failure", "Encrypt data during transmission"],
+    "answer": 1,
+    "explanation": "IDS monitors networks to detect and alert about potential intrusions."
+  },
+  {
+    "q": "What is the main function of a network switch?",
+    "options": ["Connect multiple network devices", "Provide internet access", "Enhance network security", "Manage network traffic"],
+    "answer": 0,
+    "explanation": "Switches connect multiple devices on a network and forward data between them efficiently."
+  },
+  {
+    "q": "Most backup and recovery commands in _____ are executed by server sessions.",
+    "options": ["Recovery Manager", "Backup Manager", "Backup and Recovery Manager", "Database Manager"],
+    "answer": 0,
+    "explanation": "Recovery Manager handles server-side execution of backup and recovery commands."
+  },
+  {
+    "q": "Which loop statement is guaranteed to execute its body at least once?",
+    "options": ["For loop statement", "Do...while statement", "If...else statement", "Switch statement"],
+    "answer": 1,
+    "explanation": "Do...while loops execute the body at least once before checking the condition."
+  },
+  {
+    "q": "Which of the following is not a recovery technique?",
+    "options": ["Deferred update", "Recovery management", "Two-phase commit", "Immediate update"],
+    "answer": 1,
+    "explanation": "Recovery management is a process, not a specific recovery technique."
+  },
+  {
+    "q": "Merge sort is a stable algorithm. What does 'stable' mean?",
+    "options": ["Predictable time complexity", "Maintains relative order of equal elements", "Guaranteed to terminate", "Efficient for large input"],
+    "answer": 1,
+    "explanation": "Stability means that equal elements retain their original relative order after sorting."
+  },
+  {
+    "q": "If a link transmits 4000 frames/sec, each with 8 bits, what is the transmission rate using TDM?",
+    "options": ["500 bps", "32 kbps", "32 bps", "500 kbps"],
+    "answer": 1,
+    "explanation": "4000 frames × 8 bits = 32,000 bps = 32 kbps."
+  },
+  {
+    "q": "Which of the following is not a type of memory hierarchy in a computer system?",
+    "options": ["Virtual memory", "Cache memory", "Magnetic tape", "Registers"],
+    "answer": 2,
+    "explanation": "Magnetic tape is secondary storage, not part of standard memory hierarchy."
+  },
+  {
+    "q": "Which function is called in a pop() operation?",
+    "options": ["IsFull()", "IsEmpty()"],
+    "answer": 1,
+    "explanation": "Pop() must check if the stack is empty before removing an element."
+  },
+  {
+    "q": "What is the major characteristic of a computer virus?",
+    "options": ["Steals data", "Encrypts files for ransom", "Spreads via email attachments", "Replicates by attaching to other files", "Spreads through network connections"],
+    "answer": 3,
+    "explanation": "A virus replicates itself by attaching to files or programs."
+  },
+  {
+    "q": "The attacker using a network of compromised devices is known as _____________",
+    "options": ["Internet", "Botnet", "Telnet", "D-net"],
+    "answer": 1,
+    "explanation": "A botnet is a network of compromised devices used to perform attacks."
+  },
+  {
+    "q": "For finite automaton that accepts strings of the form 'ab^n', n>=0, which statement is false?",
+    "options": ["Accepting state is q1", "Accepting state is q2", "None", "Initial state is q0"],
+    "answer": 1,
+    "explanation": "In the described FA, the accepting state is not q2; q1 is the correct accepting state."
+  },
+  {
+    "q": "What is the purpose of system backups?",
+    "options": ["Recover data after loss", "Encrypt data", "Prevent unauthorized access", "Develop software", "Monitor attacks"],
+    "answer": 0,
+    "explanation": "System backups allow recovery of data in case of data loss or system failure."
+  },
+  {
+    "q": "What makes Naive Bayes 'naive'?",
+    "options": ["Uses single-layer neural network", "Not suitable for classification", "Relies on labeled data", "Assumes all features are independent"],
+    "answer": 3,
+    "explanation": "Naive Bayes assumes feature independence, which is why it is called 'naive'."
+  },
+  {
+    "q": "Which of the following is a network monitoring tool?",
+    "options": ["All", "Nmap", "Nagios", "Wireshark"],
+    "answer": 0,
+    "explanation": "All listed tools are used for network monitoring and analysis."
+  },
+  {
+    "q": "For patients waiting in a clinic, seriously sick patients should be served first. Which data structure is most appropriate?",
+    "options": ["Queue", "Tree", "Priority Queue", "Stack"],
+    "answer": 2,
+    "explanation": "A priority queue serves elements based on priority rather than order of arrival."
+  },
+  {
+    "q": "Equivalent recurrence relation for T(n)=T(n-1)+2n-1?",
+    "options": ["T(n)=T(n-1)+O(n-1)", "T(n)=T(n-1)+O(2n)", "T(n)=T(n-1)+O(1)", "T(n)=T(n-1)+O(n)"],
+    "answer": 3,
+    "explanation": "2n-1 is O(n), so the recurrence can be expressed as T(n)=T(n-1)+O(n)."
+  },
+  {
+    "q": "Which resource is typically time multiplexed in an operating system?",
+    "options": ["Compact Disk", "Network", "CPU", "Memory"],
+    "answer": 2,
+    "explanation": "The CPU is time-multiplexed among processes to share processing time."
+  },
+  {
+    "q": "What is the primary goal of a denial-of-service (DoS) attack?",
+    "options": ["Modify data", "Disrupt service availability", "Gain unauthorized access", "Intercept data", "Steal data"],
+    "answer": 1,
+    "explanation": "DoS attacks aim to make services unavailable to legitimate users."
+  },
+  {
+    "q": "Which concept allows you to store the memory address of a variable in C++?",
+    "options": ["Strings", "Arrays", "Pointers", "Structures"],
+    "answer": 2,
+    "explanation": "Pointers store memory addresses of variables in C++."
+  },
+  {
+    "q": "Which compiler runs on one machine and generates code for multiple machines?",
+    "options": ["Onepass compiler", "Cross compiler", "Multipass compiler", "Optimizing compiler"],
+    "answer": 1,
+    "explanation": "A cross compiler generates executable code for a platform different from the one it runs on."
+  },
+  {
+    "q": "Which of the following best describes the halting problem for Turing machines?",
+    "options": ["Determine if TM will halt or run indefinitely", "Determine if TM can recognize context-free languages", "Determine if TM can simulate other models", "Determine if TM can solve any computational problem"],
+    "answer": 0,
+    "explanation": "The halting problem is deciding whether a Turing machine will eventually stop or run forever on a given input."
+  },
+
+
+
+
+
+
+
+
+  
+
+  {
     "q": "Which of the following is not a type of computer network?",
     "options": ["LAN", "WAN", "PAN", "CANADA"],
     "answer": 3,
@@ -15200,6 +15765,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
