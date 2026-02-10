@@ -370,10 +370,122 @@ const exams = {
     },
     "Answer": "C",
     "Explanation": "XOR outputs 1 when inputs are different."
-  }
+  },
 
 
 
+
+
+  {
+    "Question": "Which device is used to convert digital signals into analog signals?",
+    "Options": [
+      "Router",
+      "Modem",
+      "Repeater",
+      "Switch"
+    ],
+    "Answer": "Modem",
+    "Explanation": "A modem converts digital signals to analog and vice versa for transmission."
+  },
+  {
+    "Question": "Which type of memory is fastest?",
+    "Options": [
+      "RAM",
+      "Cache",
+      "Hard Disk",
+      "ROM"
+    ],
+    "Answer": "Cache",
+    "Explanation": "Cache memory is the fastest memory and is located close to the CPU."
+  },
+  {
+    "Question": "Which algorithm is used to find the shortest path in a graph?",
+    "Options": [
+      "Prim’s Algorithm",
+      "Kruskal’s Algorithm",
+      "Dijkstra’s Algorithm",
+      "DFS"
+    ],
+    "Answer": "Dijkstra’s Algorithm",
+    "Explanation": "Dijkstra’s algorithm finds the shortest path between nodes in a graph."
+  },
+  {
+    "Question": "Which OS concept allows multiple programs to reside in memory at the same time?",
+    "Options": [
+      "Multitasking",
+      "Multiprogramming",
+      "Multithreading",
+      "Time Sharing"
+    ],
+    "Answer": "Multiprogramming",
+    "Explanation": "Multiprogramming allows multiple programs to be loaded in memory simultaneously."
+  },
+  {
+    "Question": "Which database constraint ensures no duplicate values?",
+    "Options": [
+      "NOT NULL",
+      "CHECK",
+      "UNIQUE",
+      "DEFAULT"
+    ],
+    "Answer": "UNIQUE",
+    "Explanation": "UNIQUE constraint prevents duplicate values in a column."
+  },
+  {
+    "Question": "Which layer of OSI model is responsible for routing?",
+    "Options": [
+      "Transport",
+      "Network",
+      "Data Link",
+      "Session"
+    ],
+    "Answer": "Network",
+    "Explanation": "The Network layer handles routing and logical addressing."
+  },
+  {
+    "Question": "Which HTML tag is used to create a hyperlink?",
+    "Options": [
+      "<link>",
+      "<a>",
+      "<href>",
+      "<url>"
+    ],
+    "Answer": "<a>",
+    "Explanation": "The <a> tag is used to create hyperlinks in HTML."
+  },
+  {
+    "Question": "Which software metric measures program complexity?",
+    "Options": [
+      "LOC",
+      "Cyclomatic Complexity",
+      "Function Points",
+      "Halstead Volume"
+    ],
+    "Answer": "Cyclomatic Complexity",
+    "Explanation": "Cyclomatic complexity measures the logical complexity of a program."
+  },
+  {
+    "Question": "Which attack involves intercepting communication between two parties?",
+    "Options": [
+      "Phishing",
+      "Man-in-the-Middle",
+      "Denial of Service",
+      "Trojan Horse"
+    ],
+    "Answer": "Man-in-the-Middle",
+    "Explanation": "MITM attack intercepts and possibly alters communication between two parties."
+  },
+  {
+    "Question": "Which compiler phase removes unnecessary code?",
+    "Options": [
+      "Lexical Analysis",
+      "Syntax Analysis",
+      "Code Optimization",
+      "Code Generation"
+    ],
+    "Answer": "Code Optimization",
+    "Explanation": "Code optimization removes redundant and unnecessary code to improve efficiency."
+  },
 
 
     
@@ -12755,6 +12867,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
