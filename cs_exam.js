@@ -1,9 +1,86 @@
 // Exam Data
 const exams = {
-
 "hu":[
 
 
+
+  {
+    "q": "What is the subnetwork address if the destination address is 19.30.80.5 and the mask is 255.255.192.0?",
+    "options": ["19.30.192.0", "19.30.64.0", "19.30.18.0", "19.30.80.0"],
+    "answer": 1,
+    "explanation": "Subnetting with mask 255.255.192.0 (or /18) gives subnetwork address 19.30.64.0."
+  },
+  {
+    "q": "What role does biometrics play in access control?",
+    "options": ["Authenticity", "Authorization", "Authentication", "Accountability"],
+    "answer": 2,
+    "explanation": "Biometrics is used to authenticate a user’s identity."
+  },
+  {
+    "q": "What is the purpose of the 'whoami' command in Windows operating systems?",
+    "options": ["Changing file permissions", "Setting user passwords", "Displaying the current username", "Displaying user information"],
+    "answer": 2,
+    "explanation": "The 'whoami' command displays the username of the current user."
+  },
+  {
+    "q": "What is the primary purpose of user authentication in operating system security?",
+    "options": ["Network traffic monitoring", "System backup", "File encryption", "Identifying and verifying the identity of users"],
+    "answer": 3,
+    "explanation": "Authentication ensures that users are who they claim to be."
+  },
+  {
+    "q": "What is the purpose of HTML?",
+    "options": ["To manage server-side operations", "To structure and format content on web pages", "To create interactive user interfaces", "To create dynamic web pages"],
+    "answer": 1,
+    "explanation": "HTML structures content and defines elements on web pages."
+  },
+  {
+    "q": "What PHP function allows you to establish a connection to a MySQL database?",
+    "options": ["createMySQLConnection('server', 'username', 'password')", "connectDatabase('server', 'username', 'password')", "mysql_connect('server', 'username', 'password')", "No specific function is needed, directly use database credentials"],
+    "answer": 2,
+    "explanation": "mysql_connect() establishes a connection to a MySQL database in PHP."
+  },
+  {
+    "q": "When a process is in a 'Blocked' state waiting for some I/O service, when the service is completed, it goes to the:",
+    "options": ["Running state", "Ready state", "Terminated state", "Suspended state"],
+    "answer": 1,
+    "explanation": "After I/O completion, a blocked process moves to the Ready state."
+  },
+  {
+    "q": "What is the correct syntax for referring to an external script called 'abc.js'?",
+    "options": ["<style src='abc.js'>", "<script name='abc.js'>", "<script href='abc.js'>", "<script url='abc.js'>"],
+    "answer": 3,
+    "explanation": "The correct way to include a JavaScript file is <script src='abc.js'></script>."
+  },
+  {
+    "q": "What is the correct way to include the external file 'config.php' into another PHP document?",
+    "options": ["<!-- include file='config.php' -->", "<?php include 'config.php'; ?>", "<?php include file='config.php'; ?>", "<?php include:'config.php'; ?>"],
+    "answer": 1,
+    "explanation": "PHP include statement '<?php include 'config.php'; ?>' includes external PHP files."
+  },
+  {
+    "q": "What is the correct way to open the file 'test.txt' for read-only using PHP?",
+    "options": ["fopen('test.txt', 'r')", "open('test.txt', 'r')", "open('test.txt', 'read')", "fopen('test.txt', 'r+')"],
+    "answer": 0,
+    "explanation": "fopen('test.txt', 'r') opens a file in read-only mode in PHP."
+  },
+  {
+    "q": "What is the isolation property of transactions?",
+    "options": ["Statements form a logic unit", "Database remains consistent", "One transaction does not affect the other", "Transaction effects are recorded permanently"],
+    "answer": 2,
+    "explanation": "Isolation ensures that transactions are executed independently without interference."
+  },
+  {
+    "q": "What is the difference between inline, internal, and external CSS?",
+    "options": [
+      "Inline CSS is included in the HTML document, internal CSS is in the head section, and external CSS is in a separate file",
+      "Inline CSS is in a separate file, internal CSS is in the head, external CSS is in HTML",
+      "Inline CSS is in a separate file, internal CSS is in the body, external CSS is in head",
+      "Inline CSS is in the body, internal CSS is in a separate file, external CSS is in head"
+    ],
+    "answer": 0,
+    "explanation": "Inline CSS is inside element, internal CSS in <head>, external CSS is a separate file."
+  },
 
 
 
@@ -87,17 +164,239 @@ const exams = {
     ],
     "answer": 0,
     "explanation": "Inline CSS is inside element, internal CSS in <head>, external CSS is a separate file."
+  },
+
+
+
+
+
+
+
+
+
+
+
+  
+  {
+    "q": "What is the primary purpose of access control in database security?",
+    "options": [
+      "To ensure data is only accessible to authorized users",
+      "To increase the database's performance",
+      "To encrypt the data stored in the database",
+      "To accelerate the seed control of the database"
+    ],
+    "answer": 0,
+    "explanation": "Access control ensures that only authorized users can access sensitive data."
+  },
+  {
+    "q": "Which network security device will filter traffic coming into or out of a network by protocol or IP address?",
+    "options": [
+      "Authentication Authorization, Accounting (AAA)",
+      "Intrusion Prevention System (IPS)",
+      "Firewall",
+      "Virtual Private Network (VPN)"
+    ],
+    "answer": 2,
+    "explanation": "A firewall filters network traffic based on IP addresses, protocols, and ports."
+  },
+  {
+    "q": "Which database recovery technique updates the disk copy as soon as a data item is modified in cache?",
+    "options": [
+      "In-place update",
+      "Deferred update",
+      "Shadow update",
+      "Immediate update"
+    ],
+    "answer": 3,
+    "explanation": "Immediate update writes changes from cache to disk as soon as data is modified."
+  },
+  {
+    "q": "Which of the following describes the functions of OSI Layer 3 protocols?",
+    "options": [
+      "Physical addressing",
+      "Error recovery",
+      "Arbitration",
+      "Logical addressing"
+    ],
+    "answer": 3,
+    "explanation": "Layer 3 (Network Layer) is responsible for logical addressing and routing packets."
+  },
+  {
+    "q": "Which of the following cannot contain multiple Active Directory domains?",
+    "options": ["Forest", "Sites", "Organizational units", "Trees"],
+    "answer": 2,
+    "explanation": "Organizational Units (OUs) cannot contain multiple domains; they are subdivisions within a domain."
+  },
+  {
+    "q": "Which Active Directory component does a client use to locate objects in another domain?",
+    "options": ["DHCP", "Site Link", "Global Catalog", "DNS"],
+    "answer": 2,
+    "explanation": "Global Catalog allows Active Directory clients to find objects across domains."
+  },
+  {
+    "q": "Which HTML5 element defines video or movie content?",
+    "options": ["<video>", "<media>", "<movie>", "<audio>"],
+    "answer": 0,
+    "explanation": "The <video> element is used to embed video content in HTML5."
+  },
+  {
+    "q": "Which role can be installed on a Windows Server?",
+    "options": ["Adobe Photoshop", "Google Chrome", "Active Directory Domain Services", "Microsoft Office"],
+    "answer": 2,
+    "explanation": "Active Directory Domain Services is a server role providing directory services."
+  },
+  {
+    "q": "The main purpose of Active Directory is to:",
+    "options": [
+      "Provide File and Print services",
+      "Give administrators the ability to control access to restricted hardware",
+      "Provide authentication and authorization to users and computers",
+      "Allow users to organize their file systems into a cohesive directory"
+    ],
+    "answer": 2,
+    "explanation": "Active Directory manages authentication and authorization in a Windows network."
+  },
+  {
+    "q": "Why are the operating system and other processes protected from being modified by a running process?",
+    "options": [
+      "They are in different logical addresses",
+      "They are in different memory spaces",
+      "Every CPU address is checked against relocation and limit registers",
+      "They have a protection algorithm"
+    ],
+    "answer": 2,
+    "explanation": "The CPU checks every memory access against the relocation and limit registers to prevent unauthorized modifications."
+  },
+  {
+    "q": "The speed mismatch between sender and receiver is called:",
+    "options": ["Transmission control", "Error control", "Flow control", "Speed error"],
+    "answer": 2,
+    "explanation": "Flow control ensures that data is sent at a rate the receiver can handle."
+  },
+  {
+    "q": "The operating system maintains a table tracking allocated, available, and total frames. This is called the:",
+    "options": ["Mapping table", "Memory table", "Frame table", "Page table"],
+    "answer": 2,
+    "explanation": "The frame table tracks physical memory frames and their usage."
+  },
+  {
+    "q": "The write-ahead logging (WAL) protocol implies that:",
+    "options": [
+      "The log record for an operation should be written before the actual data is written",
+      "The log never needs to be written to disk",
+      "All log records should be written before a new transaction begins",
+      "Writing of a data item should be done ahead of any logging operation"
+    ],
+    "answer": 0,
+    "explanation": "WAL ensures recovery by writing log records to disk before modifying actual data."
+  },
+  {
+    "q": "The WWW is handled by which OSI layer?",
+    "options": ["Session", "Physical", "Application", "Data link"],
+    "answer": 2,
+    "explanation": "WWW (HTTP, HTML) is handled by the Application Layer (Layer 7)."
+  },
+  {
+    "q": "When instructor and secretary entity sets have similar attributes like identifier, name, and salary, this process is called:",
+    "options": ["Commonality", "Specialization", "Similarity", "Generalization"],
+    "answer": 3,
+    "explanation": "Generalization abstracts common attributes into a higher-level entity."
+  },
+  {
+    "q": "What happens when the backtracking algorithm reaches a complete solution?",
+    "options": [
+      "It traverses from a different route",
+      "Recursively traverses through the same route",
+      "It backtracks to the root",
+      "It continues searching for other possible solutions"
+    ],
+    "answer": 3,
+    "explanation": "Backtracking explores all possible solutions even after a complete solution is found."
+  },
+  {
+    "q": "What is buffer overflow vulnerability?",
+    "options": [
+      "Occurs when a program tries to put more data in a buffer than it can hold or past its memory area",
+      "A type of injection where malicious scripts are injected into websites",
+      "A vulnerability that allows a programmer to code perfectly",
+      "A vulnerability allowing an attacker to interfere with database queries"
+    ],
+    "answer": 0,
+    "explanation": "Buffer overflow happens when data exceeds the allocated buffer size, potentially causing security issues."
+  },
+  {
+    "q": "What does the SQL SELECT statement do?",
+    "options": [
+      "Creates a new table",
+      "Deletes stored data",
+      "Modifies stored data",
+      "Reads and displays data from the database"
+    ],
+    "answer": 3,
+    "explanation": "SELECT retrieves data from the database for viewing or processing."
+  },
+  {
+    "q": "What is a significant advantage of cloud-based backups?",
+    "options": [
+      "Offsite storage, eliminating risk of physical damage",
+      "Faster restore time than local backups",
+      "Lower cost than local backups",
+      "More secure than local backups"
+    ],
+    "answer": 0,
+    "explanation": "Cloud backups provide offsite storage, protecting against physical loss or damage."
+  },
+  {
+    "q": "What is the authorization concept known as implicit deny?",
+    "options": [
+      "Access requires explicit authorization and everything else is rejected",
+      "Owner has full control over assigning access",
+      "Users are grouped and assigned template permissions",
+      "Users are granted rights needed for their job and nothing more"
+    ],
+    "answer": 0,
+    "explanation": "Implicit deny ensures any access not explicitly allowed is denied by default."
+  },
+  {
+    "q": "To access the services of the operating system, the interface is provided by:",
+    "options": ["Assembly instructions", "API", "System calls", "Library"],
+    "answer": 2,
+    "explanation": "System calls provide the interface through which programs access OS services."
+  },
+  {
+    "q": "Dynamic loading allows routines to be loaded only when called. How is this implemented?",
+    "options": [
+      "Requires special hardware and OS support",
+      "User programs can implement without special support",
+      "Requires special OS support",
+      "Requires special hardware"
+    ],
+    "answer": 1,
+    "explanation": "Dynamic loading can be implemented by user programs without special OS or hardware support."
+  },
+  {
+    "q": "Two critical resources considered when designing algorithms are:",
+    "options": ["Time and Bandwidth", "Time and Space", "Bandwidth and Space", "Memory and Network"],
+    "answer": 1,
+    "explanation": "Algorithm design focuses on optimizing time complexity and space usage."
+  },
+  {
+    "q": "What distinguishes server-side scripting from client-side scripting?",
+    "options": [
+      "Runs on client's browser",
+      "Used to access database system",
+      "Interacts directly with the web server",
+      "Both perform the same function"
+    ],
+    "answer": 2,
+    "explanation": "Server-side scripting executes on the web server, often interacting with databases and server resources."
+  },
+  {
+    "q": "What kernel type does OS X use?",
+    "options": ["Monolithic kernel with modules", "Microkernel", "Monolithic kernel", "Hybrid kernel"],
+    "answer": 3,
+    "explanation": "OS X uses a hybrid kernel combining aspects of monolithic and microkernels."
   }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -17696,6 +17995,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
