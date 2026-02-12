@@ -1,5 +1,214 @@
 // Exam Data
 const exams = {
+"wsu1":[
+
+  {
+    "q": "Which of the following data structures follows the First in First out (FIFO) principle?",
+    "options": ["Queue", "Stack", "Linked List", "Tree"],
+    "answer": 0,
+    "explanation": "Queue follows FIFO (First In First Out) principle."
+  },
+  {
+    "q": "Which of the following is the original creator of the C++ language?",
+    "options": ["Dennis Ritchie", "Ken Thompson", "Bjarne Stroustrup", "Brian Kernighan"],
+    "answer": 2,
+    "explanation": "Bjarne Stroustrup created the C++ programming language."
+  },
+  {
+    "q": "Which algorithm is commonly used for text classification in NLP?",
+    "options": ["K-means Clustering", "Support Vector Machines (SVM)", "Convolutional Neural Networks (CNN)", "Principal Component Analysis (PCA)"],
+    "answer": 1,
+    "explanation": "Support Vector Machines (SVM) are commonly used for text classification tasks."
+  },
+  {
+    "q": "In computer security, which term means that computer system assets can be modified only by authorized parties?",
+    "options": ["Confidentiality", "Integrity", "Availability", "Authenticity"],
+    "answer": 1,
+    "explanation": "Integrity ensures that only authorized users can modify system assets."
+  },
+  {
+    "q": "Which memory is used to speed up computer processing?",
+    "options": ["Cache memory", "RAM", "ROM", "None of the above"],
+    "answer": 0,
+    "explanation": "Cache memory speeds up processing by storing frequently used data."
+  },
+  {
+    "q": "Which of the following is an example of supervised learning?",
+    "options": ["Clustering", "Regression", "Classification", "Anomaly detection"],
+    "answer": 2,
+    "explanation": "Classification is a supervised learning technique using labeled data."
+  },
+  {
+    "q": "Which of the following is the broadcast address for a Class B network ID using the default subnet mask?",
+    "options": ["172.16.10.255", "255.255.255.255", "172.16.255.255", "172.255.255.255"],
+    "answer": 2,
+    "explanation": "For Class B with default mask 255.255.0.0, the broadcast address is 172.16.255.255."
+  },
+  {
+    "q": "A top-down parser generates:",
+    "options": ["Left-most derivation in reverse", "Left-most derivation", "Right-most derivation in reverse", "Right-most derivation"],
+    "answer": 1,
+    "explanation": "A top-down parser generates a left-most derivation."
+  },
+  {
+    "q": "An organization's web server is receiving abnormally high web page requests from different locations simultaneously. What type of attack is this?",
+    "options": ["Adware", "Social Engineering Attack", "Spyware", "DDoS"],
+    "answer": 3,
+    "explanation": "DDoS (Distributed Denial of Service) involves overwhelming a server with traffic."
+  },
+  {
+    "q": "A Database Management System is a type of ______ software.",
+    "options": ["System software", "Application software", "General software", "Both A and C"],
+    "answer": 0,
+    "explanation": "DBMS is considered system software because it manages databases and supports other applications."
+  },
+  {
+    "q": "TCP/IP model does not have which layer that OSI model has?",
+    "options": ["Session layer", "Transport layer", "Application layer", "Network layer"],
+    "answer": 0,
+    "explanation": "TCP/IP model does not include a separate Session layer."
+  },
+  {
+    "q": "Which language is used for creating and deleting database structures?",
+    "options": ["DML", "Query", "Relational Schema", "DDL"],
+    "answer": 3,
+    "explanation": "DDL (Data Definition Language) is used to define and modify database structures."
+  },
+  {
+    "q": "A set of processes is deadlocked if:",
+    "options": ["Each process is blocked and will remain so forever", "Each process is terminated", "All processes are trying to kill each other", "None of the mentioned"],
+    "answer": 0,
+    "explanation": "Deadlock occurs when each process is blocked forever waiting for resources."
+  },
+  {
+    "q": "Which cryptographic attack tries all possible key combinations?",
+    "options": ["Brute-force attack", "Phishing attack", "MitM attack", "Spoofing attack"],
+    "answer": 0,
+    "explanation": "Brute-force attack attempts every possible key combination."
+  },
+  {
+    "q": "Under which OOP pillar does base and derived class relationship fall?",
+    "options": ["Polymorphism", "Inheritance", "Encapsulation", "Abstraction"],
+    "answer": 1,
+    "explanation": "Inheritance defines the relationship between base and derived classes."
+  },
+
+
+
+
+
+
+
+
+  {
+    "q": "Which data structure is used for implementing undo functionality in text editors?",
+    "options": ["Stack", "Queue", "Tree", "Graph"],
+    "answer": 0,
+    "explanation": "Undo operations use a stack because it follows the Last In First Out (LIFO) principle."
+  },
+  {
+    "q": "Which two predefined variables are used to retrieve information from forms in PHP?",
+    "options": ["$GET & $SET", "$_GET & $_SET", "$__GET & $__SET", "GET & SET"],
+    "answer": 1,
+    "explanation": "$_GET and $_POST are commonly used in PHP to retrieve form data. The given correct option is $_GET & $_SET as per exam key."
+  },
+  {
+    "q": "Which one should not be used while sending passwords or other sensitive information?",
+    "options": ["GET", "POST", "REQUEST", "NEXT"],
+    "answer": 0,
+    "explanation": "GET sends data through URL, which is visible and not secure for sensitive information."
+  },
+  {
+    "q": "Which HTTP method requests the server to accept enclosed data to modify an existing object identified by the URI?",
+    "options": ["GET", "DELETE", "PUT", "POST"],
+    "answer": 2,
+    "explanation": "PUT method is used to update or modify an existing resource."
+  },
+  {
+    "q": "Which real-world scenario can be represented using a queue?",
+    "options": ["Undo operation in text editor", "Managing web browser history", "Print spooling", "Evaluating arithmetic expressions"],
+    "answer": 2,
+    "explanation": "Print spooling follows FIFO order like a queue."
+  },
+  {
+    "q": "Which data structure is typically used for implementing Breadth First Search (BFS) in graphs?",
+    "options": ["Stack", "Queue", "Array", "Linked List"],
+    "answer": 1,
+    "explanation": "BFS uses a queue to explore nodes level by level."
+  },
+  {
+    "q": "Which function converts a string to all uppercase in PHP?",
+    "options": ["upper()", "uppercase()", "struppercase()", "strtoupper()"],
+    "answer": 3,
+    "explanation": "strtoupper() converts a string to uppercase in PHP."
+  },
+  {
+    "q": "What is the maximum number of IP addresses that can be assigned to hosts on a subnet using 255.255.255.224 mask?",
+    "options": ["14", "15", "16", "30"],
+    "answer": 3,
+    "explanation": "255.255.255.224 is /27, which gives 32 total addresses, 30 usable host addresses."
+  },
+  {
+    "q": "Which of the following is the oldest database model?",
+    "options": ["Relational", "Deductive", "Physical", "Network"],
+    "answer": 3,
+    "explanation": "The Network model is one of the earliest database models."
+  },
+  {
+    "q": "What is a neural network in AI?",
+    "options": ["A system of interconnected neurons", "A network protocol", "A computer system modeled on the human brain", "A type of database"],
+    "answer": 2,
+    "explanation": "A neural network is a computing system inspired by the human brain."
+  },
+  {
+    "q": "Which statement is true about C++?",
+    "options": ["C++ is object-oriented only", "C++ is procedural only", "C++ is functional", "C++ is both procedural and object-oriented"],
+    "answer": 3,
+    "explanation": "C++ supports both procedural and object-oriented programming."
+  },
+  {
+    "q": "Which operation is performed by an interrupt handler?",
+    "options": ["Saving current state", "Executing interrupt code", "Restoring previous state", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "Interrupt handler saves state, executes code, and restores the system state."
+  },
+  {
+    "q": "Which encryption algorithm is used to securely exchange keys over an insecure channel?",
+    "options": ["Diffie-Hellman Algorithm", "Digital Signature", "RSA", "Trusted Third Party"],
+    "answer": 0,
+    "explanation": "Diffie-Hellman is specifically designed for secure key exchange."
+  },
+  {
+    "q": "The graph showing basic blocks and successor relationships is called:",
+    "options": ["Hamiltonian graph", "Control graph", "Flow graph", "DAG"],
+    "answer": 2,
+    "explanation": "A flow graph represents control flow between basic blocks."
+  },
+  {
+    "q": "Which of the following is not an OOP concept in Java?",
+    "options": ["Inheritance", "Encapsulation", "Polymorphism", "Compilation"],
+    "answer": 3,
+    "explanation": "Compilation is not an OOP concept."
+  },
+
+
+
+
+
+  
+
+  
+
+  ],
+
+
+
+
+
+
+
+
+  
 "model":[
 
 
@@ -15765,6 +15974,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
