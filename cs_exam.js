@@ -195,6 +195,365 @@ const exams = {
 
 
 
+  {
+    "q": "A Turing machine operates over:",
+    "options": ["Finite memory tape", "Infinite memory tape", "Depends on the algorithm", "None of the mentioned"],
+    "answer": 1,
+    "explanation": "A Turing Machine has an infinite tape used as memory."
+  },
+  {
+    "q": "What is a Functional Requirement?",
+    "options": ["Specifies tasks the program must not work", "Specifies tasks the program should not complete", "Specifies tasks the program must complete", "All of the mentioned"],
+    "answer": 2,
+    "explanation": "Functional requirements describe what tasks the system must perform."
+  },
+  {
+    "q": "The attack which involves insertion of malicious code into a page frequented by users is known as:",
+    "options": ["Basic SQL injection", "Advanced SQL injection", "Cross-site scripting", "Scripting"],
+    "answer": 2,
+    "explanation": "Cross-site scripting (XSS) injects malicious scripts into web pages."
+  },
+  {
+    "q": "What is the time complexity for inserting a node at the beginning of a linked list?",
+    "options": ["O(n)", "O(1)", "O(log n)", "O(n log n)"],
+    "answer": 1,
+    "explanation": "Insertion at the beginning requires constant time."
+  },
+  {
+    "q": "What is the time complexity for inserting at the end of a linked list if a tail pointer is maintained?",
+    "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+    "answer": 3,
+    "explanation": "With a tail pointer, insertion at end is constant time."
+  },
+  {
+    "q": "Which AI technique is commonly used for image recognition?",
+    "options": ["Natural Language Processing", "Linear Regression", "K-Means Clustering", "Convolutional Neural Networks"],
+    "answer": 3,
+    "explanation": "CNNs are widely used for image recognition tasks."
+  },
+  {
+    "q": "What is the primary goal of Artificial Intelligence?",
+    "options": ["Replicate human emotions", "Develop systems that perform tasks requiring human intelligence", "Replace all human jobs", "Create advanced gaming systems"],
+    "answer": 1,
+    "explanation": "AI aims to build systems capable of intelligent behavior."
+  },
+  {
+    "q": "Which technique replaces run-time computations with compile-time computations?",
+    "options": ["Constant folding", "Code hoisting", "Peephole optimization", "Invariant computation"],
+    "answer": 0,
+    "explanation": "Constant folding evaluates constant expressions at compile time."
+  },
+  {
+    "q": "A relation is in Second Normal Form (2NF) if:",
+    "options": ["In 1NF and no transitive dependencies", "In 1NF and no partial dependencies", "In 3NF and no update anomalies", "In BCNF and no redundancy"],
+    "answer": 1,
+    "explanation": "2NF requires 1NF and removal of partial dependencies."
+  },
+  {
+    "q": "What is a common application of AI in healthcare?",
+    "options": ["Image filtering", "Personalized medicine", "Web development", "File management"],
+    "answer": 1,
+    "explanation": "AI enables personalized treatment plans in healthcare."
+  },
+  {
+    "q": "In ER modeling, relationships and constraints represent:",
+    "options": ["Rules of DBMS behavior", "Physical storage method", "Data representation in schema", "How tables are related"],
+    "answer": 2,
+    "explanation": "ER modeling describes data structure and relationships in schema."
+  },
+  {
+    "q": "OSI stands for:",
+    "options": ["Open system interconnection", "Operating system interface", "Optical service implementation", "Open service Internet"],
+    "answer": 0,
+    "explanation": "OSI means Open Systems Interconnection."
+  },
+  {
+    "q": "What is the full form of BIOS?",
+    "options": ["Between input-output system", "Binary input-output system", "Basic input/output system", "All of the above"],
+    "answer": 2,
+    "explanation": "BIOS stands for Basic Input/Output System."
+  },
+  {
+    "q": "What role do rules play in knowledge representation systems?",
+    "options": ["Learn from data", "Store raw data", "Define logical relationships and actions", "Optimize algorithms"],
+    "answer": 2,
+    "explanation": "Rules define logic and actions based on conditions."
+  },
+  {
+    "q": "How does software trigger an interrupt?",
+    "options": ["Sending signals to CPU", "Executing a system call", "Executing system program", "Executing interrupt trigger program"],
+    "answer": 1,
+    "explanation": "Software interrupts are triggered via system calls."
+  },
+  {
+    "q": "Primary goal of complexity analysis in algorithms?",
+    "options": ["Gauge physical size", "Evaluate efficiency and resource use", "Assess creativity", "Check correctness"],
+    "answer": 1,
+    "explanation": "Complexity analysis measures efficiency and resource usage."
+  },
+  {
+    "q": "Which refers to characteristics of an array?",
+    "options": ["Set of similar data items", "Set of distinct data items", "Holds different data types", "None"],
+    "answer": 0,
+    "explanation": "Arrays store elements of the same data type."
+  },
+  {
+    "q": "Which features must exist for a pure OOP language?",
+    "options": ["Encapsulation", "Inheritance", "Polymorphism", "All of the above"],
+    "answer": 3,
+    "explanation": "Pure OOP requires encapsulation, inheritance, and polymorphism."
+  },
+  {
+    "q": "What does a weak entity require to be uniquely identified?",
+    "options": ["Primary key", "Foreign key", "Partial key and owner's foreign key", "Attribute"],
+    "answer": 2,
+    "explanation": "Weak entity needs partial key plus owner's key."
+  },
+  {
+    "q": "Ability of AI to learn from data without explicit programming is called:",
+    "options": ["Deep learning", "Machine learning", "Reinforcement learning", "NLP"],
+    "answer": 1,
+    "explanation": "Machine learning enables systems to learn from data."
+  },
+  {
+    "q": "Collection of 8 bits is called:",
+    "options": ["Byte", "Nibble", "Word", "Record"],
+    "answer": 0,
+    "explanation": "8 bits equal one byte."
+  },
+  {
+    "q": "Which HTTP method leaves entity body empty?",
+    "options": ["POST", "SEND", "GET", "PUT"],
+    "answer": 2,
+    "explanation": "GET requests typically do not have a message body."
+  },
+  {
+    "q": "What is a batch operating system?",
+    "options": ["Multiple individual tasks", "Similar tasks grouped together", "Tasks on different systems", "All of the above"],
+    "answer": 1,
+    "explanation": "Batch OS processes similar jobs together."
+  },
+  {
+    "q": "Which constraint ensures foreign key matches primary key?",
+    "options": ["Unique", "Check", "Referential integrity", "Not null"],
+    "answer": 2,
+    "explanation": "Referential integrity maintains key relationships."
+  },
+  {
+    "q": "Systems allowing only one process at a time are called:",
+    "options": ["Uniprogramming systems", "Uniprocessing systems", "Unitasking systems", "None"],
+    "answer": 1,
+    "explanation": "Uniprocessing systems execute one process at a time."
+  },
+  {
+    "q": "Attempt to steal or damage systems is called:",
+    "options": ["Cyber-attack", "Computer security", "Cryptography", "Digital hacking"],
+    "answer": 0,
+    "explanation": "Cyber-attack refers to malicious attempts on systems."
+  },
+  {
+    "q": "Which statement is correct about class?",
+    "options": ["Object is instance of class", "Class is instance of object", "Object is instance of data type", "Both A and C"],
+    "answer": 0,
+    "explanation": "An object is an instance of its class."
+  },
+  {
+    "q": "Which normalization eliminates transitive dependency?",
+    "options": ["2NF", "3NF", "1NF", "BCNF"],
+    "answer": 1,
+    "explanation": "3NF removes transitive dependencies."
+  },
+  {
+    "q": "Stack operation sequence pop results:",
+    "options": ["20,20,10,10,20", "20,10,20,20,10", "20,20,10,20,20", "20,10,20,20,20"],
+    "answer": 0,
+    "explanation": "Following LIFO principle results in 20,20,10,10,20."
+  },
+  {
+    "q": "SQL statement returning largest integer less than or equal to value:",
+    "options": ["FLOOR", "CEIL", "TRUNC", "None"],
+    "answer": 0,
+    "explanation": "FLOOR returns largest integer less than or equal to value."
+  },
+  {
+    "q": "Performance management is closely related to:",
+    "options": ["Proactive Fault Management", "Fault management", "Reactive Fault Management", "Preventive Fault Management"],
+    "answer": 1,
+    "explanation": "Performance management relates to fault management."
+  },
+  {
+    "q": "Popping from an empty stack results in:",
+    "options": ["Stack overflow", "Stack imbalance", "Stack underflow", "Stack reversal"],
+    "answer": 1,
+    "explanation": "As per provided key, the correct answer is Stack imbalance."
+  },
+  {
+    "q": "What is functional dependency?",
+    "options": ["One attribute determines another", "Organizing tables smaller", "Intentional redundancy", "Data duplication"],
+    "answer": 0,
+    "explanation": "Functional dependency means one attribute determines another."
+  },
+  {
+    "q": "The status bit is also called:",
+    "options": ["Unsigned bit", "Signed bit", "Flag bit", "None"],
+    "answer": 2,
+    "explanation": "Status bit is known as flag bit."
+  },
+  {
+    "q": "Main purpose of decision tree in AI:",
+    "options": ["Store data", "Make decisions based on attributes", "Handle network traffic", "Sort data"],
+    "answer": 1,
+    "explanation": "Decision trees are used for decision-making based on attributes."
+  },
+
+
+
+  {
+    "q": "Which of the following circuit is used to store one bit of data?",
+    "options": ["Flip Flop", "Decoder", "Encoder", "Register"],
+    "answer": 0,
+    "explanation": "A Flip Flop is a basic memory circuit used to store one bit of data."
+  },
+  {
+    "q": "Which of the following OOP concept binds the code and data together and keeps them secure from the outside world?",
+    "options": ["Polymorphism", "Inheritance", "Abstraction", "Encapsulation"],
+    "answer": 3,
+    "explanation": "Encapsulation binds data and methods together and restricts direct access from outside."
+  },
+  {
+    "q": "In order to undo the work of transaction after last commit which one should be used?",
+    "options": ["View", "Commit", "Rollback", "Flashback"],
+    "answer": 2,
+    "explanation": "Rollback is used to undo changes made by a transaction since the last commit."
+  },
+  {
+    "q": "Which of the following is a combinational logic circuit which sends data from a single source to two or more separate destinations?",
+    "options": ["Multiplexer", "Demultiplexer", "Encoder", "Decoder"],
+    "answer": 1,
+    "explanation": "A Demultiplexer takes a single input and channels it to one of many outputs."
+  },
+  {
+    "q": "A table can be logically connected to another table by defining a",
+    "options": ["Super key", "Candidate key", "Primary key", "Unique key"],
+    "answer": 2,
+    "explanation": "A primary key uniquely identifies rows and can be used to connect tables."
+  },
+  {
+    "q": "The address of the next instruction to be executed by the current process is provided by the _________",
+    "options": ["CPU registers", "Program counter", "Process stack", "Pipe"],
+    "answer": 1,
+    "explanation": "The Program Counter holds the address of the next instruction to execute."
+  },
+  {
+    "q": "Which of the following option is correct?",
+    "options": [
+      "NFA is slower to process and its representation uses more memory than DFA",
+      "DFA is faster to process and its representation uses less memory than NFA",
+      "NFA is slower to process and its representation uses less memory than DFA",
+      "DFA is slower to process and its representation uses less memory than NFA"
+    ],
+    "answer": 2,
+    "explanation": "NFA uses less memory but is slower to process than DFA."
+  },
+  {
+    "q": "Transmission data rate is decided by ____________",
+    "options": ["network layer", "physical layer", "data link layer", "transport layer"],
+    "answer": 1,
+    "explanation": "The physical layer determines the transmission data rate."
+  },
+  {
+    "q": "What are information redundancy and update anomalies in database design?",
+    "options": [
+      "The duplication of data in a database, which can lead to inconsistencies and errors, and errors that occur when modifying data in a table leads to inconsistencies or errors in other tables.",
+      "The process of intentionally introducing data redundancy into a table for performance reasons, and the duplication of data in a database, which can lead to inconsistencies and errors.",
+      "The duplication of data in a database, which can lead to inconsistencies and errors, and the increased complexity of the database schema.",
+      "The intentional introduction of data redundancy into a table for performance reasons, and errors that occur when modifying data in a table leads to inconsistencies or errors in other tables."
+    ],
+    "answer": 0,
+    "explanation": "Redundancy leads to duplicate data, and update anomalies occur when modifications cause inconsistencies."
+  },
+  {
+    "q": "Turing machine can be represented using the following tools:",
+    "options": ["Transition graph", "Transition table", "Queue and Input tape", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "Turing machines can be represented using graphs, tables, and tapes."
+  },
+  {
+    "q": "A transaction completes its execution is said to be",
+    "options": ["Committed", "Aborted", "Rolled back", "Failed"],
+    "answer": 0,
+    "explanation": "A committed transaction has completed successfully and is permanent in the database."
+  },
+  {
+    "q": "Assume the R is a relation on a set A, aRb is partially ordered such that a and b are _____________",
+    "options": ["Reflexive", "Transitive", "Symmetric", "reflexive and transitive"],
+    "answer": 3,
+    "explanation": "A partial order is reflexive and transitive."
+  },
+  {
+    "q": "Which one of the following access control method has a high security level and its data confidentiality is more rigid?",
+    "options": ["Mandatory access control", "Role based access control", "Discretionary access control", "Rule based access control"],
+    "answer": 0,
+    "explanation": "Mandatory access control (MAC) enforces strict security policies."
+  },
+  {
+    "q": "Which one of the following is true about PHP?",
+    "options": [
+      "PHP is one of the client-side scripting language, like JavaScript.",
+      "PHP is one of an open source software that supports only MYSQL databases.",
+      "PHP files are returned to the browser as plain HTML text.",
+      "can have a file extension of \".pph\", \".pph3\", or \".phmtl\""
+    ],
+    "answer": 2,
+    "explanation": "PHP is a server-side scripting language; output is sent to the browser as HTML."
+  },
+  {
+    "q": "Consider the following operations performed on a stack of size 5 : Push(x); Pop(); Push; Push(z); Pop(); Push(d); Pop(); Pop(); Push(w) Which of the following statements is correct?",
+    "options": ["Underflow occurs", "Stack operations are performed properly", "Overflow occurs", "None of the mentioned"],
+    "answer": 1,
+    "explanation": "All stack operations are valid; neither overflow nor underflow occurs."
+  },
+  {
+    "q": "Which of the following terms does refer to the correctness and completeness of the data in a database?",
+    "options": ["Data security", "Data constraint", "Data independence", "Data integrity"],
+    "answer": 3,
+    "explanation": "Data integrity ensures data correctness and consistency."
+  },
+  {
+    "q": "Which table is a permanent database that has an entry for each terminal symbol?",
+    "options": ["Reductions", "Identifier table", "Literal table", "Terminal table"],
+    "answer": 3,
+    "explanation": "A terminal table contains all terminal symbols of a language."
+  },
+  {
+    "q": "An automaton that presents output based on previous state or current input:",
+    "options": ["Acceptor", "Classifier", "Transducer", "None of the mentioned."],
+    "answer": 2,
+    "explanation": "A transducer produces outputs depending on current input and previous states."
+  },
+  {
+    "q": "A process can be terminated due to __________",
+    "options": ["normal exit", "fatal error", "killed by another process", "all of the mentioned"],
+    "answer": 3,
+    "explanation": "A process may terminate normally, by error, or be killed by another process."
+  },
+  {
+    "q": "What is \"overfitting\" in the context of machine learning?",
+    "options": [
+      "model that performs poorly on training data but well on new data",
+      "A model that performs well on training data but poorly on new data",
+      "A model that has too few parameters",
+      "A model that has balanced performance"
+    ],
+    "answer": 1,
+    "explanation": "Overfitting occurs when a model learns the training data too well and fails to generalize."
+  }
+
+
+
+
+
+
   
 
   
@@ -15974,6 +16333,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
