@@ -4,83 +4,158 @@ const exams = {
 
 
 
+  
   {
-    "q": "What is the subnetwork address if the destination address is 19.30.80.5 and the mask is 255.255.192.0?",
-    "options": ["19.30.192.0", "19.30.64.0", "19.30.18.0", "19.30.80.0"],
-    "answer": 1,
-    "explanation": "Subnetting with mask 255.255.192.0 (or /18) gives subnetwork address 19.30.64.0."
-  },
-  {
-    "q": "What role does biometrics play in access control?",
-    "options": ["Authenticity", "Authorization", "Authentication", "Accountability"],
+    "q": "Which of the following is used to provide IP address automatically to hosts connected to a network?",
+    "options": ["DNS", "AAA", "DHCP", "NAT"],
     "answer": 2,
-    "explanation": "Biometrics is used to authenticate a user’s identity."
+    "explanation": "DHCP automatically assigns IP addresses to hosts on a network."
   },
   {
-    "q": "What is the purpose of the 'whoami' command in Windows operating systems?",
-    "options": ["Changing file permissions", "Setting user passwords", "Displaying the current username", "Displaying user information"],
+    "q": "Which of the following protocols allows a client PC to discover the IP address of another computer based on that other computer's name?",
+    "options": ["ARP", "DNS", "DHCP", "RARP"],
+    "answer": 1,
+    "explanation": "DNS resolves domain names to IP addresses."
+  },
+  {
+    "q": "Which of the following recursive formula can be used to find the factorial of a number?",
+    "options": ["fact(n) = n * fact(n)", "fact(n) = n * fact(n-1)", "fact(n) = n * fact(1)", "fact(n) = n * fact(n+1)"],
+    "answer": 1,
+    "explanation": "The factorial of n is calculated recursively as n * factorial of (n-1)."
+  },
+  {
+    "q": "Which of the following refers to something that can be identified in the user's work environment, something that the users want to track?",
+    "options": ["Relationship", "Identifier", "Entity", "Attribute"],
     "answer": 2,
-    "explanation": "The 'whoami' command displays the username of the current user."
+    "explanation": "An entity is something in the user's environment that can be tracked."
   },
   {
-    "q": "What is the primary purpose of user authentication in operating system security?",
-    "options": ["Network traffic monitoring", "System backup", "File encryption", "Identifying and verifying the identity of users"],
-    "answer": 3,
-    "explanation": "Authentication ensures that users are who they claim to be."
-  },
-  {
-    "q": "What is the purpose of HTML?",
-    "options": ["To manage server-side operations", "To structure and format content on web pages", "To create interactive user interfaces", "To create dynamic web pages"],
-    "answer": 1,
-    "explanation": "HTML structures content and defines elements on web pages."
-  },
-  {
-    "q": "What PHP function allows you to establish a connection to a MySQL database?",
-    "options": ["createMySQLConnection('server', 'username', 'password')", "connectDatabase('server', 'username', 'password')", "mysql_connect('server', 'username', 'password')", "No specific function is needed, directly use database credentials"],
-    "answer": 2,
-    "explanation": "mysql_connect() establishes a connection to a MySQL database in PHP."
-  },
-  {
-    "q": "When a process is in a 'Blocked' state waiting for some I/O service, when the service is completed, it goes to the:",
-    "options": ["Running state", "Ready state", "Terminated state", "Suspended state"],
-    "answer": 1,
-    "explanation": "After I/O completion, a blocked process moves to the Ready state."
-  },
-  {
-    "q": "What is the correct syntax for referring to an external script called 'abc.js'?",
-    "options": ["<style src='abc.js'>", "<script name='abc.js'>", "<script href='abc.js'>", "<script url='abc.js'>"],
-    "answer": 3,
-    "explanation": "The correct way to include a JavaScript file is <script src='abc.js'></script>."
-  },
-  {
-    "q": "What is the correct way to include the external file 'config.php' into another PHP document?",
-    "options": ["<!-- include file='config.php' -->", "<?php include 'config.php'; ?>", "<?php include file='config.php'; ?>", "<?php include:'config.php'; ?>"],
-    "answer": 1,
-    "explanation": "PHP include statement '<?php include 'config.php'; ?>' includes external PHP files."
-  },
-  {
-    "q": "What is the correct way to open the file 'test.txt' for read-only using PHP?",
-    "options": ["fopen('test.txt', 'r')", "open('test.txt', 'r')", "open('test.txt', 'read')", "fopen('test.txt', 'r+')"],
+    "q": "Which of the following security mechanisms assures that the original message need not be modified during transmission?",
+    "options": ["Integrity", "Non-repudiation", "Confidentiality", "Firewall"],
     "answer": 0,
-    "explanation": "fopen('test.txt', 'r') opens a file in read-only mode in PHP."
+    "explanation": "Integrity ensures that data is not altered during transmission."
   },
   {
-    "q": "What is the isolation property of transactions?",
-    "options": ["Statements form a logic unit", "Database remains consistent", "One transaction does not affect the other", "Transaction effects are recorded permanently"],
+    "q": "Which of the following terms describes the process of granting users access to file server shares by reading their permissions?",
+    "options": ["Enumeration", "Authentication", "Authorization", "Assignment"],
     "answer": 2,
-    "explanation": "Isolation ensures that transactions are executed independently without interference."
+    "explanation": "Authorization is the process of granting access based on permissions."
   },
   {
-    "q": "What is the difference between inline, internal, and external CSS?",
-    "options": [
-      "Inline CSS is included in the HTML document, internal CSS is in the head section, and external CSS is in a separate file",
-      "Inline CSS is in a separate file, internal CSS is in the head, external CSS is in HTML",
-      "Inline CSS is in a separate file, internal CSS is in the body, external CSS is in head",
-      "Inline CSS is in the body, internal CSS is in a separate file, external CSS is in head"
-    ],
-    "answer": 0,
-    "explanation": "Inline CSS is inside element, internal CSS in <head>, external CSS is a separate file."
+    "q": "Which of the following is not a system privilege?",
+    "options": ["EXECUTE ANY", "CREATE TABLE", "UPDATE ANY", "SELECT"],
+    "answer": 3,
+    "explanation": "SELECT is a basic SQL command, not a system-level privilege."
   },
+  {
+    "q": "Which of the following is not a feature of DBMS?",
+    "options": ["High Level of Security", "Single-user Access only", "Support ACID Property", "Minimum Duplication and Redundancy of Data"],
+    "answer": 1,
+    "explanation": "DBMS supports multi-user access; single-user access is not a feature."
+  },
+  {
+    "q": "Which of the following is not a type of user account that can be configured in Windows Server 2012 R2?",
+    "options": ["Local accounts", "Domain accounts", "Built-in accounts", "Network accounts"],
+    "answer": 3,
+    "explanation": "Network accounts are not a recognized account type in Windows Server 2012 R2."
+  },
+  {
+    "q": "Which of the following is not a challenge of system administrator?",
+    "options": ["Knowing his duties and responsibility", "Deploying, configuring and maintaining network devices", "Identifying what services are needed", "Planning and implementing adequate security to the system"],
+    "answer": 0,
+    "explanation": "Knowing duties is basic knowledge; it is not considered a challenge."
+  },
+  {
+    "q": "Which of the following is not the duty of system administrator?",
+    "options": ["Giving support for users of the system", "Performing backup and restoration", "Configuring network devices", "Purchasing devices and goods"],
+    "answer": 3,
+    "explanation": "Purchasing devices is usually done by procurement, not system administrators."
+  },
+  {
+    "q": "Which of the following is not a unary operation?",
+    "options": ["Select", "Rename", "Union", "Project"],
+    "answer": 2,
+    "explanation": "Union is a binary operation in relational algebra, not unary."
+  },
+  {
+    "q": "Which of the following is used to create a session in PHP?",
+    "options": ["$_SESSION[ ]", "session_destroy() function", "session_start() function", "start_session() function"],
+    "answer": 2,
+    "explanation": "session_start() is used to create or resume a session in PHP."
+  },
+  {
+    "q": "The communication medium is closest to which OSI layer?",
+    "options": ["Transport", "Application", "Physical", "Data Link"],
+    "answer": 2,
+    "explanation": "The physical layer deals with actual communication media (cables, wireless signals)."
+  },
+  {
+    "q": "The FCFS algorithm is particularly troublesome for which systems?",
+    "options": ["Multiprogramming systems", "Time sharing systems", "Operating systems", "Multiprocessor systems"],
+    "answer": 1,
+    "explanation": "FCFS can cause long waiting times in time-sharing systems."
+  },
+  {
+    "q": "What is the main purpose of Active Directory?",
+    "options": ["Provide File and Print services", "Allow users to organize files into a cohesive directory", "Give administrators the ability to control access to hardware", "Provide authentication and authorization to users and computers"],
+    "answer": 3,
+    "explanation": "Active Directory provides centralized authentication and authorization."
+  },
+  {
+    "q": "Which aspect of heuristic-based query optimization is generally not recommended?",
+    "options": ["Applying SELECT and PROJECT operations after JOIN", "Translating the query into relational algebra starting from the query block", "Applying SELECT and PROJECT operations before JOIN", "Translating the high-level query into relational algebra"],
+    "answer": 0,
+    "explanation": "Applying SELECT/PROJECT after JOIN can decrease query performance; best to apply before JOIN."
+  },
+  {
+    "q": "Which access control method is considered user-directed?",
+    "options": ["Nondiscretionary", "Mandatory", "Identity-based", "Discretionary"],
+    "answer": 3,
+    "explanation": "Discretionary Access Control allows users to direct access to their resources."
+  },
+  {
+    "q": "Which PHP function is used to get the length of a string variable?",
+    "options": ["strcount()", "len()", "count()", "strlen()"],
+    "answer": 3,
+    "explanation": "strlen() returns the length of a string in PHP."
+  },
+  {
+    "q": "Which device performs both encapsulation and decapsulation in a single flow of data transmission?",
+    "options": ["Router", "Switch", "Receiver", "Sender"],
+    "answer": 0,
+    "explanation": "Routers encapsulate and decapsulate data as it moves between networks."
+  },
+  {
+    "q": "Which network security device will filter traffic coming into or out of a network by protocol or IP address?",
+    "options": ["Intrusion Prevention System (IPS)", "Virtual Private Network (VPN)", "Authentication Authorization Accounting (AAA)", "Firewall"],
+    "answer": 3,
+    "explanation": "Firewalls filter network traffic based on rules such as IP address and protocol."
+  },
+  {
+    "q": "Which command in Unix-based operating systems is used to change the ownership of files and directories?",
+    "options": ["chmod", "chown", "cls", "usermod"],
+    "answer": 1,
+    "explanation": "chown changes the owner of a file or directory in Unix/Linux."
+  },
+  {
+    "q": "Which concept is crucial for building dynamic and interactive web applications?",
+    "options": ["Server-side scripting capabilities", "Advanced CSS skills", "Basic HTML, CSS, and JavaScript knowledge", "Understanding SQL server configuration"],
+    "answer": 0,
+    "explanation": "Server-side scripting (like PHP) enables dynamic and interactive web applications."
+  },
+  {
+    "q": "What is the usable range for the values of the first octet for Class A IP networks?",
+    "options": ["0 to 127", "1 to 127", "1 to 126", "0 to 126"],
+    "answer": 2,
+    "explanation": "Class A IP addresses range from 1–126 for the first octet."
+  },
+  {
+    "q": "What is the purpose of PHP cookies?",
+    "options": ["To encrypt sensitive data during transmission", "To store user information on the client-side", "To validate user input in web form", "To store user preferences on the server-side"],
+    "answer": 1,
+    "explanation": "Cookies store small pieces of user information on the client-side."
+  },
+
 
 
 
@@ -17995,6 +18070,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
