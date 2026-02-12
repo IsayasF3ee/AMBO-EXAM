@@ -569,7 +569,7 @@ const exams = {
 
 
   
-[
+
   {
     "q": "The __________ model helps in representing the system's dynamic behavior.",
     "options": ["Object Model", "Context Model", "Behavioral Model", "Data Model"],
@@ -16954,6 +16954,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
