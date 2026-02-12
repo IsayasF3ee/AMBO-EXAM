@@ -1,5 +1,119 @@
 // Exam Data
 const exams = {
+
+"hu":[
+
+
+
+
+
+
+
+
+
+  {
+    "q": "What is the subnetwork address if the destination address is 19.30.80.5 and the mask is 255.255.192.0?",
+    "options": ["19.30.192.0", "19.30.64.0", "19.30.18.0", "19.30.80.0"],
+    "answer": 1,
+    "explanation": "Subnetting with mask 255.255.192.0 (or /18) gives subnetwork address 19.30.64.0."
+  },
+  {
+    "q": "What role does biometrics play in access control?",
+    "options": ["Authenticity", "Authorization", "Authentication", "Accountability"],
+    "answer": 2,
+    "explanation": "Biometrics is used to authenticate a user’s identity."
+  },
+  {
+    "q": "What is the purpose of the 'whoami' command in Windows operating systems?",
+    "options": ["Changing file permissions", "Setting user passwords", "Displaying the current username", "Displaying user information"],
+    "answer": 2,
+    "explanation": "The 'whoami' command displays the username of the current user."
+  },
+  {
+    "q": "What is the primary purpose of user authentication in operating system security?",
+    "options": ["Network traffic monitoring", "System backup", "File encryption", "Identifying and verifying the identity of users"],
+    "answer": 3,
+    "explanation": "Authentication ensures that users are who they claim to be."
+  },
+  {
+    "q": "What is the purpose of HTML?",
+    "options": ["To manage server-side operations", "To structure and format content on web pages", "To create interactive user interfaces", "To create dynamic web pages"],
+    "answer": 1,
+    "explanation": "HTML structures content and defines elements on web pages."
+  },
+  {
+    "q": "What PHP function allows you to establish a connection to a MySQL database?",
+    "options": ["createMySQLConnection('server', 'username', 'password')", "connectDatabase('server', 'username', 'password')", "mysql_connect('server', 'username', 'password')", "No specific function is needed, directly use database credentials"],
+    "answer": 2,
+    "explanation": "mysql_connect() establishes a connection to a MySQL database in PHP."
+  },
+  {
+    "q": "When a process is in a 'Blocked' state waiting for some I/O service, when the service is completed, it goes to the:",
+    "options": ["Running state", "Ready state", "Terminated state", "Suspended state"],
+    "answer": 1,
+    "explanation": "After I/O completion, a blocked process moves to the Ready state."
+  },
+  {
+    "q": "What is the correct syntax for referring to an external script called 'abc.js'?",
+    "options": ["<style src='abc.js'>", "<script name='abc.js'>", "<script href='abc.js'>", "<script url='abc.js'>"],
+    "answer": 3,
+    "explanation": "The correct way to include a JavaScript file is <script src='abc.js'></script>."
+  },
+  {
+    "q": "What is the correct way to include the external file 'config.php' into another PHP document?",
+    "options": ["<!-- include file='config.php' -->", "<?php include 'config.php'; ?>", "<?php include file='config.php'; ?>", "<?php include:'config.php'; ?>"],
+    "answer": 1,
+    "explanation": "PHP include statement '<?php include 'config.php'; ?>' includes external PHP files."
+  },
+  {
+    "q": "What is the correct way to open the file 'test.txt' for read-only using PHP?",
+    "options": ["fopen('test.txt', 'r')", "open('test.txt', 'r')", "open('test.txt', 'read')", "fopen('test.txt', 'r+')"],
+    "answer": 0,
+    "explanation": "fopen('test.txt', 'r') opens a file in read-only mode in PHP."
+  },
+  {
+    "q": "What is the isolation property of transactions?",
+    "options": ["Statements form a logic unit", "Database remains consistent", "One transaction does not affect the other", "Transaction effects are recorded permanently"],
+    "answer": 2,
+    "explanation": "Isolation ensures that transactions are executed independently without interference."
+  },
+  {
+    "q": "What is the difference between inline, internal, and external CSS?",
+    "options": [
+      "Inline CSS is included in the HTML document, internal CSS is in the head section, and external CSS is in a separate file",
+      "Inline CSS is in a separate file, internal CSS is in the head, external CSS is in HTML",
+      "Inline CSS is in a separate file, internal CSS is in the body, external CSS is in head",
+      "Inline CSS is in the body, internal CSS is in a separate file, external CSS is in head"
+    ],
+    "answer": 0,
+    "explanation": "Inline CSS is inside element, internal CSS in <head>, external CSS is a separate file."
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ],
+
+
+
+
+
+
+
+
+  
 "wsu1":[
 
   {
@@ -17582,6 +17696,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
