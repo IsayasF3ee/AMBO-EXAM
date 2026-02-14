@@ -2,7 +2,7 @@
 const exams = {
 
 "admasu3":[
-[
+
   {
     "q": "Which one of the following is true about agile scrum methodology?",
     "options": [
@@ -21057,6 +21057,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
