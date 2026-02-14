@@ -885,7 +885,7 @@ const exams = {
     ],
     "answer": 2,
     "explanation": "Many modern kernels are modular and allow modules to be loaded/unloaded dynamically."
-  }
+  },
 
 
 
@@ -21057,6 +21057,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
