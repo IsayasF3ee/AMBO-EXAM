@@ -1,5 +1,1147 @@
 // Exam Data
 const exams = {
+
+"admasu3":[
+[
+  {
+    "q": "Which one of the following is true about agile scrum methodology?",
+    "options": [
+      "project management that emphasizes incremental progress",
+      "project management that emphasizes decrement progress",
+      "project management that emphasizes neutral progress",
+      "project management that emphasizes no progress"
+    ],
+    "answer": 0,
+    "explanation": "Agile Scrum emphasizes incremental progress through iterative cycles called sprints."
+  },
+  {
+    "q": "What is a Functional Requirement?",
+    "options": [
+      "specifies the tasks the program must complete",
+      "specifies the tasks the program should not complete",
+      "specifies the tasks the program must not work",
+      "All of the mentioned"
+    ],
+    "answer": 0,
+    "explanation": "A functional requirement defines what the software system should do, specifying tasks and behavior."
+  },
+  {
+    "q": "_________ is a software development life cycle model that is chosen if the development team has less experience on similar projects.",
+    "options": [
+      "Iterative Enhancement Model",
+      "RAD",
+      "Spiral",
+      "Waterfall"
+    ],
+    "answer": 3,
+    "explanation": "Waterfall model is chosen when teams have less experience as it follows a linear and structured approach."
+  },
+  {
+    "q": "In which step of SDLC actual programming of software code is done?",
+    "options": [
+      "Development and Documentation",
+      "Maintenance and Evaluation",
+      "Design",
+      "Analysis"
+    ],
+    "answer": 0,
+    "explanation": "The Development phase is where actual coding/programming occurs."
+  },
+  {
+    "q": "Software Debugging is known as _________________",
+    "options": [
+      "identifying the task to be computerized",
+      "creating program code",
+      "creating the algorithm",
+      "finding and correcting errors in the program code"
+    ],
+    "answer": 3,
+    "explanation": "Debugging involves identifying, locating, and correcting errors in the code."
+  },
+  {
+    "q": "Which of the following is the understanding of software product limitations, learning system related problems or changes to be done in existing systems beforehand, identifying and addressing the impact of project on organization and personnel etc.?",
+    "options": [
+      "Software Design",
+      "Feasibility Study",
+      "Requirement Gathering",
+      "System Analysis"
+    ],
+    "answer": 1,
+    "explanation": "Feasibility Study assesses limitations, impacts, and practicality before development."
+  },
+  {
+    "q": "How can we write comment along with CSS code?",
+    "options": [
+      "/* a comment*/",
+      "//a comment //",
+      "/ a comment/",
+      "<’a comment’>"
+    ],
+    "answer": 0,
+    "explanation": "CSS comments are written between /* and */."
+  },
+  {
+    "q": "Which CSS property is used to control the text size of an element?",
+    "options": [
+      "font-style",
+      "text-size",
+      "font-size",
+      "text-style"
+    ],
+    "answer": 2,
+    "explanation": "The font-size property specifies the size of text in CSS."
+  },
+  {
+    "q": "By default Hyperlinks are displayed with an underline. How do you remove the underline from all hyperlinks by using CSS code?",
+    "options": [
+      "a {text: no-underline;}",
+      "a {text-decoration:none;}",
+      "a {text-style: no-underline;}",
+      "a {text-decoration: no-underline;}"
+    ],
+    "answer": 1,
+    "explanation": "Setting text-decoration:none removes the underline from links."
+  },
+  {
+    "q": "A program in HTML can be rendered and read by –",
+    "options": [
+      "web browser",
+      "server",
+      "interpreter",
+      "none of the above"
+    ],
+    "answer": 0,
+    "explanation": "HTML code is interpreted and rendered by web browsers."
+  },
+  {
+    "q": "Which of the following HTML tag is used to display the text with scrolling effect?",
+    "options": [
+      "<marquee>",
+      "<scroll>",
+      "<div>",
+      "None of the above"
+    ],
+    "answer": 0,
+    "explanation": "<marquee> tag creates scrolling text in HTML."
+  },
+  {
+    "q": "Are actions that occur as a result of something the user does?",
+    "options": [
+      "Function",
+      "Procedure",
+      "Event",
+      "None"
+    ],
+    "answer": 2,
+    "explanation": "An event occurs as a result of user interaction, like clicks or key presses."
+  },
+  {
+    "q": "Which of the following is true about PHP?",
+    "options": [
+      "PHP is server side scripting language",
+      "PHP is client side scripting language",
+      "PHP is a database",
+      "None of the above"
+    ],
+    "answer": 0,
+    "explanation": "PHP is executed on the server to generate dynamic web content."
+  },
+  {
+    "q": "Which of the following is NOT a programming paradigm used in JavaScript?",
+    "options": [
+      "Object-oriented programming",
+      "Functional programming",
+      "Procedural programming",
+      "Logical programming"
+    ],
+    "answer": 3,
+    "explanation": "JavaScript does not natively support logical programming."
+  },
+  {
+    "q": "Which of the following is NOT a type of HTTP request method?",
+    "options": [
+      "GET",
+      "POST",
+      "HEAD",
+      "DELETE"
+    ],
+    "answer": null,
+    "explanation": "All listed methods are standard HTTP request methods. (If the intended answer is missing, verify with the source.)"
+  },
+  {
+    "q": "The ability to query data, as well as insert, delete, and alter tuples, is offered by __________",
+    "options": [
+      "TCL (Transaction Control Language)",
+      "DCL (Data Control Language)",
+      "DDL (Data Definition Langauge)",
+      "DML (Data Manipulation Langauge)"
+    ],
+    "answer": 3,
+    "explanation": "DML provides the ability to query and manipulate data in the database."
+  },
+  {
+    "q": "In which of the following attribute type the attribute value can be calculated from other related attribute?",
+    "options": [
+      "Simple Attribute",
+      "Derived Attribute",
+      "Multi-valued Attribute",
+      "Composite Attribute"
+    ],
+    "answer": 1,
+    "explanation": "Derived attributes are calculated from other attributes in the database."
+  },
+  {
+    "q": "In which one of the following cardinality, an occurrence in entity A can be associated with at most one occurrence in entity B and however an occurrence in B can be associated with any number (zero or more) of occurrences in A.",
+    "options": [
+      "One-to-many",
+      "Many-to-one",
+      "One-to-one",
+      "Many-to-many"
+    ],
+    "answer": 0,
+    "explanation": "One-to-many means one record in A maps to multiple in B."
+  },
+  {
+    "q": "If FK is a foreign key in a relation R1, which one of the following is always true?",
+    "options": [
+      "Every tuple of R1 has a distinct value for FK",
+      "FK is a Candidate key for some other relation",
+      "FK cannot have a null value for tuples in R1",
+      "FK is a Primary key for R1",
+      "FK is a Composite key for R1"
+    ],
+    "answer": 1,
+    "explanation": "A foreign key is always a candidate key in another table."
+  },
+  {
+    "q": "Which one of the following dependency exists when a non-prime attribute depends on other non-prime attribute rather than depending upon the primary key?",
+    "options": [
+      "Partial",
+      "Full",
+      "Transitive",
+      "Functional"
+    ],
+    "answer": 2,
+    "explanation": "Transitive dependency occurs when a non-prime attribute depends on another non-prime attribute."
+  },
+  {
+    "q": "The given Query can be replaced with_______ SELECT name, course_id FROM instructor, teaches WHERE instructor_ID= teaches_ID;",
+    "options": [
+      "Select name, course_id from teaches,instructor where instructor_id=course_id;",
+      "Select name, course_id from instructor natural join teaches;",
+      "Select name, course_id from instructor;",
+      "Select course_id from instructor join teaches;"
+    ],
+    "answer": 1,
+    "explanation": "A natural join simplifies the join condition using common columns."
+  },
+  {
+    "q": "In case of any shut down during transaction before commit which of the following statement is done automatically?",
+    "options": [
+      "View",
+      "Commit",
+      "Rollback",
+      "Flashback"
+    ],
+    "answer": 2,
+    "explanation": "Rollback undoes the transaction if it has not yet been committed."
+  },
+  {
+    "q": "Which one of the following commands is used for removing (or deleting) a relation from the SQL database?",
+    "options": [
+      "Delete",
+      "Drop",
+      "Remove",
+      "All of the above"
+    ],
+    "answer": 1,
+    "explanation": "DROP command removes the entire table structure from the database."
+  },
+  {
+    "q": "A system is in a ______ state if there exists a set of transactions such that every transaction in the set is waiting for another transaction in the set.",
+    "options": [
+      "Idle",
+      "Waiting",
+      "Deadlock",
+      "Ready"
+    ],
+    "answer": 2,
+    "explanation": "Deadlock occurs when transactions are waiting for each other indefinitely."
+  },
+  {
+    "q": "Which refers to a property of computer to run several operations simultaneously and possible as computers await response of each other?",
+    "options": [
+      "Concurrency",
+      "Deadlock",
+      "Backup",
+      "Recovery"
+    ],
+    "answer": 0,
+    "explanation": "Concurrency allows multiple processes to run simultaneously."
+  },
+  {
+    "q": "If a transaction does not modify the database until it has committed, it is said to use the ___________ technique.",
+    "options": [
+      "Deferred-modification",
+      "Late-modification",
+      "Immediate-modification",
+      "Undo"
+    ],
+    "answer": 0,
+    "explanation": "Deferred modification delays changes until the transaction is committed."
+  },
+  {
+    "q": "A __________ is a special kind of a store procedure that executes in response to certain action on the table like insertion, deletion or updating of data.",
+    "options": [
+      "Procedures",
+      "Triggers",
+      "Functions",
+      "None of the mentioned"
+    ],
+    "answer": 1,
+    "explanation": "Triggers are database procedures that automatically execute in response to certain events."
+  },
+
+
+
+
+
+
+
+  {
+    "q": "Which one of the following should be included under every C++ program?",
+    "options": [
+      "int",
+      "double",
+      "main()",
+      "length()"
+    ],
+    "answer": 2,
+    "explanation": "Every C++ program must include a main() function as the entry point of execution."
+  },
+  {
+    "q": "A symbolic name for memory location in which data can be stored and subsequently recalled is called .",
+    "options": [
+      "Keyword",
+      "Literals",
+      "Variable",
+      "Reserved words"
+    ],
+    "answer": 2,
+    "explanation": "A variable is a symbolic name for a memory location that stores data."
+  },
+  {
+    "q": "Which one of the following is INCORRECT about pointers in C++?",
+    "options": [
+      "It is a variable that stores the address of another variable.",
+      "It points to the address of another variable.",
+      "It should have the same data type as that of the variable it points to.",
+      "The reference operator (&) is used to access the value at an address."
+    ],
+    "answer": 3,
+    "explanation": "The *dereference* operator (*) is used to access the value at an address, not &."
+  },
+  {
+    "q": "How do you declare an integer array of size 10 having a name of num?",
+    "options": [
+      "int num[10];",
+      "int 10;",
+      "float num[10];",
+      "int num(10);"
+    ],
+    "answer": 0,
+    "explanation": "C++ array declaration uses the syntax type name[size]; e.g., int num[10];"
+  },
+  {
+    "q": "What is the effect of writing a break statement inside a loop?",
+    "options": [
+      "It cancels remaining iterations.",
+      "It skips a particular iteration.",
+      "The program terminates immediately.",
+      "Loop counter is reset."
+    ],
+    "answer": 0,
+    "explanation": "break exits the loop immediately, stopping further iterations."
+  },
+  {
+    "q": "Overloaded functions are _____________",
+    "options": [
+      "a group of functions with the same name.",
+      "all have the same number and types of arguments.",
+      "may fail unexpectedly due to stress.",
+      "all are correct"
+    ],
+    "answer": 0,
+    "explanation": "Function overloading allows multiple functions with the same name but different parameters."
+  },
+  {
+    "q": "Which of the following is not an OOPS concept?",
+    "options": [
+      "Encapsulation",
+      "Polymorphism",
+      "Exception",
+      "Abstraction"
+    ],
+    "answer": 2,
+    "explanation": "Exception handling is not a core OOP concept; OOP focuses on encapsulation, inheritance, abstraction, and polymorphism."
+  },
+  {
+    "q": "Which feature of OOPS describes the reusability of code?",
+    "options": [
+      "Abstraction",
+      "Encapsulation",
+      "Polymorphism",
+      "Inheritance"
+    ],
+    "answer": 3,
+    "explanation": "Inheritance allows a class to reuse code from another class, promoting code reusability."
+  },
+  {
+    "q": "Which among the following feature is not in the general definition of OOPS?",
+    "options": [
+      "Modularity",
+      "Efficient Code",
+      "Code reusability",
+      "Duplicate or Redundant Data"
+    ],
+    "answer": 3,
+    "explanation": "OOP aims to reduce redundancy; duplicate data is not a feature."
+  },
+  {
+    "q": "Define the programming language, which does not support all four types of inheritance?",
+    "options": [
+      "Smalltalk",
+      "Kotlin",
+      "Java",
+      "C++"
+    ],
+    "answer": 2,
+    "explanation": "Java does not support multiple inheritance directly for classes, unlike C++."
+  },
+  {
+    "q": "Which function best describes the concept of polymorphism in programming languages?",
+    "options": [
+      "Class member function",
+      "Virtual function",
+      "Inline function",
+      "Undefined function"
+    ],
+    "answer": 1,
+    "explanation": "Virtual functions in OOP allow runtime polymorphism."
+  },
+  {
+    "q": "Which operator can be overloaded using the friend function?",
+    "options": [
+      "*",
+      "()",
+      "->",
+      "="
+    ],
+    "answer": 0,
+    "explanation": "The * operator (multiplication/dereference) is often overloaded using friend functions."
+  },
+  {
+    "q": "Which one of the following is an incorrect statement about algorithms?",
+    "options": [
+      "Algorithm is composed of a finite set of steps",
+      "Each step of algorithm may require one or more operations",
+      "Each operation has to be effective but not necessarily definite",
+      "All"
+    ],
+    "answer": 2,
+    "explanation": "Each operation in an algorithm must be well-defined and unambiguous."
+  },
+  {
+    "q": "Which one of the following is correct about running time analysis?",
+    "options": [
+      "Determine how running time increases as the computer resources increases",
+      "Determine how running time increases as the size of the problem increases",
+      "Determine how running time decreases as the computer resources increases",
+      "None"
+    ],
+    "answer": 1,
+    "explanation": "Running time analysis studies how execution time grows with input size."
+  },
+  {
+    "q": "Which one of the following is correct about greedy algorithms?",
+    "options": [
+      "In each phase the currently best decision is made",
+      "Optimal solution is a feasible solution where the objective function reaches its maximum or minimum",
+      "A globally optimal solution is one where there are no other feasible solutions with better objective function values",
+      "All"
+    ],
+    "answer": 3,
+    "explanation": "Greedy algorithms make the locally optimal choice at each step to reach a global optimum."
+  },
+  {
+    "q": "Which one of the following is correct about asymptotic analysis?",
+    "options": [
+      "Shorthand way to represent the time complexity",
+      "We can give time complexity as 'fastest possible', 'slowest possible'",
+      "Rough measure that characterizes how fast each function grows",
+      "All"
+    ],
+    "answer": 3,
+    "explanation": "Asymptotic analysis characterizes algorithm growth rates, commonly with Big O notation."
+  },
+  {
+    "q": "Which one of the following is a correct time function T(n) for binary search?",
+    "options": [
+      "T(n)=T(n-1) + O(n)",
+      "T(n)=T(n/2) + T(n/2) + O(n)",
+      "T(n)=T(n/2) + O(1)",
+      "None"
+    ],
+    "answer": 2,
+    "explanation": "Binary search divides the problem size by 2 each time, giving T(n) = T(n/2) + O(1)."
+  },
+  {
+    "q": "Algorithms must terminate after a finite number of steps; What is this characteristic called?",
+    "options": [
+      "Unambiguous",
+      "Feasibility",
+      "Finiteness",
+      "Independent"
+    ],
+    "answer": 2,
+    "explanation": "Finiteness means the algorithm will always terminate after a limited number of steps."
+  },
+  {
+    "q": "What data structure is used for breadth-first traversal of a graph?",
+    "options": [
+      "Queue",
+      "Stack",
+      "List",
+      "None of the above"
+    ],
+    "answer": 0,
+    "explanation": "Breadth-first traversal uses a queue to process nodes level by level."
+  },
+  {
+    "q": "If the array is already sorted, which of these algorithms will exhibit the best performance?",
+    "options": [
+      "Merge Sort",
+      "Insertion Sort",
+      "Quick Sort",
+      "Heap Sort"
+    ],
+    "answer": 1,
+    "explanation": "Insertion sort has O(n) best-case performance for already sorted arrays."
+  },
+  {
+    "q": "How many swaps are required to sort the given array using bubble sort - {2, 5, 1, 3, 4}?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "Bubble sort requires 6 swaps to sort the array step by step."
+  },
+  {
+    "q": "All possible spanning trees of graph G",
+    "options": [
+      "have same number of edges and vertices.",
+      "have same number of edges but not vertices.",
+      "have same number of vertices but not edges.",
+      "depends upon algorithm being used."
+    ],
+    "answer": 0,
+    "explanation": "All spanning trees of a connected graph have exactly (V-1) edges and V vertices."
+  },
+  {
+    "q": "From a complete graph, by removing maximum _______________ edges, we can construct a spanning tree.",
+    "options": [
+      "e-n+1",
+      "n-e+1",
+      "n+e-1",
+      "e-n-1"
+    ],
+    "answer": 0,
+    "explanation": "A spanning tree has exactly n-1 edges, so we can remove e-(n-1) = e-n+1 edges from a complete graph."
+  },
+  {
+    "q": "After each iteration in bubble sort",
+    "options": [
+      "at least one element is at its sorted position.",
+      "one less comparison is made in the next iteration.",
+      "Both A & B are true.",
+      "Neither A or B are true."
+    ],
+    "answer": 2,
+    "explanation": "Each pass of bubble sort places the largest element at the end and reduces comparisons by 1."
+  },
+  {
+    "q": "In doubly linked lists",
+    "options": [
+      "A pointer is maintained to store both next and previous nodes.",
+      "Two pointers are maintained to store next and previous nodes.",
+      "A pointer to self is maintained for each node.",
+      "None of the above."
+    ],
+    "answer": 1,
+    "explanation": "Doubly linked list nodes maintain two pointers: next and previous."
+  },
+
+
+
+
+
+
+  {
+    "q": "_____________ is a probabilistic algorithm where a data packet is sent by the router to any one of its neighbors randomly.",
+    "options": [
+      "Adaptive routing algorithm",
+      "Flooding routing algorithm",
+      "Random walks routing algorithm",
+      "Distributed routing algorithm"
+    ],
+    "answer": 2,
+    "explanation": "Random walks routing algorithm sends packets randomly to neighbor nodes, often used in probabilistic routing."
+  },
+  {
+    "q": "Which network address translation protocol solves the task of address resolution using port number?",
+    "options": [
+      "Network Address Translation",
+      "Port Address Translation",
+      "Dynamic Address Translation",
+      "All"
+    ],
+    "answer": 1,
+    "explanation": "Port Address Translation (PAT) maps multiple private addresses to a single public IP using ports."
+  },
+  {
+    "q": "Which network topology allows for multiple connection paths to be used in the event that one fails?",
+    "options": [
+      "Ring",
+      "Mesh",
+      "Bus",
+      "Star"
+    ],
+    "answer": 1,
+    "explanation": "Mesh topology provides redundancy through multiple paths between nodes."
+  },
+  {
+    "q": "One of the following is false regarding Bus topology?",
+    "options": [
+      "It requires a great deal of cable to add a new station.",
+      "A failure in the back bone will lead to a complete shutdown in the system.",
+      "It is easy to add a new node.",
+      "A failure in one station will not cause any harm in the network."
+    ],
+    "answer": 2,
+    "explanation": "Bus topology is not easy to add nodes, as it may require modifying the backbone cable."
+  },
+  {
+    "q": "A Cisco command that is used to check the IP address as well as MAC addresses of a device is_____.",
+    "options": [
+      "Ipconfig/all",
+      "Ping",
+      "IPconfig",
+      "Tracert"
+    ],
+    "answer": 0,
+    "explanation": "ipconfig /all displays both IP and MAC addresses on Windows devices."
+  },
+  {
+    "q": "If you need to subnet a network into 5 subnets, each with at least 16 hosts. Which subnet mask would you use?",
+    "options": [
+      "255.255.255.192",
+      "255.255.255.224",
+      "255.255.255.240",
+      "255.255.255.248"
+    ],
+    "answer": 1,
+    "explanation": "255.255.255.224 (/27) provides 32 addresses per subnet, enough for 16 hosts."
+  },
+  {
+    "q": "What is not the objective of network security?",
+    "options": [
+      "Identification",
+      "Authentication",
+      "Access control",
+      "Lock"
+    ],
+    "answer": 3,
+    "explanation": "Lock is not an official objective; network security focuses on identification, authentication, and access control."
+  },
+  {
+    "q": "Which one of the following refers to the technique used for verifying the integrity of the message?",
+    "options": [
+      "Digital signature",
+      "Decryption algorithm",
+      "Protocol",
+      "Message Digest"
+    ],
+    "answer": 3,
+    "explanation": "Message digest (hash functions) are used to verify integrity of messages."
+  },
+  {
+    "q": "IPsec is designed to provide security at the",
+    "options": [
+      "Transport layer",
+      "Network layer",
+      "Application layer",
+      "Session layer"
+    ],
+    "answer": 1,
+    "explanation": "IPsec operates at the Network layer to provide confidentiality, integrity, and authentication."
+  },
+  {
+    "q": "An attempt to make computer/server resources unavailable to its intended users is called ______",
+    "options": [
+      "Botnet attack",
+      "Denial of service attack",
+      "Virus attack",
+      "Worms attack"
+    ],
+    "answer": 1,
+    "explanation": "Denial of Service (DoS) attacks aim to make resources unavailable to legitimate users."
+  },
+  {
+    "q": "In transposition, the plain text letters are",
+    "options": [
+      "Substituted",
+      "Rearranged",
+      "Removed",
+      "None of the mentioned"
+    ],
+    "answer": 1,
+    "explanation": "Transposition ciphers rearrange the letters of the plaintext according to a defined system."
+  },
+  {
+    "q": "Controlling element in the hardware and operating system that regulates the access of subjects to objects on the basis of security parameters",
+    "options": [
+      "Kerberos",
+      "Reference monitor",
+      "SET",
+      "Security kernel"
+    ],
+    "answer": 1,
+    "explanation": "Reference monitor enforces access control policies between subjects and objects."
+  },
+  {
+    "q": "_____________ is responsible for converting the higher level protocol addresses to physical Network Addresses.",
+    "options": [
+      "Address Resolution Protocol (ARP)",
+      "Reverse Address Resolution Protocol (RARP)",
+      "Bootstrap Protocol (BOOTP)",
+      "Internet Control Message Protocol (ICMP)"
+    ],
+    "answer": 0,
+    "explanation": "ARP resolves IP addresses into MAC addresses for data link layer communication."
+  },
+  {
+    "q": "Given the network address of 172.16.0.0/19, which of the following is correct?",
+    "options": [
+      "It provides 8 subnets, 32 IP addresses each",
+      "It provides 8 subnets, 8,190 hosts each",
+      "It provides 8 subnets, 30 hosts each",
+      "It provides 8 subnets, 2,046 IP addresses each"
+    ],
+    "answer": 3,
+    "explanation": "/19 subnet provides 8192 addresses per subnet, minus network/broadcast addresses gives 2046 usable IPs."
+  },
+  {
+    "q": "A network device that provides the physical interface between computer and cabling is known as________.",
+    "options": [
+      "Switch",
+      "Router",
+      "NIC",
+      "Repeater"
+    ],
+    "answer": 2,
+    "explanation": "A Network Interface Card (NIC) provides the physical interface to the network medium."
+  },
+  {
+    "q": "Which of the following is the function of DHCP server?",
+    "options": [
+      "It grants an IP address when receives a request from a client.",
+      "It maintains the information about client configuration parameters.",
+      "It maintains a database of available IP addresses.",
+      "All"
+    ],
+    "answer": 3,
+    "explanation": "DHCP provides, tracks, and manages IP addresses dynamically for clients."
+  },
+  {
+    "q": "Which of the following is arranged in the correct Active Directory organizational order (largest to smallest)?",
+    "options": [
+      "Forest, Domain, Tree, Branch, Computer",
+      "Computer, Forest, Domain, Tree",
+      "Forest, Tree, Domain, Computer",
+      "Forest, Tree, Computer, Domain"
+    ],
+    "answer": 2,
+    "explanation": "The correct hierarchy is Forest → Tree → Domain → Computer."
+  },
+  {
+    "q": "An Active Directory container used to organize a network’s users and resources into logical administrative units?",
+    "options": [
+      "Organizational Units",
+      "Users Units",
+      "Container object",
+      "Leaf object"
+    ],
+    "answer": 0,
+    "explanation": "Organizational Units (OU) are used to group and manage AD objects logically."
+  },
+  {
+    "q": "Among the given options, which is also known as inference rule?",
+    "options": [
+      "Reference",
+      "Reform",
+      "Resolution",
+      "None of the above"
+    ],
+    "answer": 2,
+    "explanation": "Resolution is a fundamental inference rule used in logic and AI."
+  },
+  {
+    "q": "When an agent solves a problem, the issue of whether the answer is guaranteed or not is evaluated by?",
+    "options": [
+      "Completeness",
+      "Time complexity",
+      "Space Complexity",
+      "Optimality"
+    ],
+    "answer": 0,
+    "explanation": "Completeness determines whether the algorithm guarantees finding a solution if one exists."
+  },
+  {
+    "q": "Which of the following search algorithm runs two simultaneous searches, one from initial state and the other from goal node, to find the goal node?",
+    "options": [
+      "Depth Limited Search",
+      "Uniform Cost Search",
+      "Bidirectional search algorithm",
+      "Iterative Deepening Search"
+    ],
+    "answer": 2,
+    "explanation": "Bidirectional search runs forward and backward searches to reduce search space."
+  },
+  {
+    "q": "Which of the following properties represents the environment that is not changed over time but the agent’s performance score does?",
+    "options": [
+      "A dynamic environment",
+      "Static environment",
+      "Semi dynamic",
+      "All"
+    ],
+    "answer": 1,
+    "explanation": "Static environment does not change over time, although performance evaluation may vary."
+  },
+  {
+    "q": "What are AI Agents?",
+    "options": [
+      "An agent is anything that can perceive its environment through sensors",
+      "An agent is anything that can change its environment through actuators",
+      "An agent is anything that can control its environment through sensors",
+      "All"
+    ],
+    "answer": 0,
+    "explanation": "An AI agent perceives its environment via sensors and acts via actuators."
+  },
+  {
+    "q": "Which of these is agent’s perceptual input at a given instance?",
+    "options": [
+      "Behavior of Agent",
+      "Percept",
+      "Percept Sequence",
+      "Agent Function"
+    ],
+    "answer": 1,
+    "explanation": "Percept is the agent’s current perceptual input at a single instance."
+  },
+  {
+    "q": "Who provides the interface to access the services of the operating system?",
+    "options": [
+      "API",
+      "System call",
+      "Library",
+      "Assembly instruction"
+    ],
+    "answer": 1,
+    "explanation": "System calls allow user programs to access operating system services."
+  },
+  {
+    "q": "Which of the following operating system runs on the server?",
+    "options": [
+      "Batch OS",
+      "Distributed OS",
+      "Real-time OS",
+      "Network OS"
+    ],
+    "answer": 3,
+    "explanation": "Network OS is designed to manage network resources and run on servers."
+  },
+  {
+    "q": "Which one of the following is not true about kernel?",
+    "options": [
+      "Kernel is the program that constitutes the central core of the operating system",
+      "Kernel is the first part of operating system to load into memory during booting",
+      "Kernel is made of various modules which cannot be loaded in running operating system",
+      "Kernel remains in the memory during the entire computer session"
+    ],
+    "answer": 2,
+    "explanation": "Many modern kernels are modular and allow modules to be loaded/unloaded dynamically."
+  }
+
+
+
+
+
+
+
+
+
+
+  {
+    "q": "If a process fails, most operating systems write the error information to a ______",
+    "options": [
+      "log file",
+      "another running process",
+      "none of the mentioned",
+      "new file"
+    ],
+    "answer": 0,
+    "explanation": "Log files are used by operating systems to record error messages and events for debugging purposes."
+  },
+  {
+    "q": "Memory block assigned to process is bigger. Some portion of memory is left unused, as it cannot be used by another process.",
+    "options": [
+      "External fragmentation",
+      "Internal fragmentation",
+      "Paging",
+      "Segmentation"
+    ],
+    "answer": 1,
+    "explanation": "Internal fragmentation occurs when allocated memory is larger than required by a process."
+  },
+  {
+    "q": "______________ is a memory management technique in which process address space is broken into blocks of the same size called pages.",
+    "options": [
+      "External fragmentation",
+      "Internal fragmentation",
+      "Paging",
+      "Segmentation"
+    ],
+    "answer": 2,
+    "explanation": "Paging divides memory into fixed-size blocks called pages to eliminate external fragmentation."
+  },
+  {
+    "q": "Which one of the following circuits requires memory to store the state of the output?",
+    "options": [
+      "Combinational circuit",
+      "Sequential circuits",
+      "Logical circuit",
+      "Physical circuit"
+    ],
+    "answer": 1,
+    "explanation": "Sequential circuits use memory to store previous states, unlike combinational circuits."
+  },
+  {
+    "q": "Which of the following circuit is used to store one bit of data?",
+    "options": [
+      "Decoder",
+      "Encoder",
+      "Flip Flop",
+      "Register"
+    ],
+    "answer": 2,
+    "explanation": "A flip-flop is a basic storage element that stores a single bit of data."
+  },
+  {
+    "q": "What can be used to store one or more bits of data, which can accept and/or transfer information serially?",
+    "options": [
+      "Parallel registers",
+      "Counters",
+      "Shift registers",
+      "None of these"
+    ],
+    "answer": 2,
+    "explanation": "Shift registers store multiple bits and allow serial input/output operations."
+  },
+  {
+    "q": "In computers, subtraction is generally carried out by",
+    "options": [
+      "9's complement",
+      "10's complement",
+      "1's complement",
+      "2's complement"
+    ],
+    "answer": 3,
+    "explanation": "2's complement is commonly used for subtraction in binary arithmetic."
+  },
+  {
+    "q": "What characteristic of RAM memory makes it not suitable for permanent storage?",
+    "options": [
+      "too slow",
+      "unreliable",
+      "it is volatile",
+      "too bulky"
+    ],
+    "answer": 2,
+    "explanation": "RAM is volatile, meaning it loses its data when power is turned off, so it is not permanent."
+  },
+  {
+    "q": "Which of the following is lowest in memory hierarchy?",
+    "options": [
+      "Cache memory",
+      "Secondary memory",
+      "Registers",
+      "RAM",
+      "None of these"
+    ],
+    "answer": 1,
+    "explanation": "Secondary memory (like HDD/SSD) is lowest in hierarchy in terms of access speed."
+  },
+  {
+    "q": "There are ________ tuples in finite state machine.",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "unlimited"
+    ],
+    "answer": 1,
+    "explanation": "A finite state machine is formally represented by 5 tuples: (Q, Σ, δ, q0, F)."
+  },
+  {
+    "q": "Assume R is a relation on a set A, aRb is partially ordered such that a and b are _____________",
+    "options": [
+      "Reflexive",
+      "Transitive",
+      "Symmetric",
+      "Reflexive and transitive"
+    ],
+    "answer": 3,
+    "explanation": "Partial order requires reflexivity and transitivity."
+  },
+  {
+    "q": "The minimum number of states required to recognize an octal number divisible by 3 are/is",
+    "options": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Three states are sufficient to track modulo 3 remainders for divisibility checks."
+  },
+  {
+    "q": "Statement 1: Initial State of NFA is Initial State of DFA. Statement 2: The final state of DFA will be every combination of final state of NFA.",
+    "options": [
+      "Statement 1 is true and Statement 2 is true",
+      "Statement 1 is true and Statement 2 is false",
+      "Statement 1 can be true and Statement 2 is true",
+      "Statement 1 is false and Statement 2 is also false"
+    ],
+    "answer": 0,
+    "explanation": "DFA constructed from NFA has initial state same as NFA's, and final states are combinations including NFA final states."
+  },
+  {
+    "q": "An automaton that presents output based on previous state or current input:",
+    "options": [
+      "Acceptor",
+      "Classifier",
+      "Transducer",
+      "None of the mentioned"
+    ],
+    "answer": 2,
+    "explanation": "A transducer produces output depending on input and/or state."
+  },
+  {
+    "q": "Keywords are recognized in a compiler during -",
+    "options": [
+      "the code generation",
+      "the data flow analysis",
+      "the lexical analysis of the program",
+      "the program parsing"
+    ],
+    "answer": 2,
+    "explanation": "Lexical analysis identifies tokens, including keywords."
+  },
+  {
+    "q": "What is a compiler?",
+    "options": [
+      "system program that converts instructions to machine language",
+      "system program that converts machine language to high-level language",
+      "system program that writes instructions to perform",
+      "None of the mentioned"
+    ],
+    "answer": 0,
+    "explanation": "A compiler translates high-level code into machine language."
+  },
+  {
+    "q": "Who is responsible for the creation of the symbol table?",
+    "options": [
+      "Assembler",
+      "Compiler",
+      "Interpreter",
+      "All of the mentioned"
+    ],
+    "answer": 1,
+    "explanation": "The compiler creates the symbol table to store identifiers and their attributes."
+  },
+  {
+    "q": "Let L1 = {w ∈ {0,1}∗ | w has at least as many occurrences of (110)’s as (011)’s}. Let L2 = {w ∈ {0,1}∗ | w has at least as many occurrences of (000)’s as (111)’s}. Which of the following is correct?",
+    "options": [
+      "L2 is regular",
+      "L1 and L2 are regular",
+      "L1 is regular but not L2",
+      "None of them are regular"
+    ],
+    "answer": 3,
+    "explanation": "These languages require counting sequences of patterns and are not regular."
+  },
+  {
+    "q": "Which of the following is a correct statement? I. For some programming languages, there are parsing algorithms with an O(3) complexity. II. A recursive programming language can be constructed with static storage allocation. III. In the context of bottom-up parsing, no L-attributed definition can be evaluated. IV. Code-improvement modifications can be carried out at both the intermediate and source code levels.",
+    "options": [
+      "I and III",
+      "I and IV",
+      "I, II and IV",
+      "I, II, III and IV"
+    ],
+    "answer": 2,
+    "explanation": "Statements I, II, IV are correct; III is false because some L-attributed definitions can be evaluated in bottom-up parsing."
+  },
+  {
+    "q": "Which tool is used for grouping of characters in tokens in the compiler?",
+    "options": [
+      "Parser",
+      "Code optimizer",
+      "Code generator",
+      "Scanner"
+    ],
+    "answer": 3,
+    "explanation": "Scanner (lexical analyzer) groups characters into tokens."
+  },
+  {
+    "q": "From the following grammars, which describes the lexical syntax?",
+    "options": [
+      "Lexical Grammar",
+      "Context-free Grammar",
+      "Syntactic Grammar",
+      "Regular Grammar"
+    ],
+    "answer": 0,
+    "explanation": "Lexical grammar defines the lexical syntax of a programming language."
+  }
+
+
+
+
+
+
+
+  
+  
+
+  
+
+  ],
+  
 "admasu2":[
 
   {
@@ -19915,6 +21057,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
