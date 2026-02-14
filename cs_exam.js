@@ -1,5 +1,699 @@
 // Exam Data
 const exams = {
+"admasu2":[
+
+  {
+    "q": "Which one of the following is False about static website?",
+    "options": [
+      "Its content will be changed unless the actual webpage file is edited.",
+      "It is also referred as flat pages or stationary pages.",
+      "It will be delivered to the users as exactly stored in the files.",
+      "Its content remains the same for all viewers of the website."
+    ],
+    "answer": 0,
+    "explanation": "Static website content does not change unless the file is manually edited."
+  },
+  {
+    "q": "Which one of the following is a server side scripting language?",
+    "options": ["PHP", "ASP", "Python", "All of the above"],
+    "answer": 3,
+    "explanation": "PHP, ASP, and Python can all be used for server-side scripting."
+  },
+  {
+    "q": "A pop up box used to display information to user in JavaScript is called ___________.",
+    "options": ["Prompt", "Alert", "Confirm", "All of the above"],
+    "answer": 1,
+    "explanation": "Alert box displays information to the user."
+  },
+  {
+    "q": "What does this code refer to <link rel=\"stylesheet\" href=\"styles.css\"> ?",
+    "options": [
+      "Defines a new CSS by the name styles",
+      "Calls an internal style sheet called styles",
+      "Calls an external style sheet called styles",
+      "Defines an inline CSS by the name styles"
+    ],
+    "answer": 2,
+    "explanation": "The link tag connects an external CSS file."
+  },
+  {
+    "q": "What is the preferred way for adding a background color in HTML?",
+    "options": [
+      "<body background=\"yellow\">",
+      "<background>yellow</background>",
+      "<body style=\"background-color: yellow\">",
+      "<background color=\"yellow\">text</background>"
+    ],
+    "answer": 2,
+    "explanation": "CSS style attribute is the correct method."
+  },
+  {
+    "q": "What is the method used to get the result from the form data sent with both GET and POST?",
+    "options": ["$_REQUEST", "$_POST", "$_GET", "A & B"],
+    "answer": 0,
+    "explanation": "$_REQUEST contains both GET and POST data."
+  },
+  {
+    "q": "Which of the following is an optional parameter while using mysqli_connect() method?",
+    "options": ["Localhost", "Database", "Username", "Password"],
+    "answer": 1,
+    "explanation": "Database name parameter is optional in mysqli_connect."
+  },
+  {
+    "q": "What tag is used for inserting a line break in an HTML page?",
+    "options": ["<break>", "<ol>", "<br>", "<lb>"],
+    "answer": 2,
+    "explanation": "<br> inserts a line break."
+  },
+  {
+    "q": "Which Javascript Event Handler pertains to mouse clicks?",
+    "options": ["Oninput", "Onchange", "Onclick", "Ondrag"],
+    "answer": 2,
+    "explanation": "onclick handles mouse click events."
+  },
+  {
+    "q": "Which of the following are advantages of modularization in software design?",
+    "options": [
+      "Smaller components are difficult to maintain",
+      "Components with high cohesion can be re-used again",
+      "Program can be divided based on functional aspects",
+      "Desired from security aspect"
+    ],
+    "answer": 1,
+    "explanation": "High cohesion modules improve reuse."
+  },
+  {
+    "q": "Which of the following is not element of Requirement Engineering Process?",
+    "options": [
+      "Software Requirement Specification",
+      "Feasibility Study",
+      "Software Requirement Design",
+      "Requirement Gathering"
+    ],
+    "answer": 2,
+    "explanation": "Requirement design is not part of requirement engineering."
+  },
+  {
+    "q": "Which type of test determine if the system meets the entire requirements?",
+    "options": ["Unit Test", "Integration test", "System test", "Acceptance test"],
+    "answer": 2,
+    "explanation": "System testing validates complete system requirements."
+  },
+  {
+    "q": "How is generalization implemented in Object-Oriented software engineering?",
+    "options": ["Inheritance", "Polymorphism", "Encapsulation", "Abstract Classes"],
+    "answer": 0,
+    "explanation": "Generalization is achieved using inheritance."
+  },
+  {
+    "q": "All of the following are required to develop an effective test except:",
+    "options": [
+      "Detailed understanding of the system",
+      "Application and solution domain knowledge",
+      "Knowledge of the testing techniques",
+      "Skill to specific programming language"
+    ],
+    "answer": 3,
+    "explanation": "Testing does not depend on a specific programming language."
+  },
+  {
+    "q": "Use case description commonly contains:",
+    "options": [
+      "Trigger, associations, guarantee",
+      "Precondition, generalizations, main scenario",
+      "Precondition, main scenario, alternative scenarios",
+      "None of the above"
+    ],
+    "answer": 2,
+    "explanation": "Use cases include preconditions, main flow, and alternatives."
+  },
+  {
+    "q": "It defines how and where data are organized in physical data storage",
+    "options": [
+      "Internal Schema",
+      "Conceptual Schema",
+      "External Schema",
+      "External and Conceptual Schema"
+    ],
+    "answer": 0,
+    "explanation": "Internal schema describes physical storage."
+  },
+  {
+    "q": "During modeling your data, Entity Relationship is applied at",
+    "options": [
+      "Applications and security",
+      "Physical refinement",
+      "Conceptual database",
+      "Schema refinement"
+    ],
+    "answer": 2,
+    "explanation": "ER modeling is part of conceptual design."
+  },
+  {
+    "q": "Criteria that should not be considered when evaluating requirement analysis?",
+    "options": ["Correctness", "Need assessment", "Consistency", "Speed"],
+    "answer": 3,
+    "explanation": "Speed is not a requirement evaluation criterion."
+  },
+  {
+    "q": "SQL command to define primary key for existing table Employee?",
+    "options": [
+      "ADD TABLE Employee ADD PRIMARY KEY (empid)",
+      "ATTACH TABLE Employee ADD PRIMARY KEY (empid)",
+      "ADD TABLE Employee ATTACH PRIMARY KEY (empid)",
+      "ALTER TABLE Employee ADD PRIMARY KEY (empid)"
+    ],
+    "answer": 3,
+    "explanation": "ALTER TABLE is used to modify existing tables."
+  },
+  {
+    "q": "Problem that doesn’t exist on transitive dependency is",
+    "options": [
+      "Modification Anomaly",
+      "Revoke Anomaly",
+      "Insertion Anomaly",
+      "Deletion Anomaly"
+    ],
+    "answer": 1,
+    "explanation": "Revoke anomaly is not a normalization anomaly."
+  },
+  {
+    "q": "If maximum cardinality is 1 in both directions, relationship is",
+    "options": ["Optional", "Many-to-many", "One-to-one", "One-to-many"],
+    "answer": 2,
+    "explanation": "Maximum 1 on both sides means one-to-one."
+  },
+  {
+    "q": "How do change the PRICE of BOOK whose id =B001 to value of 600",
+    "options": [
+      "CHANGE BOOK SET PRICE =600 Where ID ='B001'",
+      "UPDATE TO CHANGE BOOK SET PRICE =600 Where ID ='B001'",
+      "UPDATE BOOK SET PRICE =600 Where ID ='B001'",
+      "GRANT BOOK SET PRICE =600 Where ID ='B001'"
+    ],
+    "answer": 2,
+    "explanation": "UPDATE is correct SQL command."
+  },
+  {
+    "q": "The Entity Relationship (E-R) Model",
+    "options": [
+      "Entities are represented by circle",
+      "Attributes are represented by rectangle",
+      "It represents conceptual view",
+      "It corresponds to row"
+    ],
+    "answer": 2,
+    "explanation": "ER model represents conceptual database design."
+  },
+  {
+    "q": "Removal of transitivity property should be fulfilled in",
+    "options": [
+      "First Normal form",
+      "Fourth Normal form",
+      "Third Normal form",
+      "Second Normal form"
+    ],
+    "answer": 2,
+    "explanation": "3NF removes transitive dependency."
+  },
+  {
+    "q": "Cartesian product of relation R (5 tuples) and S (7 tuples)",
+    "options": ["5+7", "7-5", "5×7", "5/7"],
+    "answer": 2,
+    "explanation": "Cartesian product multiplies tuples."
+  },
+  {
+    "q": "Variable storing reference to another variable in C++",
+    "options": ["Pointer", "Constructor", "Asterisks", "Structure"],
+    "answer": 0,
+    "explanation": "Pointer stores memory address."
+  },
+  {
+    "q": "Program translating high-level language to machine language",
+    "options": ["Disassembler", "Coder", "Compiler", "Assembler"],
+    "answer": 2,
+    "explanation": "Compiler translates high-level code."
+  },
+  {
+    "q": "Valid function call assuming add exists with two parameters",
+    "options": ["add;", "add(a,b);", "add a,b;", "add(int a, int b);"],
+    "answer": 1,
+    "explanation": "Function call uses parentheses with arguments."
+  },
+  {
+    "q": "A recursive function is",
+    "options": [
+      "Calls another function",
+      "Main calls many functions",
+      "Main calls one function",
+      "Function calls itself"
+    ],
+    "answer": 3,
+    "explanation": "Recursion occurs when function calls itself."
+  },
+  {
+    "q": "Which is not OOP concept?",
+    "options": ["Encapsulation", "Polymorphism", "Exception", "Abstraction"],
+    "answer": 2,
+    "explanation": "Exception is not core OOP concept."
+  },
+  {
+    "q": "Feature that derives class from another class",
+    "options": ["Inheritance", "Data hiding", "Encapsulation", "Polymorphism"],
+    "answer": 0,
+    "explanation": "Inheritance derives classes."
+  },
+  {
+    "q": "Structure statements true",
+    "options": [
+      "Structure is collection of homogeneous members",
+      "Individual values are called members",
+      "It is possible to initialize structure upon defining",
+      "All are correct"
+    ],
+    "answer": 1,
+    "explanation": "Structure members are individual values."
+  },
+  {
+    "q": "An ___ is defined as a set of well-defined instructions used to accomplish a task.",
+    "options": ["Algorithm", "Function", "Program", "Procedure"],
+    "answer": 0,
+    "explanation": "Algorithm is step-by-step instructions."
+  },
+  {
+    "q": "The measure of longest time taken by algorithm",
+    "options": ["Little-O", "Little-Omega", "Big-Omega", "Big-O"],
+    "answer": 3,
+    "explanation": "Big-O represents worst case complexity."
+  },
+  {
+    "q": "Compact informal description of algorithm",
+    "options": ["Stack", "Queue", "Pseudocode", "Non-linear structure"],
+    "answer": 2,
+    "explanation": "Pseudocode describes algorithms informally."
+  },
+  {
+    "q": "Which data structure follows FIFO order?",
+    "options": ["Stack", "Queue", "Tree", "Graph"],
+    "answer": 1,
+    "explanation": "Queue follows First In First Out principle."
+  },
+  {
+    "q": "Which data structure uses LIFO principle?",
+    "options": ["Queue", "Stack", "Array", "Linked list"],
+    "answer": 1,
+    "explanation": "Stack follows Last In First Out principle."
+  },
+  {
+    "q": "Which of the following is a linear data structure?",
+    "options": ["Tree", "Graph", "Array", "Heap"],
+    "answer": 2,
+    "explanation": "Array is a linear data structure."
+  },
+  {
+    "q": "Which searching technique requires sorted data?",
+    "options": ["Linear search", "Binary search", "Hashing", "Traversal"],
+    "answer": 1,
+    "explanation": "Binary search works only on sorted data."
+  },
+  {
+    "q": "Which sorting algorithm has best average performance?",
+    "options": ["Bubble sort", "Selection sort", "Quick sort", "Insertion sort"],
+    "answer": 2,
+    "explanation": "Quick sort has average time complexity O(n log n)."
+  },
+  {
+    "q": "Which of the following is non-linear data structure?",
+    "options": ["Array", "Linked list", "Tree", "Queue"],
+    "answer": 2,
+    "explanation": "Tree is a non-linear data structure."
+  },
+  {
+    "q": "Which operation is used to add element into stack?",
+    "options": ["Pop", "Push", "Insert", "Append"],
+    "answer": 1,
+    "explanation": "Push operation adds element into stack."
+  },
+  {
+    "q": "Which operation removes element from stack?",
+    "options": ["Push", "Pop", "Delete", "Remove"],
+    "answer": 1,
+    "explanation": "Pop removes element from stack."
+  },
+  {
+    "q": "Which data structure is used for recursion?",
+    "options": ["Queue", "Stack", "Tree", "Graph"],
+    "answer": 1,
+    "explanation": "Recursion uses stack memory."
+  },
+  {
+    "q": "Which traversal technique visits root first?",
+    "options": ["Inorder", "Preorder", "Postorder", "Level order"],
+    "answer": 1,
+    "explanation": "Preorder traversal visits root first."
+  },
+  {
+    "q": "Which traversal technique visits root last?",
+    "options": ["Preorder", "Inorder", "Postorder", "Level order"],
+    "answer": 2,
+    "explanation": "Postorder visits root last."
+  },
+  {
+    "q": "Which traversal gives sorted output in BST?",
+    "options": ["Preorder", "Postorder", "Inorder", "Level order"],
+    "answer": 2,
+    "explanation": "Inorder traversal of BST gives sorted order."
+  },
+  {
+    "q": "Which data structure is used in BFS?",
+    "options": ["Stack", "Queue", "Tree", "Array"],
+    "answer": 1,
+    "explanation": "Breadth First Search uses queue."
+  },
+  {
+    "q": "Which data structure is used in DFS?",
+    "options": ["Queue", "Stack", "Array", "Graph"],
+    "answer": 1,
+    "explanation": "Depth First Search uses stack."
+  },
+  {
+    "q": "Which of the following is dynamic data structure?",
+    "options": ["Array", "Linked list", "Stack (array)", "Queue (array)"],
+    "answer": 1,
+    "explanation": "Linked list is dynamic because memory is allocated at runtime."
+  },
+  {
+    "q": "Which data structure stores elements in nodes?",
+    "options": ["Array", "Linked list", "Stack", "Queue"],
+    "answer": 1,
+    "explanation": "Linked list stores elements in nodes."
+  },
+  {
+    "q": "Which pointer stores address of next node?",
+    "options": ["Prev", "Next", "Head", "Tail"],
+    "answer": 1,
+    "explanation": "Next pointer stores address of next node."
+  },
+  {
+    "q": "Which type of linked list has two pointers?",
+    "options": ["Singly", "Doubly", "Circular", "Linear"],
+    "answer": 1,
+    "explanation": "Doubly linked list has next and previous pointers."
+  },
+  {
+    "q": "Which data structure is best for implementing priority queue?",
+    "options": ["Heap", "Stack", "Linked list", "Array"],
+    "answer": 0,
+    "explanation": "Heap efficiently implements priority queue."
+  },
+  {
+    "q": "Which tree has maximum two children?",
+    "options": ["Binary tree", "AVL tree", "Heap", "B-tree"],
+    "answer": 0,
+    "explanation": "Binary tree has at most two children."
+  },
+  {
+    "q": "Which tree is self-balancing?",
+    "options": ["Binary tree", "AVL tree", "Heap", "BST"],
+    "answer": 1,
+    "explanation": "AVL tree maintains balance automatically."
+  },
+  {
+    "q": "Which algorithm is used for shortest path?",
+    "options": ["Prim", "Kruskal", "Dijkstra", "DFS"],
+    "answer": 2,
+    "explanation": "Dijkstra algorithm finds shortest path."
+  },
+  {
+    "q": "Which algorithm finds minimum spanning tree?",
+    "options": ["Dijkstra", "Prim", "Binary search", "DFS"],
+    "answer": 1,
+    "explanation": "Prim algorithm finds MST."
+  },
+  {
+    "q": "Which complexity is fastest?",
+    "options": ["O(n)", "O(log n)", "O(n^2)", "O(1)"],
+    "answer": 3,
+    "explanation": "O(1) is constant time and fastest."
+  },
+  {
+    "q": "Which case defines minimum time complexity?",
+    "options": ["Worst case", "Average case", "Best case", "All"],
+    "answer": 2,
+    "explanation": "Best case gives minimum time."
+  },
+  {
+    "q": "Which structure grows from top?",
+    "options": ["Queue", "Stack", "Tree", "Graph"],
+    "answer": 1,
+    "explanation": "Stack grows from top."
+  },
+  {
+    "q": "Insertion in queue happens at?",
+    "options": ["Front", "Rear", "Middle", "Top"],
+    "answer": 1,
+    "explanation": "Queue insertion occurs at rear."
+  },
+  {
+    "q": "Deletion in queue happens at?",
+    "options": ["Rear", "Front", "Top", "Middle"],
+    "answer": 1,
+    "explanation": "Queue deletion occurs at front."
+  },
+  {
+    "q": "Which structure uses head pointer?",
+    "options": ["Stack", "Queue", "Linked list", "Array"],
+    "answer": 2,
+    "explanation": "Linked list uses head pointer."
+  },
+  {
+    "q": "Which algorithm repeatedly swaps adjacent elements?",
+    "options": ["Selection sort", "Bubble sort", "Merge sort", "Quick sort"],
+    "answer": 1,
+    "explanation": "Bubble sort swaps adjacent elements."
+  },
+  {
+    "q": "Which sorting divides array into halves?",
+    "options": ["Merge sort", "Bubble sort", "Insertion sort", "Selection sort"],
+    "answer": 0,
+    "explanation": "Merge sort uses divide and conquer."
+  },
+  {
+    "q": "Which structure is hierarchical?",
+    "options": ["Array", "Queue", "Tree", "Stack"],
+    "answer": 2,
+    "explanation": "Tree represents hierarchical structure."
+  },
+  {
+    "q": "Which graph contains cycles?",
+    "options": ["Tree", "Acyclic graph", "Directed graph", "None"],
+    "answer": 2,
+    "explanation": "Directed graphs may contain cycles."
+  },
+  {
+    "q": "Which representation uses adjacency matrix?",
+    "options": ["Graph", "Tree", "Stack", "Queue"],
+    "answer": 0,
+    "explanation": "Graphs can be represented using adjacency matrix."
+  },
+  {
+    "q": "Which structure is used in function calls?",
+    "options": ["Queue", "Stack", "Array", "Tree"],
+    "answer": 1,
+    "explanation": "Function calls use stack memory."
+  },
+
+  {
+    "q": "Which of the following is not a type of Artificial Intelligence agent?",
+    "options": ["Learning AI agent", "Goal-based AI agent", "Simple reflex AI agent", "Unity-based AI agent"],
+    "answer": 3,
+    "explanation": "Unity-based AI agent is not a recognized type of AI agent."
+  },
+  {
+    "q": "Which of the following is not commonly used programming language for AI?",
+    "options": ["Perl", "Java", "PROLOG", "LISP"],
+    "answer": 0,
+    "explanation": "Perl is rarely used for AI compared to Java, PROLOG, and LISP."
+  },
+  {
+    "q": "What is the name of the AI system developed by Daniel Bobrow?",
+    "options": ["program known as BACON", "system known as STUDENT", "program known as SHRDLU", "system known as SIMD"],
+    "answer": 1,
+    "explanation": "Daniel Bobrow developed the AI system called STUDENT."
+  },
+  {
+    "q": "A process that is repeated, evaluated, and refined is called __________",
+    "options": ["diagnostic", "descriptive", "interpretive", "iterative"],
+    "answer": 3,
+    "explanation": "An iterative process is repeated and refined until the desired outcome is achieved."
+  },
+  {
+    "q": "An AI agent perceives and acts upon the environment using___",
+    "options": ["Perceiver", "Sensors", "Actuators", "Both Sensors and Actuators"],
+    "answer": 3,
+    "explanation": "AI agents use sensors to perceive and actuators to act on the environment."
+  },
+  {
+    "q": "Which rule is applied for the Simple reflex agent?",
+    "options": ["Simple-action rule", "Simple & Condition-action rule", "Condition-action rule", "None of the above"],
+    "answer": 2,
+    "explanation": "Simple reflex agents use condition-action rules based on current percept."
+  },
+  {
+    "q": "When does a page fault occur?",
+    "options": ["The deadlock occurs", "The buffering occurs", "The page is present in memory", "The page does not present in memory"],
+    "answer": 3,
+    "explanation": "A page fault occurs when the required page is not present in memory."
+  },
+  {
+    "q": "Which of the following is a condition that causes deadlock?",
+    "options": ["Mutual exclusion", "Hold and wait", "Circular wait", "No preemption", "All of these"],
+    "answer": 4,
+    "explanation": "All listed conditions together can cause deadlock in a system."
+  },
+  {
+    "q": "What is an operating system?",
+    "options": ["System service provider to application programs", "Collection of programs that manages hardware", "Interface between hardware and applications", "All of the above"],
+    "answer": 3,
+    "explanation": "An OS provides services, manages hardware, and acts as an interface."
+  },
+  {
+    "q": "Which scheduling algorithm allocates CPU first to process that requests it first?",
+    "options": ["Priority scheduling", "Shortest job scheduling", "First-come, first-served scheduling", "None of above"],
+    "answer": 2,
+    "explanation": "First-come, first-served allocates CPU based on arrival order."
+  },
+  {
+    "q": "What is the ready state of a process?",
+    "options": ["Process is unable to run until some task is complete", "Process is scheduled to run", "Process is using CPU", "None of the mentioned"],
+    "answer": 1,
+    "explanation": "A ready process is scheduled to run when CPU is available."
+  },
+  {
+    "q": "A set of processes is deadlocked if ____________",
+    "options": ["Each process is terminated", "All processes are trying to kill each other", "Each process is blocked and will remain so forever", "None of the mentioned"],
+    "answer": 2,
+    "explanation": "Deadlock occurs when each process waits indefinitely for others."
+  },
+  {
+    "q": "Which are CPU scheduling algorithms?",
+    "options": ["Priority", "Round Robin", "Shortest Job First", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "All listed options are CPU scheduling algorithms."
+  },
+  {
+    "q": "In which storage placement strategy is a program placed in largest available hole?",
+    "options": ["Best fit", "First fit", "Worst fit", "Buddy"],
+    "answer": 2,
+    "explanation": "Worst fit places a program in the largest hole."
+  },
+  {
+    "q": "Which is a type of computer architecture?",
+    "options": ["Microarchitecture", "Harvard Architecture", "Von-Neumann Architecture", "All of the mentioned"],
+    "answer": 3,
+    "explanation": "All listed architectures are types of computer architecture."
+  },
+  {
+    "q": "Which one is not a combinational circuit?",
+    "options": ["Encoder", "Decoder", "Multiplexer", "De-multiplexer", "Register"],
+    "answer": 4,
+    "explanation": "Register is a sequential circuit, not combinational."
+  },
+  {
+    "q": "In which cache organization can data be stored in any cache block?",
+    "options": ["Direct Mapped", "Set Associativity", "Fully Associative", "All"],
+    "answer": 2,
+    "explanation": "Fully associative cache allows data to be stored in any block."
+  },
+  {
+    "q": "If a grammar produces more than one leftmost derivation, it is called:",
+    "options": ["Ambiguous grammar", "Perfect grammar", "Associative grammar", "Precedence grammar"],
+    "answer": 0,
+    "explanation": "Ambiguous grammar allows multiple leftmost derivations for a sentence."
+  },
+  {
+    "q": "The intersection of a context-free language and a regular language is ________",
+    "options": ["Neither context-free nor regular", "Context-free", "Regular but not context-free", "Both regular and context-free"],
+    "answer": 1,
+    "explanation": "Intersection of context-free and regular languages is context-free."
+  },
+  {
+    "q": "Which one of the following is not part of Turing machine?",
+    "options": ["Finite control", "Head", "Tape", "Input"],
+    "answer": 3,
+    "explanation": "Input is not a separate part; Turing machine consists of finite control, tape, and head."
+  },
+  {
+    "q": "The output of lexical analyzer is",
+    "options": ["Syntax tree", "Strings of characters", "A set of tokens", "Set of regular expressions"],
+    "answer": 2,
+    "explanation": "Lexical analyzer outputs a set of tokens."
+  },
+  {
+    "q": "Which of the following is NOT the primary role of code generator?",
+    "options": ["Instruction selection", "Declaration of variables", "Instruction ordering", "Register allocation"],
+    "answer": 1,
+    "explanation": "Code generator does not declare variables; it handles instructions and registers."
+  },
+  {
+    "q": "Which one of the following is different from the others?",
+    "options": ["Quadruples", "Triples", "Tree", "Indirect triples"],
+    "answer": 2,
+    "explanation": "Tree is a different intermediate code representation."
+  },
+  {
+    "q": "When is type checking usually done?",
+    "options": ["During lexical analysis", "During syntax directed translation", "During syntax analysis", "During code optimization"],
+    "answer": 2,
+    "explanation": "Type checking is usually performed during syntax analysis."
+  },
+  {
+    "q": "Which of the following cannot represent a target code?",
+    "options": ["Three address code", "Assembly language", "Absolute machine code", "Byte Code"],
+    "answer": 0,
+    "explanation": "Three-address code is intermediate code, not target code."
+  },
+  {
+    "q": "Which of the following is NOT important property of intermediate code representation?",
+    "options": ["Ease of generation", "Register allocation", "Level of abstraction", "Ease of manipulation"],
+    "answer": 1,
+    "explanation": "Register allocation is handled in code generation, not intermediate code."
+  },
+  {
+    "q": "Handle pruning is used to obtain",
+    "options": ["Canonical reduction sequence", "Canonical derivation sequence", "Both", "None of these"],
+    "answer": 2,
+    "explanation": "Handle pruning obtains both canonical reduction and derivation sequences."
+  },
+  {
+    "q": "Which of the following are phases of compiler?",
+    "options": ["Code generation", "Syntax analyzer", "Lexical analyzer", "All of these"],
+    "answer": 3,
+    "explanation": "All listed are phases of a compiler."
+  },
+  {
+    "q": "Compiler translates source code to",
+    "options": ["Machine code", "Executable code", "Binary code", "Both Machine code and Binary code"],
+    "answer": 3,
+    "explanation": "Compiler produces machine code (binary code) which is executable."
+  },
+  {
+    "q": "Replacement of an expensive operation by a cheaper one is called",
+    "options": ["Reduction in strength", "Loop-invariant computation", "Code motion", "None of these"],
+    "answer": 0,
+    "explanation": "Reduction in strength replaces expensive operations with cheaper ones."
+  }
+
+
+
+  
+
+  ],
+
+
+
+
+  
 "admasu":[
 
   {
@@ -19221,6 +19915,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
