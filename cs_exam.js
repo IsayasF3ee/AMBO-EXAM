@@ -2,6 +2,558 @@
 const exams = {
 "admasu":[
 
+  {
+    "q": "What happens when you push a new node onto a stack?",
+    "options": [
+      "The new node is placed at the front of the linked list",
+      "The new node is placed at the back of the linked list",
+      "The new node is placed at the middle of the linked list",
+      "No changes happen"
+    ],
+    "answer": 0,
+    "explanation": "Stack follows LIFO (Last In First Out), so insertion happens at the top (front)."
+  },
+  {
+    "q": "_______ is very useful in situation when data have to stored and then retrieved in reverse order.",
+    "options": [
+      "Stack",
+      "Queue",
+      "List",
+      "Link List"
+    ],
+    "answer": 0,
+    "explanation": "Stack retrieves data in reverse order due to LIFO behavior."
+  },
+  {
+    "q": "Which OSI layer defines the functions of logical network addressing and routing?",
+    "options": [
+      "Physical",
+      "Network",
+      "Data link",
+      "Transport"
+    ],
+    "answer": 1,
+    "explanation": "The Network layer handles logical addressing (IP) and routing."
+  },
+  {
+    "q": "Dialogue and conversation between the sender and the receiver device is established by___",
+    "options": [
+      "Physical",
+      "Session",
+      "Data link",
+      "Presentation"
+    ],
+    "answer": 1,
+    "explanation": "The Session layer manages sessions and communication dialogs."
+  },
+  {
+    "q": "Which of the following devices translates hostnames into IP addresses?",
+    "options": [
+      "DNS Server",
+      "Hub",
+      "DHCP Server",
+      "Firewall"
+    ],
+    "answer": 0,
+    "explanation": "DNS resolves domain names into IP addresses."
+  },
+  {
+    "q": "Delivery and storage of E-Mail message to a server is achieved using__________",
+    "options": [
+      "Post Office Protocol (POP)",
+      "Internet Mail Access Protocol (IMAP)",
+      "Simple Mail Transfer Protocol (SMTP)",
+      "Hypertext Transfer Protocol (HTTP)"
+    ],
+    "answer": 2,
+    "explanation": "SMTP is used to send and transfer email messages to servers."
+  },
+  {
+    "q": "Changing a stream of data bits into a predefined code is known as ___________",
+    "options": [
+      "Decoding",
+      "Encoding",
+      "Signaling",
+      "Data transferring"
+    ],
+    "answer": 1,
+    "explanation": "Encoding converts data into a specific format for transmission."
+  },
+  {
+    "q": "If we want to remove the message from mailbox, which protocol is available to remove it?",
+    "options": [
+      "SMTP",
+      "IMAP",
+      "POP3",
+      "SNMP"
+    ],
+    "answer": 2,
+    "explanation": "POP3 downloads and removes emails from the server mailbox."
+  },
+  {
+    "q": "An information system requires a valid userid and strong password from any user. This process is known as_______",
+    "options": [
+      "Authentication",
+      "Strong authentication",
+      "Two-factor authentication",
+      "Single sign-on"
+    ],
+    "answer": 0,
+    "explanation": "Authentication verifies user identity using credentials."
+  },
+  {
+    "q": "An organization wants to prevent SQL and script injection attacks on its Internet web application. The organization should implement a/an___",
+    "options": [
+      "Intrusion detection system",
+      "Firewall",
+      "Application firewall",
+      "SSL certificate"
+    ],
+    "answer": 2,
+    "explanation": "An application firewall (WAF) protects web applications from injection attacks."
+  },
+  {
+    "q": "CIA is known as__________",
+    "options": [
+      "Confidentiality, Integrity, and Availability",
+      "Computers, Information, and Assets",
+      "Confidence In Applications",
+      "Controls, Integrity, and Availability"
+    ],
+    "answer": 0,
+    "explanation": "CIA triad stands for Confidentiality, Integrity, and Availability in information security."
+  },
+  {
+    "q": "A DBA needs to make certain fields visible to some users. What is the best action?",
+    "options": [
+      "Implement column-based access controls",
+      "Export the table to a data warehouse",
+      "Clone the table with permitted fields",
+      "Create a view containing only permitted fields"
+    ],
+    "answer": 3,
+    "explanation": "A database view allows restricting access to specific columns without duplicating data."
+  },
+  {
+    "q": "Public key cryptography is so-named because________",
+    "options": [
+      "It is the world standard for HTTPS",
+      "It works on all operating systems",
+      "It uses an encryption key that can be released to the public",
+      "The encryption algorithms are public"
+    ],
+    "answer": 2,
+    "explanation": "Public key cryptography uses a publicly shared key for encryption and a private key for decryption."
+  },
+  {
+    "q": "An encryption algorithm transforms plaintext to ciphertext by XORing with the key. This is known as__________",
+    "options": [
+      "Electronic codebook",
+      "Cipher block chaining",
+      "Block cipher",
+      "Stream cipher"
+    ],
+    "answer": 3,
+    "explanation": "Stream ciphers encrypt data bit-by-bit often using XOR with a keystream."
+  },
+  {
+    "q": "Company.com, facebook.com, kpmim.edu.my are examples of ___________",
+    "options": [
+      "Hostname",
+      "Domain Name",
+      "Fully Qualified Domain Name",
+      "Servers"
+    ],
+    "answer": 2,
+    "explanation": "These are Fully Qualified Domain Names (FQDN) containing full domain hierarchy."
+  },
+  {
+    "q": "An Active Directory container used to organize network users and resources?",
+    "options": [
+      "Organizational Units",
+      "Users Units",
+      "Container object",
+      "Leaf object"
+    ],
+    "answer": 0,
+    "explanation": "Organizational Units (OU) organize users and resources logically."
+  },
+  {
+    "q": "To which of the following can a GPO be linked?",
+    "options": [
+      "Domains",
+      "Sites",
+      "Leaf object",
+      "Container object"
+    ],
+    "answer": 3,
+    "explanation": "GPOs are linked to Sites, Domains, and Organizational Units (container objects)."
+  },
+  {
+    "q": "Which of the following is a container object?",
+    "options": [
+      "Domain & OU",
+      "Users",
+      "Computers",
+      "Groups"
+    ],
+    "answer": 0,
+    "explanation": "Domains and Organizational Units are container objects."
+  },
+  {
+    "q": "Correct Active Directory organizational order (largest to smallest)?",
+    "options": [
+      "Forest, Domain, Tree, Branch, Computer",
+      "Computer, Forest, Domain, Tree",
+      "Forest, Tree, Domain, Computer",
+      "Forest, Tree, Computer, Domain"
+    ],
+    "answer": 2,
+    "explanation": "Active Directory hierarchy is Forest → Tree → Domain → Objects."
+  },
+  {
+    "q": "A network of Windows machines utilizing the same name to share resources",
+    "options": [
+      "Active Directory",
+      "Domain",
+      "Forest",
+      "Workgroup"
+    ],
+    "answer": 1,
+    "explanation": "A domain is a network of computers sharing centralized authentication."
+  },
+  {
+    "q": "In AI, the simple reflex agent selects action based on",
+    "options": [
+      "Current percept only",
+      "Percept history only",
+      "Both current and full history",
+      "Current and previous percept"
+    ],
+    "answer": 0,
+    "explanation": "Simple reflex agents act only on the current percept."
+  },
+  {
+    "q": "_______ environment is random and cannot be determined completely.",
+    "options": [
+      "Deterministic",
+      "Stochastic",
+      "Static",
+      "Dynamic"
+    ],
+    "answer": 1,
+    "explanation": "Stochastic environments involve randomness and uncertainty."
+  },
+  {
+    "q": "Agent that works based on percept and stored internal state",
+    "options": [
+      "Goal-based",
+      "Learning",
+      "Model-based reflex",
+      "Utility-based"
+    ],
+    "answer": 2,
+    "explanation": "Model-based agents maintain internal state of the world."
+  },
+  {
+    "q": "Which is not a required property of Knowledge Representation?",
+    "options": [
+      "Inferential Efficiency",
+      "Inferential Adequacy",
+      "Representational Verification",
+      "Representational Adequacy"
+    ],
+    "answer": 2,
+    "explanation": "Representational Verification is not a standard KR property."
+  },
+  {
+    "q": "Logical equivalent proved by law of contraposition?",
+    "options": [
+      "(α ⇒ β) ≡ (¬β ⇒ α)",
+      "(α ⇒ β) ≡ (β ⇔ ¬α)",
+      "(¬α ⇒ β) ≡ (¬β ⇒ ¬α)",
+      "(α ⇒ β) ≡ (¬β ⇒ ¬α)"
+    ],
+    "answer": 3,
+    "explanation": "Contraposition: If α implies β, then not β implies not α."
+  },
+  {
+    "q": "Data, information, and past experience combined are termed as __________.",
+    "options": [
+      "Inference",
+      "Acquisition",
+      "Vision",
+      "Knowledge"
+    ],
+    "answer": 3,
+    "explanation": "Knowledge is derived from data, information, and experience."
+  },
+  {
+    "q": "If a process fails, OS writes error information to a ______",
+    "options": [
+      "log file",
+      "another running process",
+      "new file",
+      "none"
+    ],
+    "answer": 0,
+    "explanation": "Operating systems store error details in log files."
+  },
+  {
+    "q": "Which is not a process state?",
+    "options": [
+      "New",
+      "Old",
+      "Waiting",
+      "Running"
+    ],
+    "answer": 1,
+    "explanation": "Old is not a standard process state."
+  },
+  {
+    "q": "What is the degree of multiprogramming?",
+    "options": [
+      "Processes executed per unit time",
+      "Processes in ready queue",
+      "Processes in I/O queue",
+      "Processes in memory"
+    ],
+    "answer": 3,
+    "explanation": "Degree of multiprogramming is number of processes in memory."
+  },
+  {
+    "q": "Which is not an advantage of single-level directory?",
+    "options": [
+      "Simple implementation",
+      "Fast search for small files",
+      "Simple file operations",
+      "Directory may be very large causing slow search"
+    ],
+    "answer": 3,
+    "explanation": "Large directory causing slow search is a disadvantage."
+  },
+  {
+    "q": "Unused memory portion within allocated block is called",
+    "options": [
+      "External fragmentation",
+      "Internal fragmentation",
+      "Paging",
+      "Segmentation"
+    ],
+    "answer": 1,
+    "explanation": "Internal fragmentation occurs when allocated memory is larger than needed."
+  },
+  {
+    "q": "Memory management technique dividing address space into pages",
+    "options": [
+      "External fragmentation",
+      "Internal fragmentation",
+      "Paging",
+      "Segmentation"
+    ],
+    "answer": 2,
+    "explanation": "Paging divides memory into equal-sized pages."
+  },
+  {
+    "q": "Which architecture is power efficient?",
+    "options": [
+      "RISC",
+      "ISA",
+      "IANA",
+      "CISC"
+    ],
+    "answer": 0,
+    "explanation": "RISC architectures use simpler instructions and are more power efficient."
+  },
+  {
+    "q": "Memory devices similar to EEPROM but more cost effective?",
+    "options": [
+      "CMOS",
+      "Memory sticks",
+      "Blu-ray devices",
+      "Flash memory"
+    ],
+    "answer": 3,
+    "explanation": "Flash memory is an improved form of EEPROM with better cost efficiency."
+  },
+  {
+    "q": "Number of successful memory accesses as a fraction is called",
+    "options": [
+      "Access rate",
+      "Success rate",
+      "Hit rate",
+      "Miss rate"
+    ],
+    "answer": 2,
+    "explanation": "Hit rate measures successful memory accesses."
+  },
+  {
+    "q": "Memory used to speed up processing",
+    "options": [
+      "Cache memory",
+      "RAM",
+      "ROM",
+      "SRAM"
+    ],
+    "answer": 0,
+    "explanation": "Cache memory stores frequently accessed data for faster processing."
+  },
+  {
+    "q": "Which is not a peripheral device?",
+    "options": [
+      "CPU",
+      "Keyboard",
+      "Monitor",
+      "Printer"
+    ],
+    "answer": 0,
+    "explanation": "CPU is the core processing unit, not a peripheral."
+  },
+  {
+    "q": "Circuit used to store one bit of data",
+    "options": [
+      "Flip Flop",
+      "Decoder",
+      "Encoder",
+      "Register"
+    ],
+    "answer": 0,
+    "explanation": "Flip-flop stores a single bit."
+  },
+  {
+    "q": "Which is not part of Turing machine?",
+    "options": [
+      "Finite control",
+      "Input",
+      "Tape",
+      "Head"
+    ],
+    "answer": 1,
+    "explanation": "Turing machine components include tape, head, and control; input is not separate."
+  },
+  {
+    "q": "f(x)=x+2 over N is _____ function",
+    "options": [
+      "Total",
+      "Partial",
+      "Recursive",
+      "Both total and partial"
+    ],
+    "answer": 0,
+    "explanation": "Function is defined for all natural numbers, so it is total."
+  },
+  {
+    "q": "S(S(S(Z(4)))) is equal to_______",
+    "options": [
+      "U13(2,1,3)",
+      "U13(2,1,3)",
+      "U33(2,1,3)",
+      "None of these"
+    ],
+    "answer": 3,
+    "explanation": "Successor applied three times gives 7, not matching given forms."
+  },
+  {
+    "q": "Which grammar is in Chomsky Normal Form?",
+    "options": [
+      "S→AS/a, A→SA/aa",
+      "S→AS/a, A→SA/b",
+      "S→AS/ASS/a, A→SA/b",
+      "B and C"
+    ],
+    "answer": 1,
+    "explanation": "CNF requires productions A→BC or A→a."
+  },
+  {
+    "q": "Correct grammar matching?",
+    "options": [
+      "Context-free grammar",
+      "Regular grammar",
+      "Left linear grammar",
+      "A and B"
+    ],
+    "answer": 0,
+    "explanation": "The grammar structure corresponds to context-free grammar."
+  },
+  {
+    "q": "How many languages over alphabet R?",
+    "options": [
+      "Countably infinite",
+      "Countably finite",
+      "Uncountable finite",
+      "Uncountable infinite"
+    ],
+    "answer": 3,
+    "explanation": "Set of all languages over an alphabet is uncountably infinite."
+  },
+  {
+    "q": "Which represents a dynamic semantic error?",
+    "options": [
+      "Type mismatch",
+      "Illegal character",
+      "Missing semicolon",
+      "Division by zero"
+    ],
+    "answer": 3,
+    "explanation": "Division by zero occurs during execution (runtime)."
+  },
+  {
+    "q": "When is type checking usually done?",
+    "options": [
+      "Lexical analysis",
+      "Syntax analysis",
+      "Code optimization",
+      "Syntax directed translation"
+    ],
+    "answer": 3,
+    "explanation": "Type checking occurs during semantic analysis phase."
+  },
+  {
+    "q": "Which cannot represent target code?",
+    "options": [
+      "Three address code",
+      "Assembly language",
+      "Absolute machine code",
+      "Byte code"
+    ],
+    "answer": 0,
+    "explanation": "Three-address code is intermediate representation, not target code."
+  },
+  {
+    "q": "All can represent intermediate code except",
+    "options": [
+      "Syntax tree",
+      "Three address code",
+      "Lexemes",
+      "Quadruples"
+    ],
+    "answer": 2,
+    "explanation": "Lexemes are tokens from lexical analysis, not intermediate code."
+  },
+  {
+    "q": "Recognizer for syntax analysis is",
+    "options": [
+      "Deterministic finite automata",
+      "Non-deterministic finite automata",
+      "Non-deterministic pushdown automata",
+      "Deterministic pushdown automata"
+    ],
+    "answer": 3,
+    "explanation": "Parsing uses pushdown automata with stack."
+  },
+  {
+    "q": "Grammar types implemented with predictive parser except",
+    "options": [
+      "Right recursive",
+      "Left recursive",
+      "Deterministic",
+      "Left factored"
+    ],
+    "answer": 1,
+    "explanation": "Predictive parsers cannot handle left-recursive grammars."
+  },
+
+
 
   {
     "q": "The software developer team must be given more emphasize which types of software quality requirements?",
@@ -18669,6 +19221,7 @@ function submitExam() {
     document.getElementById('score-display').style.display = 'block';
     document.getElementById('score-display').textContent = `You scored ${score} out of ${currentExam.length}`;
 }
+
 
 
 
